@@ -1,0 +1,2077 @@
+// 스토리북 여백 삭제 (검수용)
+.sb-show-main.sb-main-padded {
+  padding: 0;
+  overflow-y: auto;
+}
+
+// T타임 메인
+.card-main-content.tTime {
+  .content-list {
+    li {
+      margin-bottom: 12px;
+
+      a {
+        display: block;
+        position: relative;
+        height: 56px;
+        padding: 3px 0 3px 61px;
+
+        .thumb-img {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+
+        .tit-wrap {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          padding: 0 25px;
+          background-color: #f5f5f7;
+          border-radius: 3px 25px 25px 25px;
+          @include break-point(359) {
+            padding: 0 15px;
+          }
+
+          .tit {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 390px;
+            font-size: 14px;
+            line-height: 1.3;
+            font-weight: 400; //2023.08.16수정
+            @include break-point(359) {
+              font-size: 13px;
+            }
+          }
+          //2023.08.16수정
+          .bl-arr-bold {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &:nth-child(2n) {
+        a {
+          padding: 3px 61px 3px 0;
+
+          img {
+            left: auto;
+            right: 0;
+          }
+
+          .tit-wrap {
+            border-radius: 25px 3px 25px 25px;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.link-rounded-large {
+  border: 1px #d9d9d9 solid;
+  border-radius: 25px;
+}
+
+// T타임 서브페이지 컨테이너 (검수용)
+.tTime-container {
+  padding-top: 56px;
+
+  .scroll-test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background: #e8faff;
+  }
+
+  // T타임룸 페이지 - 배너 (검수용)
+  .banner-area.btm-border {
+    border-bottom: 8px #f0f0f5 solid;
+  }
+}
+
+.tTime-container-detail {
+  margin-bottom: 50px;
+}
+
+// T타임 - header
+.tworld-sub-header.tTime {
+  .sub-header-inner {
+    position: relative;
+    @include break-point(359) {
+      padding: 0 4px 0 4px;
+    }
+    .sub-header-tit {
+      @include break-point(359) {
+        font-size: 17px;
+      }
+    }
+    button.btn-prev + .sub-header-tit {
+      padding-left: 0;
+      margin-left: -2px;
+      // margin-top: 3px;
+    }
+
+    // 메뉴 버튼
+    a[class^='btn-'],
+    button[class^='btn-'] {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-size: 19px auto;
+      background-position: center center;
+    }
+
+    // T타임 메뉴 아이콘
+    button.btn-prev {
+      background-image: url($dir + 'sub/ic-prev.png');
+    }
+    button.btn-info {
+      background-image: url($dir + 'sub/ic-info.png');
+      background-size: 18px 18px; //2023.08.16수정
+    }
+    button.btn-save {
+      background-image: url($dir + 'sub/ic-save.png');
+      &.active {
+        background-image: url($dir + 'sub/ic-save-active.png');
+      }
+    }
+    button.btn-share {
+      background-image: url($dir + 'sub/ic-share.png');
+    }
+    button.btn-close {
+      background-image: url($dir + 'sub/ic-close.png');
+      background-size: 17px auto;
+    }
+  }
+}
+
+// T타임 - 메세지버블
+.card-main-notification.tTime {
+  a {
+    padding: 0 40px 0 20px;
+    background-color: #f2e0e0;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    @include break-point(359) {
+      padding: 0 40px 0 10px;
+    }
+
+    .ic-alarm-notice {
+      &::before {
+        background: url($dir + 'sub/ic-cup.png') no-repeat center center;
+        background-size: 19px 19px;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  button {
+    .ic-tbar-cls {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+}
+
+// T타임 - T타임현황
+.tTime-current-info-content {
+  position: relative;
+  width: 100%;
+  background: #fff7e5;
+
+  .login-area {
+    padding: 30px 20px;
+    overflow: hidden;
+    @include break-point(359) {
+      padding: 30px 10px;
+    }
+
+    h2.tit {
+      display: block;
+      margin: 0 0 24px;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 700;
+      @include break-point(359) {
+        font-size: 16px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+
+        .bl-arr-bold {
+          font-size: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .info-list {
+      display: flex;
+      align-items: center;
+      margin: 0 -10px 0 -20px;
+      // margin: 0 -23px 0 -26px;
+      padding: 0 5px;
+
+      li {
+        position: relative;
+        width: 33.333%;
+        padding: 0 10px 0 20px;
+        // padding: 0 23px 0 26px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.08);
+        }
+
+        &:last-child {
+          &::before {
+            display: none;
+          }
+        }
+
+        a {
+          display: block;
+
+          .list-tit {
+            display: block;
+            font-size: 13px; //2023.08.16수정
+            line-height: 1.2;
+            @include break-point(340) {
+              min-height: 29px;
+            }
+          }
+
+          .num {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 700;
+
+            em {
+              padding-right: 4px;
+              font-size: 20px;
+            }
+
+            .bl-arr-bold {
+              font-size: 11px;
+              font-weight: bold;
+              margin-left: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 비로그인 시
+  .no-login-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 25px 20px 20px;
+    @include break-point(359) {
+      padding: 25px 10px 20px;
+    }
+
+    p {
+      width: 100%;
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 700;
+      text-align: center;
+      @include break-point(359) {
+        font-size: 14px;
+      }
+    }
+
+    .btn-login {
+      display: block;
+      margin-top: 20px;
+      padding: 12px 33px;
+      background: transparent;
+      border-radius: 50px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      span {
+        font-size: 14px;
+        color: #444444;
+      }
+    }
+  }
+}
+
+// T타임 - 테마별이야기
+.tTime-theme-list-content {
+  position: relative;
+  padding: 36px 20px;
+  overflow: hidden;
+  border-bottom: 8px #f0f0f5 solid;
+  @include break-point(359) {
+    padding: 36px 10px;
+  }
+
+  h2.tit {
+    margin: 0 0 6px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    @include break-point(359) {
+      font-size: 16px;
+    }
+  }
+
+  .theme-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .theme-item {
+      width: calc(50% - 5px);
+      margin-top: 13px;
+      padding: 10px 14px;
+      border-radius: 3px 25px 25px 25px;
+      background-color: #f5f5f7;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        img {
+        }
+
+        .tit {
+          margin-left: 5px;
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 400; //2023.08.16수정
+          letter-spacing: 0px; //2023.08.24수정
+          @include break-point(359) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 이야기 리스트 (T타임 리스트영역 / 테마별이야기 탭 / 이야기 모아보기 탭 공통)
+.story-list {
+  margin-top: 30px;
+  li {
+    position: relative;
+    margin-bottom: 30px;
+    @include break-point(359) {
+      margin-bottom: 20px;
+    }
+
+    a,
+    .thumb-item {
+      min-height: 56px;
+    }
+
+    .thumb-item {
+      display: flex;
+      position: relative;
+      padding-right: 25px;
+      align-items: center;
+      column-gap: 14px; //2023.08.16수정
+      &.no-bookmark {
+        padding-right: 0px;
+      }
+
+      .bullet {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        width: 5px;
+        height: 5px;
+        padding: 0;
+        border-radius: 50%;
+        background: #ff404e;
+      }
+
+      .thumbnail-rounded {
+        //2023.08.16수정
+        flex: 0 0 66px;
+        img {
+          margin-left: 10px;
+        }
+      }
+
+      .text-area {
+        width: calc(100% - 84px);
+        .tit {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          height: auto; //2023.08.16수정
+          font-size: 15px; //2023.08.16수정
+          line-height: 18px; //2023.08.16수정
+          font-weight: 400;
+        }
+
+        .tag-box {
+          margin-top: 4px; //2023.08.16수정
+
+          .tag {
+            display: inline-block;
+            width: auto;
+            margin-right: 5px;
+            padding: 0;
+            font-size: 12px;
+            color: #7887b3;
+          }
+        }
+      }
+
+      .btn-bookmark {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -12.5px;
+        width: 25px;
+        height: 25px;
+        background: url($dir + 'sub/ic-bookmark-off.png') no-repeat center center;
+        background-size: 13px 16px;
+
+        &.active {
+          background-image: url($dir + 'sub/ic-bookmark-on.png');
+        }
+      }
+    }
+  }
+
+  .banner-area {
+    //2023.08.16수정
+    // margin-left: -20px;
+    // margin-right: -20px;
+    // @include break-point(359) {
+    //   margin-left: -10px;
+    //   margin-right: -10px;
+    // }
+
+    a {
+      min-height: auto;
+    }
+  }
+}
+
+// T타임 - 리스트영역
+.tTime-story-list-content {
+  position: relative;
+  padding: 36px 20px;
+  overflow: hidden;
+  @include break-point(359) {
+    padding: 36px 10px;
+  }
+
+  // 상단 필터 영역
+  .list-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2.tit {
+      display: block;
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 700;
+      @include break-point(359) {
+        font-size: 16px;
+      }
+    }
+
+    .bl-arr-bold {
+      font-size: 12px;
+      font-weight: bold;
+      vertical-align: 3px;
+    }
+
+    .select-option-box {
+      .btn-list-filter {
+        // 2023.08.24 수정
+        display: flex;
+        align-items: center;
+        height: 24px;
+        .ic-filter:before {
+          // 2023.08.14 수정
+          display: inline-block;
+          content: url($dir + 'sub/ic-filter.png');
+          transform: scale(0.5) translate(15px, 1px);
+        }
+        em {
+          padding-left: 5px;
+          font-size: 14px;
+          color: #808080 !important;
+        }
+      }
+    }
+  }
+
+  // 이야기 리스트
+  .story-list {
+    margin-top: 24px;
+  }
+}
+
+// T타임 - 정렬필터 바텀시트
+.BottomSheet {
+  .sort-filter-wrap {
+    .modal-title {
+      padding: 0 25px 40px 0;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .modal-content {
+      .item-type-list {
+        padding: 0;
+
+        .item {
+          padding-bottom: 0;
+          margin-bottom: 36px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 테마별이야기 탭
+.tTime-theme-story-content {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 40px);
+  padding: 0 20px;
+  overflow: hidden;
+  // @supports (-webkit-touch-callout: none) {
+  //   height: -webkit-fill-available;
+  // }
+  @include break-point(359) {
+    padding: 0 10px 30px;
+  }
+
+  // 이야기 리스트
+  .tTime-story-list-content {
+    margin: 0 -20px;
+    padding: 0;
+    @include break-point(359) {
+      margin: 0 -10px;
+    }
+
+    .story-list {
+      margin: 0;
+      padding: 24px 20px 20px;
+      overflow-y: auto;
+      max-height: calc(
+              var(--vh, 1vh) * 100 - 329px - 40px
+      ); // header + .tab-wrap + .cup-info 높이 + bottom navi 높이(60px)
+      @include break-point(359) {
+        padding: 24px 10px;
+      }
+    }
+  }
+}
+
+// 테마별이야기 탭 카테고리 영역
+.tTime-theme-story-tab-wrap {
+  position: fixed;
+  top: 56px;
+  left: 20px;
+  z-index: 10;
+  width: 100%;
+  margin: 0 -20px;
+  // padding: 56px 20px 0; // padding-top : Header 높이
+  padding: 0 20px; // padding-top : Header 높이
+  overflow: hidden;
+  background-color: #fff;
+
+  .tab-list {
+    display: flex;
+    margin: 0 -50px 0 -20px;
+    padding: 5px 20px;
+
+    .tab-item {
+      display: inline-block;
+      width: auto;
+      margin: 0 10px 0 0;
+      padding: 0;
+      height: 36px;
+      border: 2px solid #f5f5f7;
+      border-radius: 3px 20px 20px 20px;
+      background-color: #f5f5f7;
+      &:last-child {
+        margin-right: 0 !important;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 17px 0 12px;
+        line-height: 32px;
+
+        .tit {
+          margin-left: 5px;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+
+      &.swiper-slide-thumb-active {
+        button {
+          .tit {
+            font-weight: 700;
+          }
+        }
+      }
+      &.bg1 {
+        &.swiper-slide-thumb-active {
+          background-color: #fff9c1;
+          border: 2px solid #ffb800;
+        }
+      }
+      &.bg2 {
+        &.swiper-slide-thumb-active {
+          background-color: #e8fbff;
+          border: 2px solid #57cdff;
+        }
+      }
+      &.bg3 {
+        &.swiper-slide-thumb-active {
+          background-color: #ffeed6;
+          border: 2px solid #b77538;
+        }
+      }
+      &.bg4 {
+        &.swiper-slide-thumb-active {
+          background-color: #f4e8ff;
+          border: 2px solid #d687ff;
+        }
+      }
+    }
+  }
+}
+
+// 테마별이야기 탭 컨텐츠 영역
+.tTime-theme-story-tab-content-wrap {
+  padding-top: 102px; // header + .tab-wrap 높이
+
+  .tab-content {
+    position: relative;
+    display: flex;
+    margin: 0 -20px;
+    @include break-point(359) {
+      margin: 0 -10px;
+    }
+
+    .content-item {
+      position: relative;
+      //min-height: calc(var(--vh, 1vh) * 100 - 102px); // header + .tab-wrap 높이
+
+      // 컵 정보
+      .cup-info {
+        position: relative;
+        margin: 0 -20px;
+        padding: 24px 20px;
+        text-align: center;
+
+        // 컵 정보 배경색
+        .bg-box {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 140px;
+          background-color: #f5f5f7;
+          z-index: -1;
+          &.bg1 {
+            background-color: #fffacb;
+          }
+          &.bg2 {
+            background-color: #e8fbff;
+          }
+          &.bg3 {
+            background-color: #ffeed6;
+          }
+          &.bg4 {
+            background-color: #f4e8ff;
+          }
+        }
+
+        .text-area {
+          margin-top: 11px;
+
+          .sub-text {
+            display: block;
+            font-size: 13px;
+            line-height: 1.2;
+          }
+
+          .tit {
+            display: block;
+            margin-top: 8px;
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    // 슬라이드 화살표
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 98px;
+      left: auto;
+      right: auto;
+      width: 24px;
+      height: 24px;
+      margin: 0;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      display: none;
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: url($dir + 'sub/ic-arr-left.png') no-repeat center center;
+        background-size: contain;
+      }
+      @include break-point(359) {
+        left: 10px;
+      }
+    }
+
+    .swiper-button-next {
+      right: 20px;
+      &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: url($dir + 'sub/ic-arr-right.png') no-repeat center center;
+        background-size: contain;
+      }
+      @include break-point(359) {
+        right: 10px;
+      }
+    }
+  }
+}
+
+// 콘텐츠 상세 - 태그 영역
+.content-tag-area {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 20px 30px;
+  @include break-point(359) {
+    padding: 20px 10px 30px;
+  }
+
+  .tag-box {
+    .tag {
+      display: inline-block;
+      margin: 0 5px 5px 0;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #7887b3;
+    }
+  }
+}
+
+// 콘텐츠 상세 - T알림 동의 안내 영역
+.content-noti-agree-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 25px 20px 20px;
+  background: #f5f5f7;
+  @include break-point(359) {
+    padding: 25px 10px 20px;
+  }
+
+  & + .content-list-area {
+    border-top: none;
+  }
+
+  p {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    @include break-point(359) {
+      font-size: 14px;
+    }
+  }
+
+  .link-rounded-large {
+    display: block;
+    height: 43px;
+    padding: 12px 33px;
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid #d9d9d9;
+    color: #444;
+  }
+}
+
+// 콘텐츠 상세 - T 타임 이야기 더보기 리스트 영역
+.content-list-area {
+  position: relative;
+  overflow: hidden;
+  padding: 36px 20px 90px;
+  border-top: 8px #f0f0f5 solid;
+  @include break-point(359) {
+    padding: 36px 10px 79px;
+  }
+
+  h2.tit {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    @include break-point(359) {
+      font-size: 16px;
+    }
+    // T 타임 이야기 더 보기 타이틀 아이콘추가 2023.08.08
+    .bl-arr-bold {
+      font-size: 12px;
+      font-weight: bold;
+      vertical-align: 3px;
+    }
+  }
+
+  // 이야기 리스트
+  .story-list {
+    margin-top: 20px;
+  }
+}
+
+// 콘텐츠 상세 - 로그인안내 바텀시트
+.BottomSheet {
+  .login-guide {
+    // 텍스트 영역
+    .text-area {
+      background: url($dir + 'sub/bg-bottomSheetLogin.png') no-repeat top 0 right 0;
+      background-size: 60px 60px;
+
+      .tit {
+        display: block;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 700;
+        padding-right: 70px;
+      }
+
+      .sub-text {
+        padding-top: 25px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #808080;
+      }
+    }
+
+    // 버튼 영역
+    .btn-area {
+      flex-wrap: wrap;
+      padding-top: 20px;
+
+      // 로그인 버튼(바텀시트 활성화시)
+      .btn-login {
+        display: block;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        background: #4130df;
+        border-radius: 5px;
+      }
+
+      // 닫기 버튼
+      .btn-closed {
+        display: block;
+        width: 100%;
+        margin: 5px 0 -14px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        color: #444;
+        background: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// 콘텐츠 상세 - 토스트 팝업
+.my-layer-toast.tTime {
+  z-index: auto;
+  padding: 0;
+  border-radius: 3px 20px 20px 20px;
+  background: #f5f5f7;
+  opacity: 1;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16); //2023.08.16수정
+  .my-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+
+    img {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .bl-arr-bold {
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+}
+
+// 콘텐츠 상세
+.ttime-content {
+  overflow-y: auto;
+}
+// T타임룸 - 컵 유형정보
+.troom-typeinfo-content {
+  padding: 30px 20px 24px;
+  border-bottom: 8px #f0f0f5 solid;
+  @include break-point(359) {
+    padding: 30px 10px 24px;
+  }
+
+  .cup-info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    .cup-img {
+    }
+
+    .text-area {
+      width: 100%;
+      padding: 20px 0 24px;
+      text-align: center;
+
+      .user-name {
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.8px;
+      }
+
+      .cup-name {
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: -0.8px;
+        @include break-point(359) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  .story-info {
+    width: 100%;
+    padding: 24px 4px 0;
+    border-top: 1px solid #e5e5e5;
+
+    .info-list {
+      display: flex;
+      align-items: center;
+
+      li {
+        position: relative;
+        width: 50%;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 19px;
+          background-color: #e5e5e5;
+        }
+
+        &:first-child {
+          padding-right: 10px;
+        }
+        &:last-child {
+          padding-left: 10px;
+          &::before {
+            display: none;
+          }
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .list-tit {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 400;
+            letter-spacing: -1px;
+          }
+
+          .num {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 700;
+            vertical-align: middle;
+            text-align: right;
+
+            em {
+              padding-right: 2px;
+              font-size: 17px;
+              line-height: 20px;
+              font-weight: 700;
+            }
+          }
+
+          .bl-arr-bold {
+            font-size: 10px;
+            font-weight: bold;
+            vertical-align: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// T타임룸 - 컵 안내 리스트
+.troom-list-content {
+  padding: 36px 20px;
+  @include break-point(359) {
+    padding: 36px 10px;
+  }
+
+  h2.tit {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    text-align: center;
+
+    .user-name {
+      padding-right: 3px;
+      font-weight: 700;
+    }
+
+    .num {
+      padding-left: 3px;
+      font-weight: 700;
+      color: #4130df;
+    }
+  }
+
+  .cup-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .list-item {
+      width: calc((100% - 50px) / 3);
+      margin-left: 25px;
+      margin-top: 25px;
+      &:nth-child(3n + 1) {
+        margin-left: 0;
+      }
+      @include break-point(359) {
+        width: calc((100% - 40px) / 3);
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        font-size: 0;
+
+        .cup-img {
+          width: 90px;
+          height: 90px;
+          @include break-point(359) {
+            width: 70px;
+            height: 70px;
+          }
+        }
+
+        .tit {
+          display: block;
+          padding-top: 12px;
+          text-align: center;
+          font-size: 13px;
+          line-height: 1.2;
+          font-weight: 400;
+        }
+      }
+
+      // 새로 모은컵
+      &.new {
+        position: relative;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 35px;
+          height: 16px;
+          background: url($dir + 'sub/ic-newbadge.png') no-repeat center center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+// T타임룸 - 컵설명서 바텀시트
+.BottomSheet {
+  .cup-manual {
+    .modal-title {
+      padding: 0 25px 40px 0;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .modal-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+
+      .cup-img {
+      }
+
+      .cup-name {
+        width: 100%;
+        padding-top: 20px;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 700;
+        @include break-point(359) {
+          font-size: 16px;
+        }
+      }
+
+      .cup-info {
+        width: 100%;
+        padding-top: 11px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #909090;
+      }
+    }
+  }
+}
+
+// 이야기 모아보기 탭
+.collect-stories-content {
+  width: 100%;
+
+  // 탭 카테고리
+  .card-tab-wrap {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 0px;
+    z-index: 100;
+    margin: 0;
+
+    .card-tab-item {
+      position: relative;
+
+      li {
+        display: inline-block;
+        width: 50%;
+
+        button {
+          width: 100%;
+          text-align: center;
+          &.active {
+            border-bottom: 2px solid black;
+          }
+        }
+      }
+
+      .line {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        width: calc(50% - 20px);
+        height: 2px;
+        background: #000;
+        transition: all 0.3s cubic-bezier(0.01, 0.8, 1, 1);
+      }
+    }
+  }
+
+  .tTime-story-list-content {
+    // 2023.08.16수정
+    position: relative;
+    padding: 70px 20px 0px 20px; // 2023.08.24수정
+    overflow: hidden;
+
+    .story-list {
+      margin-top: 0px;
+    }
+  }
+}
+
+.collect-stories-container {
+  .tTime-story-list-content {
+    padding: 70px 20px 0px 20px; // 2023.08.24수정
+  }
+
+  .enjoy-more-ttime-btn-area {
+    margin-bottom: 30px;
+    a {
+      width: 100%;
+    }
+    .link-rounded-large {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// 탭 컨텐츠
+.tTime-story-list-content {
+  // 이야기 리스트 상단영역
+  .list-head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px 0; //2023.08.16수정
+
+    .story-count-title {
+      font-size: 15px;
+
+      .count-result {
+        color: #4130df;
+        font-weight: 400;
+      }
+    }
+  }
+
+  // 모은 이야기가 있는 경우
+  .story-list {
+    margin-top: 0;
+  }
+
+  // 모은 이야기가 없는 경우
+  .story-list-none {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    text-align: center;
+    padding: 110px 0 0 0;
+
+    .ic-warn {
+      display: inline-block;
+      font-size: 28px;
+      margin-bottom: 18px;
+      color: #595959;
+    }
+
+    .result-text {
+      margin-bottom: 12px;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #444;
+      letter-spacing: -0.34px;
+    }
+
+    .sub-text {
+      display: block;
+      margin-bottom: 18px;
+      font-size: 13px;
+      line-height: 1.2;
+      color: #808080;
+      text-align: center;
+      letter-spacing: -0.26px;
+    }
+
+    .btn-area {
+      max-width: 200px;
+    }
+  }
+
+  // 공통 버튼영역
+  .btn-area {
+    width: 100%;
+    margin: 0 auto;
+
+    a {
+      display: block;
+      width: 100%;
+
+      .link-rounded-large {
+        border: 1px #d9d9d9 solid;
+      }
+    }
+  }
+}
+
+// T타임안내 풀팝업
+.ModalFullScreen.tTime {
+  padding: 0;
+
+  // 팝업 컨텐츠
+  .modal-content {
+    padding: 0 20px 0;
+
+    .tTime-guide {
+      .main-box {
+        margin: 0 -20px;
+        padding: 36px 20px 27px;
+        background: #fff7e5;
+        background-image: url($dir + 'sub/bg-modalTtimeguide.png');
+        background-repeat: no-repeat;
+        background-position: top 50% right 0;
+        background-size: 150px auto;
+
+        strong {
+          display: block;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 700;
+          letter-spacing: -0.4px;
+        }
+
+        p {
+          display: block;
+          padding-top: 12px;
+          font-size: 13px;
+          line-height: 18px;
+          color: #808080;
+          letter-spacing: -0.26px;
+        }
+      }
+
+      .guide-list {
+        padding: 36px 0;
+
+        li {
+          display: block;
+          position: relative;
+          min-height: 56px;
+          margin-bottom: 26px;
+          padding: 0 0 0 61px;
+          &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -28px;
+            width: 56px;
+            height: 56px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+          }
+          &:nth-child(1) {
+            &::before {
+              background-image: url($dir + 'sub/ic-modalTtimeguide1.png');
+            }
+          }
+          &:nth-child(2) {
+            &::before {
+              background-image: url($dir + 'sub/ic-modalTtimeguide2.png');
+            }
+          }
+          &:nth-child(3) {
+            &::before {
+              background-image: url($dir + 'sub/ic-modalTtimeguide3.png');
+            }
+          }
+
+          p {
+            display: block;
+            height: 100%;
+            padding: 10px 20px;
+            background-color: #f5f5f7;
+            border-radius: 3px 20px 20px 20px;
+            font-size: 14px; //2023.08.16수정
+            line-height: 18px;
+            letter-spacing: -0.8px;
+            min-height: 56px;
+          }
+
+          &:nth-child(2n) {
+            padding: 0 61px 0 0;
+            &::before {
+              left: auto;
+              right: 0;
+            }
+
+            p {
+              border-radius: 20px 3px 20px 20px;
+            }
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .dot-list {
+        padding: 20px 0 20px;
+        border-top: 1px solid #e5e5e5;
+
+        li {
+          position: relative;
+          padding-left: 22px;
+          font-size: 13px;
+          line-height: 18px;
+          color: #808080;
+          letter-spacing: -0.26px;
+          word-break: break-all;
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 9px;
+            top: 7px;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: #808080;
+          }
+
+          .ic-info {
+            display: inline-block;
+            margin-left: 4px;
+            vertical-align: -1px;
+            font-size: 13px;
+            color: #808080;
+          }
+        }
+      }
+    }
+  }
+}
+
+// T타임 프로모션 페이지
+.ttime-promotion-content {
+  &.none-header {
+    padding-top: 0;
+  }
+  padding-top: 59px;
+  .section-head {
+    width: 100vw;
+    height: 152.7vw;
+    background: #f4f5ff url($cdn + 'ttime/promotion/bg_promotion01.png') no-repeat center 0;
+    background-size: cover;
+    .inner {
+      position: relative;
+      .h1 {
+        width: 47.2vw;
+        margin: 0 auto;
+        padding: 11.1vw 0 0 0;
+        text-align: center;
+        img {
+          &.logo {
+            width: 34.03vw;
+          }
+        }
+      }
+      .h1Text {
+        display: block;
+        font-size: 5vw;
+        color: #7381ff;
+        font-weight: 700;
+        text-align: center;
+      }
+      .h1Img {
+        display: block;
+        margin: 3.47vw 0 0 0;
+        text-align: center;
+        img {
+          width: 47.22vw;
+          height: 13.88vw;
+          vertical-align: top;
+          & + img {
+            width: 47.22vw;
+            height: 13.88vw;
+            margin: 2.77vw 0 0 0;
+          }
+        }
+      }
+      .h1SubText {
+        margin: 2.77vw 0 5.56vw;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: center;
+        color: #444;
+      }
+      .eventDate {
+        width: 72.22vw;
+        margin: 0 auto;
+        padding: 3.06vw 0;
+        background: #fff;
+        border-radius: 15.27vw;
+        text-align: center;
+        span {
+          display: block;
+          margin: 0 auto;
+          font-size: 3.33vw;
+          color: rgba(0, 0, 0, 0.6);
+          & + span {
+            margin: 1.11vw 0 0 0;
+          }
+        }
+      }
+    }
+  }
+  .section-01 {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 8.33vw;
+      width: 14.58vw;
+      height: 11.38vw;
+      background: url($cdn + 'ttime/promotion/ico_promotion01.png') no-repeat 0 0;
+      background-size: cover;
+      transform: translate(-50%, 0);
+    }
+    .inner {
+      padding: 22.5vw 0 0 0;
+      .h2 {
+        font-size: 5.27vw;
+        font-weight: 400;
+        color: #000;
+        line-height: 6.66vw;
+        text-align: center;
+        strong {
+          display: inline-block;
+          position: relative;
+          z-index: 1;
+          font-weight: 700;
+          color: #000;
+          &:after {
+            display: block;
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+            height: 1.94vw;
+            background: #eceeff;
+          }
+        }
+      }
+      .sub {
+        display: block;
+        margin: 2.77vw 0 0 0;
+        font-size: 3.61vw;
+        font-weight: 400;
+        line-height: 5vw;
+        color: #666;
+        text-align: center;
+      }
+      .sub2 {
+        position: relative;
+        &::before {
+          display: block;
+          content: '';
+          position: absolute;
+          left: 9.86vw;
+          top: 0;
+          width: 29.86vw;
+          height: 29.86vw;
+          background: url($cdn + 'ttime/promotion/ico_promotion02.png') no-repeat 0 0;
+          background-size: cover;
+        }
+        .sub2Text {
+          position: absolute;
+          left: 39.58vw;
+          top: 11.25vw;
+          padding: 2.77vw 4.16vw 2.77vw 4.16vw;
+          background: #e2e2e2;
+          border-radius: 0.8vw 2.77vw 2.77vw 2.77vw;
+          font-size: 3.61vw;
+          font-weight: 400;
+          color: #000;
+          line-height: 5vw;
+          text-align: left;
+          word-spacing: -2px;
+          strong {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .section-02 {
+    position: relative;
+    z-index: 1;
+    margin: 17.77vw 0 0 0;
+    padding: 20.55vw 5.55vw 0;
+    background: url($cdn + 'ttime/promotion/bg_promotion02.png') no-repeat 0 0;
+    background-size: 100%;
+    li {
+      & + li {
+        margin: 5.55vw 0 0 0;
+      }
+    }
+    .goodsArea {
+      // height:45.83vw;
+      img {
+        width: 100%;
+        vertical-align: top;
+      }
+    }
+    .goodsWhiteArea {
+      padding: 0 0 5.55vw;
+      background: #fff;
+      border-radius: 0 0 2.77vw 2.77vw;
+    }
+    .goodsBtnArea {
+      display: flex;
+      justify-content: space-between;
+      // justify-content: center;
+      padding: 4.56vw 5.56vw 5.56vw 5.56vw;
+      .goodsName {
+        display: block;
+        font-size: 3.33vw;
+        font-weight: 400;
+        line-height: 4.03vw;
+        padding: 24vw 0 0 0;
+      }
+      button {
+        width: 22.22vw;
+        height: inherit;
+        border: 0;
+        outline: 0;
+        background: none;
+      }
+      .img01 {
+        background: url($cdn + 'ttime/promotion/img_cup01_off.png') no-repeat 0 0;
+        background-size: contain;
+        &.on {
+          background: url($cdn + 'ttime/promotion/img_cup01.png') no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+      .img02 {
+        background: url($cdn + 'ttime/promotion/img_cup02_off.png') no-repeat 0 0;
+        background-size: contain;
+        &.on {
+          background: url($cdn + 'ttime/promotion/img_cup02.png') no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+      .img03 {
+        background: url($cdn + 'ttime/promotion/img_cup03_off.png') no-repeat 0 0;
+        background-size: contain;
+        &.on {
+          background: url($cdn + 'ttime/promotion/img_cup03.png') no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+      .img04 {
+        background: url($cdn + 'ttime/promotion/img_cup04_off.png') no-repeat 0 0;
+        background-size: contain;
+        &.on {
+          background: url($cdn + 'ttime/promotion/img_cup04.png') no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+      .img05 {
+        background: url($cdn + 'ttime/promotion/img_cup05_off.png') no-repeat 0 0;
+        background-size: contain;
+        &.on {
+          background: url($cdn + 'ttime/promotion/img_cup05.png') no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+      .img06 {
+        background: url($cdn + 'ttime/promotion/img_cup06_off.png') no-repeat 0 0;
+        background-size: contain;
+        &.on {
+          background: url($cdn + 'ttime/promotion/img_cup06.png') no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+      .img07 {
+        background: url($cdn + 'ttime/promotion/img_cup07_off.png') no-repeat 0 0;
+        background-size: contain;
+        &.on {
+          background: url($cdn + 'ttime/promotion/img_cup07.png') no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+      .img08 {
+        background: url($cdn + 'ttime/promotion/img_cup08_off.png') no-repeat 0 0;
+        background-size: contain;
+        &.on {
+          background: url($cdn + 'ttime/promotion/img_cup08.png') no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+      .img09 {
+        background: url($cdn + 'ttime/promotion/img_cup09_off.png') no-repeat 0 0;
+        background-size: contain;
+        &.on {
+          background: url($cdn + 'ttime/promotion/img_cup09.png') no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+    }
+    .goodsBtnWrap {
+      button {
+        border: 0;
+        outline: 0;
+        background: none;
+      }
+      .cup {
+        display: block;
+        width: 41.66vw;
+        margin: 0 auto;
+        padding: 3.95vw 0;
+        background: #ff586c;
+        font-size: 3.88vw;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        border-radius: 13.8vw;
+        &[disabled] {
+          opacity: 40%;
+        }
+        &.end {
+          background: #000;
+        }
+        &.login {
+          background: #3d4db8;
+        }
+      }
+    }
+  }
+  .section-03 {
+    position: relative;
+    padding: 11.11vw 0 8.33vw 0;
+    background: #eceeff;
+    .luckyBox {
+      position: relative;
+      z-index: 1;
+      padding: 0 5.55vw;
+      img {
+        width: 100%;
+        vertical-align: top;
+      }
+    }
+    .luckyStep {
+      position: relative;
+      z-index: 0;
+      padding: 0 5.55vw;
+      margin-top: -3.61vw;
+      img {
+        width: 100%;
+        vertical-align: top;
+      }
+    }
+    .ttimeMainLink {
+      margin: 5.56vw 0 0 0;
+      button {
+        display: block;
+        width: 55.56vw;
+        height: 12.5vw;
+        margin: 0 auto;
+        padding: 3.47vw 0;
+        background: #000;
+        font-size: 3.89vw;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        border-radius: 6.94vw;
+      }
+    }
+  }
+  .section-04 {
+    padding: 0 0 4.33vw;
+    .tTimeStory {
+      position: relative;
+      padding: 23.61vw 0 0 0;
+      font-size: 5.27vw;
+      color: #000;
+      font-weight: 400;
+      line-height: 6.66vw;
+      text-align: center;
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 8.33vw;
+        width: 12.5vw;
+        height: 12.5vw;
+        background: url($cdn + 'ttime/promotion/ico_promotion03.png') no-repeat 0 0;
+        background-size: cover;
+        transform: translate(-50%, 0);
+      }
+      strong {
+        position: relative;
+        font-weight: 700;
+        &::after {
+          display: block;
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          z-index: -1;
+          width: 100%;
+          height: 1.94vw;
+          background: #eceeff;
+        }
+      }
+      .tTimeStorySub {
+        margin: 2.77vw 0 0 0;
+        font-size: 3.61vw;
+        color: #000;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+    .swiper {
+      margin: 8.33vw 0 0 4.55vw;
+      .swiper-slide {
+        width: 66%;
+        a {
+          display: block;
+          img {
+            width: 100%;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+  .section-05 {
+    background: #fffce5;
+    .shareText {
+      position: relative;
+      padding: 49.44vw 0 0 0;
+      font-size: 5.27vw;
+      font-weight: 400;
+      line-height: 6.66vw;
+      text-align: center;
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 11.11vw;
+        width: 52.63vw;
+        height: 32.77vw;
+        background: url($cdn + 'ttime/promotion/ico_promotion04.png') no-repeat 0 0;
+        background-size: cover;
+        transform: translate(-50%, 0);
+      }
+      strong {
+        font-weight: 700;
+      }
+    }
+    .btnShare {
+      text-align: center;
+      button {
+        display: inline-block;
+        width: 41.66vw;
+        height: 12.5vw;
+        margin: 5.55vw 0 11.11vw;
+        background: #4130df;
+        font-size: 3.88vw;
+        color: #fff;
+        font-weight: 700;
+        line-height: 12.5vw;
+        border-radius: 6.94vw;
+        outline: 0;
+        border: 0;
+      }
+    }
+  }
+  .section-06 {
+    background: #666;
+  }
+  .section-07 {
+    background: #444;
+  }
+  .section-06,
+  .section-07 {
+    padding: 5.55vw;
+    .noticeArea {
+    }
+    .noticeText {
+      padding: 0 0 0 5.55vw;
+      background: url($cdn + 'ttime/promotion/img_notice.png') no-repeat 0 center;
+      background-size: 4.72vw;
+      font-size: 4.72vw;
+      color: #fff;
+      font-weight: 700;
+    }
+    .depTit {
+      display: block;
+      color: #fff;
+      font-size: 3.61vw;
+      font-weight: 700;
+      line-height: 4.72vw;
+      margin: 1.67vw 0 0 0;
+    }
+    .depOne {
+      margin: 4.17vw 0 0 0;
+      & > li {
+        font-size: 4.16vw;
+        color: #fff;
+        font-weight: 700;
+        & + li {
+          margin: 4.17vw 0 0 0;
+        }
+        & > ol {
+          padding: 0 0 0 4.16vw;
+          text-indent: -4.16vw;
+        }
+      }
+      .point {
+        margin: 0.69vw 0 0 0;
+        padding: 0 0 0 0.69vw;
+        font-size: 3.33vw;
+        color: #999;
+        text-indent: -2.5vw;
+      }
+    }
+    .depTwo {
+      margin: 1.67vw 0 0 0;
+      padding: 0 0 0 1.38vw;
+      & > li {
+        padding: 0 0 0 1.94vw;
+        font-size: 3.61vw;
+        font-weight: 400;
+        color: #fff;
+        text-indent: -2.22vw;
+        line-height: 5vw;
+        & + li {
+          margin: 1.11vw 0 0 0;
+        }
+        em {
+          display: block;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 3.33vw;
+          font-weight: 400;
+          line-height: 4.44vw;
+          text-indent: 1vw;
+          margin: 1.11vw 0;
+        }
+        .kakaoLink {
+          color: #fff;
+          font-size: 3.61vw;
+          font-weight: 400;
+          line-height: 5vw;
+          text-decoration-line: underline;
+        }
+      }
+    }
+    .depThree {
+      margin: 0.69vw 0 0 0;
+      & > li {
+        padding: 0 0 0 4.16vw;
+        font-size: 3.88vw;
+        font-weight: 400;
+        color: #fff;
+        text-indent: -1.94vw;
+        & + li {
+          margin: 0.69vw 0 0 0;
+        }
+      }
+    }
+  }
+  section .noticeInfo {
+    display: block;
+    color: #000;
+    font-size: 3.73vw;
+    font-weight: 700;
+    background-color: #eceeff;
+    padding: 3.73vw 4.67vw;
+    margin: 0 5.33vw;
+    text-align: center;
+    letter-spacing: -0.35vw;
+  }
+}

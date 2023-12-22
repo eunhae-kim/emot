@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+  <style>
+    h1 {margin: 0 0 30px;text-align: center;font-size:15px;}
+    h2 {margin: 30px 0;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container search">
+      <div  style="padding:20px">
+        <h1>* 썸네일, 이미지들 배너 UI가이드 * </h1>
+        <ul style="margin:20px;color:blue;font-size:15px;line-height:20px;">
+          <li><a href="form.html"> - 버튼/link/input type 버튼/검색</a></li>
+          <li><a href="banner.html"> - 썸네일, 이미지들 배너</a></li>
+          <li><a href="etc.html"> - 컨텐츠박스/헤더 등 기타</a></li>
+        </ul>
+
+        <h2>Pie Chart 가로형</h2>
+        <div class="common-content-chart">
+          <div class="pie-chart-row">
+            <div class="pie-chart-wrap">
+              <!-- 파이 차트 들어가는 공간 -->
+            </div>
+            <ul class="list-percent-info">
+              <li>
+                <span class="info-name eng-word">
+                  <i class="first-prd-ico circle-shape"></i>
+                  iPhone 13 Pro
+                </span>
+                <strong class="info-percent">45%</strong>
+              </li>
+              <li>
+                <span class="info-name">
+                  <i class="second-prd-ico circle-shape"></i>
+                  갤럭시 S22
+                </span>
+                <strong class="info-percent">30%</strong>
+              </li>
+              <li>
+                <span class="info-name">
+                  <i class="third-prd-ico circle-shape"></i>
+                  홍미노트
+                </span>
+                <strong class="info-percent">9%</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Pie Chart 세로형</h2>
+        <div class="common-content-chart">
+          <div class="pie-chart-col">
+            <div class="pie-chart-wrap">
+              <!-- 파이 차트 들어가는 공간 -->
+            </div>
+            <ul class="list-percent-info">
+              <li>
+                <span class="info-name eng-word">
+                  <i class="first-prd-ico circle-shape"></i>
+                  iPhone 13 Pro
+                </span>
+                <strong class="info-percent">45%</strong>
+              </li>
+              <li>
+                <span class="info-name">
+                  <i class="second-prd-ico circle-shape"></i>
+                  갤럭시 S22
+                </span>
+                <strong class="info-percent">30%</strong>
+              </li>
+              <li>
+                <span class="info-name">
+                  <i class="third-prd-ico circle-shape"></i>
+                  홍미노트
+                </span>
+                <strong class="info-percent">9%</strong>
+              </li>
+              <li>
+                <span class="info-name">
+                  <i class="fourth-prd-ico circle-shape"></i>
+                  홍미노트
+                </span>
+                <strong class="info-percent">10%</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>썸네일 세로형 case1</h2>
+        <!--  액세사리 case -->
+        <div class="common-content-thumb">
+          <ul class="list-thumb-col">
+            <li class="item-large-basic">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="AirPods Pro" width="128" height="128">
+                </picture>
+                <span class="content-infobox">
+                  <em class="title eng-word">AirPods Pro</em>
+                  <p class="desc eng-word">70,000원<em class="sale-percent">(20%)</em></p>
+                  <strong class="price-point"><em>56,000</em>원/월</strong>
+                </s>
+              </a>
+            </li> 
+          </ul>
+        </div>
+          
+        <h2>썸네일 세로형 case2</h2>
+        <!--혜택/할인 -->
+        <div class="common-content-thumb">
+          <ul class="list-thumb-col">
+            <li class="item-large-hashtag">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="우주패스 all(상품명2)" width="128" height="128">
+                </picture>
+                <span class="content-infobox">
+                  <strong class="title">가족나눔<em class="search-keyword">데이터</em></strong>
+                  <p class="desc">가족나눔<em class="search-keyword">데이터</em> 이동전화(2~5회선) 최대 1,000MB <em class="search-keyword">데이터</em> 추가 제공</p>
+                  <div class="group-hashtag">
+                    <span class="hashtag">#결합할인</span>
+                  </div>
+                </span>
+              </a>
+            </li> 
+          </ul>
+        </div>
+          
+        <h2>썸네일 세로형 case3</h2>
+        <!-- 2030 여성 인기 휴대폰 Best 3 -->
+        <div class="common-content-thumb">
+          <div class="list-thumb-col">
+            <div class="item-large-rank">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="iPhone 13 Pro" width="128" height="128">
+                  <strong class="rank-number">
+                    1
+                    <span class="hidden">2030여성 인기 휴대폰 1위</span>
+                  </strong>
+                </picture>
+                <span class="content-infobox">
+                  <em class="title eng-word">iPhone 13 Pro</em>
+                  <p class="group-color">
+                    <span class="first-color">
+                      <em class="hidden">제품 컬러명1</em>
+                    </span>
+                    <span class="second-color">
+                      <em class="hidden">제품 컬러명2</em>
+                    </span>
+                    <span class="third-color">
+                      <em class="hidden">제품 컬러명3</em>
+                    </span>
+                    <span class="fourth-color">
+                      <em class="hidden">제품 컬러명4</em>
+                    </span>
+                  </p>
+                  <p class="group-memory">
+                    <span>128GB</span>
+                    <span>256GB</span>
+                    <span>512GB</span>
+                  </p>
+                  <strong class="price-point"><em>126,143</em>원/월</strong>
+                  <p class="desc">5GX프라임 기준</p>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <h2>썸네일 세로형 case4</h2>
+        <!-- 멤버십 추천 모듈 -->
+        <div class="common-content-thumb">
+          <div class="list-thumb-col">
+            <div class="item-large-desc">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="" width="128" height="128">
+                </picture>
+                <span class="content-infobox">
+                  <em class="title">상품명(제휴사명)</em>
+                  <p class="desc">(혜택텍스트)가나다라마바사아자차카
+                    타파하가나다라마바가나다라마바가나
+                    다라마바</p>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <h2>썸네일 세로형 case5</h2>
+        <!-- 30대 남성 인기 구독상품  Best 3 -->
+        <div class="common-content-thumb">
+          <div class="list-thumb-col">
+            <div class="item-large-badge">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="우주패스 all" width="128" height="128">
+                </picture>
+                <div class="content-infobox">
+                  <em class="title">우주패스 all</em>
+                  <p class="group-badge">
+                    <span class="cmn-badge-gray">Amazon</span>
+                    <span class="cmn-badge-gray">GoogleOne</span>
+                    <span class="cmn-badge-gray">11번가</span>
+                    <span class="cmn-badge-gray">+1 Free</span>
+                  </p>
+                  <strong class="price-point"><em>9,900</em>원/월</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <h2>썸네일 세로형 case6</h2>
+        <!-- 컬러링/벨소리 -->
+        <div class="common-content-thumb">
+          <ul class="list-thumb-col">
+            <li class="item-medium">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="That That" width="104" height="104">
+                </picture>
+                <span class="content-infobox">
+                  <em class="title">That That</em>
+                  <p class="desc">싸이<em>(PSY)</em></p>
+                  <p class="group-badge">
+                    <span class="cmn-badge-gray">컬러링</span>
+                  </p>
+                </span>
+              </a>
+            </li> 
+          </ul>
+        </div>
+        
+        <h2>썸네일 세로형 case7</h2>
+        <!-- T로밍 -->
+        <div class="common-content-thumb">
+          <ul class="list-thumb-col">
+            <li class="item-small">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="우주패스 all(상품명2)" width="100" height="80">
+                </picture>
+                <span class="content-infobox">
+                  <em class="title">우주패스 all(상품명2)</em>
+                  <p class="group-badge">
+                    <span class="cmn-badge-gray">Amazon</span>
+                    <span class="cmn-badge-gray">GoogleOne</span>
+                    <span class="cmn-badge-gray">11번가</span>
+                    <span class="cmn-badge-gray">Amazon</span>
+                  </p>
+                  <p class="desc"><em class="search-keyword">휴대</em>가나다라마아자차카타파하가나다라마</p>
+                  <strong class="price-point"><em>9,900</em>원/월</strong>
+                </span>
+              </a>
+            </li> 
+          </ul>
+        </div>
+        
+
+      </div>
+
+
+      <h2>visual 배너</h2>
+      <div class="common-content-visual">
+        <div class="swiper swiperVisual">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="/public/images/banner/main-banner.png" alt="430" width="100%" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="/public/images/banner/main-banner.png" alt="430" width="100%" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="/public/images/banner/main-banner.png" alt="430" width="100%" />
+                </picture>
+              </a>
+            </li>
+          </ul>
+
+          <!-- 배너 1개일 경우 controller 숨김 -->
+          <div class="visual-swiper-controller" id="swVisualController">
+            <!-- 재생/정지 -->
+            <div class="btn-controller">
+              <button type="button" class="swiper-button-play" id="swPlay">
+                <i class="ic-play" class="icon-play"></i>
+                <span class="hidden">재생</span>
+              </button>
+              <button type="button" class="swiper-button-pause" id="swStop">
+                <i class="ic-btn-stop2" class="icon-stop"></i>
+                <span class="hidden">정지</span>
+              </button>
+            </div>
+            
+            <div class="swiper-pagination visual-pagination"></div>
+          </div>
+          <!-- .controller -->
+        </div>
+      </div>
+
+      <h2>section 배너</h2>
+      <div class="common-content-slide">
+        <div class="full-banner-medium">
+          <div class="swiper swiperControls">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/thumbnail/middle-banner.png" alt="430" width="100%" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/thumbnail/middle-banner.png" alt="430" width="100%" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/thumbnail/middle-banner.png" alt="430" width="100%" />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+
+            <!-- 배너 1개일 경우 controller 숨김 -->
+            <div class="bnr-swiper-controller" id="swController">
+              <div class="swiper-pagination"></div>
+
+              <div class="btn-controller">
+                <button type="button" class="swiper-button-play" id="swPlay2">
+                  <i class="ic-play" class="icon-play"></i>
+                  <span class="hidden">재생</span>
+                </button>
+                <button type="button" class="swiper-button-pause" id="swStop2">
+                  <i class="ic-btn-stop2" class="icon-stop"></i>
+                  <span class="hidden">정지</span>
+                </button>
+              </div>
+            </div>
+            <!-- .controller -->
+          </div>
+        </div>
+      </div>
+
+      <h2>배너 3</h2>
+      <article class="common-content-visual">
+        <div class="swiper-per">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-pass.png">
+                </i>
+                <span class="cl-benefit">우주패스 all<br />할인 받기</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-together.png">
+                </i>
+                <span class="cl-benefit">우주패스 all<br />할인 받기</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-tv.png">
+                </i>
+                <span class="cl-benefit">우주패스 all<br />할인 받기</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div><!-- / .wrap -->
+</body>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

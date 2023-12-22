@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container sub-store">
+
+      <header class="tworld-sub-header">
+        <div class="sub-header-inner">
+          <a href="#" class="menu-item-prev">
+            <i class="svg-prev"></i>
+            <span class="hidden">이전 페이지</span>
+          </a>
+          <h1 class="sub-header-tit">매장 찾기</h1>
+          <span class="menu-box">
+            <a href="#" class="menu-item-search">
+              <i class="svg-search"></i>
+              <span class="hidden">검색</span>
+            </a>
+            <button type="button" class="menu-item-share">
+              <i class="svg-share"></i>
+              <span class="hidden">공유</span>
+            </button>
+          </span>
+        </div>
+
+        <div class="store-search-area">
+          <!-- 주소/매장명 선택시 검색 영역 -->
+          <div class="type-address">
+            <button type="button" class="btn-select">
+              주소/매장명
+              <i class="bl-arr btm"></i>
+            </button>
+            <div class="search-form-square">
+              <form>
+                <fieldset>
+                  <legend class="hidden">매장명,지역 검색</legend>
+                  <div class="search-input-area">
+                    <input type="search" class="input-srch-square" placeholder="매장명, 지역 검색">
+                    <!-- 디자인에는 없지만 뒤에 삭제 버튼 추가될수도 있어서 일단 주석처리 -->
+                    <!-- <button type="button" class="btn-txt-delete">
+                      <i class="ic-input-delet"></i>
+                      <span class="hidden">텍스트 삭제 버튼</span>
+                    </button> -->
+                  </div>
+                  <button type="submit" class="btn-search-submit">
+                    <i class="ic-tbar-srch2"></i>
+                    <span class="hidden">검색</span>
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+
+          <!-- 지하철 선택시 검색 영역 -->
+          <div class="type-subway" style="display:none;">
+            <div class="select-top">
+              <button type="button" class="btn-select">
+                지하철
+                <i class="bl-arr btm"></i>
+              </button>
+              <button type="button" class="btn-select">
+                지역선택
+                <i class="bl-arr btm"></i>
+              </button>
+              <button type="button" class="btn-select">
+                노선선택
+                <i class="bl-arr btm"></i>
+              </button>
+            </div>
+            <div class="select-bottom">
+              <button type="button" class="btn-select">
+                역명 선택
+                <i class="bl-arr btm"></i>
+              </button>
+              <button type="button" class="btn-filter">
+                <i class="ic-store-filter"></i>
+                <span class="hidden">서비스찾기</span>
+              </button>
+            </div>
+          </div>
+        </div><!-- / .store-search-area -->
+      </header>
+
+      <!-- 지도영역 -->
+      <div class="map-area">
+        <div class="map-box" style="background-color:gray;"> <!-- 지도 들어갈 자리 -->
+        </div>
+
+        <div class="map-option-area">
+
+          <!-- 매장찾기 지도 상단 noti 알림 - case1 -->
+          <div class="noti-box-black">
+            <button type="button" class="noti-close">
+              <i class="ic-tbar-cls"></i>
+              <span class="hidden">닫기</span>
+            </button>
+            <i class="ic-warn2"></i>
+            원하시는 업무 처리가 가능한 매장이 없습니다. <br>
+            원하시는 지점/대리점을 선택해주세요. 
+          </div>
+
+          <!-- 매장찾기 지도 상단 noti 알림 - case2 -->
+          <!-- <div class="noti-box-black">
+            <button type="button" class="noti-close">
+              <i class="ic-tbar-cls"></i>
+              <span class="hidden">닫기</span>
+            </button>
+            <i class="ic-warn2"></i>
+            검색 결과가 없습니다.<br>
+            다시 검색해주세요
+          </div> -->
+
+          <!-- 매장찾기 지도 상단 noti 알림 - case3 -->
+          <!-- <div class="noti-box-black">
+            <button type="button" class="noti-close">
+              <i class="ic-tbar-cls"></i>
+              <span class="hidden">닫기</span>
+            </button>
+            <i class="ic-warn2"></i>
+            반경 3km 이내에 지점/대리점이 없습니다. <br>
+            원하시는 지점/대리점을 검색해주세요.
+          </div> -->
+
+          <!-- 매장찾기 지도 상단 noti 알림 - case4 -->
+          <!-- <div class="noti-box-pink">
+            <button type="button" class="noti-close">
+              <i class="ic-tbar-cls"></i>
+              <span class="hidden">닫기</span>
+            </button>
+            위치정보 이용동의를 하시면 근처 지점/대리점을<br>
+            확인하실 수 있습니다.
+          </div> -->
+
+          <!-- 매장찾기 - 필터 옵션 -->
+          <div class="map-filter-area">
+            <div class="filter-option-wrap">
+              <ul class="filter-option">
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-phone"></i>
+                    휴대폰
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-tv"></i>
+                    인터넷/TV
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-caps bg-type"></i>
+                    ADT캡스
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-sk bg-type"></i>
+                    SK매직
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-apple bg-type"></i>
+                    애플
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-5g bg-type"></i>
+                    5GX체험존
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-vr"></i>
+                    VR체험존 
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-terminal"></i>
+                    단말체험존
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-space"></i>
+                    T우주
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-phone basic"></i>
+                    휴대폰 일반
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-as"></i>
+                    행복A/S
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-mintit bg-type"></i>
+                    민팃 (중고 단말 키오스크)
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-tel"></i>
+                    통화내역 조회
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-receipt"></i>
+                    명의도용접수
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-pickup"></i>
+                    바로픽업
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-rphone"></i>
+                    임대폰
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-parking"></i>
+                    주차가능
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-runway"></i>
+                    경사로 설치
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-eng"></i>
+                    영어가능
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="ic-filter-chinese"></i>
+                    중국어가능
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <button type="button" class="btn-filter">
+              <i class="ic-store-filter"></i>
+              <span class="hidden">서비스찾기</span>
+            </button>
+          </div><!-- / .map-filter-area -->
+        </div><!-- / .map-option-area -->
+      </div> <!-- / .map-area -->
+
+      <div class="layer-store-list">
+        <button type="button" class="bottom-layer-btn">
+          <span class="hidden">영역 확장</span>
+        </button>
+        <div class="layer-cont-wrap">
+          <div class="list-head">
+            <span class="result">총 <strong class="point-color">21</strong>개</span>
+            <!-- 추천매장이 노출되는 case-->
+            <!-- <span class="recommend">추천 매장</span> -->
+            <div class="select-option-box">
+              <button type="button" class="btn-store-type">
+                지점/대리점<i class="bl-arr btm"></i>
+                <span class="hidden">매장형태 선택</span>
+              </button>
+              <button type="button" class="btn-list-filter">
+                <i class="ic-filter"></i>
+                거리순
+                <span class="hidden">오름차순 / 내림차순</span>
+              </button>
+            </div>
+          </div>
+
+          <ul class="store-list-wrap">
+            <li class="store-list-item">
+              <div class="store-content">
+                <div class="content-box">
+                  <h2 class="store-name"><a href="">미래 대리점 종로 직영점</a></h2>
+                  <span class="store-like">
+                    <i class="thumbup">
+                    </i>
+                    <strong class="number">
+                      199K
+                      <span class="hidden">매장 좋아요 수</span>
+                    </strong>
+                  </span>
+                  <div class="store-time">
+                    <button type="button" class="accodian-tit">
+                      <span class="tit">영업시간</span>
+                      09:00 ~ 21:00
+                      <i class="bl-arr btm">
+                        <em class="hidden">펼침</em>
+                      </i>
+                    </button>
+                    <div class="accodian-content">
+                      <p>
+                        <span class="tit">평일</span>
+                        10:30 ~ 20:30
+                      </p>
+                      <p>
+                        <span class="tit">토요일/공휴일</span>
+                        11:00 ~ 20:00
+                      </p>
+                      <p>
+                        <span class="tit">일요일</span>
+                        11:00 ~ 20:00
+                      </p>
+                    </div>
+                  </div>
+                  <p class="store-address">
+                    <em>410m</em>
+                    서울 종로구 삼일대로 391
+                  </p>
+                </div>
+                <a href="">
+                  <picture class="thumbnail-rounded">
+                      <img src="/public/images/transparent.png" alt="미래 대리점 종로 직영점" width="68" height="68">
+                  </picture>
+                </a>
+              </div>
+              <div class="option-badge-box">
+                <div class="store-option">
+                  <span class="cmn-badge-gray">주차가능</span>
+                  <span class="cmn-badge-gray">애플체험</span>
+                  <span class="cmn-badge-gray">민팃</span>
+                  <span class="cmn-badge-gray">구독</span>
+                  <span class="cmn-badge-gray">인터넷</span>
+                </div>
+              </div>
+              <div class="store-link-box">
+                <a href="" class="tel">
+                  <i class="ic-etc-tel2"></i>
+                  전화
+                </a>
+                <a href="" class="reserve">
+                  <i class="ic-reserve"></i>
+                  예약
+                </a>
+                <button type="button" class="load">
+                  <i class="ic-find-load"></i>
+                  길찾기
+                </button>
+                <a href="" class="home" target="_blank">
+                  <i class="ic-home-link"></i>
+                  홈
+                </a>
+              </div>
+              <!-- 3개 case -->
+              <!-- <div class="store-link-box type-three">
+                <a href="" class="tel">
+                  <i class="ic-etc-tel2"></i>
+                  전화
+                </a>
+                <a href="" class="reserve">
+                  <i class="ic-reserve"></i>
+                  예약
+                </a>
+                <button type="button" class="load">
+                  <i class="ic-find-load"></i>
+                  길찾기
+                </button>
+              </div> -->
+            </li>
+
+            <!-- 단골매장 케이스 -->
+            <li class="store-list-item custom-store">
+              <div class="store-content">
+                <div class="content-box">
+                  <h2 class="store-name"><a href=""> <i class="custom-icon"></i> 미래 대리점 <em class="keyword">종로</em> 직영점</a></h2>
+                  <div>
+                    <span class="store-like">
+                      <i class="thumbup">
+                      </i>
+                      <strong class="number">
+                        199K
+                        <span class="hidden">매장 좋아요 수</span>
+                      </strong>
+                    </span>
+                    <span class="cmn-badge-blue-border">단골매장</span>
+                  </div>
+                  <div class="store-time">
+                    <button type="button" class="accodian-tit">
+                      <span class="tit">영업시간</span>
+                      09:00 ~ 21:00
+                      <i class="bl-arr btm">
+                        <em class="hidden">펼침</em>
+                      </i>
+                    </button>
+                    <div class="accodian-content">
+                      <p>
+                        <span class="tit">평일</span>
+                        10:30 ~ 20:30
+                      </p>
+                      <p>
+                        <span class="tit">토요일/공휴일</span>
+                        11:00 ~ 20:00
+                      </p>
+                      <p>
+                        <span class="tit">일요일</span>
+                        11:00 ~ 20:00
+                      </p>
+                    </div>
+                  </div>
+                  <p class="store-address">
+                    <span>410m</span>
+                    서울  <em class="keyword">종로</em>구 삼일대로 391
+                  </p>
+                </div>
+                <a href="">
+                  <picture class="thumbnail-rounded">
+                    <img src="/public/images/transparent.png" alt="미래 대리점 종로 직영점"  width="68" height="68">
+                  </picture>
+                </a>
+              </div>
+              <div class="option-badge-box">
+                <div class="store-option">
+                  <span class="cmn-badge-gray">주차가능</span>
+                  <span class="cmn-badge-gray">애플체험</span>
+                  <span class="cmn-badge-gray">민팃</span>
+                  <span class="cmn-badge-gray">구독</span>
+                  <span class="cmn-badge-gray">인터넷</span>
+                </div>
+              </div>
+
+              <div class="store-link-box">
+                <a href="" class="tel">
+                  <i class="ic-etc-tel2"></i>
+                  전화
+                </a>
+                <a href="" class="reserve">
+                  <i class="ic-reserve"></i>
+                  예약
+                </a>
+                <button type="button" class="load">
+                  <i class="ic-find-load"></i>
+                  길찾기
+                </button>
+                <a href="" class="home" target="_blank">
+                  <i class="ic-home-link"></i>
+                  홈
+                </a>
+              </div>
+              <!-- 3개 case -->
+              <!-- <div class="store-link-box type-three">
+                <a href="" class="tel">
+                  <i class="ic-etc-tel2"></i>
+                  전화
+                </a>
+                <a href="" class="reserve">
+                  <i class="ic-reserve"></i>
+                  예약
+                </a>
+                <button type="button" class="load">
+                  <i class="ic-find-load"></i>
+                  길찾기
+                </button>
+              </div> -->
+            </li>
+          </ul>
+          <button type="button" class="btn-more">
+            더보기
+            <i class="ic-arr-btm"></i>
+          </button>
+        </div><!-- / .layer-cont-wrap -->
+      </div><!-- / .layer-store-list -->
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+
+<script src="../../../public/js/$var.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../public/js/widgets.js"></script>
+<script src="../../../public/js/auth.js"></script>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/waypoints.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+
+</html>

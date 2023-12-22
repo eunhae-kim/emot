@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'icon-font';
+  src: url($dirFont + 'icon-font.ttf?g1yj3c') format('truetype'), url($dirFont + 'icon-font.woff?g1yj3c') format('woff'),
+    url($dirFont + 'icon-font.svg?g1yj3c#icon-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i[class^='ic-'],
+i[class^='bl-'] {
+  font-family: 'icon-font' !important;
+  speak: none;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,32 @@
+// 메인 퀵메뉴 아이콘
+.ic-qckmain-benef:before {
+  content: '\e914';
+}
+.ic-qck-store:before {
+  content: '\e918';
+}
+.ic-qck-guide:before {
+  content: '\e915';
+}
+.ic-qck-iptv:before {
+  content: '\e916';
+}
+.ic-qckmain-shop:before {
+  content: '\e917';
+}
+
+.ic-new-yt {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-size: 100% 100%;
+
+  &::before {
+    display: block;
+    content: '';
+    background: url($dir + 'icon/ic-new-yt.png') no-repeat left top;
+    background-size: 100% 100%;
+    width: 28px;
+    height: 28px;
+  }
+}

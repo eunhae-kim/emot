@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container tds-search-filter">
+      
+      <article class="common-content-srchform">
+        <div class="search-form-wrap">
+          <button type="button" class="tbar-btn-prev">
+            <i class="ic-tbar-prev"></i>
+            <span class="hidden">이전 페이지 이동</span>
+          </button>
+
+          <!-- 공통으로 쓸 component -->
+          <div class="search-form">
+            <h1 class="hidden">검색 영역</h1>
+            <form>
+              <fieldset>
+                <legend class="hidden">검색 입력창 영역</legend>
+                <div class="search-input-area">
+                  <input type="search" class="search-input" title="TDS 검색">
+                  <button type="button" class="btn-txt-delete">
+                    <i class="ic-input-delet"></i>
+                    <span class="hidden">입력 내용 삭제</span>
+                  </button>
+                </div>
+                <button type="submit" class="btn-search-submit">
+                  <i class="ic-tbar-srch2"></i>
+                  <span class="hidden">검색</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- //공통으로 쓸 component -->
+        </div>
+      </article>
+
+      <div class="filter-content">
+        <div class="title-fixed">
+          <h2 class="sub-title">카테고리/조건으로 검색</h2> 
+          <button type="button" class="btn-reset">
+            <span>
+              <i class="ic-reset"></i>
+              초기화
+            </span>
+          </button>
+        </div>
+
+        <div class="common-content-inquire hphone-area">
+          <h2>휴대폰</h2>
+          <div class="detail-inquire">
+            <strong>화면크기</strong>
+            <ul class="inquire-type-two">
+              <li class="inquire-item">
+                <input type="checkbox" id="size0" />
+                <label for="size0">
+                  <span class="add-text">정말 작은</span>
+                  <em>5인치 이하</em> 
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="size1" />
+                <label for="size1">
+                  <span class="add-text">손이 편한</span>
+                  <em>5~6 인치</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="size2" />
+                <label for="size2">
+                  <span class="add-text">눈이 편한</span>
+                  <em>6~6.5인치</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="size3" />
+                <label for="size3">
+                  <span class="add-text">큰화면/생생한</span>
+                  <em>6.5인치 이상</em>
+                </label>
+              </li>          
+            </ul>
+          </div><!-- / .detail-inquire  -->
+
+          <div class="detail-inquire">
+            <strong>배터리 용량</strong>
+            <ul class="inquire-type-one">
+              <li class="inquire-item">
+                <input type="checkbox" id="battery0" />
+                <label for="battery0">
+                  <span class="add-text">간단하고 가벼운</span>
+                  <em>3,000mAh 미만</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="battery1" />
+                <label for="battery1">
+                  <span class="add-text">즐거움이 오래가는</span>
+                  <em>3,000mAh 이상 ~ 3,500mAh 미만</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="battery2" />
+                <label for="battery2">
+                  <span class="add-text">하루 종일 든든한</span>
+                  <em>3,500mAh 이상 ~ 4,000mAh 미만</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="battery3" />
+                <label for="battery3">
+                  <span class="add-text">정주행도 거뜬한</span>
+                  <em>4,000mAh 이상</em>
+                </label>
+              </li>          
+            </ul>
+          </div><!-- / .detail-inquire  -->
+
+          <div class="detail-inquire">
+            <strong>휴대폰 용량</strong>
+            <ul class="inquire-type-two">
+              <li class="inquire-item">
+                <input type="checkbox" id="p-battery0" />
+                <label for="p-battery0">
+                  <span class="add-text">기본에 충실한</span>
+                  <em>64GB 이하 가벼운</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="p-battery1" />
+                <label for="p-battery1">
+                  <span class="add-text">적당한</span>
+                  <em>128GB</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="p-battery2" />
+                <label for="p-battery2">
+                  <span class="add-text">안정적인</span>
+                  <em>256GB</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="p-battery3" />
+                <label for="p-battery3">
+                  <span class="add-text">여유로운</span>
+                  <em>512GB 이상</em>
+                </label>
+              </li>          
+            </ul>
+          </div><!-- / .detail-inquire  -->
+
+          <div class="detail-inquire">
+            <strong>무게</strong>
+            <ul class="inquire-type-one">
+              <li class="inquire-item">
+                <input type="checkbox" id="weight0" />
+                <label for="weight0">
+                  <span class="add-text">한 손으로 가볍게</span>
+                  <em>113g 미만</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="weight1" />
+                <label for="weight1">
+                  <span class="add-text">한 손도 무리없이</span>
+                  <em>113g 이상 ~ 138g 미만</em>
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="checkbox" id="weight2" />
+                <label for="weight2">
+                  <span class="add-text">두 손이 편안한</span>
+                  <em>138g 이상</em>
+                </label>
+              </li> 
+            </ul>
+          </div><!-- / .detail-inquire  -->
+        </div>
+
+        <div class="common-content-inquire device-area">
+          <h2>기타기기</h2>
+          <ul class="inquire-type-two">
+            <li class="inquire-item">
+              <input type="checkbox" id="device0" />
+              <label for="device0">
+                <em class="add-text">키즈폰</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="checkbox" id="device1" />
+              <label for="device1">
+                <em class="add-text">태블릿</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="checkbox" id="device2" />
+              <label for="device2">
+                <em>스마트워치</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="checkbox" id="device3" />
+              <label for="device3">
+                <em>휴대용 와이파이</em>
+              </label>
+            </li> 
+          </ul>
+        </div>
+
+        <div class="common-content-inquire brand-area">
+          <h2>제조사/브랜드</h2>
+          <ul class="inquire-type-two">
+            <li class="inquire-item">
+              <input type="checkbox" id="brand0" />
+              <label for="brand0">
+                <em class="add-text">삼성전자</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="checkbox" id="brand1" />
+              <label for="brand1">
+                <em class="add-text">Apple</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="checkbox" id="brand2" />
+              <label for="brand2">
+                <em>기타 브랜드</em>
+              </label>
+            </li> 
+          </ul>
+        </div>
+
+        <div class="price-slide-bar">
+          <h2>가격</h2>
+          <div class="slider-range">
+            <div class="slider-active-range" style="width:60%;"> <!-- 가격설정 너비 -->
+              <div class="slider-active-bar"></div><!-- 설정 가격 범위 bar: 파란색 bg -->
+              <button type="button" class="btn-slider-control">
+                <span class="hidden">가격설정</span>
+              </button>
+            </div>
+          </div>
+          <div class="price-range">
+            <span>
+              0
+              <em class="hidden">최소 설정가격</em>
+            </span>
+            <span>1,900,000
+              <em class="hidden">최대 설정가격</em>
+            </span>
+          </div>
+        </div>
+
+      </div><!-- filter-content -->
+
+      <div class="common-content-btn">
+        <div class="btn-area">
+          <button type="button" class="btns-square-rd blue">조건에 맞는 결과 보기</button>
+        </div>
+      </div>
+
+     
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/$var.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../public/js/widgets.js"></script>
+<script src="../../../public/js/auth.js"></script>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/ScrollMagic.min.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

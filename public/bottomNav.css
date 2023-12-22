@@ -1,0 +1,15 @@
+.g-bottom{
+    padding-bottom:80px;
+    min-height:100%;
+    height:auto
+}
+.g-bottom-sheet{
+    padding-bottom:105px;
+    min-height:100%;
+    height:auto
+}
+@media only screen and (max-width: 359px){
+    .g-bottom{
+        padding-bottom:160px
+    }
+}

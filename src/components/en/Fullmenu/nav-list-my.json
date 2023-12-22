@@ -1,0 +1,37 @@
+[
+  {
+    "subtitle": "My Data/Talk/Text",
+    "sublist": [],
+    "href": "/en/myt-data/hotdata",
+    "oferStcCd": "CMMA_A10_B80_C1199-30"
+  },
+  {
+    "subtitle": "My Bills",
+    "href": "/en/myt-fare/submain",
+    "sublist": [
+      {
+        "href": "/en/myt-fare/billguide/guide",
+        "name": "Bills",
+        "oferStcCd": "CMMA_A10_B80_C1199-32"
+      },
+      {
+        "href": "/en/myt-fare/bill/hotbill",
+        "name": "Real-time monthly fees",
+        "oferStcCd": "CMMA_A10_B81_C1201-12"
+      }
+    ],
+    "oferStcCd": "CMMA_A10_B80_C1199-31"
+  },
+  {
+    "subtitle": "My Information",
+    "href": "/en/myt-join/submain",
+    "sublist": [
+      {
+        "href": "/en/myt-join/submain/infodiscount",
+        "name": "Contract Discounts /<br> Device Installments",
+        "oferStcCd": "CMMA_A10_B81_C1198_D4373-28"
+      }
+    ],
+    "oferStcCd": "CMMA_A10_B80_C1199-34"
+  }
+]

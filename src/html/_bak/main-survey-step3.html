@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <main class="container survey">
+      <div class="popup-survey">
+        <header class="tworld-sub-header">  
+          <div class="sub-header-inner">
+            <a href="javascript:window.history.go(-1);" class="menu-item-prev">
+              <i class="svg-prev"></i>
+              <span class="hidden">이전 페이지</span>
+            </a>
+            <strong class="sub-header-tit">나에게 맞는 단말 찾기</strong>
+            <span class="menu-box">
+              <button type="button" class="menu-item-close">
+                <i class="svg-close"></i>
+                <span class="hidden">닫기</span>
+              </button>
+            </span>
+          </div>
+
+          <!-- 그래프 -->
+          <div class="channel-line-graph">
+            <div class="bar-graph" aria-label="막대그래프">
+              <span class="figure-data" style="width:42%"></span>
+            </div>
+          </div>
+          <!-- / 그래프 -->
+        </header>
+      
+        <div class="survey-content">
+          <div class="popup-top">
+            <p class="step">Step3</p>
+            <h2 class="top-title">
+              휴대폰을 무엇에 이용하는지<br>모두 선택해 주세요
+            </h2>
+          </div>
+
+          <ul class="inquire-type-two">
+            <li class="inquire-item">
+              <input type="radio" id="step_0" name="step1"/>
+              <label for="step_0" class="survey-title">
+                <em class="sv-title">메신저, SNS</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step_1" name="step3"/>
+              <label for="step_1" class="survey-title">
+                <em class="sv-title">사진, 동영상 촬영</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step_2" name="step3"/>
+              <label for="step_2" class="survey-title">
+                <em class="sv-title">동영상 시청</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step_3" name="step3"/>
+              <label for="step_3" class="survey-title">
+                <em class="sv-title">업무 용도</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step_4" name="step3"/>
+              <label for="step_4" class="survey-title">
+                <em class="sv-title">웹 서핑, 쇼핑</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step_5" name="step3"/>
+              <label for="step_5" class="survey-title">
+                <em class="sv-title">음악 듣기, 팟캐스트</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step_6" name="step3"/>
+              <label for="step_6" class="survey-title">
+                <em class="sv-title">모바일 게임</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step_7" name="step3"/>
+              <label for="step_7" class="survey-title">
+                <em class="sv-title">전화, 문자</em>
+              </label>
+            </li>
+          </ul>
+        </div><!-- / .survey-content -->
+
+        <div class="fixed-area-bt">
+          <div class="btn-full-pop">
+            <button type="button" class="btns blue" onClick="location.href='main-survey-step4.html'">다음</button>
+          </div>
+        </div>
+      </div><!-- / .popup-cablesub -->      
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+
+</html>

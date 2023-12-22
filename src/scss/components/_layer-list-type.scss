@@ -1,0 +1,211 @@
+.title-fixed {
+  position: sticky;
+  top: 0;
+  padding: 28px 24px 18px 24px;
+  background-color: #fff;
+  z-index: 1;
+  .link {
+    display: inline-flex;
+    align-items: center;
+  }
+  .sub-title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -0.72px;
+  }
+  .bl-arr-bold {
+    height: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0 0 0 3.5px;
+  }
+  .btn-close {
+    position: absolute;
+    top: 28px;
+    right: 24px;
+  }
+  .enroll-txt {
+    color: var(--grey600);
+    font-size: 14px;
+    letter-spacing: -0.56px;
+    padding: 18px 0 7px 0;
+    .number {
+      color: #ea3120;
+      font-weight: bold;
+    }
+  }
+}
+.item-type-list {
+  i[class^='ic-'] {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    &[class*='disk'] {
+      &::before {
+        background-image: url($dir + 'icon/ic-etc-disk.png');
+        content: '';
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        background-size: 100% 100%;
+      }
+    }
+    &[class*='hphone'] {
+      &::before {
+        background-image: url($dir + 'icon/ic-etc-hphone.png');
+        content: '';
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        background-size: 100% 100%;
+      }
+    }
+    &[class*='global'] {
+      &::before {
+        background-image: url($dir + 'icon/ic-etc-global.png');
+        content: '';
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        background-size: 100% 100%;
+      }
+    }
+    &[class*='iptv'] {
+      &::before {
+        background-image: url($dir + 'icon/ic-etc-iptv.png');
+        content: '';
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        background-size: 100% 100%;
+      }
+    }
+  }
+  .text {
+    font-size: 16px;
+    margin-left: 6px;
+    letter-spacing: -0.64px;
+  }
+  .range {
+    margin-left: auto;
+  }
+  .ic-qckmain-benef {
+    &::before {
+      content: '';
+      background-image: url(/public/images/icon/ic-benef.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 14px;
+      height: 14px;
+      display: block;
+    }
+  }
+  .item {
+    padding-bottom: 36px;
+    position: relative;
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &:nth-child(1) {
+    padding-top: 8px;
+  }
+  .radio-box-modal {
+    font-size: 16px;
+    label {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+    .radio {
+      position: relative;
+      display: block;
+      speak: none;
+      speak: never;
+      &::before {
+        display: block;
+        content: '';
+        width: 22px;
+        height: 22px;
+        border: solid 1px #e5e5e5;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+    }
+    input[type='radio'] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      &:checked {
+        & + label {
+          .radio {
+            &::before {
+              background-color: #4030df;
+              border-color: #4030df;
+            }
+            &::after {
+              display: block;
+              content: '';
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sub {
+    font-size: 13px;
+    color: #909090;
+    margin-left: 20px;
+  }
+  .line-fee-area {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    @include break-point(360) {
+      margin-left: 14px;
+    }
+  }
+  .btn {
+    padding-top: 18px;
+    font-size: 13px;
+    color: #4130df;
+    text-decoration: underline;
+    font-weight: 600;
+    letter-spacing: -0.39px;
+    box-shadow: none;
+    &:not([href]) {
+      display: none;
+    }
+    @include break-point(360) {
+      font-size: 11px;
+    }
+    &::before {
+      content: '';
+      display: inline-flex;
+      width: 1px;
+      height: 10px;
+      margin: 0 12px;
+      background-color: #d9d9d9;
+      @include break-point(360) {
+        margin: 0 6px;
+      }
+    }
+    &:first-child {
+      margin-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <main class="container survey">
+      <div class="popup-survey">
+        <header class="tworld-sub-header">  
+          <div class="sub-header-inner">
+            <a href="javascript:window.history.go(-1);" class="menu-item-prev">
+              <i class="svg-prev"></i>
+              <span class="hidden">이전 페이지</span>
+            </a>
+            <strong class="sub-header-tit">나에게 맞는 단말 찾기</strong>
+            <span class="menu-box">
+              <button type="button" class="menu-item-close">
+                <i class="svg-close"></i>
+                <span class="hidden">닫기</span>
+              </button>
+            </span>
+          </div>
+
+          <!-- 그래프 -->
+          <div class="channel-line-graph">
+            <div class="bar-graph" aria-label="막대그래프">
+              <span class="figure-data" style="width:14%"></span>
+            </div>
+          </div>
+          <!-- / 그래프 -->
+        </header>
+      
+        <div class="survey-content step1">
+          <div class="popup-top">
+            <p class="step">Step1</p>
+            <h2 class="top-title">
+              좋아하는 브랜드가<br>있으신가요?
+            </h2>
+          </div>
+
+          <ul class="inquire-type-two">
+            <li class="inquire-item">
+              <input type="radio" id="step_0" name="step1"/>
+              <label for="step_0" class="channel-title">
+                <span class="channel-chart">
+                  <img src="/public/images/icon/ic-samsung.png" alt="삼성로고" width="100%" class="icsamsung"/>
+                </span>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step_1" name="step1"/>
+              <label for="step_1"  class="channel-title">
+                <span class="channel-chart">
+                  <img src="/public/images/icon/ic-apple.png" alt="애플로고" width="100%" class="icapple"/>
+                </span>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step_2" name="step1"/>
+              <label for="step_2"  class="channel-title">
+                <span>
+                  Etc
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fixed-area-bt">
+          <div class="btn-full-pop">
+            <button type="button" class="btns blue" onClick="location.href='main-survey-step2.html'">다음</button>
+          </div>
+        </div>
+      </div><!-- / .popup-cablesub -->      
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+
+</html>

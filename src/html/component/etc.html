@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+  <style>
+    h1 {margin: 30px 0 30px;text-align: center;font-size:1.5rem;}
+    /* h2 {margin: 30px 0;} */
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <h1>* 컨텐츠박스 등 기타 UI가이드 * </h2>
+      <ul style="margin:2rem;color:blue;font-size:1.5rem;line-height:2rem;">
+        <li><a href="form.html"> - 버튼/link/input type 버튼/검색</a></li>
+        <li><a href="banner.html"> - 썸네일, 이미지들 배너</a></li>
+        <li><a href="etc.html"> - 컨텐츠박스/헤더 등 기타</a></li>
+      </ul>
+
+
+      <h2> 서브 공통 헤더</h2>
+      <!-- 서브메인용 공통 헤더 -->
+      <header class="tworld-sub-header" style="position:static;"> <!-- 공통 헤더 가져다 쓸 때 인라인 스타일 style="position:static;" 빼시면 됩니다! -->
+        <div class="sub-header-inner">
+          <a href="#" class="menu-item-prev">
+            <i class="svg-prev"></i>
+            <span class="hidden">이전 페이지</span>
+          </a>
+          <strong class="sub-header-tit">매장 찾기</strong>
+          <span class="menu-box">
+            <a href="" class="menu-item-home">
+              <i class="svg-home"></i>
+              <span class="hidden">홈</span>
+            </a>
+            <a href="" class="menu-item-search">
+              <i class="svg-search"></i>
+              <span class="hidden">검색</span>
+            </a>
+            <button type="button" class="menu-item-share">
+              <i class="svg-share"></i>
+              <span class="hidden">공유</span>
+            </button>
+          </span>
+        </div>
+      </header>
+
+      <header class="tworld-sub-header" style="position:static;">  <!-- 공통 헤더 가져다 쓸 때 인라인 스타일 style="position:static;" 빼시면 됩니다! -->
+        <div class="sub-header-inner">
+          <a href="#" class="menu-item-prev">
+            <i class="svg-prev"></i>
+            <span class="hidden">이전 페이지</span>
+          </a>
+          <span class="menu-box">
+            <a href="#" class="menu-item-search">
+              <i class="svg-search"></i>
+              <span class="hidden">검색</span>
+            </a>
+            <button type="button" class="menu-item-share">
+              <i class="svg-share"></i>
+              <span class="hidden">공유</span>
+            </button>
+          </span>
+        </div>
+      </header>
+
+      <h2> 팝업용 공통 헤더</h2>
+      <!-- 팝업용 공통 헤더 케이스 -->
+      <div class="tworld-sub-header" style="position:static;">  <!-- 공통 헤더 가져다 쓸 때 인라인 스타일 style="position:static;" 빼시면 됩니다! -->
+        <div class="sub-header-inner">
+          <a href="#" class="menu-item-prev">
+            <i class="svg-prev"></i>
+            <span class="hidden">이전 페이지</span>
+          </a>
+          <strong class="sub-header-tit">내게 맞는 인터넷/IPTV 상품 찾기</strong>
+          <span class="menu-box">
+            <button type="button" class="menu-item-close">
+              <i class="svg-close"></i>
+              <span class="hidden">닫기</span>
+            </button>
+          </span>
+        </div>
+      </div>
+
+      <h2>공통 셀렉트 레이어팝업 <br><br>
+          - 소스에서 active 추가
+      </h2>
+      
+      <div class="overlay">  <!--active 붙으면 활성화-->
+        <div class="layer-type-bottom">
+          <div class="title-fixed">
+            <h2 class="sub-title">정렬기준</h2> 
+          </div>
+          <!-- 버튼형태 case -->
+          <ul class="select-list-type">
+            <li class="item active"> <!-- 선택된 케이스: 클래스명 active 붙임-->
+              <button type="button">
+                추천순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+            <li class="item">
+              <button type="button">
+                클릭순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+            <li class="item">
+              <button type="button">
+                최신순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+            <li class="item">
+              <button type="button">
+                낮은가격순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+            <li class="item">
+              <button type="button">
+                높은가격순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+          </ul>   
+        </div>
+      </div>
+      
+      <hr>
+
+      <h2>Content box 1</h2>
+      <article class="common-content-attend">
+        <div class="attend-detail">
+          <i class="icon-usual">
+            <img src="/public/images/icon/ic-mike.png" alt="알림"/>
+          </i>
+          <div class="attend-text">
+            <div class="remark">
+              현재 <strong>T플랜 스페셜 / 79,000원</strong>
+              요금제를 이용하고계세요.
+            </div>
+            <a href="/" class="btn-go">
+              <span class="text">나의 요금제/부가상품 보러가기</span>
+              <i class="bl-arr"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+      
+      <h2>Content box 2</h2>
+      <article class="common-content-attend">
+        <div class="attend-detail">
+          <i class="icon-usual">
+            <img src="/public/images/icon/ic-mike.png" alt="알림"/>
+          </i>
+          <div class="attend-text">
+            <div class="remark">
+              <strong class="underline">Giga+All 패키지</strong> 상품에 가입하셨어요
+              약정만기일은 <strong>2022.7.29</strong>입니다.
+            </div>
+            <a href="/" class="btn-go">
+              <span class="text">재약정하고 추가 할인받기</span>
+              <i class="bl-arr"></i>
+            </a>
+          </div>
+        </div>
+      </article>    
+
+      <h2>Content box 3</h2>
+      <article class="common-content-attend">
+        <div class="attend-detail">
+          <i class="ic-search"></i>
+          <div class="attend-text">
+            <div class="remark">
+              아직 상품 가입하지 않으셨다면 
+              <strong>내게 맞는 인터넷/IPTV</strong> 상품을 찾아보세요
+            </div>
+            <a href="/" class="btn-go">
+              <span class="text">내게 맞는 상품 찾아보기</span>
+              <i class="bl-arr"></i>
+            </a>
+          </div>
+        </div>
+      </article> 
+
+      <hr />
+      <div class="common-content-announce">
+        <div class="message-announce-case">
+          <div class="my-msg-exception">
+            <i class="ic-warn"></i>
+            <p class="emp-text">잔여량 조회 서비스를 이용하실 수 없습니다.</p>
+            <span class="acc-text">잔여량 조회에 실패하였습니다.</span>
+            <div class="my-btn-area">
+              <button type="button" class="btn">새로고침</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- / .wrap -->
+</body>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

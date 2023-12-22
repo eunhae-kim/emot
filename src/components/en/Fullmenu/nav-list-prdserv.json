@@ -1,0 +1,34 @@
+[
+  {
+    "subtitle": "Plans",
+    "href": "/en/product/mobileplan",
+    "sublist": [
+      {
+        "href": "/en/product/mobileplan?filters=F01713",
+        "name": "5G",
+        "oferStcCd": "CMMA_A10_B82-195"
+      },
+      {
+        "href": "/en/product/mobileplan?filters=F01121",
+        "name": "LTE",
+        "oferStcCd": "CMMA_A10_B82-196"
+      },
+      {
+        "href": "/en/product/mobileplan?filters=F01122",
+        "name": "3G",
+        "oferStcCd": "CMMA_A10_B82-197"
+      },
+      {
+        "href": "/en/product/mobileplan?filters=F01124",
+        "name": "Tablet / 2nd Device",
+        "oferStcCd": "CMMA_A10_B82-198"
+      },
+      {
+        "href": "/en/product/mobileplan?filters=F01125",
+        "name": "PPS",
+        "oferStcCd": "CMMA_A10_B82-199"
+      }
+    ],
+    "oferStcCd": "CMMA_A10_B80_C1199-35"
+  }
+]

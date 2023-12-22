@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../styles/app.min.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <section class="container fullmenu">
+
+      <!-- 스크롤시 nav-full-menu fixed 추가 -->
+      <div class="nav-full-menu" id="navDiv">
+
+        <!-- #개인화(Util) 영역 -->
+        <div class="nav-header">
+          <div class="nav-info-box">
+
+            <!-- 준회원 -->
+            <div class="info-login none">
+              <h1>
+                <span class="usernm">준회원 님</span>
+              </h1>
+              <button type="button" class="btn-txt ">
+                <span class="txt-login">로그아웃</span>
+              </button>
+              <hr />
+            </div>
+
+            <!-- 가입회선 미등록 -->
+            <div class="info-login none">
+              <h1>
+                <span class="usernm">
+                  가입회선 미등록 <i class="bl-arr"></i>
+                </span>
+              </h1>
+              <button type="button" class="btn-txt">
+                <span class="underline">회선등록</span> <!-- 회선등록 / 간편로그인 -->
+              </button>
+              <button type="button" class="btn-txt ">
+                <span class="txt-login">로그아웃</span>
+              </button>
+              <hr />
+            </div>
+
+            <!-- 미로그인 -->
+            <div class="info-login none">
+              <h1>
+                <span class="usernm">미로그인</span>
+              </h1>
+              <button type="button" class="btn-txt">
+                <span class="underline">간편로그인</span>
+              </button>
+              <button type="button" class="btn-txt ">
+                <span class="underline">로그아웃</span>
+              </button>
+              <hr />
+            </div>
+
+            <!-- #로그인_app / 가입회선 -->
+            <div class="info-login">
+              <h1>
+                <span class="usernm">홍길동이선미님</span>
+              </h1>
+              <button type="button" class="btn-txt">
+                <span class="info-number">
+                  010-90**-12** <i class="bl-arr btm"></i>
+                </span>
+              </button>
+              <button type="button" class="btn-txt ">
+                <span class="txt-login">로그아웃</span>
+              </button>
+            </div>
+
+            <ul class="info-items">
+              <li>
+                <button type="button" class="btn-icon">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="문자" width="28" height="28">
+                  <span class="hidden">문자</span>
+                </button>
+                <li>
+                  <button type="button" class="btn-icon">
+                    <img loading="lazy" src="/public/images/transparent.png" alt="알림" width="28" height="28">
+                    <span class="hidden">알림</span>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn-icon">
+                    <img loading="lazy" src="/public/images/transparent.png" alt="설정" width="28" height="28">
+                    <span class="hidden">설정</span>
+                  </button>
+                </li>
+            </ul>
+            <!--// #로그인_app -->
+
+          </div>
+        </div>
+        <!--// #개인화(Util) 영역 -->
+
+        <!-- #퀵메뉴 -->
+        <div class="nav-top-menu">
+          <h2>퀵메뉴</h2>
+          <ul class="top-menu-list">
+            <li>
+              <button type="button" class="btn-icon">
+                <span class="icon-box">
+                  <i class="icon-app">
+                    <img loading="lazy" src="/public//images/transparent.png" alt="">
+                  </i>
+                </span>
+                <span class="txt"><em>T</em>우주</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn-icon">
+                <span class="icon-box">
+                  <i class="icon-app">
+                    <img loading="lazy" src="/public//images/transparent.png" alt="">
+                  </i>
+                </span>
+                <span class="txt"><em>New YT</em></span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn-icon">
+                <span class="icon-box">
+                  <i class="icon-app">
+                    <img loading="lazy" src="/public//images/transparent.png" alt="">
+                  </i>
+                </span>
+                <span class="txt"><em>T</em>로밍</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn-icon">
+                <span class="icon-box">
+                  <i class="icon-app">
+                    <img src="/public//images/transparent.png" alt="">
+                  </i>
+                </span>
+                <span class="txt"><em>English T world</em></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- #전체메뉴 -->
+        <div class="nav-wrap">
+
+          <!-- #왼쪽 1Depth -->
+          <ul class="nav-subject">
+            <li>
+              <button type="button" class="btn-icon">
+                <i class="icon-nav-my">
+                  <img src="/public//images/transparent.png" alt="">
+                </i>
+                <span>MY</span>
+              </button>
+            </li>
+            <li  class="on"> <!-- li선택 .on 추가 -->            
+              <button type="button" class="btn-icon">
+                <i class="icon-nav-svc on">
+                  <img src="/public//images/transparent.png" alt="">
+                </i>
+                <span>상품 서비스</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn-icon">
+                <i class="icon-nav-shop">
+                  <img src="/public//images/transparent.png" alt="">
+                </i>
+                <span>SHOP</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn-icon">
+                <i class="icon-nav-benefit">
+                  <img src="/public//images/transparent.png" alt="">
+                </i>
+                <span>혜택</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn-icon">
+                <i class="icon-nav-info">
+                  <img src="/public//images/transparent.png" alt="">
+                </i>
+                <span>고객지원</span>
+              </button>
+            </li>
+          </ul>
+
+          <!-- #MY -->
+          <ul class="nav-sub-depth none">
+            <li>
+              <a href="#" class="nav-subtitle">나의 데이터/통화</a>
+              <ul class="nav-sublist">
+                <li><a href="#">실시간 잔여량</a></li>
+                <li><a href="#">T끼리데이터선물</a></li>
+                <li><a href="#">리필쿠폰</a></li>
+                <li><a href="#">최근 충전/선물 내역</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">나의 요금</a>
+              <ul class="nav-sublist">
+                <li><a href="#">요금안내서</a></li>
+                <li><a href="#">실시간 이용요금</a></li>
+                <li><a href="#">요금안내서 설정</a></li>
+                <li><a href="#">납부방법</a></li>
+                <li><a href="#">휴대폰 결제/콘텐츠 이용료</a></li>
+                <li><a href="#">요금납부내역 조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">나의 가입 정보</a>
+              <ul class="nav-sublist">
+                <li><a href="#">나의 요금제/부가상품</a></li>
+                <li><a href="#">나의 부가상품</a></li>
+                <li><a href="#">나의 결합상품</a></li>
+                <li><a href="#">약정할인/기기 할부 정보</a></li>
+                <li><a href="#">휴대폰 일시정지</a></li>
+                <li><a href="#">인터넷/전화/IPTV 신청내역</a></li>
+                <li><a href="#">인터넷/전화/IPTV 일시 정지/해제</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- #상품서비스 -->
+          <ul class="nav-sub-depth ">
+            <li>
+              <a href="#" class="nav-subtitle">요금제</a>
+              <ul class="nav-sublist">
+                <li><a href="#">전체 요금제</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">부가서비스</a>
+              <ul class="nav-sublist">
+                <li><a href="#">부가서비스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">인터넷/IPTV</a>
+              <ul class="nav-sublist">
+                <li><a href="#">인터넷</a></li>
+                <li><a href="#">IPTV</a></li>
+                <li><a href="#">전화</a></li>
+                <li><a href="#">보안</a></li>
+                <li><a href="#">결합상품</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">T우주</a>
+              <ul class="nav-sublist">
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">T로밍</a>
+              <ul class="nav-sublist">
+                <li><a href="#">나의 T로밍 이용현황</a></li>
+                <li><a href="#">T로밍 요금제</a></li>
+                <li><a href="#">T로밍 부가서비스</a></li>
+                <li><a href="#">T로밍 카드/쿠폰</a></li>
+                <li><a href="#">baro Box 임대</a></li>
+                <li><a href="#">국가별 로밍 이용요금 조회</a></li>
+                <li><a href="#">T로밍안내</a></li>
+                <li><a href="#">T로밍센터</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- #SHOP -->
+          <ul class="nav-sub-depth none">
+            <li>
+              <a href="#" class="nav-subtitle">SHOP</a>
+              <ul class="nav-sublist">
+                <li><a href="#">전체 SHOP</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">T다이렉트샵</a>
+              <ul class="nav-sublist">
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- #혜택 -->
+          <ul class="nav-sub-depth none">
+            <li>
+              <a href="#" class="nav-subtitle">혜택</a>
+              <ul class="nav-sublist">
+                <li><a href="#">나의 혜택</a></li>
+                <li><a href="#">전체 혜택</a></li>
+                <li><a href="#">이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">T맴버십</a>
+              <ul class="nav-sublist">
+                <li><a href="#">나의 T맴버십</a></li>
+                <li><a href="#">헤택 브랜드</a></li>
+                <li><a href="#">혜택 이용내역</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- #고객지원 -->
+          <ul class="nav-sub-depth none">
+            <li>
+              <a href="#" class="nav-subtitle">이용안내</a>
+              <ul class="nav-sublist">
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">자주 하는 질문</a>
+              <ul class="nav-sublist">
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">매장찾기</a>
+              <ul class="nav-sublist">
+                <li><a href="#">AS센터 안내</a></li>
+                <li><a href="#">나의 매장 상담 예약이력</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">이메일 상담</a>
+              <ul class="nav-sublist">
+                <li><a href="#">상담하기</a></li>
+                <li><a href="#">상담내역</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">고객의견</a>
+              <ul class="nav-sublist">
+                <li><a href="#">칭찬합니다</a></li>
+                <li><a href="#">칭찬 등록내역</a></li>
+                <li><a href="#">설문조사</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">이용자 피해예방센터</a>
+              <ul class="nav-sublist">
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">필요서류 안내</a>
+              <ul class="nav-sublist">
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-subtitle">공지사항</a>
+              <ul class="nav-sublist">
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- #T앱 -->
+        <div class="nav-app-cont">
+          <h2><em>T</em>앱</h2>
+          <a href="#" class="btn-more">더보기</a>
+          <ul class="app-list">
+            <li>
+              <button class="btn-icon">
+                <i class="icon-app">
+                  <img loading="lazy" src="/public/images/thumbnail/app-adot.png" alt="에이닷">
+                </i>
+                <span class="txt"><em>A</em> (에이닷)</span>
+              </button>
+            </li>
+            <li>
+              <button class="btn-icon">
+                <i class="icon-app">
+                  <img loading="lazy" src="/public/images/thumbnail/app-if.png" alt="ifland">
+                </i>
+                <span class="txt"><em>ifland</em></span>
+              </button>
+            </li>
+            <li>
+              <button class="btn-icon">
+                <i class="icon-app">
+                  <img loading="lazy" src="/public/images/thumbnail/app-handong.png" alt="0한동">
+                </i>
+                <span class="txt">0한동</span>
+              </button>
+            </li>
+            <li>
+              <button class="btn-icon">
+                <i class="icon-app">
+                  <img loading="lazy" src="/public/images/thumbnail/app-t.png" alt="T맴버십">
+                </i>
+                <span class="txt"><em>T</em>멤버십</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- #banner -->
+        <div class="middle-full-banner">
+          <h2 class="hidden">배너</h2>
+          <div class="swiper mySwiper">
+            <ul class="swiper-wrapper t-banner-list">
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/thumbnail/middle-banner.png" alt="430" width="100%" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/thumbnail/middle-banner.png" alt="430" width="100%" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/thumbnail/middle-banner.png" alt="430" width="100%" />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+
+            <!-- 배너 1개일 경우 controller 숨김 -->
+            <div class="bnr-swiper-controller" id="swController">
+              <div class="swiper-pagination"></div>
+
+              <div class="bnr-controller">
+                <button type="button" class="swiper-button-play" id="swPlay">
+                  <!-- <i className="ic-play" /> -->play
+                </button>
+                <button type="button" class="swiper-button-pause" id="swStop">
+                  <!-- <i class="ic-btn-stop2" /> -->stop
+                </button>
+              </div>
+            </div>
+            <!-- .controller -->
+          </div>
+        </div>
+
+        <!-- #nav-footer -->
+        <div class="nav-footer">
+          <div class="f-nemu">
+            <ul class="f-nemu-list">
+              <li><a href="#" class="f-link">이용약관</a></li>
+              <li><a href="//m.skt-id.co.kr/member/terms/termsInfo.do?chnlId=TWDT&client_type=mWEB&stplTypCd=02"
+                  target="_blank" class="f-link"><strong>개인정보 처리방침</strong></a></li>
+              <li><a href="//piuh.sktelecom.com/mobile/common/selfCert" target="_blank" class="f-link"><strong>개인정보
+                    이용내역</strong></a></li>
+            </ul>
+            <ul class="f-nemu-list">
+              <li><a href="#" class="f-link">미환급금 조회</a></li>
+              <li><a href="#" class="f-link">이용자 피해예방센터</a></li>
+              <li><a href="#" class="f-link">사업자 정보</a></li>
+            </ul>
+            <ul class="f-nemu-list">
+              <li><a href="#" class="f-link">패밀리사이트</a></li>
+              <li><a href="//privacy.sk.com/" target="_blank" class="f-link">동의정보 지킴이</a></li>
+              <li><a href="//m.privacy.sktelecom.com/" target="_blank" class="f-link">프라이버시 센터</a></li>
+            </ul>
+            <p><a href="//piuh.sktelecom.com/mobile/common/selfCert" target="_blank" class="f-link"><strong>통신자료 제공내역
+                  열람</strong></a></p>
+          </div>
+
+          <dl class="f-info">
+            <dt>휴대폰 고객센터</dt>
+            <dd>국번없이<a href="tel:114" class="f-tel">114</a>(무료) 또는 <a href="tel:080-011-6000"
+                class="f-tel">080-011-6000</a>(무료),</dd>
+            <dd>국번없이<a href="tel:1599-0011" class="f-tel">1599-0011</a>(유료)</dd>
+
+            <dt>인터넷∙집전화 고객센터</dt>
+            <dd><a href="tel:080-816-2000" class="f-tel">080-816-2000</a>(무료) 또는 <a href="tel:1600-2000"
+                class="f-tel">1600-2000</a>(유료)</dd>
+
+            <dt><em>T</em> 멤버십 마켓</dt>
+            <dd><a href="tel:1599-3377" class="f-tel">1599-3377</a>(유료)</dd>
+          </dl>
+
+          <div class="f-global">
+            <div class="f-global-link">
+              <a href="#">
+                <i><img loading="lazy" src="/public/images/transparent.png" alt="ENG"></i>
+                <span>ENG</span>
+              </a>
+            </div>
+            <p class="f-ltd">SK telecom., LTD</p>
+          </div>
+        </div>
+
+      </div><!-- / .nav-full-menu -->
+
+    </section><!-- / .container -->
+  </div><!-- / .wrap -->
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // 스크롤업 시
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      if (document.documentElement.scrollTop > 50) {
+        //document.getElementById("navDiv").className = "fixed";
+        document.getElementById("navDiv").classList.add('fixed');
+      } else {
+        document.getElementById("navDiv").classList.remove('fixed');
+      }
+    }
+
+    // 배너 슬라이드
+    var _swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination", //페이징 태그 클래스 설정
+        type: "fraction", //페이징 타입 설정(종류: bullets, fraction, progress, progressbar)
+        renderBullet: (index, className) => {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+
+    // 배너 오토롤링케이스
+    document.getElementById("swPlay").classList.add('none');
+    // start
+    function fnPlay() {
+      _swiper.autoplay.start();
+      document.getElementById("swPlay").classList.add('none');
+      document.getElementById("swStop").classList.remove('none');
+    }
+    const btn_play = document.getElementById("swPlay");
+    btn_play.addEventListener("click", fnPlay);
+
+    // stop
+    function fnStop() {
+      _swiper.autoplay.stop();
+      document.getElementById("swStop").classList.add('none');
+      document.getElementById("swPlay").classList.remove('none');
+    }
+    const btn_stop = document.getElementById("swStop");
+    btn_stop.addEventListener("click", fnStop);
+
+    // 배너 슬라이드 컨트롤러 영역
+    var lists = document.getElementsByClassName('swiper-slide');
+    if (lists.length == 1) { //lists 가 1개일때
+      //console.log(lists.length);
+      document.getElementById('swController').className += ' none';
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>
