@@ -1,0 +1,28 @@
+<!-- (230621) 메인샵 > 메인베너 -->
+<div class="main-section main-banner">
+    <div class="swiper-wrap">
+        <div ref="mainBanner" v-swiper:pbannerSwiper="swiperOption" class="swiper-container swiper-banner">
+            <ul class="swiper-wrapper">
+                <li v-for="(banner, index) in pbannerList" :key="banner.id" class="item swiper-slide" role="tabpanel">
+                    <div class="item-inner">
+                        <!-- [T] Image TYPE -->
+                        <a :id="'banner-swiper-selector'+ (index+1)" href="javascript:void(0)">
+                            <c-img :prop-src="getBannerImg(banner)" :prop-name="getImgAlt(banner)" :style="customStyle" @imgloaded="imgloaded" />
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- pagination -->
+        <!-- stop / play button-->
+        <div class="swipe-play-control">
+            <button v-if="!currentBtn" type="button" class="btn-start" aria-pressed="true" @click="startSlide">
+                <span class="blind"> 시작 </span>
+            </button>
+            <button v-else type="button" class="btn-stop" aria-pressed="false" @click="stopSlide">
+                <span class="blind"> 정지 </span>
+            </button>
+        </div>
+        <div class="swipe-nav pager-2" swipe-paging-pbanner role="tablist" />
+    </div>
+</div>

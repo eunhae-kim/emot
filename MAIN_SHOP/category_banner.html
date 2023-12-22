@@ -1,0 +1,11 @@
+<!-- (230621) 메인샵 > 카테고리 메뉴 10개 -->
+<div class="main-section">
+    <ul class="quick-menu-list">
+        <li v-for="(menu, index) in categoryMenuList" :key="index">
+            <a :href="getLinkPage(menu)" class="btn" :title="getTitle(menu.url)" @click.prevent="gotoLinkPage(menu)">
+                <c-img :prop-src="imgSrc(menu)" :prop-name="' '" />
+                <span class="menu-txt">{{ menu.title.text }}</span>
+            </a>
+        </li>
+    </ul>
+</div>

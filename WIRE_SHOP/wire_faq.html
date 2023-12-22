@@ -1,0 +1,96 @@
+<!-- (230621) 유선 서브메인 (인터넷) > 이것이 궁금해요! 자주하는 질문 -->
+<section class="faq-area area">
+  <div class="l-grid">
+    <div class="faq-wrap">
+      <h3>이것이 궁금해요! <br />자주 하는 질문</h3>
+      <button
+        type="button"
+        class="btn-view-all"
+        title="새창"
+        @click="faqAllView('https://m.shop.tworld.co.kr/shopguide/inqr?wireYn=Y', $event?.currentTarget)"
+      >
+        전체 보기
+      </button>
+      <ul class="faq-list">
+        <li>
+          <a
+            href="javascript:void(0)"
+            title="새창"
+            target="_blank"
+            class="btn-faq"
+            @click.prevent="faqAllView('https://m.shop.tworld.co.kr/shopguide/inqr?wireYn=Y&wireNo=1&wireSeq=1', $event?.currentTarget)"
+          >
+            <div class="txt">
+              <p>가입신청 후 개통 과정</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            target="_blank"
+            title="새창"
+            class="btn-faq"
+            @click.prevent="faqAllView('https://m.shop.tworld.co.kr/shopguide/inqr?wireYn=Y&wireNo=1&wireSeq=2', $event?.currentTarget)"
+          >
+            <div class="txt">
+              <p>사은품 배송 시점</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            target="_blank"
+            title="새창"
+            class="btn-faq"
+            @click.prevent="faqAllView('https://m.shop.tworld.co.kr/shopguide/inqr?wireYn=Y&wireNo=1&wireSeq=3', $event?.currentTarget)"
+          >
+            <div class="txt">
+              <p>바로가입 상품 및 사은품 변경</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            target="_blank"
+            title="새창"
+            class="btn-faq"
+            @click.prevent="faqAllView('https://m.shop.tworld.co.kr/shopguide/inqr?wireYn=Y&wireNo=1&wireSeq=4', $event?.currentTarget)"
+          >
+            <div class="txt">
+              <p>개통 일정 변경</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            target="_blank"
+            title="새창"
+            class="btn-faq"
+            @click.prevent="faqAllView('https://m.shop.tworld.co.kr/shopguide/inqr?wireYn=Y&wireNo=1&wireSeq=5', $event?.currentTarget)"
+          >
+            <div class="txt">
+              <p>설치비 안내</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            target="_blank"
+            title="새창"
+            class="btn-faq"
+            @click.prevent="faqAllView('https://m.shop.tworld.co.kr/shopguide/inqr?wireYn=Y&wireNo=2&wireSeq=4', $event?.currentTarget)"
+          >
+            <div class="txt">
+              <p>개통 후 철회</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

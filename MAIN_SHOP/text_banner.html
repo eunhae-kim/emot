@@ -1,0 +1,6 @@
+<!-- (230621) 메인샵 > 주문내역 확인하기 / 구매후기 보러가기 -->
+<div v-for="banner in textBanner" :key="banner.url.text" class="main-section direct-link direct-link-bot">
+    <a :href="getUrl(banner)" :title="getTitle(banner.url)" class="cnt-card type-arrow" @click.prevent="gotoDetail(banner)">
+        <span class="txt-notice">{{ banner.title.text }}</span>
+    </a>
+</div>

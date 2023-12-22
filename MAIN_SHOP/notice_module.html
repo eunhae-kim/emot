@@ -1,0 +1,16 @@
+<!-- (230621) 메인샵 > 공지사항 -->
+<div class="main-section direct-link top-notice">
+  <span class="top-new-notice">새로운 알림</span>
+  <div class="swiper-wrap">
+    <div ref="topNotice" v-swiper:noticeswiper="swiperOption" class="swiper-container swiper-notice">
+      <ul class="swiper-wrapper">
+        <li v-for="(item, index) in noticeList" :key="index" class="item swiper-slide">
+          <button type="button" class="cnt-card">
+            <span class="txt-notice" v-html="item.title.text" />
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="swipe-nav pager-1 swiper-pagination-fraction" />
+  </div>
+</div>
