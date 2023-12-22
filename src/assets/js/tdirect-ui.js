@@ -1317,14 +1317,6 @@ var UI = {
 			$(this).siblings().children('.link-block').removeAttr('aria-current');
 		});
 
-		// home > 빠른메뉴
-		$('.btn-counsel-toggle').on('click', function () {
-			//console.log('----shortcut clicked----');
-			$('.sticky-shortcut').toggleClass('active');
-			$('body').toggleClass('js-noscroll');
-			$('.sticky-shortcut-dimmed').toggle();
-		});
-
 		/* 요금계산기 */
 		$('.product-wrap .title-field').on('click', function () {
 			$(this).parent().toggleClass('active');
@@ -1363,7 +1355,7 @@ var UI = {
 		/* 체크포인트 확인방법 */
 		$('.checkpoint-area .title-field').on('click', function () {
 			$(this).parent().toggleClass('active');
-			$('.checkpoint-area .checkpoint-item').not($(this).parent('.checkpoint-item')).removeClass('active');
+			$('.checkpoint-area .checkpoint-item').not($(this).parent('.checkpoint-item')).removeClass('active').find('button').attr('aria-expanded', false);
 		});
 
 		/* 매장검색-지하철노선별(2021.10.18) */
@@ -1898,15 +1890,43 @@ var swiperRateProduct2 = new Swiper('.slide-num-wrap .swiper-container', {
 	}
 });
 
+//[D] 2023 웹접근성 수정
+var KeyVisualCnt = $(".swiper-slide",".product-key-visual .swiper-container").length; // 상품 이미지 갯수
 var swiperProductKeyVisual = new Swiper('.product-key-visual .swiper-container', {
+	a11y: {
+		enabled: false
+	},
 	pagination: {
-		el: '.swiper-pagination',
-		clickable: true
-	} // ,navigation: {
-	// 	nextEl: '.swiper-button-next',
-	// 	prevEl: '.swiper-button-prev',
-	// },
+      el: '.swiper-pagination',
+      clickable: true,
+      bulletClass: 'bullet',
+      bulletActiveClass: 'active',
+      renderBullet: function (index, className) {
+        return '<div class="' + className + '" role="presentation" ><button type="button" role="tab" id="banner-swiper' + (index + 1) + '" aria-controls="product-visual-' + (index + 1) + '" aria-lable="'+ (index + 1) +' of '+ KeyVisualCnt + '">' + (index + 1) + '</button></div>';   
+      }
+    },
+  on: {
+    slideChange : function(){
+      $('.product-key-visual .bullet').find('button').attr('aria-selected', false);
+      $('.product-key-visual .bullet.active').find('button').attr('aria-selected', true);
+			
+      var thisEl = $('.product-key-visual .bullet.active').index();
+      $('.product-key-visual .swiper-wrapper .swiper-slide').attr('tabindex', '-1')
+      $('.product-key-visual .swiper-wrapper .swiper-slide').eq(thisEl).attr('tabindex', '0');
+			
+			//[D] 슬라이드 작동 시 aria-hidden 값 세팅
+			$(".swiper-slide", $(this.el)).attr("aria-hidden","true");
+			$(".swiper-slide", $(this.el)).eq(this.realIndex).attr("aria-hidden","false");
+    },
+		init : function() {
+			//[D] 슬라이드 최초 렌더 시 aria-hidden 값 세팅
+			$(".swiper-slide", $(this.el)).attr("aria-hidden","true");
+			$(".swiper-slide.swiper-slide-active", $(this.el)).eq(this.realIndex).attr("aria-hidden","false");
+		}  
+  }  
 });
+$('.product-key-visual .bullet:first-child').find('button').attr('aria-selected', true);
+$('.product-key-visual .bullet:first-child').siblings().find('button').attr('aria-selected', false);
 
 //twd2020 2020-07-07 구매조건비교하기 swiper
 var swiperPlanSlider = new Swiper('.plan-slide-wrap .swiper-container', {
@@ -1979,19 +1999,19 @@ $('.btn-score1, .btn-score2, .btn-score3, .btn-score4, .btn-score5').on('click',
 });
 
 
-//구매프로세스 > T기프트 배송정보 > 택배 : 수정시 편집영역 노출
+//구매프로세스 > T 기프트 배송정보 > 택배 : 수정시 편집영역 노출
 $('#_tgiftPrclEdt').on('click', function () {
 	$(this).closest('.delivery-info').hide();
 	$(this).closest('.delivery-info').next('.delivery-edit').show();
 });
 
-//구매프로세스 > T기프트 배송정보 > 찾아가는 개통 : 수정시 편집영역 노출
+//구매프로세스 > T 기프트 배송정보 > 찾아가는 개통 : 수정시 편집영역 노출
 $('#_tgiftCmgEdt').on('click', function () {
 	$(this).closest('.delivery-info').hide();
 	$(this).closest('.delivery-info').next('.delivery-edit').show();
 });
 
-//구매프로세스 > T기프트 배송정보 > 타이틀 뱃지 변경
+//구매프로세스 > T 기프트 배송정보 > 타이틀 뱃지 변경
 $('#_tgiftComing1').closest('.c-ick').on('click', function () {
 	$(this).closest('.tgift-panel-coming').find('.h-type .badge').replaceWith('<em class="badge">택배</em>');
 	$('.tgift-detail').show();
@@ -2506,10 +2526,12 @@ UI.sellerFront = function () {
 		var $btnToggleText = $(this).find('.g-invisible');
 		if ($layerBody.hasClass('on')) {
 			$layerBody.removeClass('on');
-			$btnToggleText.text('상세보기 열기');
+      $layerBody.children('.btn-toggle').attr('aria-expanded', false);
+			$btnToggleText.text('적용 가입조건 상세보기 열기');
 		} else {
 			$layerBody.addClass('on');
-			$btnToggleText.text('상세보기 닫기');
+      $layerBody.children('.btn-toggle').attr('aria-expanded', true);
+			$btnToggleText.text('적용 가입조건 상세보기 닫기');
 		}
 	});
 };
@@ -2575,17 +2597,23 @@ $("input[type='text'], textarea" , ".popup-body .c-input").on("focus", function 
 	/* 클릭시 해당영역으로 이동 22.02.11 */
 	$('.anchor-menu .anchor-btn1').click(function(){
 		var ancSpec = $('#anchor-spec').position(); 
-		$('html, body').animate({scrollTop : ancSpec.top - 40}, 600);				
+		$('html, body').animate({scrollTop : ancSpec.top - 40}, 600);			
+    $('.anchor-menu li a').attr('aria-selected', false);	
+    $(this).find('a').attr('aria-selected', true);	
 	});
 
 	$('.anchor-menu .anchor-btn2').click(function(){
 		var ancPoint = $('#anchor-point').position(); 
 		$('html, body').animate({scrollTop : ancPoint.top - 40}, 600);
+    $('.anchor-menu li a').attr('aria-selected', false);	
+    $(this).find('a').attr('aria-selected', true);
 	});
 
 	$('.anchor-menu .anchor-btn3').click(function(){
 		var ancReview = $('#anchor-review').position(); 
 		$('html, body').animate({scrollTop : ancReview.top - 39}, 600);
+    $('.anchor-menu li a').attr('aria-selected', false);	
+    $(this).find('a').attr('aria-selected', true);
 	});
 
 

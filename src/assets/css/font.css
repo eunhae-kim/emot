@@ -1,41 +1,58 @@
 /* bold */
 @font-face {
-  font-family: "Spoqa Han Sans";
+  font-family: 'Spoqa Han Sans';
   font-weight: 700;
-  src: local("Spoqa Han Sans Bold"),
-    url("../fonts/SpoqaHanSansNeo-Bold.woff2") format("woff2"),
-    url("../fonts/SpoqaHanSansNeo-Bold.woff") format("woff"),
-    url("../fonts/SpoqaHanSansNeo-Bold.ttf") format("truetype");
+  src: local("Spoqa Han Sans Bold"), 
+  url("../fonts/SpoqaHanSansNeo-Bold.woff2") format("woff2"), 
+  url("../fonts/SpoqaHanSansNeo-Bold.woff") format("woff"), 
+  url("../fonts/SpoqaHanSansNeo-Bold.ttf") format("truetype");
 }
 
 /* medium */
 @font-face {
-  font-family: "Spoqa Han Sans";
+  font-family: 'Spoqa Han Sans';
   font-weight: 500;
-  src: local("Spoqa Han Sans Medium"),
-    url("../fonts/SpoqaHanSansNeo-Medium.woff2") format("woff2"),
-    url("../fonts/SpoqaHanSansNeo-Medium.woff") format("woff"),
-    url("../fonts/SpoqaHanSansNeo-Medium.ttf") format("truetype");
+  src: local("Spoqa Han Sans Medium"), 
+  url("../fonts/SpoqaHanSansNeo-Medium.woff2") format("woff2"), 
+  url("../fonts/SpoqaHanSansNeo-Medium.woff") format("woff"), 
+  url("../fonts/SpoqaHanSansNeo-Medium.ttf") format("truetype");
 }
 
 /* normal */
 @font-face {
-  font-family: "Spoqa Han Sans";
+  font-family: 'Spoqa Han Sans';
   font-weight: 400;
-  src: local("Spoqa Han Sans Regular"),
-    url("../fonts/SpoqaHanSansNeo-Regular.woff2") format("woff2"),
-    url("../fonts/SpoqaHanSansNeo-Regular.woff") format("woff"),
-    url("../fonts/SpoqaHanSansNeo-Regular.ttf") format("truetype");
+  src: local("Spoqa Han Sans Regular"), 
+  url("../fonts/SpoqaHanSansNeo-Regular.woff2") format("woff2"), 
+  url("../fonts/SpoqaHanSansNeo-Regular.woff") format("woff"), 
+  url("../fonts/SpoqaHanSansNeo-Regular.ttf") format("truetype");
 }
 
 /* right */
 @font-face {
-  font-family: "Spoqa Han Sans";
+  font-family: 'Spoqa Han Sans';
   font-weight: 300;
-  src: local("Spoqa Han Sans Light"),
-    url("../fonts/SpoqaHanSansNeo-Light.woff2") format("woff2"),
-    url("../fonts/SpoqaHanSansNeo-Light.woff") format("woff"),
-    url("../fonts/SpoqaHanSansNeo-Light.ttf") format("truetype");
+  src: local("Spoqa Han Sans Light"), 
+  url("../fonts/SpoqaHanSansNeo-Light.woff2") format("woff2"), 
+  url("../fonts/SpoqaHanSansNeo-Light.woff") format("woff"), 
+  url("../fonts/SpoqaHanSansNeo-Light.ttf") format("truetype");
+}
+
+/* right */
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  font-weight: 300;
+  src: local("Apple SD Gothic Neo"), 
+  url("../fonts/applesdgothicneo.woff") format("woff");
+}
+
+/* right */
+@font-face {
+  font-family: 'NotoSansCJKkr';
+  font-weight: 300;
+  src: local("NotoSansCJKkr"), 
+  url("../fonts/NotoSansKR-Medium.woff2") format("woff2"), 
+  url("../fonts/NotoSansKR-Medium.woff") format("woff");
 }
 
 /*  Apple SD Gothic Neo / sf-ui-display 폰트 표준화로 추가 */
@@ -45,7 +62,7 @@
   font-family: "Apple SD Gothic Neo";
   font-weight: 300;
   src: local("AppleSDGothicNeoL"),
-    url("../fonts/AppleSDGothicNeoL.woff2") format("woff2"),
+    url("../fonts/AppleSDGothicNeoL.woff2") format("woff2"), 
     url("../fonts/AppleSDGothicNeoL.woff") format("woff"),
     url("../fonts/AppleSDGothicNeoL.ttf") format("truetype");
 }
@@ -55,7 +72,7 @@
   font-family: "Apple SD Gothic Neo";
   font-weight: 400;
   src: local("AppleSDGothicNeoM"),
-    url("../fonts/AppleSDGothicNeoM.woff2") format("woff2"),
+    url("../fonts/AppleSDGothicNeoM.woff2") format("woff2"), 
     url("../fonts/AppleSDGothicNeoM.woff") format("woff"),
     url("../fonts/AppleSDGothicNeoM.ttf") format("truetype");
 }
@@ -65,7 +82,7 @@
   font-family: "Apple SD Gothic Neo";
   font-weight: 500;
   src: local("AppleSDGothicNeoB"),
-    url("../fonts/AppleSDGothicNeoB.woff2") format("woff2"),
+    url("../fonts/AppleSDGothicNeoB.woff2") format("woff2"), 
     url("../fonts/AppleSDGothicNeoB.woff") format("woff"),
     url("../fonts/AppleSDGothicNeoB.ttf") format("truetype");
 }
@@ -75,7 +92,7 @@
   font-family: "Apple SD Gothic Neo";
   font-weight: 600;
   src: local("AppleSDGothicNeoEB"),
-    url("../fonts/AppleSDGothicNeoEB.woff2") format("woff2"),
+    url("../fonts/AppleSDGothicNeoEB.woff2") format("woff2"), 
     url("../fonts/AppleSDGothicNeoEB.woff") format("woff"),
     url("../fonts/AppleSDGothicNeoEB.ttf") format("truetype");
 }
@@ -85,7 +102,7 @@
   font-family: "Apple SD Gothic Neo";
   font-weight: 700;
   src: local("AppleSDGothicNeoH"),
-    url("../fonts/AppleSDGothicNeoH.woff2") format("woff2"),
+    url("../fonts/AppleSDGothicNeoH.woff2") format("woff2"), 
     url("../fonts/AppleSDGothicNeoH.woff") format("woff"),
     url("../fonts/AppleSDGothicNeoH.ttf") format("truetype");
 }
