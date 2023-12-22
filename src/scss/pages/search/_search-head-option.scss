@@ -1,0 +1,118 @@
+//자동변환 검색 결과 notice
+.search-replace-noti {
+  padding: 11px 20px;
+  margin: 30px 0 0;
+  background-color: #f0f0f5;
+  .ic-warn {
+    font-size: 14px;
+    color: #666666;
+    vertical-align: middle;
+  }
+  p {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -0.52px;
+    vertical-align: middle;
+    .search-keyword {
+      font-weight: 700;
+      color: var(--primary);
+    }
+  }
+}
+
+// 검색결과, 결과 내 재검색
+.search-head-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 20px 17px;
+  border-bottom: 1.5px solid #efefef;
+  .result-amount {
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    font-weight: 500;
+    em {
+      font-weight: 700;
+      letter-spacing: 0;
+      color: var(--primary);
+    }
+  }
+  .check-box label {
+    display: inline-block;
+  }
+  &.option-type-one {
+    justify-content: flex-end;
+  }
+}
+
+// 연관 검색어 keyword
+.search-head-keyword {
+  display: flex;
+  align-items: center;
+  padding: 8px 0 8px 20px;
+  border-bottom: 7px solid #f0f0f5;
+  .related-word {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.56px;
+  }
+  .keyword-group-wrap {
+    margin-left: 9px;
+    overflow-x: auto;
+    @include scrollbar-none;
+    .keyword-group {
+      white-space: nowrap;
+      li {
+        display: inline-block;
+        a {
+          display: inline-block;
+          padding: 10px 9px;
+          font-size: 13px;
+          letter-spacing: -0.52px;
+          color: #808080;
+        }
+      }
+    }
+  }
+}
+
+//검색 카테고리 tab
+.search-head-category {
+  padding-left: 6.5px;
+  border-bottom: 1px solid #efefef;
+  overflow-x: auto;
+  @include scrollbar-none;
+  .category-group {
+    white-space: nowrap;
+    li {
+      display: inline-block;
+      &.active button {
+        font-weight: 700;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 13.5px;
+          bottom: 0;
+          width: calc(100% - 27px);
+          height: 2px;
+          background-color: #000;
+        }
+      }
+      button {
+        position: relative;
+        padding: 18px 13.5px;
+        font-size: 14px;
+        letter-spacing: -0.56px;
+        .amount {
+          letter-spacing: 0;
+          color: #808080;
+        }
+      }
+    }
+  }
+  & + .middle-full-banner {
+    border-top: 7px solid var(--grey50);
+  }
+}

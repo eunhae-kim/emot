@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container charge-main">
+      
+      <header class="tworld-sub-header">
+        <div class="sub-header-inner">
+          <a href="/" class="menu-item-prev">
+            <i class="svg-prev"></i>
+            <span class="hidden">이전 페이지</span>
+          </a>
+          <strong class="sub-header-tit">요금제</strong>
+          <span class="menu-box">            
+            <a href="" class="menu-item-search">
+              <i class="svg-search"></i>
+              <span class="hidden">검색</span>
+            </a>            
+          </span>
+        </div>
+      </header>
+
+      <article class="common-content-visual">
+        <div class="swiper swiperVisual">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="/public/images/banner/main-banner.png" alt="430" width="100%" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="/public/images/banner/main-banner.png" alt="430" width="100%" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="/public/images/banner/main-banner.png" alt="430" width="100%" />
+                </picture>
+              </a>
+            </li>
+          </ul>
+
+          <!-- 배너 1개일 경우 controller 숨김 -->
+          <div class="visual-swiper-controller" id="swVisualController">
+            <!-- 재생/정지 -->
+            <div class="btn-controller">
+              <button type="button" class="swiper-button-play" id="swPlay">
+                <i class="ic-play" class="icon-play"></i>
+                <span class="hidden">재생</span>
+              </button>
+              <button type="button" class="swiper-button-pause" id="swStop">
+                <i class="ic-btn-stop2" class="icon-stop"></i>
+                <span class="hidden">정지</span>
+              </button>
+            </div>
+            
+            <div class="swiper-pagination visual-pagination"></div>
+          </div>
+          <!-- .controller -->
+        </div>
+      </article>
+
+      <article class="common-content-rate">
+
+         <!-- 미 로그인-->
+         <div class="attend-detail">
+          <i class="icon-won-heart"></i>
+          <div class="attend-text">
+            <div class="remark">
+              아직 요금제 가입하지 않으셨다면 
+              <strong>내게 맞는 요금제</strong>를 찾아보세요
+            </div>
+            <a href="/" class="btn-go">
+              <span class="text">내게 맞는 요금제 찾아보기</span>
+              <i class="bl-arr"></i>
+            </a>
+          </div>
+        </div>
+        <!--// 미 로그인-->
+
+        <!--로그인 후-->
+        <div class="attend-detail">
+          <i class="icon-mike"></i>
+          <div class="attend-text">
+            <div class="remark">
+              현재 <strong>T플랜 스페셜 / 79,000원</strong>
+              요금제를 이용하고계세요.
+            </div>
+            <a href="/" class="btn-go">
+              <span class="text">나의 요금제/부가상품 보러가기</span>
+              <i class="bl-arr"></i>
+            </a>
+          </div>
+        </div>
+        <!--//로그인 후-->       
+
+        <div class="benefit-content">
+          <p class="comment">아직 신청하지 않은 혜택이 있어요!</p>
+          <ul class="benefit-list">
+            <li class="item">
+              <i class="icon-wavve"></i>
+              <div class="text-prod">
+                <div class="title">wavve 앤 데이터 70%할인</div>
+              </div>
+              <a href="/" class="btn-apply">신청</a>            
+            </li>
+            <li class="item">
+              <i class="icon-flo"></i>
+              <div class="text-prod">
+                <div class="title">wavve 앤 데이터 70%할인</div>
+              </div>
+              <a href="/" class="btn-apply">신청</a>            
+            </li>
+            <li class="item">
+              <i class="icon-space"></i>
+              <div class="text-prod">
+                <div class="title">
+                  <span class="text-arr">우주패스 all 5천원 할인</span>
+                  <i class="bl-arr"></i>
+                </div>
+                <span class="desc">(FLO 또는 wavve 선택 시)</span>
+              </div>
+            </li>          
+          </ul>
+        </div>
+      </article>
+
+      <article class="common-content-rate">
+        <button type="button" class="bar-btn type-b">
+          <i class="icon-won-heart-bg"></i>
+          <span class="rate-desc">
+            <span class="remark">내게 딱 맞는 요금제를 찾아드려요!</span> 
+            <span class="txt">원하는 요금제 찾기</span> 
+          </span>
+          <span class="bi-box">
+            <i class="bl-arr"></i>
+            <span class="hidden">이동</span>
+          </span>
+        </button>
+      </article>
+
+      <article class="common-content-rate">
+        <h2 class="title">평소보다 데이터 사용이 많으시네요 </h2>
+        <div class="data-consume">
+          <div class="sub-title">가입하신 요금제의 기본 제공 데이터보다<br /> <em>10GB</em> 많이 사용할 것으로 예상됩니다</div>
+          <div style="width:100%;height:12.8rem;border:1px solid #000">그래프 영역</div>
+          <div class="fee-item">
+            <dl>
+              <dt><span class="flag">추천</span>T플랜 스페셜</dt>
+              <dd>월 126,143원</dd>
+            </dl>
+          </div>
+          <div class="btn-area-full">
+            <button type="button" class="btns-round">내 요금제와 비교하기</button>
+          </div>
+        </div>
+      </article>
+      
+      <article class="common-content-rate">
+        <button type="button" class="bar-btn type-s">
+          <span class="icon-box">
+            <i class="icon-won-rect"></i>
+          </span>
+          <span class="rate-desc">
+            <span class="txt">전체 요금제 둘러보기</span> 
+          </span>
+          <span class="bi-box">
+            <i class="bl-arr"></i>
+            <span class="hidden">이동</span>
+          </span>
+        </button>
+      </article>
+      
+      <article class="common-content-rate">
+        <h2>꼭 필요한 혜택을 찾아보세요</h2>
+        <div class="swiper-per">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-pass.png">
+                </i>
+                <span class="cl-benefit">우주패스 all 할인 받기</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-together.png">
+                </i>
+                <span class="cl-benefit">데이터 함께쓰기 할인 받기</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-tv.png">
+                </i>
+                <span class="cl-benefit">TV와 VOD 무제한</span>
+              </a>
+            </li>            
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-infinite.png">
+                </i>
+                <span class="cl-benefit">데이터 무제한 요금제</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-watch.png">
+                </i>
+                <span class="cl-benefit">스마트 워치 요금제</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-benefit.png">
+                </i>
+                <span class="cl-benefit">결합하고 할인 혜택 받기</span>
+              </a>
+            </li>           
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-protect.png">
+                </i>
+                <span class="cl-benefit">휴대폰 정보 지킴 서비스</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-phone.png">
+                </i>
+                <span class="cl-benefit">통화 시간이 부족할 때</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-talk.png">
+                </i>
+                <span class="cl-benefit">상대방 통화가능 안내 서비스</span>
+              </a>
+            </li>
+
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-offer.png">
+                </i>
+                <span class="cl-benefit">주말 데이터 제공</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-book.png">
+                </i>
+                <span class="cl-benefit">무제한 도서 구독 앱</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-excess.png">
+                </i>
+                <span class="cl-benefit">데이터 초과 사용 걱정 없이</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-speed.png">
+                </i>
+                <span class="cl-benefit">데이터 속도가 답답할 때</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-divide.png">
+                </i>
+                <span class="cl-benefit">가족끼리 데이터 나눠쓰기</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-heart.png">
+                </i>
+                <span class="cl-benefit">T건강 습관 앱</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-lock.png">
+                </i>
+                <span class="cl-benefit">휴대폰 정보 보호</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-bell.png">
+                </i>
+                <span class="cl-benefit">동영상 컬러링 부가 서비스</span>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <i class="icon-usual">
+                  <img src="/public/images/icon/ic-vip.png">
+                </i>
+                <span class="cl-benefit">T멤버십 VIP 혜택 받기</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-area-full">
+          <button type="button" class="btns-round">전체 요금제 보러가기</button>
+        </div>
+      </article>
+
+      <article class="common-content-rate">
+        <ul class="charge-row-list">
+          <li class="charge-item">
+            <div class="title-agree">
+              <div class="tit-name">
+                <span class="flag">5G</span>
+                <h2>5GX플래티넘</h2>
+              </div>
+              <div class="exp-fee">
+                <div class="fee">125,000원</div>
+                <div class="apply">선택약정 반영 시 <em>93,705원</em></div>
+              </div>
+            </div>
+            <div class="compose-agree">
+              <ul class="item-list">
+                <li>
+                  <i class="ic-etc-wifi"></i>무제한
+                </li>
+                <li>
+                  <i class="ic-etc-tel"></i>집  이동전화 무제한
+                </li>
+                <li>
+                  <i class="ic-etc-msg"></i>기본제공
+                </li>
+              </ul>
+            </div>
+            <ul class="benefit-list">
+              <li class="item">
+                <i class="icon-wavve"></i>
+                <div class="text-prod">
+                  <div class="title">T멤버십 VIP 등급</div>
+                </div>                      
+              </li>
+              <li class="item">
+                <i class="icon-flo"></i>
+                <div class="text-prod">
+                  <div class="title">
+                    Wavve 앤 데이터 무료
+                    <span class="deduct">(<em class="fee">15,900원</em>-><em class="free">0원</em>)</span>
+                  </div>
+                </div>                 
+              </li>
+              <li class="item">
+                <i class="icon-flo"></i>
+                <div class="text-prod">
+                  <div class="title">
+                    FLO앤 데이터 무료
+                    <span class="deduct">(<em class="fee">9,000원</em>-><em class="free">0원</em>)</span>
+                  </div>
+                </div>                 
+              </li>
+              <li class="item">
+                <i class="icon-space"></i>
+                <div class="text-prod">
+                  <div class="title">
+                    <span class="text-arr">우주패스 all 7,000 할인</span>
+                    <i class="bl-arr"></i>
+                  </div>
+                  <span class="desc">(추가 혜택으로 Wavve 또는 FLO를 가입한 경우에 한함)</span>
+                </div>
+              </li>          
+            </ul>
+            <div class="btn-area-full">
+              <button type="button" class="btns-round">내 요금제와 비교하기</button>
+            </div>
+          </li>  
+          <li class="charge-item">
+            <div class="title-agree">
+              <div class="tit-name">
+                <span class="flag">5G</span>
+                <h2>5GX플래티넘</h2>
+              </div>
+              <div class="exp-fee">
+                <div class="fee">125,000원</div>
+                <div class="apply">선택약정 반영 시 <em>93,705원</em></div>
+              </div>
+            </div>
+            <div class="compose-agree">
+              <ul class="item-list">
+                <li>
+                  <i class="ic-etc-wifi"></i>무제한
+                </li>
+                <li>
+                  <i class="ic-etc-tel"></i>집  이동전화 무제한
+                </li>
+                <li>
+                  <i class="ic-etc-msg"></i>기본제공
+                </li>
+              </ul>
+            </div>
+            <ul class="benefit-list">
+              <li class="item">
+                <i class="icon-wavve"></i>
+                <div class="text-prod">
+                  <div class="title">T멤버십 VIP 등급</div>
+                </div>                      
+              </li>
+              <li class="item">
+                <i class="icon-flo"></i>
+                <div class="text-prod">
+                  <div class="title">
+                    Wavve 앤 데이터 무료
+                    <span class="deduct">(<em class="fee">15,900원</em>-><em class="free">0원</em>)</span>
+                  </div>
+                </div>                 
+              </li>
+              <li class="item">
+                <i class="icon-flo"></i>
+                <div class="text-prod">
+                  <div class="title">
+                    FLO앤 데이터 무료
+                    <span class="deduct">(<em class="fee">9,000원</em>-><em class="free">0원</em>)</span>
+                  </div>
+                </div>                 
+              </li>
+              <li class="item">
+                <i class="icon-space"></i>
+                <div class="text-prod">
+                  <div class="title">
+                    <span class="text-arr">우주패스 all 7,000 할인</span>
+                    <i class="bl-arr"></i>
+                  </div>
+                  <span class="desc">(추가 혜택으로 Wavve 또는 FLO를 가입한 경우에 한함)</span>
+                </div>
+              </li>          
+            </ul>
+            <div class="btn-area-full">
+              <button type="button" class="btns-round">내 요금제와 비교하기</button>
+            </div>
+          </li>
+
+        </ul>
+      </article>
+
+      <article class="common-content-theme">
+        <h2>다양한 테마상품을 골라보세요</h2>
+        <ul class="thumbnail-inside-text">
+          <li>
+            <a href="/">
+              <picture>
+                <img src="">
+              </picture>
+              <span class="thumb-title">
+                가족 모두 풍족하게<br />T가족모아데이터
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <picture>
+                <img src="">
+              </picture>
+              <span class="thumb-title">
+                언제나 음악과<br />함께 한다면
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <picture>
+                <img src="">
+              </picture>
+              <span class="thumb-title">
+                가입 즉시<br />당신은 VIP
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <picture>
+                <img src="">
+              </picture>
+              <span class="thumb-title">
+                우리 아이를 위한<br />주니어 요금제
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="btn-area-full">
+          <button type="button" class="btns-round">전체 테마 보러가기</button>
+        </div>
+      </article>
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<%- include('./include/js') %>
+</html>

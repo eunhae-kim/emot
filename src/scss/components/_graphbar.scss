@@ -1,0 +1,127 @@
+//graphbar
+:root {
+  --graphData: 50%;
+  --graphCall: 50%;
+  --graphMessage: 50%;
+  --graphShare: 20%;
+  --graphSpeed: 0.8s;
+}
+
+.graphbar_group {
+  position: relative;
+  padding: 24px 20px 0 20px;
+
+  .bar-amount {
+    font-size: 11px;
+    color: #a1a1a1;
+    position: absolute;
+    right: 20px;
+    top: 9px;
+  }
+}
+.graphbar_group .graphbar_box {
+  position: relative;
+}
+.graphbar_group .graphbar_box input {
+  border: none;
+  color: #9e9e9e;
+  text-align: right;
+  width: 100%;
+  margin-bottom: 4px;
+}
+.graphbar_group .graphbar_box .graphbar {
+  width: 100%;
+  height: 6px;
+  display: block;
+  background-color: #eaeaea;
+}
+.graphbar_group .graphbar_box .graphbar.graphbar-s {
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+}
+.graphbar_group .graphbar_box .graphbar span {
+  display: block;
+  height: 100%;
+  // animation: graphbar var(--graphSpeed) ease forwards;
+  transform-origin: 0 0;
+}
+
+/* bar color
+  data : _group-data
+  call : _group-call
+  message : _group-message
+*/
+.graphbar_group.graphbar_group-data .graphbar_box .graphbar span {
+  background-color: rgb(82, 60, 230);
+  animation: graphbar-d var(--graphSpeed) ease forwards;
+}
+.graphbar_group.graphbar_group-call .graphbar_box .graphbar span {
+  background-color: rgb(32, 169, 96);
+  animation: graphbar-s var(--graphSpeed) ease forwards;
+}
+.graphbar_group.graphbar_group-message .graphbar_box .graphbar span {
+  background-color: rgb(255, 147, 6);
+}
+
+/* gradient bar */
+.graphbar_group.graphbar_group-data .graphbar_box .graphbar-s span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgb(73, 170, 235),
+    rgb(73, 170, 235) 2px,
+    rgb(73, 170, 235) 0px,
+    rgb(201, 230, 249) 4px
+  );
+  background-repeat: repeat-x;
+  background-size: 400% 100%;
+  //animation: gradient 10s infinite linear, graphbar-b 2s ease forwards;
+  transform: scale(0, 1);
+  transform-origin: 0 0;
+  animation-delay: var(--graphSpeed);
+}
+
+@keyframes graphbar-d {
+  0% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes graphbar-s {
+  0% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes graphbar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--graphMessage);
+  }
+}
+@keyframes graphbar-b {
+  0% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -33% 50%;
+  }
+}

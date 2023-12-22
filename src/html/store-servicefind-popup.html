@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container sub-store">
+
+      <!-- 매장찾기 - 검색 서비스찾기 팝업 -->
+      <div class="overlay active"> <!-- active --> 
+        <div class="layer-type-bottom store-filter-popup">
+          <div class="title-fixed">
+            <h2 class="sub-title">서비스 찾기</h2> 
+            <button type="button" class="btn-reset">
+              <span>
+                <i class="ic-reset"></i>
+                초기화
+              </span>
+            </button>
+          </div>
+          <div class="content-inner">
+            <ul class="filter-box-wrap">
+              <li class="filter-section">
+                <strong class="filter-tit">제공 서비스</strong>
+                <ul class="filter-list">
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="service1">
+                      <label for="service1">휴대폰</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="service2">
+                      <label for="service2">인터넷/TV</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="service3">
+                      <label for="service3">ADT캡스</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="service4">
+                      <label for="service4">SK매직</label>
+                    </span>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter-section">
+                <strong class="filter-tit">체험존</strong>
+                <ul class="filter-list">
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="experience1">
+                      <label for="experience1">5GX 체험존</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="experience2">
+                      <label for="experience2">VR 체험존</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="experience3">
+                      <label for="experience3">단말 체험존</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="experience4">
+                      <label for="experience4">T우주</label>
+                    </span>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter-section">
+                <strong class="filter-tit">처리 가능 업무</strong>
+                <ul class="filter-list">
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="work1">
+                      <label for="work1">휴대폰</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="work2">
+                      <label for="work2">행복 A/S</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="work3">
+                      <label for="work3">민팃(키오스크 단말)</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="work4">
+                      <label for="work4">임대폰</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="work5">
+                      <label for="work5">통화내역 조회</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="work6">
+                      <label for="work6">명의도용접수</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="work7">
+                      <label for="work7">바로 픽업</label>
+                    </span>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter-section">
+                <strong class="filter-tit">고객 편의</strong>
+                <ul class="filter-list">
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="convenience1">
+                      <label for="convenience1">휴대폰</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="convenience2">
+                      <label for="convenience2">인터넷/TV</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="convenience3">
+                      <label for="convenience3">ADT캡스</label>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="checkbox-btn">
+                      <input type="checkbox" id="convenience4">
+                      <label for="convenience4">SK매직</label>
+                    </span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-full-wrap">
+            <button type="button" class="btns-square-rd blue">서비스 선택 완료</button>
+          </div>
+        </div>
+      </div>
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/$var.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../public/js/widgets.js"></script>
+<script src="../../../public/js/auth.js"></script>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/ScrollMagic.min.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

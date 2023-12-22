@@ -1,0 +1,16 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React, { useContext, useState } from 'react';
+
+import { Layout } from '../../components/Layout/Layout';
+import EnMy from '../../container/my/EnMy';
+import BottomNav from '../../container/BottomNav';
+import { isApp } from '../../js/commonUtil';
+
+export default function BottomSheet() {
+  return (
+    <Layout addClass={isApp() ? '' : 'myweb'}>
+      <html lang="en" />
+      <EnMy />
+    </Layout>
+  );
+}

@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container search">
+      <article class="common-content-srchform">
+        <div class="search-form-wrap">
+          <button type="button" class="tbar-btn-prev">
+            <i class="ic-tbar-prev"></i>
+            <span class="hidden">이전 페이지 이동</span>
+          </button>
+
+          <!-- 공통으로 쓸 component -->
+          <div class="search-form">
+            <h1 class="hidden">검색 영역</h1>
+            <form>
+              <fieldset>
+                <legend class="hidden">검색 입력창 영역</legend>
+                <div class="search-input-area">
+                  <input type="search" class="search-input" value="추천 검색어1" title="전체검색">
+                  <button type="button" class="btn-txt-delete">
+                    <i class="ic-input-delet"></i>
+                    <span class="hidden">입력 내용 삭제</span>
+                  </button>
+                </div>
+                <button type="submit" class="btn-search-submit">
+                  <i class="ic-tbar-srch2"></i>
+                  <span class="hidden">검색</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- //공통으로 쓸 component -->
+        </div>
+      </article>
+      
+      <div class="search-result-area">
+        <!-- search-replace-noti -->
+        <div class="search-replace-noti">
+          <i class="ic-warn"></i>
+          <p>자동변환된 <em class="search-keyword">‘구포’</em>에 검색결과입니다.</p>
+        </div>
+  
+        <!-- search-head-option -->
+        <div class="search-head-option">
+          <span class="result-amount">검색결과 총 <em>902</em>건</span>
+          <span class="check-box">
+            <input type="checkbox" id="reset-search" title="결과 내 재검색">
+            <span class="check-ico">
+              <i class="bl-check"></i>
+            </span>
+            <label for="reset-search">결과 내 재검색</label>
+          </span>
+        </div>
+
+        <!-- search-head-keyword -->
+        <div class="search-head-keyword">
+          <span class="related-word">연관</span>
+          <div class="keyword-group-wrap">
+            <ul class="keyword-group">
+              <li><a href="/">휴대폰</a></li>
+              <li><a href="/">휴대폰결제 이용동의</a></li>
+              <li><a href="/">소액결제</a></li>
+              <li><a href="/">와이파이 도시락</a></li>
+              <li><a href="/">휴대폰</a></li>
+              <li><a href="/">휴대폰</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- search-head-category -->
+        <div class="search-head-category">
+          <ul class="category-group">
+            <li class="active"><button type="button">전체</button></li> <!--활성화 카테고리 클래스 active-->
+            <li><button type="button">요금제 <em class="amount">328</em></button></li>
+            <li><button type="button">부가서비스 <em class="amount">56</em></button></li>
+            <li><button type="button">바로가기 <em class="amount">19</em></button></li>
+            <li><button type="button">요금제 <em class="amount">328</em></button></li>
+            <li><button type="button">부가서비스 <em class="amount">56</em></button></li>
+          </ul>
+        </div>
+
+        <!-- search : middle-full-banner -->
+        <div class="middle-full-banner">
+          <a href="/">
+            <img loading="lazy" src="/public/images/banner/search-ban.jpg" alt="일상의 디지털메이트 에이닷과 함께 음악을 즐겨봐!" width="100%;" />
+          </a>
+        </div>
+
+        <!-- search zero click result : case 1_Knowledge Panel -->
+        <div class="common-content-box zero-click-module">
+          <div class="search-list-head">
+            <h2 class="head-tit"><em class="search-keyword">'약정할인'</em> 관련 정보입니다.</h2>
+          </div>
+          <ul class="list-group-desc">
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title"><span>선택</span><em class="search-keyword">약정할인</em></h3>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li> 
+            <li class="list-item thumb-img">
+              <a href="/">
+                <div class="text-wrap">
+                  <div class="list-item-head">
+                    <h3 class="title"><span>요금</span><em class="search-keyword">약정할인</em><span>제도</span></h3>
+                  </div>
+                  <p class="desc">
+                    요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아
+                    카타파하 요금제 설명 텍스트 2 - 가나다
+                  </p>
+                </div>
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="요금약정할인제도"
+                    width="63" height="63">
+                </picture>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title"><span>선택</span><em class="search-keyword">약정할인</em></h3>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li>  
+          </ul>
+        </div>
+
+        <!-- search zero click result : case 2_List Snippet -->
+        <div class="common-content-box zero-click-module">
+          <div class="search-list-head">
+            <h2 class="head-tit">휴대폰 <em class="search-keyword">'번호변경'</em> 방법입니다.</h2>
+          </div>
+          <div class="list-snippet">
+            <a href="/">
+              <ol> <!-- 그냥 p태그로 할지 고민 -->
+                <li>PC Web > T월드(www.tworld.co.kr) 접속</li>
+                <li>My T > 변경 > 번호변경 > 휴대폰 번호변경 메뉴 선택</li>
+                <li>변경할 번호 입력 후 저장</li>
+              </ol>
+            </a>
+          </div>
+        </div>
+
+        <!-- search zero click result : case 3_Paragraph Snippet -->
+        <div class="common-content-box zero-click-module">
+          <div class="search-list-head">
+            <h2 class="head-tit">5G 스마트폰으로 데이터를 다른 스마트 기기와 함</h2>
+          </div>
+          <div class="paragraph-snippet">
+            <a href="/">
+              <p class="desc">5G 스마트폰으로 데이터를 다른 스마트 기기와 <em class="search-keyword">함께</em>  쓸 수 
+                있는 요금제 5G <em class="search-keyword">함께</em>쓰기_태블릿 월정액(부가세 포함) 
+                5,000원 선택 약정 반영 시 3,735원 요금제 변경 데이터 
+                <em class="search-keyword">함께</em> 쓰기 5G 스마트폰으로 데이터를 다른 스마트 기기와 
+                <em class="search-keyword">함께</em> 쓸 수 있는 요금제 5G 스마트폰 이용고객이 동일명의의 
+                데이터 전용 디바이스에 결합하여… 
+              </p>
+              <p class="link-depth">
+                T world > 요금제 > 5G함께쓰기_태블릿
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- search 통계기반 추천모듈 : case 1_단말기 추천 모듈 -->
+        <div class="statistic-content-box">
+          <h2>20대 인기 휴대폰 Best 3</h2>
+          <div class="common-swiper-slide swiper-thumb">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="pie-chart-row cmn-pie-chart">
+                  <div class="pie-chart-wrap">
+                    <!-- 파이 차트 들어가는 공간 -->
+                  </div>
+                  <ul class="list-percent-info">
+                    <li>
+                      <span class="info-name eng-word">
+                        <i class="first-prd-ico circle-shape"></i>
+                        iPhone 13 Pro
+                      </span>
+                      <strong class="info-percent">45%</strong>
+                    </li>
+                    <li>
+                      <span class="info-name">
+                        <i class="second-prd-ico circle-shape"></i>
+                        갤럭시 S22
+                      </span>
+                      <strong class="info-percent">30%</strong>
+                    </li>
+                    <li>
+                      <span class="info-name">
+                        <i class="third-prd-ico circle-shape"></i>
+                        홍미노트
+                      </span>
+                      <strong class="info-percent">9%</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div> 
+              <div class="swiper-slide">
+                <div class="list-thumb-col">
+                  <div class="item-large-rank">
+                    <a href="/">
+                      <div class="thumb-box">
+                        <picture class="thumbnail-rounded">
+                          <img loading="lazy" src="/public/images/transparent.png" alt="iPhone 13 Pro" width="128" height="128">
+                        </picture>
+                        <strong class="rank-number">
+                          1
+                          <span class="hidden">20대 인기 휴대폰 Best 3 1위</span>
+                        </strong>
+                      </div>
+                      <div class="content-infobox">
+                        <em class="title eng-word">iPhone 13 Pro</em>
+                        <p class="group-color">
+                          <span class="first-color" style="background-color: #29ac8c;">
+                            <em class="hidden">초록</em>
+                          </span>
+                          <span class="second-color" style="background-color: #e1d1ac;">
+                            <em class="hidden">노랑</em>
+                          </span>
+                          <span class="third-color" style="background-color: #fcfcfc; border:1px solid #e6e6e6;">
+                            <em class="hidden">흰색</em>
+                          </span>
+                          <span class="fourth-color" style="background-color: #646464;">
+                            <em class="hidden">검정</em>
+                          </span>
+                        </p>
+                        <p class="group-memory">
+                          <span>128GB</span>
+                          <span>256GB</span>
+                          <span>512GB</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a href="" class="link-rounded-large">아이폰 13 Pro 알아보기</a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- search 통계기반 추천모듈 : case 3_구독 추천 모듈   -->
+        <div class="statistic-content-box">
+          <div class="chart-col-case">
+            <h2>30대 인기 구독상품  Best 3</h2>
+            <div class="pie-chart-row pie-chart-subscrb">
+              <div class="pie-chart-wrap">
+                <!-- 파이 차트 들어가는 공간 -->
+              </div>
+              <ul class="list-percent-info">
+                <li>
+                  <span class="info-name eng-word">
+                    <i class="first-prd-ico circle-shape"></i>
+                    해피독
+                  </span>
+                  <strong class="info-percent">45%</strong>
+                </li>
+                <li>
+                  <span class="info-name">
+                    <i class="second-prd-ico circle-shape"></i>
+                    오뚜기몰
+                  </span>
+                  <strong class="info-percent">30%</strong>
+                </li>
+                <li>
+                  <span class="info-name">
+                    <i class="third-prd-ico circle-shape"></i>
+                    베스킨라빈스
+                  </span>
+                  <strong class="info-percent">9%</strong>
+                </li>
+              </ul>
+            </div>
+            <div class="list-thumb-col">
+              <div class="item-large-badge">
+                <a href="/">
+                  <picture class="thumbnail-rounded">
+                    <img loading="lazy" src="/public/images/transparent.png" alt="우주패스 all" width="128" height="128">
+                  </picture>
+                  <div class="content-infobox">
+                    <em class="title">우주패스 all</em>
+                    <strong class="price-point"><em>9,900</em>원/월</strong>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- search 통계기반 추천모듈 : case 5_멤버십 추천 모듈   -->
+        <div class="statistic-content-box">
+          <h2>지금 가장 인기있는 혜택 1위</h2>
+          <div class="common-swiper-slide swiper-thumb">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="pie-chart-row">
+                  <div class="pie-chart-wrap">
+                    <!-- 파이 차트 들어가는 공간 -->
+                  </div>
+                  <ul class="list-percent-info">
+                    <li>
+                      <span class="info-name eng-word">
+                        <i class="first-prd-ico circle-shape"></i>
+                        상품명 1
+                      </span>
+                      <strong class="info-percent">45%</strong>
+                    </li>
+                    <li>
+                      <span class="info-name">
+                        <i class="second-prd-ico circle-shape"></i>
+                        상품명 2
+                      </span>
+                      <strong class="info-percent">30%</strong>
+                    </li>
+                    <li>
+                      <span class="info-name">
+                        <i class="third-prd-ico circle-shape"></i>
+                        상품명 3
+                      </span>
+                      <strong class="info-percent">9%</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div> 
+              <div class="swiper-slide"> 
+                <div class="list-thumb-col">
+                  <div class="item-large-desc">
+                    <a href="/">
+                      <picture class="thumbnail-rounded">
+                        <img loading="lazy" src="/public/images/transparent.png" alt="" width="128" height="128">
+                      </picture>
+                      <div class="content-infobox">
+                        <em class="title">상품명(제휴사명)</em>
+                        <p class="desc">(혜택텍스트)가나다라마바사아자차카
+                          타파하가나다라마바가나다라마바가나
+                          다라마바</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a href="" class="link-rounded-large">혜택 알아보기</a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- search : 요금제 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">요금제 <em class="amount">328</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              추천순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case2">T플랜 스페셜</h3>
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case">뉴 T끼리 맞춤형(200분+700mb)</h3>  <!-- 뒤에 (가입중), (가입불가) 등 badge 붙는 title에는 class명 'except-case' 추가 (너비 넘칭 방지) -->
+                  <span class="cmn-badge-blue">가입중</span>
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case2">요금제명</h3>
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 부가서비스 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">부가서비스 <em class="amount">56</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              추천순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <span class="cmn-badge-blue-border">추천</span>
+                  <h3 class="title except-case">부가서비스명 1</h3>
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+                <div class="group-hashtag">
+                  <span class="hashtag">#스마트폰</span>
+                  <span class="hashtag">#청소년</span>
+                </div>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case">부가서비스명 2</h3>  <!-- 뒤에 (가입중), (가입불가) 등 badge 붙는 class명 title에는 class명 'except-case' 추가 (너비 넘칭 방지) -->
+                  <span class="cmn-badge-red">가입불가</span>
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case">부가서비스명 3</h3>
+                  <span class="cmn-badge-blue">이용중</span> <!-- 뒤에 (가입중), (가입불가) 등 badge 붙는 class명 title에는 class명 'except-case' 추가 (너비 넘칭 방지) -->
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 휴대폰 -->
+        <div class="common-content-box floatingAction">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">휴대폰 <em class="amount">30</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              최신순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-thumb-row common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="iPhone 13 Pro"
+                    width="157" height="157">
+                </picture>
+                <div>
+                  <em class="title">iPhone 13 Pro</em>
+                  <p class="etc-name">모상품명1</p> <!-- tds에서 검색했을 때만 노출 -->
+                  <p class="group-color">
+                    <span class="first-color" style="background-color: #29ac8c;">
+                      <em class="hidden">초록</em>
+                    </span>
+                    <span class="second-color" style="background-color: #e1d1ac;">
+                      <em class="hidden">노랑</em>
+                    </span>
+                    <span class="third-color" style="background-color: #fcfcfc; border:1px solid #e6e6e6;">
+                      <em class="hidden">흰색</em>
+                    </span>
+                    <span class="fourth-color" style="background-color: #646464;">
+                      <em class="hidden">검정</em>
+                    </span>
+                  </p>
+                  <p class="group-memory">
+                    <span>128GB</span>
+                    <span>256GB</span>
+                    <span>512GB</span>
+                  </p>
+                  <!-- <p class="desc">요금 50,000원 +
+                    휴대폰 49,000원
+                    (24개월 요금 할인기준)</p>
+                  <strong class="price-point"><em>99,000</em>원/월</strong> -->
+                </div>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="갤럭시 Z플립3"
+                    width="157" height="157">
+                </picture>
+                <div>
+                  <em class="title">갤럭시 Z플립3</em>
+                  <p class="etc-name">모상품명1</p> <!-- tds에서 검색했을 때만 노출 -->
+                  <p class="group-color">
+                    <span class="first-color" style="background-color: #29ac8c;">
+                      <em class="hidden">초록</em>
+                    </span>
+                    <span class="second-color" style="background-color: #e1d1ac;">
+                      <em class="hidden">노랑</em>
+                    </span>
+                    <span class="third-color" style="background-color: #fcfcfc; border:1px solid #e6e6e6;">
+                      <em class="hidden">흰색</em>
+                    </span>
+                    <span class="fourth-color" style="background-color: #646464;">
+                      <em class="hidden">검정</em>
+                    </span>
+                  </p>
+                  <p class="group-memory">
+                    <span>128GB</span>
+                    <span>256GB</span>
+                    <span>512GB</span>
+                  </p>
+                </div>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="iPhone 13 Pro 128GB
+                Green" width="157" height="157">
+                </picture>
+                <div>
+                  <em class="title">iPhone 13 Pro 128GB
+                    Green</em>
+                    <p class="etc-name">SM-A135N</p> <!-- tds에서 검색했을 때만 노출 -->
+                  <p class="group-color">
+                    <span class="first-color" style="background-color: #29ac8c;">
+                      <em class="hidden">초록</em>
+                    </span>
+                    <span class="second-color" style="background-color: #e1d1ac;">
+                      <em class="hidden">노랑</em>
+                    </span>
+                    <span class="third-color" style="background-color: #fcfcfc; border:1px solid #e6e6e6;">
+                      <em class="hidden">흰색</em>
+                    </span>
+                    <span class="fourth-color" style="background-color: #646464;">
+                      <em class="hidden">검정</em>
+                    </span>
+                  </p>
+                  <p class="group-memory">
+                    <span>128GB</span>
+                    <span>256GB</span>
+                    <span>512GB</span>
+                  </p>
+                </div>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="iPhone 13 Pro 128GB Green" width="157" height="157">
+                </picture>
+                <div>
+                  <em class="title">iPhone 13 Pro 128GB Green</em>
+                  <p class="etc-name">SM-A135N</p> <!-- tds에서 검색했을 때만 노출 -->
+                  <p class="group-color">
+                    <span class="first-color" style="background-color: #29ac8c;">
+                      <em class="hidden">초록</em>
+                    </span>
+                    <span class="second-color" style="background-color: #e1d1ac;">
+                      <em class="hidden">노랑</em>
+                    </span>
+                    <span class="third-color" style="background-color: #fcfcfc; border:1px solid #e6e6e6;">
+                      <em class="hidden">흰색</em>
+                    </span>
+                    <span class="fourth-color" style="background-color: #646464;">
+                      <em class="hidden">검정</em>
+                    </span>
+                  </p>
+                  <p class="group-memory">
+                    <span>128GB</span>
+                    <span>256GB</span>
+                    <span>512GB</span>
+                  </p>
+                </div>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 태블릿/2nd device -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">태블릿/2nd device <em class="amount">17</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              최신순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-thumb-row common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="iPad mini 6세대 256G"
+                    width="157" height="157">
+                </picture>
+                <div>
+                  <em class="title">iPad mini 6세대 256G</em>
+                  <!-- <p class="desc">요금 50,000원 +
+                    휴대폰 49,000원
+                    (24개월 요금 할인기준)</p>
+                  <strong class="price-point"><em>99,000</em>원/월</strong> -->
+                  <p class="group-color">
+                    <span class="first-color" style="background-color: #29ac8c;">
+                      <em class="hidden">초록</em>
+                    </span>
+                    <span class="second-color" style="background-color: #e1d1ac;">
+                      <em class="hidden">노랑</em>
+                    </span>
+                    <span class="third-color" style="background-color: #fcfcfc; border:1px solid #e6e6e6;">
+                      <em class="hidden">흰색</em>
+                    </span>
+                    <span class="fourth-color" style="background-color: #646464;">
+                      <em class="hidden">검정</em>
+                    </span>
+                  </p>
+                  <p class="group-memory">
+                    <span>128GB</span>
+                    <span>256GB</span>
+                    <span>512GB</span>
+                  </p>
+                </div>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="iPad mini 6세대 256G"
+                    width="157" height="157">
+                </picture>
+                <div>
+                  <em class="title">iPad mini 6세대 256G</em>
+                  <p class="group-color">
+                    <span class="first-color" style="background-color: #29ac8c;">
+                      <em class="hidden">초록</em>
+                    </span>
+                    <span class="second-color" style="background-color: #e1d1ac;">
+                      <em class="hidden">노랑</em>
+                    </span>
+                    <span class="third-color" style="background-color: #fcfcfc; border:1px solid #e6e6e6;">
+                      <em class="hidden">흰색</em>
+                    </span>
+                    <span class="fourth-color" style="background-color: #646464;">
+                      <em class="hidden">검정</em>
+                    </span>
+                  </p>
+                  <p class="group-memory">
+                    <span>128GB</span>
+                    <span>256GB</span>
+                    <span>512GB</span>
+                  </p>
+                </div>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 액세사리 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">액세사리 <em class="amount">3</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              최신순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-thumb-col common-list-group">
+            <li class="item-large-basic">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="AirPods Pro" width="128" height="128">
+                </picture>
+                <div class="content-infobox">
+                  <em class="title eng-word">AirPods Pro</em>
+                  <p class="desc eng-word">70,000원<em class="sale-percent">20%</em></p>
+                  <strong class="price-point"><em>56,000</em>원/월</strong>
+                </div>
+              </a>
+            </li> 
+            <li class="item-large-basic">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="AirPods Pro" width="128" height="128">
+                </picture>
+                <div class="content-infobox">
+                  <em class="title eng-word">블루투스 삼각대 삼각대
+                    셀카봉 4세대</em>
+                  <p class="desc eng-word">70,000원<em class="sale-percent">20%</em></p>
+                  <strong class="price-point"><em>56,000</em>원/월</strong>
+                </div>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 결합상품 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">결합상품 <em class="amount">3</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title">결합상품명 1</h3>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title">휴대폰결합상품가나다라마바사(결합상품명 2)
+                    휴대폰결합상품가나다라마바사</h3> 
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : V컬러링 -->
+        <div class="common-content-box">
+          <div class="coloring-content">
+            <div class="search-list-head">
+              <h2 class="head-tit">
+                <a href="/">V컬러링 <em class="amount">30</em></a>
+              </h2>
+            </div>
+            <ul class="list-thumb-row common-list-group">
+              <li class="list-item">
+                <a href="/">
+                  <picture class="thumbnail-rounded">
+                    <img loading="lazy" src="/public/images/transparent.png" alt="That That" width="157" height="157">
+                  </picture>
+                  <span>
+                    <strong class="title">That That</strong>
+                    <em class="desc">싸이<em>(PSY)</em></em>
+                  </span>
+                </a>
+              </li> 
+              <li class="list-item">
+                <a href="/">
+                  <picture class="thumbnail-rounded">
+                    <img loading="lazy" src="/public/images/transparent.png" alt="POP!" width="157" height="157">
+                  </picture>
+                  <span>
+                    <strong class="title">POP!</strong>
+                    <em class="desc">나연<em>(TWICE)</em></em>
+                  </span>
+                </a>
+              </li> 
+              <li class="list-item">
+                <a href="/">
+                  <picture class="thumbnail-rounded">
+                    <img loading="lazy" src="/public/images/transparent.png" alt="LOVE DIVE" width="157" height="157">
+                  </picture>
+                  <span>
+                    <strong class="title">LOVE DIVE</strong>
+                    <em class="desc">아이브<em>(IVE)</em></em>
+                  </span>
+                </a>
+              </li> 
+              <li class="list-item">
+                <a href="/">
+                  <picture class="thumbnail-rounded">
+                    <img loading="lazy" src="/public/images/transparent.png" alt="사랑인가봐" width="157" height="157">
+                  </picture>
+                  <span>
+                    <strong class="title">사랑인가봐</strong>
+                    <em class="desc">멜로망스<em>(MeloMance)</em></em>
+                  </span>
+                </a>
+              </li> 
+            </ul>
+            <button type="button" class="btn-rounded-large">더보기</button>
+          </div>
+        </div>
+
+        <!-- search : 컬러링/벨소리 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">컬러링/벨소리 <em class="amount">19</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              추천순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-thumb-col list-thumb-col2 common-list-group">
+            <li class="item-medium">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="That That" width="104" height="104">
+                </picture>
+                <div class="content-infobox">
+                  <strong class="title">That That</strong>
+                  <em class="desc">싸이<em>(PSY)</em></em>
+                  <div class="group-badge">
+                    <span class="cmn-badge-gray">컬러링</span>
+                  </div>
+                </div>
+              </a>
+            </li> 
+            <li class="item-medium">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="That That" width="104" height="104">
+                </picture>
+                <div class="content-infobox">
+                  <strong class="title">That That</strong>
+                  <em class="desc">싸이<em>(PSY)</em></em>
+                  <div class="group-badge">
+                    <span class="cmn-badge-gray">컬러링</span>
+                  </div>
+                </div>
+              </a>
+            </li> 
+            <li class="item-medium">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="That That" width="104" height="104">
+                </picture>
+                <div class="content-infobox">
+                  <strong class="title">That That</strong>
+                  <em class="desc">싸이<em>(PSY)</em></em>
+                  <div class="group-badge">
+                    <span class="cmn-badge-gray">컬러링</span>
+                  </div>
+                </div>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 인터넷/집전화/IPTV -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">인터넷/집전화/IPTV <em class="amount">6</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              클릭순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case2">T_광랜 인터넷(상품명 1)</h3>
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  가장 경제적인 100M급 초고속 인터넷 <em class="search-keyword">휴대</em>폰 요금제
+                </p>
+                <div class="group-badge">
+                  <span class="cmn-badge-pink">인터넷요금제</span>
+                </div>
+                <div class="group-hashtag">
+                  <span class="hashtag">#최대속도 100Mbps</span>
+                </div>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case2">가나다라휴대가나다라(상품명 3)</h3> 
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  (설명 텍스트)가나다라마바사아자차카타파하자차카
+                  타파하가나다라마바사아자차카타파하가나다라
+                </p>
+                <div class="group-badge">
+                  <span class="cmn-badge-green">전화부가서비스</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : T우주 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">T우주 <em class="amount">9</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              추천순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-thumb-col common-list-group">
+            <li class="item-small">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="우주패스 all(상품명2)" width="100" height="80">
+                </picture>
+                <div class="content-infobox">
+                  <em class="title">우주패스 all(상품명2)</em>
+                  <p class="desc"><em class="search-keyword">휴대</em>가나다라마아자차카타파하가나다라마</p>
+                  <strong class="price-point"><em>9,900</em>원/월</strong>
+                </div>
+              </a>
+            </li> 
+            <li class="item-small">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="우주패스 all(상품명2)" width="100" height="80">
+                </picture>
+                <div class="content-infobox">
+                  <em class="title">우주패스 all(상품명2)</em>
+                  <p class="desc"><em class="search-keyword">휴대</em>가나다라마아자차카타파하가나다라마</p>
+                  <strong class="price-point"><em>9,900</em>원/월</strong>
+                </div>
+              </a>
+            </li> 
+            <li class="item-small">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="우주패스 all(상품명2)" width="100" height="80">
+                </picture>
+                <div class="content-infobox">
+                  <em class="title">우주패스 all(상품명2)</em>
+                  <p class="desc"><em class="search-keyword">휴대</em>가나다라마아자차카타파하가나다라마</p>
+                  <strong class="price-point"><em>9,900</em>원/월</strong>
+                </div>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : T멤버십 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">T멤버십 <em class="amount">7</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title">파리바게뜨(제휴 브랜드명 1)</h3>
+                </div>
+                <p class="desc">
+                  대한민국 베이커리 문화를 선도하는 건강한 베이커리
+                </p>
+                <div class="group-hashtag">
+                  <span class="hashtag">#베이커리</span>
+                </div>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title ">가나다라마바사아자차카타파하가나다라마바가나다
+                    라마바사아자차카타가나(상품명 2)</h3>
+                </div>
+                <p class="desc ">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+                <div class="group-hashtag">
+                  <span class="hashtag">#카테고리</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : T앱 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">T앱 <em class="amount">7</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              최신순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-icon-row common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <i class="app-img">
+                  <img loading="lazy" src="/public/images/thumbnail/app-adot.png" alt="A.(에이닷)">
+                </i>
+                <strong class="app-name">
+                  <em>A.</em>(에이닷)
+                </strong>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <i class="app-img">
+                  <img loading="lazy" src="/public/images/thumbnail/app-if.png" alt="ifland">
+                </i>
+                <strong class="app-name">
+                  <em>ifland</em>
+                </strong>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <i class="app-img">
+                  <img loading="lazy" src="/public/images/thumbnail/app-handong.png" alt="0한동">
+                </i>
+                <strong class="app-name">
+                  0한동
+                </strong>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <i class="app-img">
+                  <img loading="lazy" src="/public/images/thumbnail/app-t.png" alt="T멤버십">
+                </i>
+                <strong class="app-name">
+                  <em>T</em>멤버십
+                </strong>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : T로밍 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">T로밍 <em class="amount">11</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              클릭순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case2"><em class="search-keyword">데이터</em>로밍무조건차단</h3>
+                  <strong class="info text-black">무료</strong>
+                </div>
+                <p class="desc">
+                  <em class="search-keyword">데이터</em>로밍 무조건 차단하는 부가서비스대한민국 베이커리 문화를 선도하는 건강한 베이커리
+                </p>
+                <div class="group-hashtag">
+                  <span class="hashtag">#로밍차단/허용</span>
+                </div>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case2">가나다라마바사아자차카타파하가나다라
+                    가나다라마바사아자휴대아자(상품명 2)…</h3>
+                  <strong class="info">39,000원</strong>
+                </div>
+                <p class="desc ">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+                <div class="group-hashtag">
+                  <span class="hashtag">#로밍차단/허용</span>
+                  <span class="hashtag">##이동전화</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 바로가기 -->
+        <div class="common-content-box content-board-type">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">바로가기 <em class="amount">7</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-accodian common-list-group">
+            <li class="accodian-item">
+              <button type="button" class="accodian-tit">
+                <strong class="title">my T > 나의 <em class="search-keyword">데이터</em>/통화 <em class="count">(2)</em></strong>
+                <i class="bl-arr btm">
+                  <span class="hidden">'바로가기' 펼치기</span>
+                </i>
+              </button>
+              <div class="accodian-cont">
+                <ul class="group-depth-list">
+                  <li class="desc"><a href="#">my T > 나의 <em class="search-keyword">데이터</em>/통화 > T끼리끼리<em class="search-keyword">데이터</em>선물</a></li>
+                  <li class="desc"><a href="#">my T > 나의 <em class="search-keyword">데이터</em>/통화 > T끼리끼리<em class="search-keyword">데이터</em>선물 > 요금제 충전</a></li>
+                </ul>
+              </div>
+            </li> 
+            <li class="accodian-item">
+              <button type="button" class="accodian-tit">
+                <strong class="title">my T > 나의 <em class="search-keyword">데이터</em>/통화 <em class="count">(3)</em></strong>
+                <i class="bl-arr btm">
+                  <span class="hidden">'바로가기' 펼치기</span>
+                </i>
+              </button>
+              <div class="accodian-cont">
+                <ul class="group-depth-list">
+                  <li class="desc"><a href="#">my T > 나의 <em class="search-keyword">데이터</em>/통화 > T끼리끼리<em class="search-keyword">데이터</em>선물</a></li>
+                  <li class="desc"><a href="#">my T > 나의 <em class="search-keyword">데이터</em>/통화 > T끼리끼리<em class="search-keyword">데이터</em>선물 > 요금제 충전</a></li>
+                  <li class="desc"><a href="#">my T > 나의 <em class="search-keyword">데이터</em>/통화 > T끼리끼리<em class="search-keyword">데이터</em>선물 > 데이터 한도</a></li>
+                </ul>
+              </div>
+            </li> 
+            <li class="accodian-item"> <!--depth없는 case -펼침기능 X , 링크 이동-->
+              <a href="" class="no-depth-type">
+                <h3 class="title">my T > 나의 <em class="search-keyword">데이터</em>/통화 > T끼리끼리</h3>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 프로모션 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">프로모션 <em class="amount">10</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-fullbanner common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/banner/search-promotion-ban.jpg" alt="갤럭시 S22 구매혜택 휴대(프로모션명 2)" >
+                </picture>
+                <strong class="title">갤럭시 S22 구매혜택 <em class="search-keyword">휴대</em>(프로모션명2)</strong>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/banner/search-promotion-ban.jpg" alt="프로모션명 4">
+                </picture>
+              </a>
+              <strong class="title">프로모션명 4</strong>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 이용자피해예방주의보 -->
+        <div class="common-content-box content-board-type">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">이용자피해예방주의보 <em class="amount">6</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-board common-list-group">
+            <li class="list-item">
+              <a href="#"><strong class="title">결합상품 피해<em class="search-keyword">예방</em>법</strong></a>
+            </li> 
+            <li class="list-item">
+              <a href="#"><strong class="title">가나다라마바사아자<em class="search-keyword">예방</em>차카타파하가나다라마바사아자
+                차카타파하가나다라마바사아자차(제목3)</strong></a>
+            </li> 
+            <li class="list-item">
+              <a href="#"><strong class="title">가나다라마바사아자<em class="search-keyword">예방</em>차카타파하차(제목4)</strong></a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 진행중인 이벤트 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">진행중인 이벤트 <em class="amount">9</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-fullbanner common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/banner/search-event-ban.jpg" alt="중고폰으로 ESG실천하고 T다이렉트샵 이용권 받으세요!">
+                </picture>
+                <span class="date">2022.05.01~2022.05.31</span>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/banner/search-event-ban.jpg" alt="중고폰으로 ESG실천하고 T다이렉트샵 이용권 받으세요!">
+                </picture>
+                <span class="date">2022.05.01~2022.05.31</span>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 혜택/할인 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">혜택/할인 <em class="amount">7</em></a>
+            </h2>
+          </div>
+          <ul class="list-thumb-col common-list-group">
+            <li class="item-large-hashtag">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="우주패스 all(상품명2)" width="128" height="128">
+                </picture>
+                <div class="content-infobox">
+                  <strong class="title">가족나눔<em class="search-keyword">데이터</em></strong>
+                  <p class="desc">가족나눔<em class="search-keyword">데이터</em> 이동전화(2~5회선) 최대 1,000MB <em class="search-keyword">데이터</em> 추가 제공</p>
+                  <div class="group-hashtag">
+                    <span class="hashtag">#결합할인</span>
+                  </div>
+                </div>
+              </a>
+            </li> 
+            <li class="item-large-hashtag">
+              <a href="/">
+                <picture class="thumbnail-rounded">
+                  <img loading="lazy" src="/public/images/transparent.png" alt="우주패스 all(상품명2)" width="128" height="128">
+                </picture>
+                <div class="content-infobox">
+                  <strong class="title">가족나눔<em class="search-keyword">데이터</em></strong>
+                  <p class="desc">가족나눔<em class="search-keyword">데이터</em> 이동전화(2~5회선) 최대 1,000MB <em class="search-keyword">데이터</em> 추가 제공</p>
+                  <div class="group-hashtag">
+                    <span class="hashtag">#결합할인</span>
+                  </div>
+                </div>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 공지사항 -->
+        <div class="common-content-box content-board-type">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">공지사항 <em class="amount">7</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-board common-list-group">
+            <li class="list-item">
+              <a href="#"><strong class="title">T <em class="search-keyword">데이터</em> 쿠폰 시스템 점검 안내</strong></a>
+            </li> 
+            <li class="list-item">
+              <a href="#"><strong class="title">가나다라마바사아자<em class="search-keyword">예방</em>차카타파하가나다라마바사아자
+              차카타파하가나다라마바사아자차(제목3)</strong></a>
+            </li> 
+            <li class="list-item">
+              <a href="#"><strong class="title">가나다라마바사아자<em class="search-keyword">예방</em>차카타파하차(제목4)</strong></a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 자주 하는 질문 -->
+        <div class="common-content-box content-board-type">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">자주 하는 질문 <em class="amount">99</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-board common-list-group">
+            <li class="list-item">
+              <a href="#"><strong class="title">[<em class="search-keyword">데이터</em> 리필하기] 리필 쿠폰도 선물할 수 있나요?</strong></a>
+            </li> 
+            <li class="list-item">
+              <a href="#"><strong class="title">[부가서비스]<em class="search-keyword">데이터</em> 테더링 사용량도 T월드 홈페이지에서
+              확인할 수 있나요?</strong></a>
+            </li> 
+            <li class="list-item">
+              <a href="#"><strong class="title">[가나다라(분류명)] 가나<em class="search-keyword">데이터</em>다라마바사아자차카타파
+                하가나다라마바사아자차카타파하가나다라마바사아자차
+                카(제목 3)</strong></a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+                
+        <!-- search : 이럴 땐 이렇게 하세요 -->
+        <div class="common-content-box content-board-type">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">이럴 땐 이렇게 하세요 <em class="amount">9</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-board common-list-group">
+            <li class="list-item">
+              <a href="#"><strong class="title">안심백업하셨나요? <em class="search-keyword">데이터</em>  복원하기</strong></a>
+            </li> 
+            <li class="list-item">
+              <a href="#"><strong class="title">[부가서비스]<em class="search-keyword">데이터</em> 테더링 사용량도 T월드 홈페이지에서
+                확인할 수 있나요?</strong></a>
+            </li> 
+            <li class="list-item">
+              <a href="#"><strong class="title "><em class="search-keyword">데이터</em> 사용을 차단하고 싶어요.</strong></a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 지점/대리점, A/S센터 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">지점/대리점, A/S센터 <em class="amount">27</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="#">
+                <div class="list-item-head">
+                  <h3 class="title">해밀 당산점</h3>
+                </div>
+                <p class="desc">서울 영등포구 당산로 214, 103동 3호(당산동 5가, 당산 <em class="search-keyword">삼성</em>래미안 상가)</p>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="#">
+                <div class="list-item-head">
+                  <h3 class="title ">가나다라마바사아자차카타파하가나(매장명 2)</h3>
+                </div>
+                <p class="desc ">(주소텍스트)가나다라<em class="search-keyword">갤럭시</em>사아자차카타파하가나다라마
+                  바사아자차카타파하가나다라마바사아자차카</p>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="#">
+                <div class="list-item-head">
+                  <h3 class="title">PS&M(<em class="search-keyword">삼성</em>점)</h3>
+                </div>
+                <p class="desc">대전 동구 태전로 139(<em>삼성</em>동, 위성통신)</p>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 서비스 이용안내 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">서비스 이용안내 <em class="amount">7</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="#">
+                <div class="list-item-head">
+                  <h3 class="title"><em class="search-keyword">데이터</em> 리필하기</h3>
+                </div>
+                <p class="desc">서비스 정책/제도 안내 > 정책/제도 안내</p>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="#">
+                <div class="list-item-head">
+                  <h3 class="title ">가나다라마바사아자차카타파하가나(타이틀 2)</h3>
+                </div>
+                <p class="desc ">가나다라마바 > 가나다라마바사아 > 가나다라마바사아자</p>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search : 사이트 이용방법 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">사이트 이용방법 <em class="amount">7</em></a>
+            </h2>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="#">
+                <div class="list-item-head">
+                  <h3 class="title"><em class="search-keyword">데이터</em> 중심의 홈 화면</h3>
+                </div>
+                <p class="desc">서비스 안내 > 사이트 이용방법</p>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="#">
+                <div class="list-item-head">
+                  <h3 class="title ">가나다라마바사아자차카타파하가나(타이틀 2)</h3>
+                </div>
+                <p class="desc ">가나다라마바 > 가나다라마바사아 > 가나다라마바사아자</p>
+              </a>
+            </li> 
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+
+        <!-- search Zero Click Result : 즉답검색 case 1,3,4 user info  -->
+        <div class="common-content-box">
+          <!-- 즉답검색 case 1 -->
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선의 요금제는 <br>
+                <a href="" class="search-keyword">5GX프라임</a>입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선의<br> 총 데이터 잔여량은 
+                <a href="" class="search-keyword">무제한</a> 입니다.
+              </p>
+            </div>
+          </div>
+        
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선의 실시간 이용요금은<br>
+                <a href="" class="search-keyword">1,000,000원</a>입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선의 휴대폰 결제<br> 이용요금은<br>
+                <a href="" class="search-keyword">1,000,000원</a> 입니다.
+              </p>
+            </div>
+          </div>
+
+          <br><br><br><br><br><br> <!-- 임의로 구분하기 위해 넣어놓은 태그 -->
+
+          <!-- 즉답검색 case 3 -->
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선의<br>
+                총 음성 잔여량은 <a href="" class="search-keyword">무제한</a>입니다.
+              </p>
+            </div>
+          </div>
+        
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선은 <br>
+                <a href="" class="search-keyword">선택약정할인제도(12개월)</a> 사용 중이며 <br> 
+                약정종료일은 <a href="" class="search-keyword">2022.12.21</a>입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선은 <br>
+                <a href="" class="search-keyword">2건</a>의 요금약정 정보가 있습니다. 
+              </p>
+            </div>
+          </div>
+        
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선의 이용중인<br>
+                부가서비스는<br>
+                <a href="" class="search-keyword">옵션/할인 5건, 유료 0건, 무료 12건</a> 입니다. 
+              </p>
+            </div>
+          </div>
+
+
+          <br><br><br><br><br><br><!-- 임의로 구분하기 위해 넣어놓은 태그 -->
+
+
+          <!-- 즉답검색 case 4 -->
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선은 단말기 잔여 할부금은<br>
+                <a href="" class="search-keyword">1,000,000(12개월)</a> 이며 <a href="" class="search-keyword">4개월</a>입니다.
+              </p>
+            </div>
+          </div>
+        
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선은 단말기 잔여 할부금은<br>
+                <a href="" class="search-keyword">1,000,000(12개월)</a> 이며 <a href="" class="search-keyword">4개월</a><br>
+              </p>
+              <span class="etc-txt">그 외 기기상환정보: 2건</span>
+            </div>
+          </div>
+
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num search-keyword">010-12**-56**</a>회선은 <br>
+                <em class="search-keyword"><a href="" class="search-keyword">2건</a>의 약정</em>을 사용 중입니다. <br>
+                오늘 해지 시 <em class="search-keyword">할인반환금은 총<a href="#">152,170원</a></em> 입니다.
+              </p>
+            </div>
+          </div>
+        
+          <div class="user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 서비스 이용 정보입니다.</p>
+            <div class="common-bg-box">
+              <p class="info-desc">
+                <a href="" class="phone-num">010-12**-56**</a>회선은<br>
+                <em class="search-keyword"><a href="" class="search-keyword">1건</a>의 약정</em>을 사용 중입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- search : 즉답검색 case 2 -T멤버쉽 유형 -->
+        <div class="common-content-box">
+
+          <div class="membership-info-group user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 T멤버십 정보입니다.</p>
+            <div class="common-bg-box">
+              <dl class="membership-info-list">
+                <dt>T멤버십 등급</dt>
+                <dd><a href="#">할인형 VIP<i class="bl-arr"></i></a></dd>
+                <dt>연간 누적 할인</dt>
+                <dd class="year-sale"><a href="#">15,000원<i class="bl-arr"></i></a></dd>
+                <dt>사용가능 T⁺포인트</dt>
+                <dd><a href="#">115,320P<i class="bl-arr"></i></a></dd>
+              </dl>
+              <div class="vacode-sect">
+                <picture class="vacode-img">
+                  <img src="/public/images/vacode.png" alt="T멤버쉽 바코드">
+                </picture>
+                <div class="vacode-info">
+                  <p class="vacode-num">
+                    1234 5678 1234 5678
+                  </p>
+                  <strong class="vacode-timer">
+                    00:59
+                    <span class="hidden">바코드 남은 시간</span>
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="membership-info-group user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 T멤버십 정보입니다.</p>
+            <div class="common-bg-box">
+              <dl class="membership-info-list">
+                <dt>T멤버십 등급</dt>
+                <dd><a href="#">할인형 VIP<i class="bl-arr"></i></a></dd>
+                <dt>연간 누적 할인</dt>
+                <dd class="year-sale"><a href="#">15,000원<i class="bl-arr"></i></a></dd>
+                <dt>사용가능 T⁺포인트</dt>
+                <dd><a href="#">115,320P<i class="bl-arr"></i></a></dd>
+              </dl>
+              <p class="membership-desc">
+                고객님의 T멤버십카드가 일시정지 되었습니다.
+                일시정지 취소는 고객센터로 문의해주세요. 
+              </p>
+            </div>
+          </div>
+
+          <div class="membership-info-group user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 T멤버십 정보입니다.</p>
+            <div class="common-bg-box">
+              <dl class="membership-info-list">
+                <dt>T멤버십 등급</dt>
+                <dd><a href="#">할인형 VIP<i class="bl-arr"></i></a></dd>
+                <dt>연간 누적 할인</dt>
+                <dd class="year-sale"><a href="#">15,000원<i class="bl-arr"></i></a></dd>
+                <dt>사용가능 T⁺포인트</dt>
+                <dd><a href="#">115,320P<i class="bl-arr"></i></a></dd>
+              </dl>
+              <p class="membership-desc">
+                해지 신청일로부터 30일 이내에는 <br>
+                포인트 사용만 가능하고, 포인트할인,적립은 불가능합니다.
+                30일 이내에 해지신청을 취소 할 수 있습니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="membership-info-group user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 T멤버십 정보입니다.</p>
+            <div class="common-bg-box">
+              <dl class="membership-info-list">
+                <dt>T멤버십 등급</dt>
+                <dd><a href="#">할인형 VIP<i class="bl-arr"></i></a></dd>
+                <dt>연간 누적 할인</dt>
+                <dd class="year-sale"><a href="#">15,000원<i class="bl-arr"></i></a></dd>
+                <dt>사용가능 T⁺포인트</dt>
+                <dd><a href="#">115,320P<i class="bl-arr"></i></a></dd>
+              </dl>
+              <p class="membership-alert-txt">
+                <i class="ic-warn"></i>유효시간이 초과되었습니다.
+              </p>
+              <button type="button" class="btn-refresh">
+                <i class="ic-refresh"></i>
+                바코드 새로고침
+              </button>
+            </div>
+          </div>
+
+          <div class="membership-info-group user-info-case">
+            <p class="info-title"><i class="ic-profile"></i>홍*동님의 T멤버십 정보입니다.</p>
+            <div class="common-bg-box">
+              <dl class="membership-info-list">
+                <dt>T멤버십 등급</dt>
+                <dd><a href="#">할인형 VIP<i class="bl-arr"></i></a></dd>
+              </dl>
+              <div class="vacode-sect">
+                <picture class="vacode-img">
+                  <img src="/public/images/vacode.png" alt="T멤버쉽 바코드">
+                </picture>
+                <div class="vacode-info">
+                  <p class="vacode-num">
+                    1234 5678 1234 5678
+                  </p>
+                  <strong class="vacode-timer">
+                    00:59
+                    <span class="hidden">바코드 남은 시간</span>
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- search : T월드 검색 서비스는 어떠셨나요? -->
+        <div class="search-service-survey">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">T월드 검색 서비스는 어떠셨나요?</a>
+            </h2>
+          </div>
+          <ul class="select-item-ico">
+            <li class="list-item">
+              <input type="radio" id="surv-satisfact1" name="surv-satisfact">
+              <label for="surv-satisfact1">만족해요</label>
+            </li> 
+            <li class="list-item">
+              <input type="radio" id="surv-satisfact2" name="surv-satisfact">
+              <label for="surv-satisfact2">보통이에요</label>
+            </li> 
+            <li class="list-item">
+              <input type="radio" id="surv-satisfact3" name="surv-satisfact">
+              <label for="surv-satisfact3">불편해요</label>
+            </li> 
+          </ul>
+        </div>
+
+        <!-- search : 어떤 점이 불편하셨나요? -->
+        <div class="search-service-survey survey-answer-area">
+          <div class="inner">
+            <div class="search-list-head">
+              <h2 class="head-tit">
+                <a href="/">어떤 점이 불편하셨나요?</a>
+              </h2>
+            </div>
+            <ul class="select-item-txt">
+              <li class="list-item">
+                <input type="radio" id="surv-answer1" name="surv-answer">
+                <label for="surv-answer1">정보의 다양성이 부족해요.</label>
+              </li> 
+              <li class="list-item">
+                <input type="radio" id="surv-answer2" name="surv-answer">
+                <label for="surv-answer2">검색 기능이 편리하지 않아요.</label>
+              </li>
+              <li class="list-item">
+                <input type="radio" id="surv-answer3" name="surv-answer">
+                <label for="surv-answer3">검색 결과가 정확하지 않아요.</label>
+              </li> 
+              <li class="list-item">
+                <input type="radio" id="surv-answer4" name="surv-answer">
+                <label for="surv-answer4">응답시간이 느려요.</label>
+              </li> 
+              <li class="list-item">
+                <input type="radio" id="surv-answer5" name="surv-answer">
+                <label for="surv-answer5">사용하기 불편해요.</label>
+              </li> 
+            </ul>
+          </div>
+        </div>
+
+      </div> <!-- / .search-result-area -->
+
+      <!-- search : 휴대폰특정 검색_플로팅 -->
+      <div class="floating-area">
+        <div class="dim"></div>
+        <button type="button" class="btn-fix-counsel ">
+          <i class="ic-counsel"></i>
+          <span class="hidden">상담톡 열기</span>
+        </button>
+        <ul class="group-btn-list">
+          <li>
+            <span>상담하기</span>
+            <button type="button">
+              <i class="counsel"></i>
+              <span class="hidden">상담하기</span>
+            </button>
+          </li>
+          <li>
+            <span>전화상담</span>
+            <button type="button">
+              <i class="tel-counsel"></i>
+              <span class="hidden">전화상담</span>
+            </button>
+          </li>
+          <li>
+            <span>1:1채팅</span>
+            <button type="button">
+              <i class="chatting"></i>
+              <span class="hidden">1:1채팅</span>
+            </button>
+          </li>
+          <li>
+            <span>카카오톡</span>
+            <button type="button">
+              <i class="kakao"></i>
+              <span class="hidden">카카오톡</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- search : 검색 결과 리스트 정렬 필터 -->
+      <div class="overlay">  <!--active class명 붙으면 모달 활성화됨-->
+        <div class="layer-type-bottom layer-srch-filter">
+          <div class="title-fixed">
+            <h2 class="sub-title">정렬기준</h2> 
+          </div>
+          <!-- 버튼형태 case -->
+          <ul class="select-list-type">
+            <li class="item active"> <!-- 선택된 케이스: 클래스명 active 붙임-->
+              <button type="button">
+                추천순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+            <li class="item">
+              <button type="button">
+                클릭순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+            <li class="item">
+              <button type="button">
+                최신순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+            <li class="item">
+              <button type="button">
+                낮은가격순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+            <li class="item">
+              <button type="button">
+                높은가격순
+                <span class="select-state">
+                </span>
+              </button>
+            </li>
+          </ul>   
+        </div>
+      </div>
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/$var.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../public/js/widgets.js"></script>
+<script src="../../../public/js/auth.js"></script>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/ScrollMagic.min.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+<script>
+  devFunc.floatingAction.state();
+</script>
+</html>

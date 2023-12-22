@@ -1,0 +1,65 @@
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1), z-index 1ms;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 110;
+
+    .Modal,
+    .ModalFullScreen,
+    .Alert,
+    .Confirm,
+    .BottomSheet,
+    .layer-type-bottom,
+    .layer-type-password {
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+
+.overlay-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 120;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1), z-index 1ms;
+
+  .Alert,
+  .Confirm,
+  .BottomSheet,
+  .layer-type-bottom {
+    visibility: visible;
+  }
+
+  // 하단에서 올라오는 형태의 모달 본문(content)에 적용
+  .modal-content-transition {
+    will-change: transform;
+    transition: transform, visibility, 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

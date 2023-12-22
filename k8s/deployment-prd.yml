@@ -1,0 +1,119 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tworld-fe-1.0
+  labels:
+    app: tworld-fe
+    version: 1.0
+    env: prd
+spec:
+  replicas: 4
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: tworld-fe
+      version: 1.0
+  template:
+    metadata:
+      labels:
+        app: tworld-fe
+        version: 1.0
+        env: prd
+      annotations:
+        ad.datadoghq.com/tworld-fe.logs: >-
+          [{
+            "source": "nodejs",
+            "service": "tworld-fe",
+            "auto_multi_line_detection": true
+          }] 
+    spec:
+      imagePullSecrets:
+      - name: harbor-secret
+      containers:
+      - name: tworld-fe
+        image: doss-harbor.sktelecom.com/tworld-cloud-hosted/prd/tworld-fe:1.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        env:
+        - name: DD_SERVICE
+          value: "tworld-fe"
+        - name: DD_VERSION
+          value: "0.0.1"
+        - name: DD_ENV
+          value: "prd"
+        - name: DEPLOY_ENV
+          value: "BLUE"
+        - name: POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        - name: MY_POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: APP_VERSION
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.labels['version']
+        - name: DD_AGENT_HOST
+          valueFrom:
+            fieldRef:
+              fieldPath: status.hostIP
+        - name: DD_LOGS_INJECTION
+          value: "true"
+        - name: DD_TRACE_SAMPLE_RATE
+          value: "1"
+
+# jasypt key
+#        - name: JASYPT_ENCRYPTOR_PASSWORD
+#          valueFrom:
+#            secretKeyRef:
+#              name: encsecret
+#              key: jasyptEnc
+# //jasypt key
+
+# whatap License
+#        - name: license
+#          value: x210grlgdo47m-z57a6guvm4eka1-z2d81dphb0ikm6
+# //whatap Lisence
+
+## probe
+        livenessProbe:
+          httpGet:
+            path: /v6/_a/health
+            port: 3000
+          failureThreshold: 10
+          initialDelaySeconds: 90
+          periodSeconds: 15
+          successThreshold: 1
+          timeoutSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /v6/_a/health
+            port: 3000
+          failureThreshold: 10
+          initialDelaySeconds: 15
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 15
+## //probe
+        resources:
+          requests:
+            cpu: "1000m"
+            memory: "3584Mi"
+          limits:
+            cpu: "2000m"
+            memory: "3584Mi"
+        volumeMounts:
+        - mountPath: /applog
+          name: pod-log-volume
+      volumes:
+      - name: pod-log-volume
+        persistentVolumeClaim:
+          claimName: pod-log-pvc
+      terminationGracePeriodSeconds: 60

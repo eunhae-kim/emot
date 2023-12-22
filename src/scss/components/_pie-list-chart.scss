@@ -1,0 +1,83 @@
+// 공통 파이차트 리스트
+[class^='pie-chart'] {
+  display: flex;
+  .list-percent-info li {
+    display: flex;
+    justify-content: space-between;
+    .circle-shape {
+      display: inline-block;
+      border-radius: 50%;
+      &.first-prd-ico {
+        background-color: var(--primary);
+      }
+      &.second-prd-ico {
+        background-color: #fa4966;
+      }
+      &.third-prd-ico {
+        background-color: #f2b22a;
+      }
+      &.fourth-prd-ico {
+        background-color: #0bb881;
+      }
+      &.fifth-prd-ico {
+        background-color: #808080;
+      }
+    }
+    .info-percent {
+      font-weight: 700;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.pie-chart {
+  &-row {
+    align-items: center;
+    .pie-chart-wrap {
+      margin-right: 25px;
+      width: 144px;
+      height: 144px;
+      border: 1px solid #d9d9d9;
+    }
+    .list-percent-info {
+      width: calc(100% - 169px);
+      li {
+        margin-bottom: 11px;
+        font-size: 14px;
+      }
+      .info-name {
+        letter-spacing: -0.56px;
+      }
+      .circle-shape {
+        margin-right: 5px;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+  &-col {
+    flex-direction: column;
+    .pie-chart-wrap {
+      margin: 0 auto 35px;
+      width: 160px;
+      height: 160px;
+      border: 1px solid #d9d9d9;
+    }
+    .list-percent-info {
+      li {
+        margin-bottom: 17px;
+        font-size: 16px;
+      }
+      .info-name {
+        letter-spacing: -0.64px;
+      }
+      .circle-shape {
+        margin-right: 7.5px;
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}

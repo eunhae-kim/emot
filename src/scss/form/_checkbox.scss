@@ -1,0 +1,47 @@
+.check-box {
+  position: relative;
+  font-size: 0;
+  input[type='checkbox'] {
+    &:checked + .check-ico {
+      background-color: #4130df;
+      border: none;
+      i {
+        color: #fff;
+        visibility: visible;
+        transform: scale(1) translate(0, 0);
+      }
+    }
+  }
+  label {
+    position: relative;
+    padding-left: 33px;
+    margin-left: -20px;
+    top: -4px;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    color: #808080;
+  }
+  .check-ico {
+    display: inline-flex;
+    min-width: 18px;
+    height: 18px;
+    border: 1px solid #d9d9d9;
+    background-color: var(--white);
+    border-radius: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: all,.1s cubic-bezier(0.4, 0, 0.2, 1);
+    i {
+      speak: none;
+      font-size: 10px;
+      margin-left: 1px;
+      visibility: hidden;
+      vertical-align: middle;
+      color: transparent;
+      transform: scale(0) translate(-10px, 0);
+      transition: transform, 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

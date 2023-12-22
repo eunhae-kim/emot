@@ -1,0 +1,1729 @@
+// 공통 input
+input[type='text'].tworld-input,
+input[type='password'].tworld-input,
+input[type='tel'].tworld-input {
+  display: block;
+  padding-left: 16px;
+  height: 40px;
+  line-height: 38px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 13px;
+  letter-spacing: -0.52px;
+  color: var(--black);
+  &::placeholder {
+    color: var(--grey400);
+  }
+}
+
+//input search square형
+.input-srch-square {
+  padding: 0 36px 0 16px;
+  width: 100%;
+  height: 40px;
+  line-height: 38px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 13px;
+  letter-spacing: -0.52px;
+  &::placeholder {
+    color: #999999;
+  }
+}
+
+//기본 팝업
+.basic-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 312px;
+  background: var(--white);
+  border-radius: 5px;
+  .btn-close {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    width: 40px;
+    height: 40px;
+    i {
+      font-size: 14px;
+    }
+  }
+  .popup-header {
+    padding: 28px 24px 0;
+  }
+  .inner-contents {
+    padding: 0 24px;
+  }
+  .popup-tit {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.68px;
+  }
+}
+
+//매장찾기 공통
+.sub-store {
+  //포인트 컬러
+  .point-color,
+  .keyword {
+    color: var(--primary);
+  }
+  //공통 필터
+  .btn-filter {
+    width: 42px;
+    height: 32px;
+    background: #fff;
+    border: 1px solid var(--primary);
+    border-radius: 32px;
+    i {
+      font-size: 16px;
+      color: var(--primary);
+    }
+  }
+  [class^='noti-box'] {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 40px 15px 20px;
+    line-height: 17px;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    .ic-warn2 {
+      margin: 2px 6px 0 0;
+      font-size: 14px;
+      color: #fff;
+      vertical-align: middle;
+    }
+    .noti-close {
+      position: absolute;
+      top: 0;
+      right: 6px;
+      width: 40px;
+      height: 40px;
+    }
+    .ic-tbar-cls {
+      font-size: 11px;
+    }
+    &.noti-box-black {
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      .ic-tbar-cls {
+        color: #fff;
+      }
+    }
+    &.noti-box-pink {
+      background: #f3e1e1;
+      color: #000;
+      .ic-tbar-cls {
+        color: #000;
+      }
+    }
+  }
+}
+
+// checkbox type btn
+.checkbox-btn {
+  label {
+    position: relative;
+    display: inline-block;
+    padding: 0 16px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 13px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #e6e6e6;
+      border-radius: 36px;
+    }
+  }
+  input[type='checkbox']:checked + label {
+    color: #fff;
+    // font-weight: 700;
+    &::before {
+      background: var(--primary);
+      border-color: transparent;
+      z-index: -1;
+    }
+  }
+}
+
+//지도영역
+.map-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .map-box {
+    width: 100%;
+    height: 100%;
+  }
+  .map-option-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    .map-filter-area {
+      position: relative;
+      margin-top: 13px;
+      .btn-filter {
+        position: absolute;
+        top: 0;
+        right: 16px;
+        box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  .filter-option-wrap {
+    padding-left: 16px;
+    margin: 0 16px 0 0;
+    overflow-x: auto;
+    @include scrollbar-none;
+  }
+  .filter-option {
+    font-size: 0;
+    white-space: nowrap;
+    li {
+      display: inline-block;
+      margin-right: 6px;
+      &:last-child {
+        margin-right: 50px;
+      }
+    }
+    button {
+      display: inline-block;
+      padding: 0 12px 0 6px;
+      height: 32px;
+      line-height: 30px;
+      background: #fff;
+      border: 1px solid rgba(106, 106, 106, 0.2);
+      border-radius: 32px;
+      font-size: 13px;
+      letter-spacing: -0.52px;
+      color: var(--grey800);
+      box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.15);
+      i {
+        display: inline-block;
+        font-size: 20px;
+        vertical-align: -4px;
+        &.bg-type {
+          background: no-repeat center 0;
+          width: 20px;
+          height: 20px;
+          background-size: 100% auto;
+        }
+        &.ic-filter-caps {
+          background-image: url($dir + '/icon/ic-filter-adt.png');
+        }
+        &.ic-filter-sk {
+          background-image: url($dir + '/icon/ic-filter-sk.png');
+        }
+        &.ic-filter-apple {
+          background-image: url($dir + '/icon/ic-filter-apple.png');
+        }
+        &.ic-filter-5g {
+          background-image: url($dir + '/icon/ic-filter-5g.png');
+        }
+        &.ic-filter-mintit {
+          background-image: url($dir + '/icon/ic-filter-minti.png');
+        }
+      }
+    }
+  }
+}
+
+//상단 fix 검색 영역
+.store-search-area {
+  padding: 6px 16px 12px;
+  [class^='btn-select'] {
+    position: relative;
+    padding: 0 0 0 14px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+    color: var (--grey800);
+    text-align: left;
+    .bl-arr {
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      font-size: 7px;
+      transform: translateY(-50%);
+    }
+  }
+  .type-address {
+    display: flex;
+    justify-content: space-between;
+    .btn-select {
+      width: 105px;
+    }
+    .search-form-square {
+      width: calc(100% - 111px);
+      .btn-search-submit {
+        right: 4px;
+        width: 40px;
+        height: 40px;
+      }
+      .ic-tbar-srch2 {
+        font-size: 16px;
+      }
+    }
+  }
+  .type-subway {
+    .select-top {
+      display: flex;
+      justify-content: space-between;
+      .btn-select {
+        flex: 1 1 auto;
+        & + .btn-select {
+          margin-left: 6px;
+        }
+      }
+    }
+    .select-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 6px;
+      .btn-select {
+        width: 278px;
+      }
+    }
+  }
+}
+
+//매장리스트 bottomup layer
+.layer-store-list {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  .bottom-layer-btn {
+    position: relative;
+    display: block;
+    padding: 12px 0 20px;
+    width: 100%;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 35px;
+      height: 6px;
+      background: #e1e1e6;
+      border-radius: 60px;
+    }
+  }
+  .list-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 9px;
+    border-bottom: 1px solid #efefef;
+    .result,
+    .recommend {
+      font-size: 15px;
+      letter-spacing: -0.56px;
+      .point-color {
+        font-weight: 400;
+      }
+    }
+    .select-option-box button {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      font-size: 13px;
+      letter-spacing: -0.52px;
+      color: var(--grey500);
+    }
+    .btn-store-type {
+      font-size: 0;
+      margin-right: 24px;
+      .bl-arr {
+        display: inline-block;
+        margin-left: 6px;
+        font-size: 9px;
+      }
+    }
+    .ic-filter {
+      font-size: 14px;
+    }
+  }
+  //매장 옵션 badge
+  .option-box {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 5px;
+      width: 75px;
+      height: 18px;
+      background: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+      border-radius: 5px;
+    }
+  }
+
+  .store-option {
+    margin-bottom: 20px;
+    font-size: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    @include scrollbar-none;
+  }
+  .store-list-wrap {
+    li {
+      padding: 20px 20px;
+      border-bottom: 1px solid #efefef;
+      &:first-child {
+        padding-top: 25px;
+      }
+    }
+  }
+  .btn-more {
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0 100px;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: -0.56px;
+    color: #808080;
+    border-top: 0;
+    i {
+      display: inline-block;
+      font-size: 12px;
+    }
+  }
+  .custom-store {
+    background: #f5f4fd;
+    .custom-icon {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: url($dir + '/icon/ic-pin.png') no-repeat 0 0;
+      background-size: 100% auto;
+      vertical-align: middle;
+    }
+    .cmn-badge-blue-border {
+      margin-left: 2px;
+    }
+    //매장 옵션 badge
+    .option-box {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 75px;
+        height: 18px;
+        background: linear-gradient(to top, rgba(245, 244, 253, 0.8), rgba(245, 244, 253, 0.1));
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+//매장찾기 - 공통 매장썸네일 리스트
+.store-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  .content-box {
+    width: calc(100% - 83px);
+  }
+  .thumbnail-rounded {
+    width: 68px;
+    height: 68px;
+    img {
+      width: 100%;
+    }
+  }
+  .store-name {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.64px;
+    a {
+      display: block;
+      padding-bottom: 12px;
+      width: 100%;
+      @include ellipsis;
+    }
+  }
+  .store-time,
+  .store-address {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
+  .store-time {
+    .accodian-tit {
+      padding: 11px 10px 11px 0;
+      &.active {
+        .bl-arr {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .accodian-content {
+      display: none;
+    }
+    .bl-arr {
+      display: inline-block;
+      margin-left: 2px;
+      font-size: 8px;
+      vertical-align: 2px;
+      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .tit {
+      display: inline-block;
+      margin-right: 2px;
+    }
+    p {
+      margin-bottom: 12px;
+    }
+  }
+  .store-address {
+    margin-bottom: 8px;
+    @include ellipsis;
+    em {
+      display: inline-block;
+      margin-right: 6px;
+      color: #808080;
+    }
+  }
+}
+
+//매장찾기 - 공통 링크박스
+.store-link-box {
+  display: flex;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  a,
+  button {
+    width: 25%;
+    height: 36px;
+    line-height: 34px;
+    border-right: 1px solid #e5e5e5;
+    font-size: 14px;
+    letter-spacing: -0.7px;
+    text-align: center;
+    i {
+      font-size: 14px;
+    }
+  }
+  a:last-child,
+  button:last-child {
+    border-right: 0;
+  }
+  &.type-three a,
+  &.type-three button {
+    width: 33.3333%;
+  }
+}
+
+//매장찾기 공통 좋아요 아이콘
+.store-like {
+  font-size: 14px;
+  letter-spacing: -0.56px;
+  color: #f94343;
+  .thumbup {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url('/public/images/icon/ic-thumbsup.png') no-repeat 0 0;
+    background-size: 100% auto;
+  }
+  .number {
+    font-weight: 400;
+  }
+}
+
+// 매장찾기 쪽 레이어팝업 해당 css
+.store-layer-bottom .select-list-type {
+  margin-bottom: 10px;
+}
+.store-find-option .select-list-type {
+  margin-top: 18px;
+}
+
+//매장찾기 상세 팝업 해당 css
+.sub-store .store-info-popup {
+  .popup-header {
+    margin-bottom: 24px;
+  }
+  .store-option {
+    font-size: 0;
+    margin-bottom: 20px;
+  }
+  .store-link-box {
+    padding: 10px 0;
+    border: 0;
+    border-top: 1px solid #efefef;
+    a,
+    button {
+      height: 45px;
+      line-height: 45px;
+      border-right: 0;
+    }
+  }
+}
+
+//매장찾기 - 서비스 찾기 필터 팝업
+.store-filter-popup {
+  padding-bottom: 27px;
+  .btn-reset {
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    padding: 10px 0;
+    span {
+      display: inline-block;
+      padding: 0 8px;
+      height: 22px;
+      line-height: 22px;
+      background: #f0f0f5;
+      border-radius: 22px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    i {
+      display: inline-block;
+      font-size: 14px;
+      vertical-align: -2px;
+    }
+    z-index: 1;
+  }
+  .content-inner {
+    padding: 0 24px;
+  }
+  .filter-box-wrap {
+    padding-top: 12px;
+  }
+  .filter-section {
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e5e5;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  .filter-tit {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -0.52px;
+  }
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7px;
+    font-size: 0;
+    li {
+      position: relative;
+      margin-top: 8px;
+      margin-right: 4px;
+    }
+  }
+  .btn-full-wrap {
+    border-top: 0;
+    padding: 0 20px;
+  }
+}
+
+//매장찾기 -- 길찾기 레이어 팝업
+.find-load-popup {
+  .load-map-link {
+    padding: 7px 0;
+    li {
+      margin-bottom: 7px;
+      a {
+        position: relative;
+        display: block;
+        padding: 14px 24px;
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: -0.64px;
+      }
+      i {
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 10px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+//매장찿기 -- A/S 센터 안내
+.sub-store-as {
+  .head-tab-section {
+    position: sticky;
+    top: 56px;
+  }
+  .tab-cont-asguide,
+  .tab-cont-as-list {
+    margin: 53px 0 90px;
+  }
+  .tab-cont-as-list {
+    padding: 0 20px;
+  }
+  [class^='common-content'] {
+    border-bottom: 7px solid #f0f0f5;
+  }
+  //A/S 센터 안내
+  .common-content-asinfo {
+    padding: 50px 20px 36px;
+    .info-desc-box {
+      text-align: center;
+      .ic-my-tel {
+        font-size: 26px;
+      }
+      h2 {
+        margin: 22px 0 11px;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.64px;
+        color: var(--black);
+      }
+      .tel-num {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.72px;
+        color: var(--black);
+      }
+      .guide-desc {
+        margin: 18px auto 0;
+        max-width: 270px;
+        line-height: 19px;
+        font-size: 13px;
+        letter-spacing: -0.52px;
+        color: var(--grey600);
+      }
+    }
+    .bg-box {
+      padding: 17px 18px 16px;
+      margin-top: 36.5px;
+      background: var(--grey50);
+      border-radius: 3px;
+      span {
+        font-size: 13px;
+        font-weight: 700;
+        color: #4d4d4d;
+      }
+      .desc {
+        margin-top: 7px;
+        line-height: 16px;
+        color: #4d4d4d;
+        font-size: 12px;
+      }
+    }
+  }
+  .common-content-btn .bar-btn {
+    padding: 16px 20px;
+    font-size: 0;
+    .icon-box {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      background: no-repeat 0 0;
+      background-size: 100% auto;
+    }
+    .icon-file {
+      background-image: url('/public/images/icon/ic-file.png');
+    }
+    .icon-comment-dotsi {
+      background-image: url('/public/images/icon/ic-comment-dotsi.png');
+    }
+  }
+
+  //제조사별 AS 센터 안내
+  .as-list-area {
+    padding: 40px 0 0;
+    .as-list-box li {
+      display: flex;
+      align-items: center;
+      & + li {
+        margin-top: 33px;
+      }
+    }
+    [class^='center-icon'] {
+      display: inline-block;
+      margin-right: 16px;
+      width: 67px;
+      height: 67px;
+      background: no-repeat 0 0;
+      background-size: 100% auto;
+      &.center-icon-samsung {
+        background-image: url('/public/images/icon/as-center-samsung.png');
+      }
+      &.center-icon-lg {
+        background-image: url('/public/images/icon/as-center-lg.png');
+      }
+      &.center-icon-apple {
+        background-image: url('/public/images/icon/as-center-apple.png');
+      }
+      &.center-icon-tg {
+        background-image: url('/public/images/icon/as-center-tg.png');
+      }
+      &.center-icon-smobile {
+        background-image: url('/public/images/icon/as-center-sm.png');
+      }
+      &.center-icon-sony {
+        background-image: url('/public/images/icon/as-center-sony.png');
+      }
+    }
+    .center-name {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: -0.64px;
+      em {
+        display: block;
+        margin-top: 7px;
+        font-size: 13px;
+        color: var(--grey500);
+      }
+    }
+    .link-box {
+      display: block;
+      margin-top: 15px;
+      font-size: 0;
+      a,
+      button {
+        display: inline-block;
+        padding: 0 12px;
+        font-size: 13px;
+        letter-spacing: -0.52px;
+        color: var(--primary);
+        text-decoration: underline;
+        &:first-child {
+          position: relative;
+          padding-left: 0;
+          &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 10px;
+            background: #d9d9d9;
+          }
+        }
+      }
+    }
+  }
+
+  .aslist-desc-box {
+    margin-top: 37px;
+    li {
+      position: relative;
+      padding-left: 8px;
+      line-height: 18px;
+      font-size: 13px;
+      letter-spacing: -0.52px;
+      color: var(--grey500);
+      & + li {
+        margin-top: 10px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 3px;
+        height: 3px;
+        background: var(--grey500);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// as신텅 안내 팝업
+.as-guide-popup {
+  .basic-popup {
+    .popup-header {
+      margin-bottom: 9px;
+    }
+    .noti-desc {
+      line-height: 18px;
+      font-size: 13px;
+      letter-spacing: -0.52px;
+      color: var(--grey400);
+    }
+    .desc {
+      padding: 21px 0 27px;
+      li {
+        position: relative;
+        padding-left: 8px;
+        margin-bottom: 6px;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.56px;
+        color: var(--grey800);
+        &::before {
+          content: '';
+          position: absolute;
+          top: 7px;
+          left: 0;
+          width: 3px;
+          height: 3px;
+          background: var(--black);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .btn-area {
+    padding: 0 12px 12px;
+  }
+}
+
+//상단 tab바
+.head-tab-section {
+  padding: 0 20px;
+  background: var(--white);
+  border-bottom: 1px solid #efefef;
+  z-index: 1;
+  .head-tab-wrap {
+    display: flex;
+    li {
+      flex: 1 1 auto;
+      &.active {
+        border-bottom: 2px solid var(--black);
+        button,
+        a {
+          font-weight: 700;
+        }
+      }
+      button,
+      a {
+        display: block;
+        width: 100%;
+        padding: 18px 0;
+        font-size: 14px;
+        letter-spacing: -0.56px;
+        text-align: center;
+        opacity: 1;
+      }
+      em {
+        color: var(--grey500);
+      }
+    }
+  }
+}
+
+// 매장찾기 - 매장상세
+.sub-store-detail {
+  [class^='common-content'] {
+    padding: 36px 20px;
+    border-bottom: 7px solid var(--grey50);
+    .title {
+      margin-bottom: 12px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.1px;
+    }
+    .sub-desc {
+      line-height: 18px;
+      font-size: 14px;
+      letter-spacing: -0.56px;
+      color: var(--grey600);
+    }
+  }
+  .common-content {
+    &-info {
+      margin-top: 109px;
+      padding-top: 17px;
+    }
+    &-review {
+      padding-bottom: 30px;
+      border-bottom: 0;
+    }
+  }
+  .common-content-info {
+    .store-tit {
+      margin-bottom: 18px;
+      font-size: 0;
+      .ic-location-bold {
+        display: inline-block;
+        margin-right: 2px;
+        font-size: 19px;
+        vertical-align: middle;
+      }
+      span {
+        font-size: 16px;
+        font-weight: 700;
+        vertical-align: middle;
+      }
+    }
+    .map-box {
+      margin-top: 16px;
+      height: 190px;
+      background: #ddd;
+    }
+    .store-link-box {
+      margin-top: 20px;
+    }
+    .content-info-desc {
+      margin-top: 27.5px;
+    }
+  }
+  .common-content-event {
+    padding: 36px 0 36px 20px;
+    .sub-desc {
+      padding-right: 20px;
+    }
+    .swiper-overlap {
+      margin-top: 18px;
+      .swiper-wrapper {
+        z-index: 0;
+      }
+      .swiper-slide {
+        margin-right: 10px;
+        width: 310px;
+        a {
+          display: block;
+        }
+      }
+      picture {
+        display: block;
+        width: 310px;
+        height: 131px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .common-content-review {
+    margin-bottom: 60px;
+    .review-head {
+      position: relative;
+      margin-bottom: 16px;
+      .store-like {
+        position: absolute;
+        top: 0;
+        right: 3.5px;
+      }
+      .revw-amount {
+        font-size: 13px;
+        color: var(--grey500);
+      }
+    }
+    // bar graph
+    .bar-graph-box {
+      .bar-item {
+        position: relative;
+        margin-bottom: 4px;
+        height: 40px;
+        background: var(--grey100);
+        border-radius: 0 3px 3px 0;
+        &:nth-child(1) .state {
+          background: #d5d0fe;
+        }
+        &:nth-child(2) .state {
+          background: #dbd7fe;
+        }
+        &:nth-child(3) .state {
+          background: #e2dffb;
+        }
+        &:nth-child(4) .state {
+          background: #e7e5f9;
+        }
+        &:nth-child(5) .state {
+          background: #edecf9;
+        }
+      }
+      .state {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-radius: 0 3px 3px 0;
+      }
+      .info {
+        position: relative;
+        display: flex;
+        padding: 0 18px 0 20px;
+        height: 100%;
+        line-height: 40px;
+        font-size: 15px;
+        letter-spacing: -0.6px;
+      }
+      .rank {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .info-tit {
+        font-weight: 400;
+      }
+      .number {
+        margin-left: auto;
+        font-size: 12px;
+        letter-spacing: normal;
+        font-weight: 700;
+        color: #222;
+      }
+    }
+  }
+}
+
+//매장상세 - dl, dt 설명 박스
+.content-info-desc {
+  display: flex;
+  flex-wrap: wrap;
+  dt,
+  dd {
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
+  dt {
+    color: var(--grey500);
+    width: 68.5px;
+  }
+  dd {
+    margin-bottom: 13px;
+    width: calc(100% - 68.5px);
+    &:last-child {
+      margin-bottom: 0;
+    }
+    p {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+// 무상 및 유상 판단기준 full popup
+.as-serv-popup {
+  .popup-inner {
+    padding-bottom: 45px;
+    margin-top: 56px;
+    padding: 24px 20px 42px;
+    [class^='service-cont'] {
+      margin-bottom: 40px;
+      .title {
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.6px;
+        color: var(--black);
+      }
+      dd > p {
+        line-height: 18px;
+        font-size: 14px;
+        letter-spacing: -0.56px;
+        color: var(--grey600);
+        & + p {
+          margin-top: 10px;
+        }
+      }
+    }
+    .etc-desc {
+      position: relative;
+      padding-left: 7.5px;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: -0.48px;
+      color: var(--grey400);
+      &::before {
+        content: '*';
+        position: absolute;
+        top: 3px;
+        left: 0;
+        font-size: 12px;
+        letter-spacing: -0.48px;
+        color: var(--grey400);
+      }
+    }
+  }
+  // 유상서비스
+  .pay-serv-cont {
+    margin-top: 18px;
+    li + li {
+      margin-top: 15px;
+    }
+    strong {
+      display: block;
+      margin-bottom: 9px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--grey700);
+    }
+    p {
+      position: relative;
+      padding-left: 6px;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.48px;
+      color: #606060;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 2px;
+        height: 2px;
+        background: var(--grey600);
+        border-radius: 50%;
+      }
+      & + p {
+        margin-top: 4.5px;
+      }
+    }
+  }
+  .pay-serv-box {
+    padding: 15px 18px;
+    margin-top: 14px;
+    background: var(--grey50);
+    border-radius: 3px;
+    .desc {
+      padding-bottom: 12px;
+      border-bottom: 1px solid #d9d9d9;
+      font-size: 13px;
+      letter-spacing: -0.52px;
+      color: var(--grey700);
+    }
+  }
+  // 유상수리 판단기준
+  .service-cont-payrepair {
+    .case-desc {
+      display: block;
+      padding: 16.5px 0;
+      margin-bottom: 14px;
+      border: 1px solid #e5e5e5;
+      border-width: 1px 0 1px 0;
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 400;
+      letter-spacing: -0.52px;
+      color: var(--black);
+    }
+    .case-type {
+      margin-bottom: 30.5px;
+      li {
+        & + li {
+          margin-top: 14px;
+        }
+        .type-desc-box {
+          margin-top: 4px;
+        }
+        strong,
+        p {
+          font-size: 14px;
+          letter-spacing: -0.56px;
+          line-height: 21px;
+        }
+        strong {
+          font-weight: 700;
+        }
+        p {
+          position: relative;
+          padding-left: 9px;
+          font-size: 14px;
+          letter-spacing: -0.56px;
+          color: var(--grey600);
+          &::before {
+            content: '';
+            position: absolute;
+            top: 8.5px;
+            left: 0;
+            width: 3px;
+            height: 3px;
+            background: var(--grey600);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//상담 예약 내역 조회, 상담 예약 내역 리스트
+[class^='store-reserv'] {
+  .content-reserve-inquiry,
+  .content-reserve-list,
+  .content-reserve {
+    margin-top: 56px;
+    border-top: 7px solid var(--grey50);
+    padding: 24px 20px 0;
+  }
+  .reserve-tit {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.58px;
+    margin-bottom: 35px;
+  }
+  .inquiry-input-box {
+    padding-top: 35px;
+    p {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+    }
+  }
+  .title-checkbox {
+    position: relative;
+    padding-bottom: 18px;
+    .reserve-tit {
+      margin-bottom: 0;
+    }
+    .check-box {
+      position: absolute;
+      top: -3px;
+      right: 0;
+    }
+  }
+}
+
+//상담예약 내역
+.content-reserve-list {
+  margin-bottom: 90px;
+  .check-box {
+    i {
+      font-size: 13px;
+      vertical-align: -6px;
+    }
+    .check-ico {
+      width: 20px;
+      height: 20px;
+    }
+    label {
+      font-size: 14px;
+    }
+  }
+  .full-check-type li {
+    display: flex;
+    padding: 18px 0 20px;
+    border-bottom: 1px solid #efefef;
+    &:first-child {
+      border-top: 1px solid #efefef;
+    }
+    .check-box {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .check-ico {
+        margin-right: 0;
+      }
+      label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 0;
+        width: 60px;
+        height: 100%;
+        background: transparent;
+        z-index: 1;
+      }
+    }
+  }
+  .reserve-detail {
+    padding-left: 20px;
+    .store-name {
+      vertical-align: middle;
+      i {
+        display: inline-block;
+        font-size: 16px;
+        vertical-align: -2px;
+      }
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.56px;
+    }
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      width: 170px;
+      dt,
+      dd {
+        font-size: 14px;
+        letter-spacing: -0.56px;
+        margin-bottom: 12px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      dt {
+        margin-right: 9px;
+        color: var(--grey500);
+      }
+    }
+    .etc-desc {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.48px;
+      color: #7887b3;
+      .etc-icon {
+        display: inline-block;
+        vertical-align: -2px;
+        width: 12px;
+        height: 12px;
+        background: url($dir + 'icon/ic-memo.png') no-repeat 0 0;
+        background-size: 100% auto;
+      }
+    }
+  }
+  .link-box {
+    margin-left: auto;
+    .link-store {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      height: 100%;
+      width: 50px;
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+  .btn-rounded-large {
+    margin-top: 30px;
+  }
+}
+
+.list-input-box {
+  .guide-tit {
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+  }
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    dt {
+      width: 60px;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: -0.52px;
+      margin-bottom: 8px;
+    }
+    dd {
+      width: calc(100% - 60px);
+      margin-bottom: 8px;
+    }
+    input {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+//상담예약
+.store-reserve {
+  .content-reserve {
+    margin-bottom: 60px;
+
+    .store-name {
+      padding-bottom: 16px;
+      border-bottom: 1px solid #efefef;
+      i {
+        display: inline-block;
+      }
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.64px;
+    }
+    .guide-tit em {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: -0.65px;
+      color: var(--grey500);
+    }
+    .list-input-box {
+      padding: 28px 0 30px;
+      border-bottom: 1px solid #efefef;
+      .inquire-type-two {
+        margin-bottom: 8px;
+      }
+      input[type='text'] {
+        width: 100%;
+      }
+      input[type='password'] {
+        color: var(--black);
+      }
+      .ico-date,
+      .ico-time {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: no-repeat 0 0;
+        background-size: 100% auto;
+      }
+      .ico-date {
+        background-image: url('/public/images/icon/ic-date.png');
+      }
+      .ico-time {
+        background-image: url('/public/images/icon/ic-time.png');
+      }
+      .ic-store,
+      .ic-etc-hphone {
+        font-size: 12px;
+      }
+    }
+    .counsel-type-box {
+      label {
+        display: block;
+        padding: 12px 15px;
+        line-height: 16px;
+      }
+      .add-text {
+        padding-top: 3.5px;
+      }
+    }
+  }
+  .content-info-agree {
+    position: relative;
+    padding: 27px 0;
+    .agree-check {
+      padding-bottom: 16px;
+      &.active {
+        .bl-arr-bold {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .check-ico {
+      width: 20px;
+      height: 20px;
+      i {
+        font-size: 12px;
+      }
+    }
+    label {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.56px;
+      color: var(--black);
+    }
+    .btn-open {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      font-size: 10px;
+      .bl-arr-bold {
+        display: inline-block;
+        transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    .agree-desc {
+      display: none;
+      padding: 19px;
+      background: #f5f5f7;
+      .title {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 14px;
+        letter-spacing: -0.56px;
+      }
+      .desc {
+        line-height: 19px;
+        font-size: 13px;
+        letter-spacing: -0.52px;
+        color: va(--grey600);
+      }
+    }
+  }
+}
+
+//날짜 선택 레이어 팝업
+.select-date-popup {
+  .calendar-inner {
+    padding: 17px 24px 0;
+    h3 {
+      font-size: 13px;
+      font-weight: 799;
+      letter-spacing: -0.52px;
+    }
+  }
+  .calendar-box {
+    margin: 9px 0 30px;
+  }
+  .calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      i {
+        font-size: 12px;
+      }
+      &.prev-month {
+        margin-right: 5px;
+        i {
+          color: #ccc;
+        }
+      }
+      &.next-month {
+        margin-left: 5px;
+        i {
+          vertical-align: -4px;
+        }
+      }
+    }
+    .calendar-tit {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+    }
+  }
+  //캘린더 테이블
+  .calendar-table {
+    border-bottom: 1px solid #e6e6e6;
+    thead th {
+      padding: 12px 0;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: -0.52px;
+      color: var(--grey700);
+    }
+    tbody {
+      button {
+        display: inline-block;
+        width: 100%;
+        padding: 18px 0;
+        font-size: 15px;
+        text-align: center;
+        &.disabled {
+          color: #afafaf;
+        }
+        &.today {
+          color: var(--primary);
+        }
+        &.active {
+          position: relative;
+          font-weight: 600;
+          color: var(--white);
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 35px;
+            height: 35px;
+            background: var(--primary);
+            border-radius: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+          }
+        }
+        &.next-month-date {
+          color: var(--grey600);
+        }
+      }
+    }
+    tr:last-child td button {
+      padding-bottom: 29px;
+    }
+  }
+  .time-select-box {
+    margin: 15px 0 30px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 0;
+      li {
+        position: relative;
+        margin-right: 6px;
+        margin-top: 6px;
+        width: calc(33.33% - 6px);
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        &:nth-child(-n + 3) {
+          margin-top: 0;
+        }
+      }
+      input[type='radio']:checked + label {
+        font-weight: 700;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+      }
+      input[type='radio']:disabled {
+        & + label {
+          border-color: #e6e6e6;
+          background: #f2f2f2;
+          color: #afafaf;
+        }
+      }
+      label {
+        display: inline-block;
+        width: 100%;
+        height: 43px;
+        line-height: 41px;
+        font-size: 13px;
+        letter-spacing: -0.52px;
+        text-align: center;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+//상담 예약 완료 팝업
+.reserv-complete-popup {
+  .popup-header {
+    margin-bottom: 24px;
+  }
+  .popup-tit {
+    display: block;
+  }
+  .store-name {
+    margin-bottom: 10px;
+    i {
+      font-size: 16px;
+    }
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.56px;
+  }
+  .reserve-cont {
+    display: flex;
+    flex-wrap: wrap;
+    dt,
+    dd {
+      margin-bottom: 10px;
+      font-size: 14px;
+      letter-spacing: -0.56px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    dt {
+      margin-right: 9px;
+      color: var(--grey500);
+    }
+    dd {
+      width: calc(100% - 64px);
+    }
+  }
+  .common-content-btn {
+    margin-top: 30px;
+    position: static;
+    padding: 0 12px 12px;
+  }
+}

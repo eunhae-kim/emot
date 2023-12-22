@@ -1,0 +1,27 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bottomNav.css"/>
+  <script src="./bottomNav.js" charset="UTF-8"></script>
+</head>
+<body>
+<div onclick="$tw.bottomNav.show()">Show</div>
+<div onclick="$tw.bottomNav.hide()">Hide</div>
+<script>
+  $tw.bottomNav.init({
+    apiType: "V6",
+
+    ldsp: "STG",
+    lang: "KO",
+    show: true,
+
+    // 첫 화면
+    //showBottomSheet: "EXCEPTION_ONLY",
+    // 나머지 화면
+    showBottomSheet: "N",
+
+    tabIndex: 0,
+  });
+</script>
+</body>
+</html>

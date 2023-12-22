@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- 2022. 09. 26 15:30 / 팝업 구조변경 -->
+    <div class="popup-page tw-popup fixed-bottom popup-cablesub">
+      <header class="tworld-sub-header">  
+        <div class="sub-header-inner">
+          <a href="javascript:window.history.go(-1);" class="menu-item-prev">
+            <i class="svg-prev"></i>
+            <span class="hidden">이전 페이지</span>
+          </a>
+          <strong class="sub-header-tit">내게 맞는 인터넷/IPTV 상품 찾기</strong>
+          <span class="menu-box">
+            <button type="button" class="menu-item-close">
+              <i class="svg-close"></i>
+              <span class="hidden">닫기</span>
+            </button>
+          </span>
+        </div>
+
+        <!-- 그래프 -->
+        <div class="channel-line-graph">
+          <div class="bar-graph" aria-label="막대그래프">
+            <span class="figure-data" style="width:20%"></span>
+          </div>
+        </div>
+        <!-- / 그래프 -->
+      </header>
+      <div class="container-wrap">
+        <h2 class="blind">내용</h2>
+        <div class="container">
+          <div class="common-content-survey step1">
+            <div class="popup-top">
+              <p class="step">Step 2.</p>
+              <h2 class="top-title">
+                고객님의 인터넷 사용 스타일은 <br> 어떤 타입이신가요?
+              </h2>
+            </div>
+  
+            <div class="popup-survey-img">
+              <!-- 2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+              <i class="icon-survey-step02"></i>
+              <span class="hidden">간단한 질문확인</span>
+              <!-- //2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+            </div>
+  
+            <ul class="inquire-type-question">
+              <li class="inquire-item">
+                <input type="radio" id="step1_0" name="step1"/>
+                <label for="step1_0" class="channel-title">
+                  간단한 온라인 검색과 웹, 문서 작업 중심
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="radio" id="step1_1" name="step1"/>
+                <label for="step1_1" class="channel-title">
+                  재택근무, 온라인학습,<br> 영화/드라마/동영상 콘텐츠를 즐겨보는 편
+                </label>
+              </li> 
+              <li class="inquire-item">
+                <input type="radio" id="step1_2" name="step1"/>
+                <label for="step1_2" class="channel-title">
+                  초 고화질의 동영상 스트리밍, 업/다운로드,<br>
+                  고사양 온라인 게임을 즐김
+                </label>
+              </li>         
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="fixed-area-bt">
+        <div class="btn-full-pop">
+          <button type="button" class="btns blue" onClick="location.href='sub-cable-survey-step3.html'">다음</button>
+        </div>
+      </div>
+    </div>
+    <!-- // .popup-page -->
+
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+
+</html>

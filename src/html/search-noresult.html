@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container search">
+      
+      <article class="common-content-srchform">
+        <div class="search-form-wrap">
+          <button type="button" class="tbar-btn-prev">
+            <i class="ic-tbar-prev"></i>
+            <span class="hidden">이전 페이지 이동</span>
+          </button>
+
+          <!-- 공통으로 쓸 component -->
+          <div class="search-form">
+            <h1 class="hidden">검색 영역</h1>
+            <form>
+              <fieldset>
+                <legend class="hidden">검색 입력창 영역</legend>
+                <div class="search-input-area">
+                  <input type="search" class="search-input" value="추천 검색어1" title="전체검색">
+                  <button type="button" class="btn-txt-delete">
+                    <i class="ic-input-delet"></i>
+                    <span class="hidden">입력 내용 삭제</span>
+                  </button>
+                </div>
+                <button type="submit" class="btn-search-submit">
+                  <i class="ic-tbar-srch2"></i>
+                  <span class="hidden">검색</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- //공통으로 쓸 component -->
+        </div>
+      </article>
+      
+      <div class="no-result-area">
+        <!-- search : 검색 결과가 없습니다. -->
+        <div class="search-no-result common-case-box">
+          <div class="inner">
+            <span class="ico-wrap">
+              <i class="ic-warn"></i>
+            </span>
+            <strong class="warn-title">'<em class="search-keyword">ㅌㅎ노내낸ㄴ</em>'에 <br>대한 검색결과가 없습니다.</strong>
+            <ul class="info-desc">
+              <li>검색어의 맞춤법이 정확한지 확인해 주세요.</li>
+              <li>검색어의 길이를 줄이거나 비슷한 다른 검색어를 입력해 보세요.</li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- / .no-result-area -->
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/$var.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../public/js/widgets.js"></script>
+<script src="../../../public/js/auth.js"></script>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/ScrollMagic.min.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

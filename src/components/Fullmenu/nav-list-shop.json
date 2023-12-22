@@ -1,0 +1,111 @@
+[
+  {
+    "subtitle":"휴대폰",
+    "sublist": [
+      {
+        "href": null,
+        "name": "5G 휴대폰"
+      },
+      {
+        "href": null,
+        "name": "휴대폰"
+      },
+      {
+        "href": null,
+        "name": "키즈폰"
+      },
+      {
+        "href": null,
+        "name": "5G 태블릿/노트북"
+      },
+      {
+        "href": null,
+        "name": "태블릿/노트북"
+      },
+      {
+        "href": null,
+        "name": "스마트워치"
+      },
+      {
+        "href": null,
+        "name": "휴대용 와이파이"
+      }
+    ]
+  },
+  {
+    "subtitle":"언택트플랜",
+    "sublist": [
+      {
+        "href": null,
+        "name": "언택트플랜 기획전"
+      }
+    ]
+  },
+  {
+    "subtitle":"인터넷/IPTV",
+    "sublist": [
+      {
+        "href": null,
+        "name": "인터넷"
+      },
+      {
+        "href": null,
+        "name": "IPTV"
+      },
+      {
+        "href": null,
+        "name": "결합할인"
+      },
+      {
+        "href": null,
+        "name": "사은품"
+      }
+    ]
+  },
+  {
+    "subtitle":"자급제/쓰던 폰",
+    "sublist": [
+      {
+        "href": null,
+        "name": "혜택 모아보기"
+      },
+      {
+        "href": null,
+        "name": "등록 및 요금제 가입하기"
+      }
+    ]
+  },
+  {
+    "subtitle":"액세서리",
+    "sublist": [
+      {
+        "href": null,
+        "name": "핫딜"
+      },
+      {
+        "href": null,
+        "name": "케이스/필름"
+      },
+      {
+        "href": null,
+        "name": "배터리/케이블"
+      },
+      {
+        "href": null,
+        "name": "음향기기"
+      },
+      {
+        "href": null,
+        "name": "생활기기"
+      },
+      {
+        "href": null,
+        "name": "애플존"
+      }
+    ]
+  },
+  {
+    "subtitle":"기획전",
+    "sublist": []
+  }
+]

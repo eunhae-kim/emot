@@ -1,0 +1,234 @@
+//common-case-box
+.common-case-box {
+  padding: 30px 0;
+  border-bottom: 7px solid #f0f0f5;
+  .inner {
+    padding: 0 20px;
+  }
+  .title-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.64px;
+    }
+    .btn-all-delete {
+      font-size: 13px;
+      letter-spacing: -0.52px;
+      color: #808080;
+    }
+  }
+  .thumbnail-rounded img {
+    width: 100%;
+  }
+  .search-keyword {
+    color: var(--primary);
+  }
+  &.group-autocomplete-keyword {
+    .group-keyword-list li {
+      padding-right: 0;
+    }
+  }
+  &.search-promotion {
+    border-bottom: 0;
+    .title-head {
+      margin-bottom: 18px;
+      .num {
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--primary);
+      }
+    }
+    .list-group-fullbanner .title {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: -0.56px;
+    }
+  }
+}
+
+//최근 검색어가 없습니다.
+.lately-keyword-none {
+  padding: 70px 0;
+  border-bottom: 7px solid var(--grey50);
+  div {
+    text-align: center;
+    i {
+      font-size: 28px;
+    }
+    p {
+      margin-top: 8px;
+      font-size: 17px;
+      line-height: 22px;
+      font-weight: 700;
+      letter-spacing: -0.68px;
+      color: var(--grey700);
+    }
+  }
+}
+
+//키워드 리스트
+.group-keyword-list {
+  li {
+    position: relative;
+    padding-right: 32px;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .keyword-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+    .keyword-item {
+      display: block;
+      width: 100%;
+      font-size: 15px;
+      letter-spacing: -0.6px;
+    }
+    .date {
+      font-size: 12px;
+      letter-spacing: 0;
+      color: #999;
+    }
+    .btn-delete {
+      position: absolute;
+      right: 0;
+      top: 0;
+      i {
+        font-size: 12px;
+        color: #808080;
+      }
+    }
+  }
+}
+
+// 인기 급상승
+.group-hot-keyword {
+  border-bottom: 0;
+  .inner {
+    padding-right: 0;
+  }
+  .swiper-slide {
+    width: 254px;
+  }
+  .hot-keyword-list {
+    padding: 13px 20px;
+    margin-right: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    li {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        display: block;
+        padding: 13px 0;
+        width: 100%;
+        font-size: 0;
+      }
+      [class^='number'] {
+        display: inline-block;
+        margin-right: 12px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #444444;
+        &.number-top3 {
+          color: var(--primary);
+        }
+      }
+      .title {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.56px;
+      }
+      i {
+        font-size: 7px;
+      }
+    }
+  }
+}
+
+//검색 결과가 없습니다
+.search-no-result {
+  .inner {
+    padding: 0;
+    margin: 0 auto;
+    width: 235px;
+  }
+  .ico-wrap {
+    display: block;
+    margin-bottom: 17px;
+    text-align: center;
+  }
+  .ic-warn {
+    font-size: 28px;
+  }
+  .warn-title {
+    display: block;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+    letter-spacing: -0.68px;
+    .search-keyword {
+      color: var(--primary);
+    }
+  }
+  .info-desc {
+    margin-top: 9px;
+    li {
+      position: relative;
+      padding-left: 9px;
+      line-height: 18px;
+      font-size: 13px;
+      letter-spacing: -0.52px;
+      color: #808080;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 3px;
+        height: 3px;
+        background-color: #808080;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// 검색폼 fix
+.common-content-srchform {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: var(--white);
+  z-index: 2;
+}
+
+// 최근 검색어, 자동완성, 검색결과 있음, 검색 결과 없음 위치값
+.lately-keyword-area,
+.no-result-area {
+  margin-top: 50px;
+}
+
+.auto-complete-area {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--white);
+  z-index: 11;
+}
+
+.search-result-area {
+  padding-top: 50px;
+}

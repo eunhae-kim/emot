@@ -1,0 +1,61 @@
+.ic-alarm,
+.ic-settg {
+  color: #000;
+}
+.ic-menu-my,
+.ic-menu-prdserv,
+.ic-menu-benef,
+.ic-menu-suprt,
+.ic-menu-shop {
+  color: #a1a1a1;
+}
+.ic-menu-my.on,
+.ic-menu-prdserv.on,
+.ic-menu-benef.on,
+.ic-menu-suprt.on,
+.ic-menu-shop.on {
+  color: #4130df;
+}
+.ic-btn-stop1,
+.ic-btn-stop2 {
+  color: #e5e2e3;
+}
+.ic-eng {
+  color: rgba(60, 43, 223, 0.96);
+}
+.ic-info {
+  color: #888;
+}
+.bl-arr:before,
+.bl-arr-bold:before {
+  display: inline-block;
+}
+.bl-arr.top:before {
+  transform: rotate(-90deg);
+}
+.bl-arr.btm:before {
+  transform: rotate(90deg);
+}
+.bl-arr.left:before {
+  transform: rotate(180deg);
+}
+.bl-arr-bold.top:before {
+  transform: rotate(-180deg);
+}
+.bl-arr-bold.right:before {
+  transform: rotate(-90deg);
+}
+.bl-arr-bold.left:before {
+  transform: rotate(90deg);
+}
+.bl-change-same {
+  color: #cbcbcb;
+}
+.bl-change-top {
+  color: #4130df;
+}
+.bl-change-top.down {
+  display: inline-block;
+  color: #cbcbcb;
+  transform: rotateX(180deg);
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <main class="container survey">
+      <div class="popup-survey">
+        <header class="tworld-sub-header">  
+          <div class="sub-header-inner">
+            <a href="javascript:window.history.go(-1);" class="menu-item-prev">
+              <i class="svg-prev"></i>
+              <span class="hidden">이전 페이지</span>
+            </a>
+            <strong class="sub-header-tit">나에게 맞는 단말 찾기</strong>
+            <span class="menu-box">
+              <button type="button" class="menu-item-close">
+                <i class="svg-close"></i>
+                <span class="hidden">닫기</span>
+              </button>
+            </span>
+          </div>
+
+          <!-- 그래프 -->
+          <div class="channel-line-graph">
+            <div class="bar-graph" aria-label="막대그래프">
+              <span class="figure-data" style="width:28%"></span>
+            </div>
+          </div>
+          <!-- / 그래프 -->
+        </header>
+      
+        <div class="survey-content ">
+          <div class="popup-top">
+            <p class="step">Step2</p>
+            <h2 class="top-title">
+              원하는 휴대폰 유형이<br>있으신가요?
+            </h2>
+          </div>
+
+          <ul class="inquire-type-question">
+            <li class="inquire-item">
+              <input type="radio" id="step1_0" name="step1"/>
+              <label for="step1_0" class="survey-title">
+                <em class="sv-title">실속형</em>
+                경제적인 가격의 휴대폰
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="step1_1" name="step1"/>
+              <label for="step1_1" class="survey-title">
+                <em class="sv-title">균형</em>
+                가성비 좋은 휴대폰
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="step1_2" name="step1"/>
+              <label for="step1_2" class="survey-title">
+                <em class="sv-title">고사양</em>
+                빠르고 성능 좋은 휴대폰
+              </label>
+            </li>         
+          </ul>
+        </div><!-- / .survey-content -->
+
+        <div class="fixed-area-bt">
+          <div class="btn-full-pop">
+            <button type="button" class="btns blue" onClick="location.href='main-survey-step3.html'">다음</button>
+          </div>
+        </div>
+      </div><!-- / .popup-cablesub -->      
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+
+</html>

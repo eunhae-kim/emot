@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container benefit-main">
+      <article class="common-content-top">
+        <div class="full-banner">
+          <a href="/">
+            <img src="/public/images/banner/benefit-banner.jpg" />
+            <span class="inner-text">
+              <p class="text-ref">SKT와 7년 3개월째 함께하고 계신</p>
+              <span class="text-claim">김민정님을 위한
+                혜택을 확인해보세요</span>
+            </span>
+          </a>
+        </div>
+        <div class="user-benefit-edge">
+          <div class="common-state-bx">
+            <i class="ic-login"></i>
+            <div class="state-text">
+              <div class="text-title">로그인 하기 <i class="bl-arr-bold right"></i></div>
+              <div class="text-account">로그인 후 풍부한 혜택을 확인해보세요</div>
+            </div>
+          </div>
+          <div class="common-state-bx">
+            <i class="ic-line-regis"></i>
+            <div class="state-text">
+              <div class="text-title">회선 등록하기 <i class="bl-arr-bold right"></i></div>
+              <div class="text-account">원활한 서비스 이용을 위해 회선을 등록하세요</div>
+            </div>
+          </div>
+          <div class="common-state-bx">
+            <i class="ic-warn"></i>
+            <div class="state-text">
+              <div class="text-title">가입회선 없음 <i class="bl-arr-bold right"></i></div>
+              <div class="text-account">회선을 가입하고 혜택을 받아보세요</div>
+            </div>
+          </div>
+          
+        </div>
+      </article>
+
+      <article class="common-content-line">
+        <div class="common-content-slide">
+          <div class="full-banner-medium">
+            <div class="swiper swiperControls">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="/">
+                    <picture>
+                      <img loading="lazy" src="/public/images/thumbnail/middle-banner.png" alt="430" width="100%" />
+                    </picture>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="/">
+                    <picture>
+                      <img loading="lazy" src="/public/images/thumbnail/middle-banner.png" alt="430" width="100%" />
+                    </picture>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="/">
+                    <picture>
+                      <img loading="lazy" src="/public/images/thumbnail/middle-banner.png" alt="430" width="100%" />
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+  
+              <!-- 배너 1개일 경우 controller 숨김 -->
+              <div class="bnr-swiper-controller" id="swController">
+                <div class="swiper-pagination"></div>
+  
+                <div class="btn-controller">
+                  <button type="button" class="swiper-button-play" id="swPlay2">
+                    <i class="ic-play" class="icon-play"></i>
+                    <span class="hidden">재생</span>
+                  </button>
+                  <button type="button" class="swiper-button-pause" id="swStop2">
+                    <i class="ic-btn-stop2" class="icon-stop"></i>
+                    <span class="hidden">정지</span>
+                  </button>
+                </div>
+              </div>
+              <!-- .controller -->
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="common-banner-paging">
+        <h2 class="bn-title">이달의 우주 혜택 모음</h2>
+        <div class="common-swiper-slide swiper-overlap">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" alt="던킨 도너츠 모든 품목 50% 할인 및 적립" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" alt="던킨 도너츠 모든 품목 50% 할인 및 적립" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" alt="던킨 도너츠 모든 품목 50% 할인 및 적립" />
+                </picture>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+      
+      <article class="common-banner-touch">
+        <h2 class="bn-title">Weekly 혜택 모르면 손해</h2>
+
+        <h3 class="bn-sub-title">오늘의 혜택 <em>3</em></h3>
+        <div class="swiper-per rect">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="/" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+              </a>
+              <div class="cl-name">아웃백 딜리버리</div>
+              <div class="cl-state"><i class="ic-p-blue"></i>치킨 샐러드 무료 쿠폰</div>
+            </li>
+            <li class="swiper-slide">
+              <a href="/" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+              </a>
+              <div class="cl-name">캠퍼스 데이터</div>
+              <div class="cl-state"><i class="ic-p-blue"></i>새우버거+콜라(R) 무료</div>
+            </li>
+            <li class="swiper-slide">
+              <a href="/" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+              </a>
+              <div class="cl-name">캠퍼스 데이터</div>
+              <div class="cl-state"><i class="ic-p-blue"></i>새우버거+콜라(R) 무료</div>
+            </li>
+          </ul>          
+        </div> 
+        
+        <h3 class="bn-sub-title">다가오는 혜택 <em>4</em></h3>
+        <div class="swiper-per rect">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="/" class="bx due-date">
+                <span class="date">D-2</span>
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+              </a>
+              <div class="cl-name">아웃백 딜리버리</div>
+              <div class="cl-state"><i class="ic-p-red"></i>최대 12% 적립</div>
+            </li>
+            <li class="swiper-slide">
+              <a href="/" class="bx due-date">
+                <span class="date">D-3</span>
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+              </a>
+              <div class="cl-name">캠퍼스 데이터</div>
+              <div class="cl-state"><i class="ic-p-blue"></i>1만원 할인쿠폰 증정</div>
+            </li>
+            <li class="swiper-slide">
+              <a href="/" class="bx due-date">
+                <span class="date">D-4</span>
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+              </a>
+              <div class="cl-name">캠퍼스 데이터</div>
+              <div class="cl-state"><i class="ic-p-red"></i>최대 3GB</div>
+            </li>
+          </ul>          
+        </div> 
+
+      </article>
+
+      <article class="common-banner-paging">
+        <h2 class="bn-title">기프티콘 혜택</h2>
+        <div class="swiper-overlap">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" alt="던킨 도너츠 모든 품목 50% 할인 및 적립" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" alt="던킨 도너츠 모든 품목 50% 할인 및 적립" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" alt="던킨 도너츠 모든 품목 50% 할인 및 적립" />
+                </picture>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+
+      <article class="common-banner-touch">
+        <h2 class="bn-title">최대 4,000원 할인받고 인기영화 Top 5를 만나보세요</h2>
+        <div class="swiper-per oblong">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="/" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+              </a>
+              <div class="cl-name">비상선언</div>
+              <div class="cl-state">
+                <i class="ic-star"></i>
+                <div class="grade">7.2</div>
+                <div class="percent">예매율 19.1%</div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <a href="/" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+              </a>
+              <div class="cl-name">비상선언</div>
+              <div class="cl-state">
+                <i class="ic-star"></i>
+                <div class="grade">7.2</div>
+                <div class="percent">예매율 19.1%</div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <a href="/" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+              </a>
+              <div class="cl-name">비상선언</div>
+              <div class="cl-state">
+                <i class="ic-star"></i>
+                <div class="grade">7.2</div>
+                <div class="percent">예매율 19.1%</div>
+              </div>
+            </li>
+          </ul>          
+        </div>
+        <div class="btn-area">
+          <button type="button" class="btns-round">영화 전체 보러가기</button>
+        </div> 
+      </article>
+
+      <article class="common-banner-touch">
+        <h2 class="bn-title">오늘 강력 추천하는 상품이에요</h2>
+        <div class="swiper-overlap goods">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="/" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+                <span class="alarm">
+                  <i class="ic-clock"></i>
+                  <span class="date">D-6</span>
+                  <span class="time">07:46:22</span>
+                </span>
+              </a>
+              <div class="pd-name">[삼성전자] 갤럭시 버즈 프로 (색상 2종 중 택1)</div>
+              <div class="pd-price">
+                <div class="discount">53%</div>
+                <div class="flag-benefit">T혜택가</div>
+                <div class="dc-percent">113,650원</div>
+                <div class="price">239,800</div>
+              </div>
+              <div class="pd-shape">
+                <div class="tag">
+                  <span class="flag-coupon">특가쿠폰</span>
+                  <span class="flag-free">무료배송</span>
+                  <span class="flag-period">기간특가</span>
+                </div>
+                <div class="grade">
+                  <i class="ic-star"></i>
+                  <strong>4.9</strong>
+                  <span class="">(125)</span>
+                </div>
+              </div>
+              <div class="btn-area">
+                <button type="button" class="btns-round">T deal 상품 보러가기</button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <a href="/" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+                <span class="alarm">
+                  <i class="ic-clock"></i>
+                  <span class="date">D-6</span>
+                  <span class="time">07:46:22</span>
+                </span>
+              </a>
+              <div class="pd-name">[삼성전자] 갤럭시 버즈 프로 (색상 2종 중 택1)</div>
+              <div class="pd-price">
+                <div class="discount">53%</div>
+                <div class="flag-benefit">T혜택가</div>
+                <div class="dc-percent">113,650원</div>
+                <div class="price">239,800</div>
+              </div>
+              <div class="pd-shape">
+                <div class="tag">
+                  <span class="flag-coupon">특가쿠폰</span>
+                  <span class="flag-free">무료배송</span>
+                  <span class="flag-period">기간특가</span>
+                </div>
+                <div class="grade">
+                  <i class="ic-star"></i>
+                  <strong>4.9</strong>
+                  <span class="">(125)</span>
+                </div>
+              </div>
+              <div class="btn-area">
+                <button type="button" class="btns-round">T deal 상품 보러가기</button>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <a href="/" class="bx">
+                <picture>
+                  <img src="/public/images/transparent.png" />
+                </picture>
+                <span class="alarm">
+                  <i class="ic-clock"></i>
+                  <span class="date">D-6</span>
+                  <span class="time">07:46:22</span>
+                </span>
+              </a>
+              <div class="pd-name">[삼성전자] 갤럭시 버즈 프로 (색상 2종 중 택1)</div>
+              <div class="pd-price">
+                <div class="discount">53%</div>
+                <div class="flag-benefit">T혜택가</div>
+                <div class="dc-percent">113,650원</div>
+                <div class="price">239,800</div>
+              </div>
+              <div class="pd-shape">
+                <div class="tag">
+                  <span class="flag-coupon">특가쿠폰</span>
+                  <span class="flag-free">무료배송</span>
+                  <span class="flag-period">기간특가</span>
+                </div>
+                <div class="grade">
+                  <i class="ic-star"></i>
+                  <strong>4.9</strong>
+                  <span class="">(125)</span>
+                </div>
+              </div>
+              <div class="btn-area">
+                <button type="button" class="btns-round">T deal 상품 보러가기</button>
+              </div>
+            </li>
+          </ul>  
+          <div class="swiper-pagination"></div>        
+        </div>
+      </article>
+
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

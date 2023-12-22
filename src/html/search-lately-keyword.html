@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container search">
+      
+      <article class="common-content-srchform">
+        <div class="search-form-wrap">
+          <button type="button" class="tbar-btn-prev">
+            <i class="ic-tbar-prev"></i>
+            <span class="hidden">이전 페이지 이동</span>
+          </button>
+          <!-- 공통으로 쓸 component -->
+          <div class="search-form">
+            <h1 class="hidden">검색 영역</h1>
+            <form>
+              <fieldset>
+                <legend class="hidden">검색 입력창 영역</legend>
+                <div class="search-input-area">
+                  <input type="search" class="search-input" value="추천 검색어1" title="전체검색">
+                  <button type="button" class="btn-txt-delete">
+                    <i class="ic-input-delet"></i>
+                    <span class="hidden">입력 내용 삭제</span>
+                  </button>
+                </div>
+                <button type="submit" class="btn-search-submit">
+                  <i class="ic-tbar-srch2"></i>
+                  <span class="hidden">검색</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- //공통으로 쓸 component -->
+        </div>
+      </article>
+      
+      <div class="lately-keyword-area">
+        <!-- 최근검색어 내역이 없습니다. -->
+        <div class="lately-keyword-none">
+          <div>
+            <i class="ic-warn"></i>
+            <p>최근 검색어 내역이 없습니다.</p>
+          </div>
+        </div>
+        <!-- search : 최근 검색어 -->
+        <div class="group-lately-keyword common-case-box">
+          <div class="inner">
+            <div class="title-head">
+              <h2>최근 검색어</h2>
+              <button type="button" class="btn-all-delete">전체삭제</button>
+            </div>
+            <ul class="group-keyword-list">
+              <li>
+                <div class="keyword-wrap">
+                  <a href="" class="keyword-item">리필쿠폰</a>
+                  <em class="date">04.01</em>
+                </div>
+                <button type="button" class="btn-delete">
+                  <i class="ic-tbar-cls"></i>
+                  <span class="hidden">검색어 개별 삭제</span>
+                </button>
+              </li>
+              <li>
+                <div class="keyword-wrap">
+                  <a href="" class="keyword-item">알뜰한 요금제 </a>
+                  <em class="date">03.20</em>
+                </div>
+                <button type="button" class="btn-delete">
+                  <i class="ic-tbar-cls"></i>
+                  <span class="hidden">검색어 개별 삭제</span>
+                </button>
+              </li>
+              <li>
+                <div class="keyword-wrap">
+                  <a href="" class="keyword-item">신용카드 결제방법</a>
+                  <em class="date">03.19</em>
+                </div>
+                <button type="button" class="btn-delete">
+                  <i class="ic-tbar-cls"></i>
+                  <span class="hidden">검색어 개별 삭제</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- search : 인기 급상승 -->
+        <div class="group-hot-keyword common-case-box">
+          <div class="inner">
+            <div class="title-head">
+              <h2>인기 급상승</h2>
+            </div>
+            <div class="hot-keyword-wrap common-swiper-slide swiper-overlap">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <ul class="hot-keyword-list">
+                    <li>
+                      <a href="#">
+                        <span class="number-top3">1</span>
+                        <strong class="title">lte 요금제</strong>
+                      </a>
+                      <i class="bl-change-top">
+                        <em class="hidden">순위 상승</em>
+                      </i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="number-top3">2</span>
+                        <strong class="title">컬러링</strong>
+                      </a>
+                      <i class="bl-change-same">
+                        <em class="hidden">순위 변화없음</em>
+                      </i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="number-top3">3</span>
+                        <strong class="title">약정</strong>
+                      </a>
+                      <i class="bl-change-top">
+                        <em class="hidden">순위 상승</em>
+                      </i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="number">4</span>
+                        <strong class="title">lte 요금제</strong>
+                      </a>
+                      <i class="bl-change-top down">
+                        <em class="hidden">순위 하락</em>
+                      </i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="number">5</span>
+                        <strong class="title">lte 요금제</strong>
+                      </a>
+                      <i class="bl-change-top">
+                        <em class="hidden">순위 상승</em>
+                      </i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <ul class="hot-keyword-list">
+                    <li>
+                      <a href="#">
+                        <span class="number">6</span>
+                        <strong class="title">lte 요금제</strong>
+                      </a>
+                      <i class="bl-change-top">
+                        <em class="hidden">순위 상승</em>
+                      </i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="number">7</span>
+                        <strong class="title">컬러링</strong>
+                      </a>
+                      <i class="bl-change-same">
+                        <em class="hidden">순위 변화없음</em>
+                      </i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="number">8</span>
+                        <strong class="title">약정</strong>
+                      </a>
+                      <i class="bl-change-top">
+                        <em class="hidden">순위 상승</em>
+                      </i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="number">9</span>
+                        <strong class="title">lte 요금제</strong>
+                      </a>
+                      <i class="bl-change-top down">
+                        <em class="hidden">순위 하락</em>
+                      </i>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="number">10</span>
+                        <strong class="title">lte 요금제</strong>
+                      </a>
+                      <i class="bl-change-top">
+                        <em class="hidden">순위 상승</em>
+                      </i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        
+      </div><!-- / .lately-keyword-area -->
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/$var.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../public/js/widgets.js"></script>
+<script src="../../../public/js/auth.js"></script>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/ScrollMagic.min.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

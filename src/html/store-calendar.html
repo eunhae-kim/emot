@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="store-reserve container">
+    
+    <!-- 매장찾기 - 날짜, 시간 선택 레이어 팝업 -->
+    <div class="overlay active select-date-popup"> <!-- active --> 
+      <div class="layer-type-bottom store-filter-popup">
+        <div class="title-fixed">
+          <h2 class="sub-title">날짜 및 시간 선택</h2> 
+        </div>
+        <div class="calendar-inner">
+          <h3>날짜 선택</h3>
+          <div class="calendar-box">
+            <div class="calendar-header">
+              <button type="button" class="prev-month">
+                <i class="bl-arr left"></i>
+                <span class="hidden">전월</span>
+              </button>
+              <strong class="calendar-tit">2022년 7월</strong>
+              <button type="button" class="next-month">
+                <i class="bl-arr"></i>
+                <span class="hidden">다음월</span>
+              </button>
+            </div>
+            <table class="calendar-table">
+              <caption>날짜 선택</caption>
+              <thead>
+                <tr>
+                  <th>Su</th>
+                  <th>Mo</th>
+                  <th>Tu</th>
+                  <th>We</th>
+                  <th>Th</th>
+                  <th>Fr</th>
+                  <th>Sa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <!-- 선택 안 되는 날짜 class명: disabled -->
+                    <button type="button" class="disabled" disabled> 
+                      <span>27</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>28</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>29</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>30</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>31</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>1</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>2</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>3</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>4</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>5</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>6</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>7</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>8</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>9</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>10</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>11</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>12</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>13</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>14</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>15</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>16</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>17</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>18</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="disabled" disabled>
+                      <span>19</span>
+                    </button>
+                  </td>
+                  <td>
+                    <!-- 오늘 날짜 -->
+                    <button type="button" class="today">
+                      <span>
+                        20
+                        <em class="hidden">오늘</em>
+                      </span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button">
+                      <span>21</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button">
+                      <span>22</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button">
+                      <span>23</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button">
+                      <span>24</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button">
+                      <span>25</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button">
+                      <span>26</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button">
+                      <span>27</span>
+                    </button>
+                  </td>
+                  <td>
+                    <!-- 선택된 날짜 class명: active -->
+                    <button type="button" class="active">  
+                      <span>
+                        28
+                        <em class="hidden">선택된 날짜</em>
+                      </span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button">
+                      <span>29</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button">
+                      <span>30</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button">
+                      <span>31</span>
+                    </button>
+                  </td>
+                  <!-- 여기서부터 다음달 일자 class명: next-month-date -->
+                  <td>
+                    <button type="button" class="next-month-date">
+                      <span>1</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="next-month-date">
+                      <span>2</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="next-month-date">
+                      <span>3</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="next-month-date">
+                      <span>4</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="next-month-date">
+                      <span>5</span>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="next-month-date">
+                      <span>6</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>시간 선택</h3>
+          <div class="time-select-box">
+            <ul>
+              <li>
+                <input type="radio" name="time" id="time1" disabled>  <!-- 비활성화 -->
+                <label for="time1">오전 10:00</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time2">  
+                <label for="time2">오전 10:30</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time3">  
+                <label for="time3">오전 11:00</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time4">  
+                <label for="time4">오전 11:30</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time5">  
+                <label for="time5">오후 12:00</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time6">  
+                <label for="time6">오후 12:30</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time7">  
+                <label for="time7">오후 13:00</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time8">   
+                <label for="time8">오후 13:30</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time9">  
+                <label for="time9">오후 14:00</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time10">  
+                <label for="time10">오후 14:30</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time11">  
+                <label for="time11">오후 15:00</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time12">  
+                <label for="time12">오후 15:30</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time13">  
+                <label for="time13">오후 16:00</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time14">  
+                <label for="time14">오후 16:30</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time15">  
+                <label for="time15">오후 17:00</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time16">  
+                <label for="time16">오후 17:30</label>
+              </li>
+              <li>
+                <input type="radio" name="time"  id="time17">  
+                <label for="time17">오후 18:00</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-full-wrap">
+          <button type="button" class="btns-square-rd blue">확인</button>
+        </div>
+      </div>
+    </div><!-- / .select-date-popup -->
+
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/$var.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../public/js/widgets.js"></script>
+<script src="../../../public/js/auth.js"></script>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/ScrollMagic.min.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

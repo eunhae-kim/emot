@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <!-- 컬렉션상세 전체노출 페이지 -->
+  <div class="wrap">
+    <main class="container search">
+      <article class="common-content-srchform">
+        <div class="search-form-wrap">
+          <button type="button" class="tbar-btn-prev">
+            <i class="ic-tbar-prev"></i>
+            <span class="hidden">이전 페이지 이동</span>
+          </button>
+
+          <!-- 공통으로 쓸 component -->
+          <div class="search-form">
+            <h1 class="hidden">검색 영역</h1>
+            <form>
+              <fieldset>
+                <legend class="hidden">검색 입력창 영역</legend>
+                <div class="search-input-area">
+                  <input type="search" class="search-input" value="추천 검색어1" title="전체검색">
+                  <button type="button" class="btn-txt-delete">
+                    <i class="ic-input-delet"></i>
+                    <span class="hidden">입력 내용 삭제</span>
+                  </button>
+                </div>
+                <button type="submit" class="btn-search-submit">
+                  <i class="ic-tbar-srch2"></i>
+                  <span class="hidden">검색</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- //공통으로 쓸 component -->
+        </div>
+      </article>
+      <div class="search-result-area">
+        <!-- search-head-option -->
+        <div class="search-head-option option-type-one">
+          <span class="check-box">
+            <input type="checkbox" id="reset-search" title="결과 내 재검색">
+            <span class="check-ico">
+              <i class="bl-check"></i>
+            </span>
+            <label for="reset-search">결과 내 재검색</label>
+          </span>
+        </div>
+        <!-- search-head-keyword -->
+        <div class="search-head-keyword">
+          <span class="related-word">연관</span>
+          <div class="keyword-group-wrap">
+            <ul class="keyword-group">
+              <li><a href="/">휴대폰</a></li>
+              <li><a href="/">휴대폰결제 이용동의</a></li>
+              <li><a href="/">소액결제</a></li>
+              <li><a href="/">와이파이 도시락</a></li>
+              <li><a href="/">휴대폰</a></li>
+              <li><a href="/">휴대폰</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- search-head-category -->
+        <div class="search-head-category">
+          <ul class="category-group">
+            <li class="active"><button type="button">전체</button></li> <!--활성화 카테고리 클래스 active-->
+            <li><button type="button">요금제 <em class="amount">328</em></button></li>
+            <li><button type="button">부가서비스 <em class="amount">56</em></button></li>
+            <li><button type="button">바로가기 <em class="amount">19</em></button></li>
+            <li><button type="button">요금제 <em class="amount">328</em></button></li>
+            <li><button type="button">부가서비스 <em class="amount">56</em></button></li>
+          </ul>
+        </div>
+        <!-- search : 요금제 -->
+        <div class="common-content-box">
+          <div class="search-list-head">
+            <h2 class="head-tit">
+              <a href="/">요금제 <em class="amount">328</em></a>
+            </h2>
+            <button type="button" class="btn-filter">
+              <i class="ic-filter"></i>
+              추천순
+              <span class="hidden">오름차순 / 내림차순</span>
+            </button>
+          </div>
+          <ul class="list-group-desc common-list-group">
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case2">T플랜 스페셜</h3>
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li> 
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case">뉴 T끼리 맞춤형(200분+700mb)</h3>  <!-- 뒤에 (가입중), (가입불가) 등 badge 붙는 title에는 class명 'except-case' 추가 (너비 넘칭 방지) -->
+                  <span class="cmn-badge-blue">가입중</span>
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="/">
+                <div class="list-item-head">
+                  <h3 class="title except-case2">요금제명</h3>
+                  <strong class="info">90,000원</strong>
+                </div>
+                <p class="desc">
+                  요금제 설명 텍스트 1 - <em class="search-keyword">휴대</em>다라마바사아자카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                  요금제 설명 텍스트 2 - 가나다라마바사<em class="search-keyword">휴대</em>카타파하
+                </p>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-rounded-large">더보기</button>
+        </div>
+      </div> <!-- / .search-result-area -->
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/$var.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../public/js/widgets.js"></script>
+<script src="../../../public/js/auth.js"></script>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/ScrollMagic.min.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+<script>
+  devFunc.floatingAction.state();
+</script>
+</html>
