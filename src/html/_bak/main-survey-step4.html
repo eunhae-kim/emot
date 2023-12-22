@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <main class="container survey">
+      <div class="popup-survey">
+        <header class="tworld-sub-header">  
+          <div class="sub-header-inner">
+            <a href="javascript:window.history.go(-1);" class="menu-item-prev">
+              <i class="svg-prev"></i>
+              <span class="hidden">이전 페이지</span>
+            </a>
+            <strong class="sub-header-tit">나에게 맞는 단말 찾기</strong>
+            <span class="menu-box">
+              <button type="button" class="menu-item-close">
+                <i class="svg-close"></i>
+                <span class="hidden">닫기</span>
+              </button>
+            </span>
+          </div>
+
+          <!-- 그래프 -->
+          <div class="channel-line-graph">
+            <div class="bar-graph" aria-label="막대그래프">
+              <span class="figure-data" style="width:56%"></span>
+            </div>
+          </div>
+          <!-- / 그래프 -->
+        </header>
+      
+        <div class="survey-content">
+          <div class="popup-top">
+            <p class="step">Step4</p>
+            <h2 class="top-title">
+              어떤 사이즈의 화면을 <br>선호하시나요?
+            </h2>
+          </div>
+
+          <ul class="inquire-type-question">
+            <li class="inquire-item">
+              <input type="radio" id="step_0" name="step4"/>
+              <label for="step_0" class="survey-title">
+                <em class="sv-title">큰 화면</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="step_1" name="step4"/>
+              <label for="step_1" class="survey-title">
+                <em class="sv-title">작은 화면</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="step_2" name="step4"/>
+              <label for="step_2" class="survey-title">
+                <em class="sv-title">상관없음</em>
+              </label>
+            </li>         
+          </ul>
+        </div><!-- / .survey-content -->
+
+        <div class="fixed-area-bt">
+          <div class="btn-full-pop">
+            <button type="button" class="btns blue" onClick="location.href='main-survey-step5.html'">다음</button>
+          </div>
+        </div>
+      </div><!-- / .popup-cablesub -->      
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+
+</html>

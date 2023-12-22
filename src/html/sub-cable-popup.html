@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container cablesub">
+      <div class="popup-cablesub">
+        <header class="tworld-sub-header">  
+          <div class="sub-header-inner">
+            <strong class="sub-header-tit">예상 요금 시뮬레이션</strong>
+            <span class="menu-box">
+              <button type="button" class="menu-item-close">
+                <i class="svg-close"></i>
+                <span class="hidden">닫기</span>
+              </button>
+            </span>
+          </div>
+        </header>
+      
+        <!-- 2022. 09. 23 18:00 / 구조동일 reset-area-top 클래스명 변경 -->
+        <div class="reset-area-top">
+          <button type="button" class="btn-reset">
+            <span>
+              <i class="ic-reset"></i>
+              초기화
+            </span>
+          </button>
+        </div>
+        <!-- //2022. 09. 23 18:00 / 구조동일 reset-area-top 클래스명 변경 -->
+
+        <!-- step 1 -->
+        <div class="common-content step1">
+          <div class="popup-top">
+            <p class="step">Step 1.</p>
+            <h2 class="top-title">
+              인터넷 상품을 찾고 있으신 당신,<br>
+              다음 중 원하는 인터넷 속도는?
+            </h2>
+          </div>
+
+          <span class="check-box">
+            <input type="checkbox" id="reset-search">
+            <span class="check-ico">
+              <i class="bl-check"></i>
+            </span>
+            <label for="reset-search" class="eng-world">Wi-Fi 포함</label>
+          </span>
+
+          <ul class="inquire-type-one">
+            <li class="inquire-item">
+              <input type="radio" id="step1_0" name="step1"/>
+              <label for="step1_0" class="channel-title">
+                <span>광랜인터넷 와이파이</span>
+                <strong>100M</strong>
+                <em class="stxt">최소한의 용도, 저렴한 금액<br> 
+                  간단한 웹서핑, 사무, 소용량 다운로드
+                </em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="step1_1" name="step1"/>
+              <label for="step1_1" class="channel-title">
+                <span>기가라이트인터넷 와이파이</span>
+                <strong>500M</strong>
+                <em class="stxt">사용량 많음, 2인 이상<br> 
+                  끊김엇는 영상 통화, 대용량 업로드 및 다운로드
+                </em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="step1_2" name="step1"/>
+              <label for="step1_2" class="channel-title">
+                <span>기가인터넷 와이파이</span>
+                <strong>1G</strong>
+                <em class="stxt">가장 빠른 초 고화질<br>
+                  실시간 데이터, 4K 고화질 스트리밍, 초고속 다운로드
+                </em>
+              </label>
+            </li>         
+          </ul>
+        </div>
+
+        <!-- step 2 -->
+        <div class="common-content step2">
+          <div class="popup-top">
+            <p class="step">Step 2.</p>
+            <h2 class="top-title">
+              <em class="eng-world">B tv</em>를 알아보기로 한 당신, <br>
+              다음 중 원하는 채널 수는?
+            </h2>
+          </div>
+
+          <ul class="inquire-type">
+            <li class="inquire-item">
+              <input type="radio" id="step2_0" name="step2"/>
+              <label for="step2_0" class="channel-title">
+                <div class="pie-chart-row">
+                  <p class="pie-chart-wrap">
+                    <img src="/public/images/thumbnail/graph.png" alt="차트1" />
+                  </p>
+                  <p class="list-percent-info">
+                    <span>B tv 채널 수</span>
+                    <strong>선택 안함</strong>
+                    <em class="stxt">-</em>  
+                  </p>
+                </div>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step2_1" name="step2"/>
+              <label for="step2_1" class="channel-title">
+                <div class="pie-chart-row">
+                  <p class="pie-chart-wrap">
+                    <img src="/public/images/thumbnail/graph-basic.png" alt="차트2" />
+                  </p>
+                  <p class="list-percent-info">
+                    <span>B tv New 베이직</span>
+                    <strong>179채널</strong>
+                    <em class="stxt">기본 채널, 실속형<br>자상파, 종합편성</em>   
+                  </p>
+                </div>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step2_2" name="step2"/>
+              <label for="step2_2" class="channel-title">
+                <div class="pie-chart-row">
+                  <p class="pie-chart-wrap">
+                    <img src="/public/images/thumbnail/graph-standard.png" alt="차트3" />
+                  </p>
+                  <p class="list-percent-info">
+                    <span>B tv 스탠다드</span>
+                    <strong>222채널</strong>
+                    <em class="stxt">인기 채널, 다양한 장르<br> 애니/키즈/스포트(일부)</em>  
+                  </p>
+                </div>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step2_3" name="step2"/>
+              <label for="step2_3" class="channel-title">
+                <div class="pie-chart-row">
+                  <p class="pie-chart-wrap">
+                    <img src="/public/images/thumbnail/graph-all.png" alt="차트4" />
+                  </p>
+                  <p class="list-percent-info">
+                    <span>B tv All</span>
+                    <strong>252채널</strong>
+                    <em class="stxt">인기 채널, 크리에이터 영상<br> 프리미엄</em> 
+                  </p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- step 3 -->
+        <div class="common-content step3">
+          <div class="popup-top">
+            <p class="step">Step 3.</p>
+            <h2 class="top-title">
+              셋톰박스가 궁금해진 당신,<br>
+              다음 중 취향에 맞는 셋톱박스는?
+            </h2>
+          </div>
+
+          <ul class="inquire-type-two">
+            <li class="inquire-item">
+              <input type="radio" id="step3_0" name="step3"/>
+              <label for="step3_0" class="channel-title">
+                <span class="channel-chart">
+                  <!-- 2022. 09. 23 18:00 / img - i 태그 변경 -->
+                  <i class="icon-survey-smart"></i>
+                  <!-- //2022. 09. 23 18:00 / img - i 태그 변경 -->
+                </span>
+                <strong>Smart 3</strong>
+                <em class="stxt">Youtube 등 다양한 앱과<br>
+                  NUGU 음성지원 제공<br>
+                  #콤팩트
+                </em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step3_1" name="step3"/>
+              <label for="step3_1"  class="channel-title">
+                <span class="channel-chart">
+                  <!-- 2022. 09. 23 18:00 / img - i 태그 변경 -->
+                  <i class="icon-survey-apptv"></i>
+                  <!-- //2022. 09. 23 18:00 / img - i 태그 변경 -->
+                </span>
+                <strong>Apple TV 4K</strong>
+                <em class="stxt">애플 매니아라면 강력 추천,<br>
+                  콘텐츠를 즐기는 최고의 방법<br>
+                  #ios 연동
+                </em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step3_2" name="step3"/>
+              <label for="step3_2"  class="channel-title">
+                <span class="channel-chart">
+                  <!-- 2022. 09. 23 18:00 / img - i 태그 변경 -->
+                  <i class="icon-survey-ai"></i>
+                  <!-- //2022. 09. 23 18:00 / img - i 태그 변경 -->
+                </span>
+                <strong>IA 2</strong>
+                <em class="stxt">감각적인 AI스피커형 디자인,<br>
+                  더 정확해진 음성 인식 기능<br>
+                  #나만의 비서
+                </em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="step3_3" name="step3"/>
+              <label for="step3_3"  class="channel-title">
+                <span class="channel-chart">
+                  <!-- 2022. 09. 23 18:00 / img - i 태그 변경 -->
+                  <i class="icon-survey-btv"></i>
+                  <!-- //2022. 09. 23 18:00 / img - i 태그 변경 -->
+                </span>
+                <strong>B tv air</strong>
+                <em class="stxt">태블릿으로 B tv 서비스를<br>
+                  집안 어디서나 이용<br>
+                  #언제 어디서나
+                </em>
+              </label>
+            </li>
+          </ul>
+
+          <p class="svc-text">
+            <i class="ic-info"></i> <strong>셋톱박스</strong>란 <em class="eng-wold">IPTV</em>에 견경하여 방송을 수신할 수 있는 장비로,
+            다양한 서비스가 탑재되어 있습니다.
+          </p>
+        </div>
+  
+        <div class="common-content-charge">
+          <div class="popup-top">
+            <p class="step">마지막으로</p>
+            <h2 class="top-title">
+              <em class="eng-world">SKT</em> 휴대폰과 인터넷을 더하면 <br>
+              요금할인과 데이터  혜택까지!
+            </h2>
+          </div>
+
+          <div class="cont-section">
+            <h2>휴대폰 결합</h2>
+            <ul class="list-group-accodian common-list-group">
+              <li class="accodian-item">
+                <button type="button" class="accodian-tit">
+                  <h3 class="title">결합 안 함</em></h3>
+                  <i class="bl-arr btm">
+                    <span class="hidden">펼치기</span>
+                  </i>
+                </button>
+                <div class="accodian-cont">
+                  <ul class="group-depth-list">
+                    <li class="desc">사은품이언제배송되나요</li>
+                    <li class="desc">사은품이언제배송되나요</li>
+                  </ul>
+                </div>
+              </li> 
+            </ul>
+          </div>
+          <div class="cont-section">
+            <h2>가입 혜택</h2>
+            <ul class="inquire-type-two">
+              <li class="inquire-item">
+                <input type="radio" id="inf0" name="infinite" checked/>
+                <label for="inf0">
+                  <em>매달 요금 확인</em>
+                </label>
+                <div class="tooltip tip-left">
+                  <span class="tooltip-up"></span>
+                  더슬림 요금제로 월 최대 <strong>11,000원</strong>할인
+                </div>
+              </li>
+              <li class="inquire-item">
+                <input type="radio" id="inf1" name="infinite"/>
+                <label for="inf1">
+                  <em>사은품</em>
+                </label>
+                
+                <div class="tooltip tip-right">
+                  <span class="tooltip-up"></span>
+                  사은품은 주문 시 선택 가능합니다.
+                </div>
+              </li>            
+            </ul>
+          </div>
+          <div class="cont-section-charge">
+            <h2 class="view-title">요금 미리보기</h2>
+
+            <div class="fee-box">
+              <h2><i class="ic-etc-fee"></i> 이용요금</h2>
+              <div class="volume">
+                월 <span class="won">64,900</span>원 
+              </div>
+              <div class="fee-list">
+                <dl class="view-item">
+                  <dt>기가인터넷 와이파이</dt>
+                  <dd>월 39.600원</dd>
+                </dl>
+                <dl class="view-item">
+                  <dt>B tv All (252채널)</dt>
+                  <dd>월 18.700원</dd>
+                </dl>
+                <dl class="view-item">
+                  <dt>AI 2 (스피커형)  </dt>
+                  <dd>월 6,600원</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="fee-box">
+              <h2><i class="ic-discount"></i> 할인금액</h2>
+              <div class="volume">
+                월 <span class="won">-17,600</span>원 
+              </div>
+              <div class="fee-list-bg">
+                <dl class="view-item">
+                  <dt>인터넷+IPTV 결합 할인 <button type="button"><i class="ic-info"></i></button></dt>
+                  <dd>-2,200원</dd>
+                </dl>
+                <dl class="view-item">
+                  <dt>휴대푠 결합 할인 <button type="button"><i class="ic-info"></i></button></dt>
+                  <dd>0</dd>
+                </dl>
+                <dl class="view-item">
+                  <dt>요금할인 혜택(더슬림 요금제 할인)</dt>
+                  <dd>-11,000원</dd>
+                </dl>
+                <dl class="view-item">
+                  <dt>온라인 전용 할인</dt>
+                  <dd>-2,200원</dd>
+                </dl>
+              </div>
+            </div>
+            
+            <div class="fee-payment">
+              <h2><i class="ic-etc-fee"></i> 예상 납부요금</h2>
+              <div class="volume">
+                월 <span class="won">36,300</span>원 
+              </div>
+              <span class="stxt">*부가세 포함, 3년 약정 기준, 출동비 별도</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="fixed-area-bt">
+          <div class="btn-full-pop">
+            <button type="button" class="btns-type">상담하기</button>
+            <button type="button" class="btns blue">바로 가입</button>
+          </div>
+        </div>
+
+        <!-- 휴대폰 결합 -->
+        <div class="overlay ">  <!--active 붙으면 활성화-->
+          <div class="layer-type-bottom">
+            <div class="title-fixed">
+              <h2 class="sub-title">휴대폰 결합</h2> 
+            </div>
+            <!-- 버튼형태 case -->
+            <ul class="select-list-type">
+              <li class="item active"> <!-- 선택된 케이스: 클래스명 active 붙임-->
+                <button type="button">
+                  결합 안 함
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  1대
+                  <p class="sel-stxt">휴대폰 요금 3,000원 할인</p>
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  2대 
+                  <p class="sel-stxt">휴대폰 요금 8,000원 할인</p>
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  3대
+                  <p class="sel-stxt">휴대폰 요금 16,500원 할인</p>
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  4대 이상
+                  <p class="sel-stxt">휴대폰 요금 22,000원 할인</p>
+                  <span class="select-state"></span>
+                </button>
+              </li>
+            </ul>   
+          </div>
+        </div>
+
+      </div>
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

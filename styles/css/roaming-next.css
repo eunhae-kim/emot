@@ -1,0 +1,4271 @@
+@charset "utf-8";
+
+body.rn {
+  background-color: #f8f8f8;
+}
+body.rn .colorPoint {
+  color: #4559fc;
+}
+body.rn .colorGray {
+  color: #757575;
+}
+body.rn #appbar {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 30;
+}
+body.rn #appbar .search {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  font-size: 14px;
+}
+body.rn #appbar .menu {
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  cursor: pointer;
+}
+body.rn #appbar .icon-gnb-menu {
+  background: none;
+  width: 24px;
+  height: 24px;
+}
+body.rn #appbar .logo {
+  margin-top: 12px;
+}
+body.rn #appbar h1 {
+  font-size: 17px;
+  line-height: 50px;
+  font-weight: 500;
+  color: #0f0f0f;
+  letter-spacing: -0.4px;
+}
+body.rn .gnb-opaque {
+  background-color: white;
+  border-bottom: 1px solid #e9e9e9;
+}
+body.rn #roamingMain {
+  margin-bottom: 40px;
+}
+body.rn #roamingMain .background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 360px;
+  height: 180px;
+}
+body.rn #roamingMain #content {
+  margin: 20px;
+  padding-top: 70px;
+  padding-bottom: 2px;
+}
+body.rn #roamingMain #content h2 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+body.rn #roamingMain #content .description {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  letter-spacing: -1px;
+  color: #888;
+}
+body.rn #roamingMain #content > .description {
+  margin-bottom: 30px;
+}
+body.rn #roamingMain #content .card {
+  background: #FFFFFF;
+  box-shadow: 0 4px 12px 1px rgba(0, 45, 237, 0.15);
+  border-radius: 10px;
+  padding: 24px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+body.rn #roamingMain #content .card h3 {
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-top: 5px;
+}
+body.rn #roamingMain #content .card .description {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+body.rn #roamingMain #content .card #nations {
+  width: inherit;
+  margin-right: -5px;
+  margin-bottom: 20px;
+}
+body.rn #roamingMain #content .card #nations td {
+  width: 33%;
+}
+body.rn #roamingMain #content .pn {
+  margin-right: 5px;
+  margin-bottom: 1px;
+}
+body.rn #roamingMain #content .pn img {
+  width: 100%;
+}
+body.rn .card .field-container {
+  background-color: #f3f4f9;
+  border-radius: 10px;
+  padding: 12px 42px 12px 18px;
+  position: relative;
+}
+body.rn .card .field-container input {
+  width: 100%;
+  font-size: 14px;
+}
+body.rn .card .field-container input::placeholder {
+  width: 100%;
+  color: #959595;
+}
+body.rn .card .field-container button {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+body.rn .card .field-container img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 21px;
+  height: 21px;
+}
+body.rn #roamingMain #content .card .link {
+  text-align: right;
+  padding-top: 20px;
+}
+body.rn #roamingMain #content .card .link a {
+  font-size: 13px;
+  color: #4559FC;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+body.rn #roamingMain #content .card .menu-link {
+  height: 65px;
+  cursor: pointer;
+  position: relative;
+}
+body.rn #roamingMain #content .card .menu-link .icon {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+}
+body.rn #roamingMain #content .card .menu-link .arrow {
+  position: absolute;
+  top: 26px;
+  right: 21px;
+}
+body.rn #roamingMain #content .card .menu-link span {
+  position: absolute;
+  top: 22px;
+  left: 70px;
+  font-size: 15px;
+  font-weight: 500;
+}
+body.rn #roamingMain #content .card .border-bottom {
+  border-bottom: 1px solid #f2f2f2;
+}
+body.rn #roamingMain #content .card-compact {
+  background: #FFFFFF;
+  box-shadow: 0 4px 12px 1px rgba(0, 45, 237, 0.15);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+
+  position: relative;
+}
+body.rn #roamingMain #content .card-compact .status {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 3px 8px 2px 8px;
+  margin-right: 5px;
+  color: #4559fc;
+  font-size: 10px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+body.rn #roamingMain #content .card-compact .text {
+  color: #111;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  vertical-align: middle;
+}
+body.rn #roamingMain #content .card-compact .point {
+  color: #4559fc;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+body.rn #roamingMain #content .card-compact .arrow {
+  position: absolute;
+  right: 13px;
+  top: 20px;
+}
+body.rn #roamingMain #content .history {
+  background-color: #f3f4f9;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+body.rn #roamingMain #content .history h4 {
+  font-size: 18px;
+  font-family: Roboto, "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  color: #4559fc;
+  margin-bottom: 20px;
+}
+body.rn #roamingMain #content .history .range {
+  font-size: 15px;
+  letter-spacing: -0.47px;
+  color: #111;
+  margin-bottom: 3px;
+}
+body.rn #roamingMain #content .history .range img {
+  vertical-align: middle;
+}
+body.rn #roamingMain #content .history .days {
+  font-size: 14px;
+  color: #666;
+  letter-spacing: -0.5px;
+}
+body.rn #roamingMain #content .no-padding {
+  padding: 0;
+}
+
+body.rn #roamingMain #content #groups {
+  margin-top: 24px;
+  height: 154px;
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+body.rn #roamingMain #content #groups .group {
+  display: inline-block;
+  width: 126px;
+  height: 136px;
+  background-color: #f0f4ff;
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+  vertical-align: top;
+}
+body.rn #roamingMain #content #groups .group img {
+  /*height: 30px;*/
+  /*margin-top: 30px;*/
+  width: 126px;
+  height: 136px;
+}
+body.rn #roamingMain .slick-list {
+  border-radius: 10px;
+}
+
+body.rn #roamingMain .info-link {
+  height: 52px;
+  background-color: #fff;
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 52px;
+  font-weight: 400;
+  letter-spacing: -0.44px;
+}
+body.rn #roamingMain .info-link.tail {
+  border-bottom: 1px solid #ededed;
+}
+body.rn #roamingMain .info-link .arrow {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+}
+body.rn #roamingMain .info-link .separator-top {
+  position: absolute;
+  top: 1px;
+  left: 16px;
+  right: 16px;
+  height: 1px;
+  background-color: #ededed;
+}
+body.rn #roamingMain .links {
+  text-align: center;
+  margin: 20px 0;
+}
+body.rn #roamingMain .links .other-link {
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+}
+body.rn #roamingMain .links .other-link a {
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #4559fc;
+  text-decoration: underline;
+}
+body.rn #roamingMain .links .divider {
+  display: inline-block;
+  width: 1px;
+  margin-top: 3px;
+  height: 14px;
+  background-color: #e5e5e5;
+}
+#roamingMain .buttons {
+  text-align: center;
+}
+#roamingMain .button {
+  width: 196px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 18px;
+  margin: 0 auto 10px auto;
+}
+#roamingMain .button-1 {
+  background-color: #4559fc;
+  color: white;
+}
+#roamingMain .button-2 {
+  background-color: white;
+  border: 1.5px solid #4559fc;
+  color: #4559fc;
+}
+body.rn ul.ui-autocomplete li.ui-menu-item {
+  font-size: 13px;
+  padding: 4px;
+}
+body.rn ul.ui-autocomplete .ui-state-active {
+  background: #4559fc;
+}
+body.rn .dialog {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body.rn .guide-dialog {
+  padding-top: 52px;
+  background-color: white;
+}
+body.rn .guide-dialog .tabs {
+  border-bottom: 1px solid #e0e0e0;
+  height: 50px;
+  font-size: 0;
+}
+body.rn #baroTariffs .tabs {
+  height: 60px;
+}
+body.rn .guide-dialog .tabs .tab {
+  display: inline-block;
+  width: 50%;
+  height: 97%;
+  text-align: center;
+  color: #959595;
+}
+body.rn .guide-dialog .tabs .tab span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.75px;
+}
+body.rn .guide-dialog .tabs .tab span.title {
+  display: inline-block;
+  line-height: 18px;
+  padding-top: 14px;
+}
+body.rn .guide-dialog .tabs .active {
+  border-bottom: 3px solid #4559fc;
+  font-weight: 500;
+  color: #4559fc;
+}
+body.rn .guide-dialog .card {
+  background-color: white;
+  padding: 24px 20px;
+
+  font-size: 13px;
+  letter-spacing: -0.5px;
+}
+body.rn .guide-dialog .footer {
+  height: 80px;
+}
+body.rn .background-f6 {
+  background-color: #f6f6f6;
+  height: 10px;
+}
+body.rn .guide-dialog .checklist .tags {
+  margin-top: -5px;
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+body.rn .guide-dialog .checklist .tags .tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border: 1px solid #dddddd;
+  border-radius: 18px;
+  background-color: #fff;
+  color: #111;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+body.rn .guide-dialog .checklist .tags .active {
+  background-color: #4559fc;
+  border: 1px solid #4559fc;
+  color: #fff;
+}
+body.rn .guide-dialog .checklist .card {
+  padding-top: 0;
+  padding-bottom: 32px;
+}
+body.rn .guide-dialog .checklist .section .subtitle {
+  float: right;
+  color: #4559fc;
+}
+body.rn .guide-dialog .checklist li {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+body.rn .guide-dialog .checklist li .no {
+  display: inline-block;
+  margin-right: 10px;
+}
+body.rn .guide-dialog .checklist li .arrow {
+  margin-top: 4px;
+  float: right;
+}
+body.rn .guide-dialog .checklist .description {
+  display: none;
+  margin-top: 15px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+body.rn .guide-dialog .checklist li .description ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 20px;
+  /*margin-bottom: 15px;*/
+}
+body.rn .guide-dialog .checklist li .description ul li {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.45px;
+  border-bottom: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+body.rn .guide-dialog .checklist .description .button {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #4559fc;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #4559fc;
+  line-height: 36px;
+  margin-top: 15px;
+}
+body.rn .guide-dialog .tariffs ul {
+  margin-top: -20px;
+}
+body.rn .guide-dialog .tariffs li {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+body.rn .guide-dialog .tariffs li h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+}
+body.rn .guide-dialog .tariffs li p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #757575;
+}
+body.rn .guide-dialog .section {
+  background-color: #eaefff;
+  padding: 16px 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+body.rn .guide-dialog .document {
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e0e0e0;
+}
+/*body.rn .guide-dialog .document:not(:last-child) {*/
+/*  border-bottom: 1px solid #e0e0e0;*/
+/*}*/
+body.rn .guide-dialog .document h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px 0 3px 0;
+  color: #111;
+}
+body.rn .guide-dialog .document p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #959595;
+}
+body.rn .guide-dialog .document img {
+  position: absolute;
+  right: 0;
+  top: 18px;
+}
+body.rn .dialog .appbar {
+  height: 52px;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid #edeef0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+body.rn .dialog .appbar h1 {
+  color: black;
+  font-size: 16px;
+  letter-spacing: -0.7px;
+  line-height: 52px;
+  text-align: center;
+}
+body.rn .dialog .appbar .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+body.rn #nationsDialog {
+  background-color: white;
+}
+body.rn #nationsDialog .header {
+  height: 52px;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid #edeef0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+body.rn #nationsDialog .header h1 {
+  color: black;
+  font-size: 16px;
+  letter-spacing: -0.7px;
+  line-height: 52px;
+  text-align: center;
+}
+body.rn #nationsDialog .header .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+body.rn #nationsDialog .menu {
+  background-color: #f0f4ff;
+  width: 120px;
+  position: fixed;
+  top: 53px;
+  height: 100%;
+}
+body.rn #nationsDialog .menu li button {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  font-size: 16px;
+}
+body.rn #nationsDialog .menu li button.active {
+  background-color: white;
+  color: #4559fc;
+}
+body.rn #nationsDialog .content {
+  background-color: #fff;
+  margin-left: 120px;
+  margin-top: 53px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+body.rn #nationsDialog .content li button {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  color: #666;
+  cursor: pointer;
+  text-align: left;
+}
+body.rn #scheduleDialog {
+  background-color: white;
+}
+body.rn #scheduleDialog .header {
+  height: 150px;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+body.rn #scheduleDialog .header .banner {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+}
+body.rn #scheduleDialog .header .summary {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 16px;
+}
+body.rn #scheduleDialog .header .summary h1 {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+  letter-spacing: -1.11px;
+  margin-bottom: 16px;
+}
+body.rn #scheduleDialog .header .summary .date {
+  display: inline-block;
+  width: 140px;
+  height: 42px;
+}
+body.rn #scheduleDialog .header .summary .borderRight {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  margin-right: 20px;
+}
+body.rn #scheduleDialog .header .summary .date h2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+body.rn #scheduleDialog .header .summary .date h3 {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+body.rn #scheduleDialog .header .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px 15px 15px 15px;
+  cursor: pointer;
+}
+body.rn #scheduleDialog #scheduleContent {
+  margin-top: 135px;
+  background-color: #fff;
+}
+body.rn #scheduleDialog .bottom-button {
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 55px;
+  text-align: center;
+  background-color: #4559fc;
+  color: white;
+  cursor: pointer;
+}
+body.rn #scheduleDialog .bottom-space {
+  height: 55px;
+}
+body.rn #scheduleDialog .not-prepared {
+  background-color: #dddddd;
+}
+body.rn #scheduleDialog #calendarGuide {
+  display: none;
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  width: 102px;
+  height: 32px;
+  background-color: #5d60ff;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 13px;
+  border-radius: 6px;
+}
+body.rn #scheduleDialog #calendarGuide .tailContainer {
+  position: relative;
+  height: 20px;
+}
+body.rn #scheduleDialog #calendarGuide .tail {
+  position: absolute;
+  bottom: 2px;
+  left: 43px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #5d60ff;
+}
+body.rn #scheduleDialog #calendarGuide .title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: white;
+}
+body.rn #scheduleDialog #calendarGuide .message {
+
+}
+body.rn #roamingTariffOffer {
+  background-color: #fff;
+}
+body.rn #roamingTariffOffer .decoration {
+  height: 170px;
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+body.rn #roamingTariffOffer .decoration .banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+body.rn #roamingTariffOffer .decoration .banner-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 170px;
+  background-color: #1c1462;
+  opacity: 0.4;
+}
+body.rn #roamingTariffOffer .decoration p {
+  position: absolute;
+  left: 20px;
+  top: 62px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+body.rn #roamingTariffOffer .contents {
+  min-height: 500px;
+  background-color: #f6f6f6;
+}
+body.rn #roamingTariffOffer .card {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 32px 20px;
+}
+body.rn #roamingTariffOffer .card h2 {
+  font-size: 21px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -0.52px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+body.rn #roamingTariffOffer .card h2 span {
+  vertical-align: middle;
+}
+body.rn #roamingTariffOffer .card .description {
+  font-size: 13px;
+  color: #959595;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+body.rn #roamingTariffOffer .offered {
+  background-color: #f3f4f9;
+  border-radius: 12px;
+}
+body.rn #roamingTariffOffer .offered .others {
+  padding: 16px 16px 20px 16px;
+  background-color: #eaebef;
+  font-size: 13px;
+  color: #2a2a2a;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+body.rn #roamingTariffOffer .offered .others a {
+  text-decoration: underline;
+  color: #4559fc;
+  float: right;
+  padding-top: 20px;
+}
+body.rn #roamingTariffOffer .tariff {
+  padding: 16px;
+  position: relative;
+}
+body.rn #roamingTariffOffer .tariff .arrow {
+  position: absolute;
+  right: 13px;
+  top: 21px;
+}
+body.rn #roamingTariffOffer .tariff h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4559fc;
+  margin-bottom: 20px;
+}
+body.rn #roamingTariffOffer .tariff .data {
+  font-size: 16px;
+  color: #111;
+}
+body.rn #roamingTariffOffer .tariff .data span {
+  margin-left: 4px;
+}
+body.rn #roamingTariffOffer .tariff .phone {
+  font-size: 13px;
+  color: #666;
+}
+body.rn #roamingTariffOffer .tariff .price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  float: right;
+}
+body.rn #roamingTariffOffer .diff {
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+}
+body.rn #roamingTariffOffer .margin0 {
+  margin-bottom: 0;
+}
+body.rn #roamingTariffOffer .past .button {
+  border-radius: 40px;
+  border: 1px solid #4559fc;
+  height: 36px;
+  line-height: 36px;
+  background: #fff;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  color: #4559fc;
+}
+body.rn #roamingTariffOffer .tariff-list {
+  height: 188px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body.rn #roamingTariffOffer .tariff-list .tariff-box {
+  display: inline-block;
+  width: 180px;
+  height: 168px;
+  margin-right: 8px;
+  background-color: #f3f4f9;
+  border-radius: 12px;
+}
+body.rn #roamingTariffOffer .tariff-list .tariff-box .tariff h3 {
+  position: absolute;
+  left: 16px;
+  right: 36px;
+  white-space: normal;
+}
+body.rn #roamingTariffOffer .tariff-list .tariff-box .tariff .data {
+  padding-top: 65px;
+}
+body.rn #roamingTariffOffer .tariff-list .tariff-box .tariff .price {
+  float: inherit;
+  display: block;
+  margin-top: 4px;
+}
+body.rn #roamingTariffOffer .link {
+  font-size: 13px;
+  color: #4559fc;
+  text-decoration: underline;
+  float: right;
+  padding-bottom: 20px;
+}
+body.rn #roamingTariffs .header {
+  top: 50px;
+  height: 170px;
+  background-color: white;
+  margin-top: 50px;
+}
+body.rn #roamingTariffs .header h2 {
+  font-size: 21px;
+  font-weight: 500;
+  color: black;
+  padding-top: 32px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+body.rn #roamingTariffs .header .anchors {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 15px;
+  background-color: white;
+  z-index: 10;
+}
+body.rn #roamingTariffs .header .anchors .anchor {
+  display: inline-block;
+  width: 128px;
+  height: 82px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+body.rn #roamingTariffs .header .anchors .anchor img {
+  vertical-align: top;
+}
+body.rn #roamingTariffs #groups {
+  padding-bottom: 0px;
+}
+body.rn #roamingTariffs .summary {
+  position: relative;
+  height: 160px;
+  overflow-y: hidden;
+}
+body.rn #roamingTariffs .summary img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+body.rn #roamingTariffs .summary h2 {
+  position: absolute;
+  left: 20px;
+  top: 32px;
+  font-size: 21px;
+  font-weight: 500;
+  color: black;
+}
+body.rn #roamingTariffs .summary p {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 70px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+}
+body.rn #roamingTariffs .tariffs {
+  position: relative;
+  margin: -33px 16px 32px 16px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 12px 2px rgba(0, 45, 237, 0.15);
+  border-radius: 10px;
+  padding: 10px 20px 0 20px;
+  cursor: pointer;
+}
+body.rn #roamingTariffs .tariff {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+}
+body.rn #roamingTariffs a:not(:last-child) .tariff {
+  border-bottom: 1px solid #f2f2f2;
+}
+body.rn #roamingTariffs .tariff h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+body.rn #roamingTariffs .tariff .data span {
+  font-size: 13px;
+  color: #4559fc;
+}
+body.rn #roamingTariffs .tariff .phone {
+  font-size: 13px;
+  color: #959595;
+}
+body.rn #roamingTariffs .tariff .price {
+  float: right;
+  font-size: 15px;
+  font-weight: 700;
+  color: #4559fc;
+}
+body.rn #roamingTariffs .card {
+  background-color: #f3f4f9;
+  padding: 36px 20px;
+}
+body.rn #roamingTariffs .card h2 {
+  font-size: 21px;
+  font-weight: 500;
+}
+body.rn #roamingTariffs .card .link {
+  text-align: right;
+  padding-top: 20px;
+}
+body.rn #roamingTariffs .card .link a {
+  font-size: 13px;
+  color: #4559FC;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+body.rn #roamingTariffs .card .field-container {
+  background-color: white;
+  margin-top: 16px;
+}
+#roamingMenu {
+  display: none;
+  background-color: white;
+  min-height: 500px;
+  z-index: 290;
+}
+#roamingMenu .header {
+  background-color: #4559fc;
+  padding: 20px 0 20px 0;
+}
+#roamingMenu .header .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+#roamingMenu .header h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  margin-top: 25px;
+  padding-left: 20px;
+}
+#roamingMenu .header .mode {
+  margin-top: 10px;
+  padding: 0 20px 0 20px;
+}
+#roamingMenu .header .mode span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7FE5FF;
+  float: left;
+}
+#roamingMenu .header .mode .switch {
+  float: right;
+  position: relative;
+  height: 20px;
+  cursor: pointer;
+}
+#roamingMenu .header .mode .switch .track {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 40px;
+  height: 14px;
+  opacity: 0.4;
+  background-color: white;
+  border-radius: 7px;
+}
+#roamingMenu .header .mode .switch #thumb {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #3ee5ff;
+  border-radius: 10px;
+}
+#roamingMenu .header .mode .switch .thumb-on {
+  right: 0;
+}
+#roamingMenu .header .mode .switch .thumb-off {
+  right: 20px;
+}
+#roamingMenu .header .mode .reset {
+  clear: both;
+}
+#roamingMenu .header .sticky-menu {
+  margin-top: 16px;
+  text-align: center;
+}
+#roamingMenu .header .sticky-menu .menu {
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+  cursor: pointer;
+}
+#roamingMenu .header .sticky-menu .menu img {
+  margin-right: 2px;
+  vertical-align: bottom;
+}
+#roamingMenu .header .sticky-menu .menu span {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  height: 18px;
+  line-height: 18px;
+  vertical-align: bottom;
+}
+#roamingMenu .header .sticky-menu .divider {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.2);
+  vertical-align: middle;
+}
+#roamingMenu .menus {
+  padding: 10px 20px 30px 20px;
+}
+#roamingMenu .menus h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #959595;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#roamingMenu .menus li {
+  padding: 8px 0;
+}
+#roamingMenu .menus li img {
+  margin-right: 5px;
+  vertical-align: top;
+}
+#roamingMenu .menus li span {
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  height: 18px;
+  line-height: 18px;
+  vertical-align: top;
+  margin-top: 1px;
+}
+#roamingMenu .contacts {
+  padding: 20px 22px;
+}
+#roamingMenu .contacts .contact {
+  margin: 5px 0;
+}
+#roamingMenu .contacts .contact img {
+  vertical-align: middle;
+  margin-right: 3px;
+}
+#roamingMenu .contacts .contact .name {
+  display: inline-block;
+  width: 120px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #959595;
+}
+#roamingMenu .contacts .contact .phone {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #111;
+}
+#roamingMenu .logout {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+  padding: 14px;
+  border-top: 1px solid #e0e0e0;
+}
+#roamingMenu .logout .icon {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#roamingMenu .logout span {
+  vertical-align: middle;
+}
+.roaming-modal {
+  display: none;
+  position: fixed;
+  z-index: 300;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.roaming-modal .content {
+  position: relative;
+  background-color: white;
+  padding: 24px;
+  border-radius: 6px;
+  width: 272px;
+  margin: 50% auto;
+}
+.roaming-modal .content .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.roaming-modal .content .message {
+  font-size: 21px;
+  font-weight: 500;
+  color: black;
+  padding: 12px 0;
+}
+.roaming-modal .content .note {
+  font-size: 14px;
+  color: #959595;
+}
+.roaming-modal .content .divider {
+  background-color: #e2e2e2;
+  height: 1px;
+  margin: 24px -24px;
+}
+.roaming-modal .content .buttons {
+  text-align: right;
+}
+.roaming-modal .content .buttons a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #4559fc;
+}
+.roaming-modal .tm {
+  padding: 48px 24px 24px 24px;
+}
+.roaming-modal .content .today {
+  position: absolute;
+  right: 55px;
+  top: 19px;
+  cursor: pointer;
+}
+.roaming-modal .content .today .box {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e0e0e0;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.roaming-modal .content .today label {
+  line-height: 18px;
+  font-size: 12px;
+  color: #959595;
+}
+
+#roamingOff {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #4559fc;
+  background-image: linear-gradient(90deg, #5945FC 0%, #4559FC 100%);
+  padding-left: 25px;
+}
+#roamingOff .decoration {
+  display: block;
+  margin-top: 50%;
+}
+#roamingOff .progress {
+  margin-top: 20px;
+}
+#roamingOff .progress .circle {
+  display: inline-block;
+  background-color: white;
+  margin-right: 9px;
+  vertical-align: middle;
+}
+#roamingOff .progress .off {
+  width: 11px;
+  height: 11px;
+  border-radius: 5px;
+  opacity: 0.3;
+}
+#roamingOff .progress .on {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+}
+#roamingOff .message {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.61px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#roamingOff .note {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: white;
+  opacity: 0.7;
+}
+body.rn #roamingAddons .filters {
+  margin-top: 50px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+body.rn #roamingAddons .filters h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -0.42px;
+  margin-bottom: 10px;
+}
+body.rn #roamingAddons .filters .tag {
+  font-size: 12px;
+  font-weight: 500;
+  color: #111;
+  letter-spacing: -0.29px;
+  padding: 5px 12px;
+  margin-right: 8px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+body.rn #roamingAddons .filters .active {
+  background-color: #4559fc;
+  color: #fff;
+  border: 1px solid #4559fc;
+}
+body.rn #roamingAddons .items .item {
+  padding: 28px 20px;
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+body.rn #roamingAddons .items .item .name {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.43px;
+  color: #000;
+  margin-bottom: 8px;
+  margin-right: 64px;
+}
+body.rn #roamingAddons .items .item .name .comment {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #4559fc;
+  vertical-align: top;
+  margin-top: 1px;
+  margin-left: 5px;
+}
+body.rn #roamingAddons .items .item .tag {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  color: #4559fc;
+}
+body.rn #roamingAddons .items .item .description {
+  font-size: 13px;
+  font-weight: 400;
+  color: #959595;
+  letter-spacing: -0.5px;
+}
+body.rn #roamingAddons .items .item .status {
+  padding: 3px 10px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #111;
+  letter-spacing: -0.29px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  float: right;
+}
+body.rn #roamingAddons .items .item .inuse {
+  background-color: #4559fc;
+  color: white;
+  border: 0;
+}
+body.rn #roamingHistory .card {
+  margin-top: 10px;
+  background-color: white;
+  padding: 32px 20px;
+}
+body.rn #roamingHistory .card h2 {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+body.rn #roamingHistory .card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3em;
+  color: #000;
+}
+body.rn #roamingHistory .chart {
+  position: relative;
+}
+body.rn #roamingHistory .chart .bubble {
+  position: absolute;
+  right: 1px;
+  top: 6px;
+  width: 70px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: #4559fc;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  line-height: 28px;
+  text-align: center;
+  display: block;
+}
+body.rn #roamingHistory .chart .date {
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+}
+body.rn #roamingHistory .chart .right {
+  float: right;
+}
+body.rn #roamingHistory .items .item {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+}
+body.rn #roamingHistory .items .item h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -0.5px;
+  margin-bottom: 5px;
+}
+body.rn #roamingHistory .items .item span {
+  display: block;
+}
+body.rn #roamingHistory .items .item .flag-icon {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 33px;
+  height: 25px;
+  border: 1px solid #f0f0f0;
+}
+body.rn #roamingHistory .items .item .night {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4559fc;
+}
+body.rn #roamingHistory .items .item .range {
+  font-size: 12px;
+  font-weight: 500;
+  color: #a0a0a0;
+}
+body.rn #roamingHistory .items .item .total {
+  font-size: 15px;
+  font-weight: 700;
+  color: #4559fc;
+  margin-bottom: 4px;
+}
+body.rn #roamingHistory .items .item .average {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+}
+body.rn #roamingHistory .items .item .right {
+  float: right;
+  text-align: right;
+}
+body.rn #roamingHistory .items .item .content {
+  margin-left: 50px;
+}
+body.rn #roamingHistory .items .item:last-child {
+  border-bottom: 0;
+}
+body.rn #roamingOn #appbar .search {
+  display: none;
+}
+body.scroll #roamingOn #appbar .search {
+  display: block;
+}
+body.rn #roamingOn #appbar .menu .white {
+  display: block;
+}
+body.rn #roamingOn #appbar .menu .black {
+  display: none;
+}
+body.rn #roamingOn #appbar .appbar {
+  display: none;
+  margin-top: 16px;
+  line-height: 19px;
+}
+body.rn #roamingOn #appbar .appbar img,
+body.rn #roamingOn #appbar .appbar .flag-icon {
+  vertical-align: top;
+  margin-right: 5px;
+}
+body.rn #roamingOn #appbar .appbar .cname {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+}
+body.rn #roamingOn #content .hud {
+  margin: 0px 20px 120px 20px;
+  padding-top: 90px;
+}
+body.rn #roamingOn #content .hud h1 img,
+body.rn #roamingOn #content .hud h1 .flag-icon {
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 36px;
+  height: 24px;
+}
+body.rn #roamingOn #content .hud h1 .cname {
+  line-height: 36px;
+  font-size: 26px;
+  font-weight: 500;
+  color: white;
+}
+body.rn #roamingOn #content .hud .clocks {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+body.rn #roamingOn #content .hud .clocks .clock {
+  display: inline-block;
+  text-align: left;
+  color: white;
+  vertical-align: top;
+  width: 50%;
+  overflow-x: hidden;
+  position: relative;
+}
+body.rn #roamingOn #content .hud .clocks .clock .note {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: -0.55px;
+  opacity: 0.5;
+}
+body.rn #roamingOn #content .hud .clocks .clock .note img {
+  vertical-align: middle;
+  margin-left: 2px;
+  margin-right: 4px;
+  width: 14px;
+  height: 14px;
+}
+body.rn #roamingOn #content .hud .clocks .clock .note .nation {
+  font-size: 13px;
+  vertical-align: middle;
+}
+body.rn #roamingOn #content .hud .clocks .clock .value {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+body.rn #roamingOn #content .hud .clocks .divider {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 1px;
+  height: 45px;
+  background-color: #fff;
+  opacity: 0.2;
+}
+body.rn #roamingOn .card .links {
+  text-align: right;
+}
+body.rn #roamingOn .card .links .link {
+  font-size: 13px;
+  color: #4559fc;
+  text-decoration: underline;
+}
+body.rn #roamingOn .card .naMessage {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 45px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #959595;
+}
+body.rn #roamingOn .card .naTime {
+  color: #959595;
+  font-size: 13px;
+  font-weight: 300;
+  margin-left: 45px;
+}
+body.rn #roamingOn #content .card {
+  background-color: #fff;
+  box-shadow: 0 4px 12px 1px rgba(0, 45, 237, 0.15);
+  border-radius: 10px;
+  padding: 24px;
+  margin: 16px;
+}
+body.rn #roamingOn #content .card h3 {
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-top: 5px;
+}
+body.rn #roamingOn #content .card h3 img {
+  vertical-align: bottom;
+}
+body.rn #roamingOn #content .card h3 .phone {
+  margin-left: 0px;
+  vertical-align: middle;
+  padding: 1px 0px 4px 2px;
+}
+body.rn #roamingOn #content .card h3 .beta {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -1px;
+  color: #4559fc;
+  text-decoration: underline;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+body.rn #roamingOn #content .card .description {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #959595;
+}
+body.rn #roamingOn #content .card ul.description {
+  font-size: 13px;
+  color: #959595;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+body.rn #roamingOn #content .card ul.description li {
+  margin-bottom: 10px;
+}
+body.rn #roamingOn #content ul.description li.warn {
+  color: red;
+}
+body.rn #roamingOn #content .card .info {
+  display: none;
+  border-radius: 6px;
+  background-color: #f6f6f6;
+  text-align: center;
+  margin-top: 8px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+body.rn #roamingOn #content .card .info h4 {
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 500;
+  color: #666;
+  letter-spacing: -0.5px;
+}
+body.rn #roamingOn #content .card .divider {
+  height: 1px;
+  background-color: #e0e0e0;
+}
+body.rn #roamingOn #content .card-toggle {
+  padding-bottom: 10px;
+}
+body.rn #roamingOn #content .toggle {
+  text-align: center;
+  padding-top: 12px;
+}
+body.rn #roamingOn #content .card .curtain {
+  margin-left: -24px;
+  margin-right: -24px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 16px;
+}
+body.rn #roamingOn #content .card .hc {
+  display: inline-block;
+  position: relative;
+}
+body.rn #roamingOn #content .card .hu {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-color: rgba(109, 136, 255, 0.3);
+}
+body.rn #roamingOn #content .anonymous {
+  padding: 40px 24px 8px 24px;
+  text-align: center;
+}
+body.rn #roamingOn #content .unavailable {
+  padding: 64px 0 56px 0;
+  text-align: center;
+}
+body.rn #roamingOn #content .unavailable p {
+  font-size: 19px;
+  font-weight: 700;
+  color: #0d0d0d;
+  margin-top: 20px;
+}
+body.rn #roamingOn #content .buttons {
+  padding-bottom: 12px;
+}
+body.rn #roamingOn #content .button {
+  width: 196px;
+  height: 36px;
+  line-height: 33px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 18px;
+  box-sizing: border-box;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+body.rn #roamingOn #content .button-1 {
+  background-color: #4559fc;
+  border: 1.5px solid #4559fc;
+  color: white;
+}
+body.rn #roamingOn #content .button-2 {
+  background-color: white;
+  border: 1.5px solid #4559fc;
+  color: #4559fc;
+}
+body.rn #roamingOn #content .data-usages {
+  text-align: center;
+  padding-top: 32px;
+}
+body.rn #roamingOn #content .data-usages h2 {
+  font-weight: 500;
+}
+body.rn #roamingOn #content .data-usages h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.92px;
+  color: black;
+  margin-bottom: 4px;
+}
+body.rn #roamingOn #content .data-usages .range {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8d8d8d;
+  letter-spacing: -0.5px;
+}
+body.rn #roamingOn #content .data-usages .status {
+  display: block;
+  width: 65px;
+  border: 1.5px solid #dcdcdc;
+  border-radius: 13px;
+  color: #4559fc;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 0;
+  margin: 8px auto;
+}
+body.rn #roamingOn #content .data-usages .charts {
+  text-align: center;
+  margin-bottom: 8px;
+}
+body.rn #roamingOn #content .data-usages .charts .chart {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+}
+body.rn #roamingOn #content .data-usages .charts .chart .colorLeft {
+  color: #607dff;
+}
+body.rn #roamingOn #content .data-usages .charts .chart .colorRight {
+  color: #7e82ff;
+}
+body.rn #roamingOn #content .data-usages .charts .chart .track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+body.rn #roamingOn #content .data-usages .charts .chart .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+#roamingOn #content .data-usages .charts .chart .message {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #4559fc;
+}
+
+body.rn #roamingOn #content .data-usages .charts .chart .label {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  color: #999;
+}
+body.rn #roamingOn #content .data-usages .charts .chart .value-max {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111;
+}
+body.rn #roamingOn #content .data-usages .charts .chart .value {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 500;
+  color: #4559fc;
+}
+body.rn #roamingOn #content .data-usages .charts .chart h4 {
+  margin-top: 115px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+}
+body.rn #roamingOn #content .data-usages ul.description {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 13px;
+}
+body.rn #roamingOn #content .phone-usages {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+body.rn #roamingOn #content .phone-usages .usage {
+  margin: 10px 0;
+}
+body.rn #roamingOn #content .phone-usages .usage img {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+body.rn #roamingOn #content .phone-usages .usage .usage-type {
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 500;
+  color: #0f0f0f;
+}
+body.rn #roamingOn #content .phone-usages .usage .usage-value {
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 700;
+  color: #030303;
+  letter-spacing: 0;
+  float: right;
+}
+body.rn #roamingOn #content .tariff-list {
+  height: 174px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+body.rn #roamingOn #content .tariff-list .tariff-box {
+  display: inline-block;
+  width: 170px;
+  height: 160px;
+  margin-right: 8px;
+  background-color: #f3f4f9;
+  border-radius: 12px;
+}
+body.rn #roamingOn #content .tariff-list .tariff-box .tariff {
+  padding: 16px;
+  position: relative;
+}
+body.rn #roamingOn #content .tariff-list .tariff-box .tariff h3 {
+  position: absolute;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: #4559fc;
+  white-space: normal;
+  left: 16px;
+  right: 16px;
+  top: 12px;
+}
+body.rn #roamingOn #content .tariff-list .tariff-box .tariff .data {
+  margin-top: 58px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+  padding-top: 5px;
+}
+body.rn #roamingOn #content .tariff-list .tariff-box .tariff .data span {
+  margin-left: 2px;
+}
+body.rn #roamingOn #content .tariff-list .tariff-box .tariff .phone {
+  font-size: 13px;
+  font-weight: 700;
+  color: #757575;
+}
+body.rn #roamingOn #content .tariff-list .tariff-box .tariff .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  display: block;
+  margin-top: 2px;
+}
+body.rn #countriesDialog {
+  background-color: white;
+}
+body.rn #countriesDialog .header {
+  height: 52px;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid #edeef0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+body.rn #countriesDialog .header h1 {
+  color: black;
+  font-size: 16px;
+  letter-spacing: -0.7px;
+  line-height: 52px;
+  text-align: center;
+}
+body.rn #countriesDialog .header .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+body.rn #countriesDialog .tariffBox {
+  margin-top: 53px;
+  position: relative;
+  height: 85px;
+}
+body.rn #countriesDialog .tariffBox .arrow {
+  position: absolute;
+  right: 40px;
+  top: 39px;
+}
+body.rn #countriesDialog .dropdown {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 52px;
+  width: 88%;
+  padding: 0px 25px;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+}
+body.rn #countriesDialog .sortBy {
+  padding-left: 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+body.rn #countriesDialog .sortBy .by {
+  display: inline-block;
+  padding: 16px 15px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #959595;
+}
+body.rn #countriesDialog .sortBy .active {
+  color: #4559fc;
+}
+body.rn #countriesDialog .scroller {
+  position: relative;
+  height: 300px;
+}
+body.rn #countriesDialog .menu {
+  background-color: #f0f4ff;
+  width: 120px;
+  position: absolute;
+  overflow-y: scroll;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+body.rn #countriesDialog .menu li {
+  height: 56px;
+  line-height: 56px;
+  padding-left: 18px;
+  font-size: 16px;
+  /*border-bottom: 1px solid #e5e5e5;*/
+  color: #959595;
+}
+body.rn #countriesDialog .menu li.active {
+  background-color: white;
+  color: #4559fc;
+}
+body.rn #countriesDialog .content {
+  background-color: #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: absolute;
+  overflow-y: scroll;
+  left: 120px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+body.rn #countriesDialog .content li {
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  color: #111;
+  /*border-bottom: 1px solid #f2f2f2;*/
+  /*cursor: pointer;*/
+}
+body.rn #roamingRates {
+
+}
+body.rn #roamingRates .phone span {
+  vertical-align: middle;
+}
+body.rn #roamingRates .phone img {
+  vertical-align: middle;
+  padding-bottom: 2px;
+  margin-left: 2px;
+  width: 15px;
+  height: 15px;
+}
+body.rn #roamingRates .tip {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: -0.52px;
+  background-color: #4559fc;
+  color: #fff;
+  padding: 1px 10px 0 10px;
+  vertical-align: middle;
+  border-radius: 9px;
+  margin-left: 5px;
+}
+body.rn #roamingRates .card {
+  padding: 28px 20px;
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+body.rn #roamingRates .card h2 {
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+body.rn #roamingRates .card h3 {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #111;
+  margin-bottom: 6px;
+}
+body.rn #roamingRates .card.tips h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  vertical-align: middle;
+}
+body.rn #roamingRates .card .number {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+body.rn #roamingRates .card .device {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #959595;
+}
+body.rn #roamingRates .card .separator {
+  font-size: 12px;
+  font-weight: 400;
+  color: #e0e0e0;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+body.rn #roamingRates .card .field-container {
+  background-color: #f3f4f9;
+  border-radius: 10px;
+  position: relative;
+}
+body.rn #roamingRates .card .link {
+  text-align: right;
+  padding-top: 20px;
+}
+body.rn #roamingRates .card .link a {
+  font-size: 13px;
+  color: #4559FC;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+body.rn #roamingRates .card .button {
+  height: 36px;
+  line-height: 36px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 18px;
+  margin: 20px auto 20px auto;
+
+  background-color: #4559fc;
+  color: white;
+  text-align: center;
+}
+body.rn #roamingRates .card ul.description {
+  font-size: 13px;
+  color: #757575;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+body.rn #roamingRates .card ul.description li {
+  margin-bottom: 10px;
+}
+body.rn #roamingRates .card .section {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+body.rn #roamingRates .availables {
+  background-color: #f3f4f9;
+  border-radius: 6px;
+  padding: 16px 20px;
+  font-size: 14px;
+  letter-spacing: -0.47px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+body.rn #roamingRates .attentionHead {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  height: 60px;
+  margin-top: 20px;
+}
+body.rn #roamingRates .attentionHead .icon {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+body.rn #roamingRates .attentionHead .title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.44px;
+  margin-left: 35px;
+  line-height: 60px;
+}
+body.rn #roamingRates .attentionHead .toggle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 10px;
+  top: 22px;
+}
+body.rn #roamingRates .attentionBody {
+  display: none;
+  padding: 28px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+}
+body.rn #roamingRates .attentionBody a {
+  color: #4559fc;
+  text-decoration: underline;
+}
+body.rn #roamingRates .attentionBody ul.description li {
+  color: #000;
+}
+body.rn #roamingRates .rateHead {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+  min-height: 58px;
+  margin-top: 20px;
+}
+body.rn #roamingRates .rateHead .values {
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+body.rn #roamingRates .rateHead .opener {
+  position: absolute;
+  right: 0;
+  top: 28px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaa;
+}
+body.rn #roamingRates .rateBody {
+  display: none;
+  margin-top: 16px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 16px;
+}
+body.rn #roamingRates .rateBody .closer {
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaa;
+}
+body.rn #roamingRates .rateBody .align-right {
+  text-align: right;
+  padding-bottom: 10px;
+}
+body.rn #roamingRates .panels {
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 128px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+body.rn #roamingRates .panel {
+  display: inline-block;
+  width: 192px;
+  height: 110px;
+  background-color: #e5ebff;
+  border-radius: 4px;
+  padding: 0 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+body.rn #roamingRates .panel h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body.rn #roamingRates .panel p {
+  font-size: 12px;
+  color: #666;
+}
+body.rn #roamingRates .rateBody .rateBodyRow {
+  margin-bottom: 15px;
+}
+body.rn #roamingRates .rateBody .rateBodyRow .name {
+  display: block;
+  font-weight: 500;
+}
+body.rn #roamingRates .rateBody .rateBodyRow .value {
+  display: block;
+  float: right;
+}
+body.rn #roamingRates .rateBody .lo {
+  font-size: 13px;
+  color: #4559FC;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+body.rn #roamingMyuse .card {
+  margin-top: 10px;
+  background-color: white;
+  padding: 32px 20px 20px 20px;
+}
+body.rn #roamingMyuse .card h2 {
+  font-size: 21px;
+  font-weight: 500;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+body.rn #roamingMyuse .card h2 .count {
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+}
+body.rn #roamingMyuse .card p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3em;
+  color: #000;
+}
+body.rn #roamingMyuse .empty {
+  text-align: center;
+  padding: 24px;
+}
+body.rn #roamingMyuse .empty p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.36px;
+  margin-top: 15px;
+}
+body.rn #roamingMyuse .card .item {
+  margin-top: 20px;
+}
+body.rn #roamingMyuse .card .item h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  position: relative;
+  margin-bottom: 16px;
+}
+body.rn #roamingMyuse .card .item .arrow {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+}
+body.rn #roamingMyuse .card .item .divider {
+  height: 2px;
+  border-bottom: 1px dashed #e0e0e0;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+body.rn #roamingMyuse .card .item .row {
+  position: relative;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+body.rn #roamingMyuse .card .item .row .label {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+body.rn #roamingMyuse .card .item .row .value {
+  position: absolute;
+  right: 0;
+  top: 4px;
+}
+body.rn #roamingMyuse .card .item .colorGray {
+  color: #959595;
+}
+body.rn #roamingMyuse .card .item .fontsize15 {
+  font-size: 15px;
+}
+body.rn #roamingMyuse .card .item .bold {
+  font-weight: 500;
+}
+body.rn #roamingMyuse .card .item .button {
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: 400;
+  color: #4559fc;
+}
+body.rn #roamingGuide .anchorsShadow {
+  display: none;
+  position: static;
+  height: 60px;
+}
+body.rn #roamingGuide .anchors {
+  height: 60px;
+  background-color: #4559fc;
+  padding: 0 10px;
+  z-index: 10;
+  white-space: nowrap;
+}
+body.rn #roamingGuide .anchors a {
+  display: inline-block;
+  color: white;
+  opacity: .4;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 60px;
+  padding: 0 10px;
+}
+body.rn #roamingGuide .anchors .active {
+  color: white;
+  opacity: 1.0;
+}
+body.rn #roamingGuide .card {
+  margin-top: 10px;
+  background-color: white;
+  padding: 36px 20px;
+}
+body.rn #roamingGuide .mt10n {
+  margin-top: 0;
+}
+body.rn #roamingGuide .card.title h2 {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 500;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+body.rn #roamingGuide .card.title h2 img {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -4px;
+}
+body.rn #roamingGuide .card .slicks {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90px;
+  /*height: 28px;*/
+}
+body.rn #roamingGuide .card .slick-dots {
+  text-align: right;
+  bottom: -15px;
+}
+body.rn #roamingGuide .card .slick-dots li {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+}
+body.rn #roamingGuide .card .slick-dots li.slick-active button {
+  background-color: #111;
+}
+body.rn #roamingGuide .card .slick-dots li button {
+  border: 1px solid #111;
+  box-sizing: border-box;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: .8;
+}
+body.rn #roamingGuide .button {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #4559fc;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #4559fc;
+  line-height: 36px;
+  margin-top: 15px;
+}
+body.rn #roamingGuide > .first {
+  margin-top: 60px;
+}
+body.rn #roamingGuide > .mtb28 {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+body.rn #roamingGuide .card h2 {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+body.rn #roamingGuide .card > p {
+  font-size: 13px;
+  color: #959595;
+}
+body.rn #roamingGuide .card .mb8 {
+  margin-bottom: 8px;
+}
+body.rn #roamingGuide .card .subs {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 0;
+}
+body.rn #roamingGuide .card .sub {
+  display: inline-block;
+  text-align: center;
+}
+body.rn #roamingGuide .card .sub img {
+  display: block;
+  margin-bottom: 12px;
+}
+body.rn #roamingGuide .card .sub span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+body.rn #roamingGuide .card .points {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: hidden;
+  /*overflow-y: hidden;*/
+  white-space: nowrap;
+}
+body.rn #roamingGuide .card .point {
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  margin-right: 10px;
+  border-radius: 6px;
+  vertical-align: top;
+  display: inline-block;
+}
+body.rn #roamingGuide .card .point h3 {
+  background-color: #4b52ff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  padding: 14px 0 11px 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  position: relative;
+}
+body.rn #roamingGuide .card .point .subtitle {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  border-radius: 8px;
+  height: 16px;
+  line-height: 18px;
+  color: #4b52ff;
+  font-size: 9px;
+  font-weight: 800;
+  padding-left: 7px;
+  padding-right: 7px;
+  right: 15px;
+  top: 14px;
+}
+body.rn #roamingGuide .card .point ul {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px 0;
+}
+body.rn #roamingGuide .card .point ul li {
+  height: 54px;
+  line-height: 54px;
+  position: relative;
+  padding-right: 25px;
+}
+body.rn #roamingGuide .card .point ul li:not(:last-child) {
+  border-bottom: 1px solid #f2f2f2;
+}
+body.rn #roamingGuide .card .point ul li .no {
+  margin-right: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #4b52ff;
+}
+body.rn #roamingGuide .card .point ul li .arrow {
+    position: absolute;
+  right: 4px;
+  top: 18px;
+}
+body.rn #roamingGuide .card .vam {
+  vertical-align: middle;
+}
+body.rn #roamingGuide .card .tags {
+  margin-top: 20px;
+}
+body.rn #roamingGuide .card .tags .tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 18px;
+  background-color: #f3f4f9;
+  color: #111;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+body.rn #roamingGuide .why {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #EDEEF0;
+}
+body.rn #roamingGuide .why img {
+  width: 76px;
+  float: left;
+}
+body.rn #roamingGuide .why .condition {
+  margin-left: 92px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #959595;
+  letter-spacing: -0.33px;
+}
+body.rn #roamingGuide .why p {
+  margin: 16px 0 14px 92px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  letter-spacing: -0.43px;
+}
+body.rn #roamingGuide .why a {
+  /*float: right;*/
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: 400;
+  color: #4559fc;
+}
+body.rn #roamingGuide ul.description {
+  margin: 24px 10px 24px 20px;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+body.rn #roamingGuide ul.description li {
+  color: #757575;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+body.rn #roamingGuide .cont-right {
+  padding-right: 100px;
+  position: relative;
+  margin-bottom: 28px;
+}
+body.rn #roamingGuide .cont-right p {
+  font-size: 13px;
+  color: #757575;
+  letter-spacing: -0.31px;
+}
+body.rn #roamingGuide .cont-right img  {
+  position: absolute;
+  width: 58px;
+  top: 6px;
+  right: 16px;
+}
+body.rn #roamingGuide .available-result {
+  display: none;
+  border-radius: 6px;
+  text-align: center;
+  padding: 24px 20px 32px 20px;
+  background-color: #f3f4f9;
+  margin-top: 36px;
+}
+body.rn #roamingGuide .available-result h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+body.rn #roamingGuide .available-result p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #757575;
+}
+body.rn #roamingGuide .networks {
+  background-color: #3348b1;
+  padding: 28px 20px;
+}
+body.rn #roamingGuide .networks h2 {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+body.rn #roamingGuide .networks img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+body.rn #roamingGuide .networks ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 18px;
+  margin-top: 12px;
+  color: white;
+}
+body.rn #roamingGuide .networks ul li {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.33px;
+}
+body.rn #roamingGuide .whole-image {
+  /*white-space: nowrap;*/
+  margin-bottom: -8px;
+}
+body.rn #roamingGuide .whole-image img {
+  width: 100%;
+}
+body.rn #roamingGuide .explain {
+  background-color: white;
+  padding-bottom: 40px;
+}
+body.rn #roamingGuide .explain h2 {
+  font-size: 21px;
+  font-weight: 500;
+  padding: 30px 20px 30px 20px;
+}
+body.rn #roamingGuide .explain .card {
+  margin-top: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  position: relative;
+}
+
+body.rn #roamingGuide .explain .card .tail {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -16px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 12px solid #5d60ff;
+}
+
+body.rn #roamingGuide .explain .card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  position: relative;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+body.rn #roamingGuide .explain .card p .face {
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  width: 70px;
+}
+body.rn #roamingGuide .explain ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+body.rn #roamingGuide .explain li {
+  font-size: 13px;
+  font-weight: 400;
+  color: #757575;
+
+  margin-bottom: 5px;
+}
+body.rn #roamingGuide .explain > .color1 {
+  background-color: #ecf1ff;
+}
+body.rn #roamingGuide .explain .tail.color1 {
+  border-top: 12px solid #ecf1ff;
+}
+body.rn #roamingGuide .explain > .color2 {
+  background-color: #e9f7f3;
+}
+body.rn #roamingGuide .explain .tail.color2 {
+  border-top: 12px solid #e9f7f3;
+}
+body.rn #roamingGuide .explain > .color3 {
+  background-color: #e6f3fb;
+}
+body.rn #roamingGuide .explain .tail.color3 {
+  border-top: 12px solid #e6f3fb;
+}
+body.rn #roamingGuide .qna {
+  margin-top: 10px;
+}
+body.rn #roamingGuide .config .qna {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+body.rn #roamingGuide .config.gsm .qna {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+body.rn #roamingGuide .datasms .qna {
+  margin-top: 30px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+body.rn #roamingGuide .qna .q {
+  position: relative;
+  min-height: 60px;
+}
+body.rn #roamingGuide .qna .q:not(:first-child) {
+  border-top: 1px solid #f2f2f2;
+}
+body.rn #roamingGuide .product .qna.single .q {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+body.rn #roamingGuide .product .q {
+  border-top: 1px solid #f2f2f2;
+  /*border-bottom: 1px solid #f2f2f2;*/
+}
+body.rn #roamingGuide .qna .q .mark {
+  position: absolute;
+  left: 0;
+  top: 21px;
+  font-size: 17px;
+  font-weight: 500;
+}
+body.rn #roamingGuide .qna .q .title {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 21px 25px 20px;
+}
+body.rn #roamingGuide .config .qna .q .title {
+  margin-left: 0;
+}
+body.rn #roamingGuide .product .qna .q .title {
+  margin-left: 0;
+}
+body.rn #roamingGuide .datasms .qna .q .title {
+  margin-left: 0;
+}
+body.rn #roamingGuide .qna .q .arrow {
+  position: absolute;
+  right: 0;
+  top: 24px;
+}
+body.rn #roamingGuide .qna .a {
+  background-color: #f3f4f9;
+  padding: 28px 20px;
+  display: none;
+}
+body.rn #roamingGuide .config .qna .a {
+  background-color: #fff;
+  padding: 0;
+}
+body.rn #roamingGuide .config .qna .a.pb15 {
+  background-color: #fff;
+  padding: 0 0 15px 0;
+}
+body.rn #roamingGuide .product .qna .a {
+  background-color: #fff;
+  padding: 0;
+}
+body.rn #roamingGuide .datasms .qna .a {
+  background-color: #fff;
+  padding: 0 0 20px 0;
+
+}
+body.rn #roamingGuide .qna .a p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+}
+body.rn #roamingGuide .qna .a p:not(:last-child) {
+  margin-bottom: 15px;
+}
+body.rn #roamingGuide .qna .a ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+body.rn #roamingGuide .product .qna .a ul {
+  margin-bottom: 20px;
+}
+body.rn #roamingGuide .qna .a ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body.rn #roamingGuide .qna .a li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+  margin-bottom: 5px;
+}
+body.rn #roamingGuide .config .qna .a li {
+  font-size: 13px;
+}
+body.rn #roamingGuide .tips {
+
+}
+body.rn #roamingGuide .tips h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  vertical-align: middle;
+}
+body.rn #roamingGuide .tips h3 .tip {
+  margin-left: 5px;
+  display: inline-block;
+  background-color: #4559fc;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 10px 0 10px;
+  border-radius: 12px;
+  vertical-align: middle;
+}
+body.rn #roamingGuide .links {
+  text-align: right;
+}
+body.rn #roamingGuide .links h3 {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.52px;
+}
+body.rn #roamingGuide .links .left {
+  text-align: left;
+}
+body.rn #roamingGuide .links .other-link {
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+}
+body.rn #roamingGuide .links .other-link.left {
+  text-align: left;
+}
+body.rn #roamingGuide .cs-divider {
+  height: 1px;
+  background-color: #edeef0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+body.rn #roamingGuide .links .phone-link {
+  width: 48%;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+}
+body.rn #roamingGuide .links .phone-link .text {
+  font-size: 15px;
+  letter-spacing: -0.46px;
+    margin-left: 8px;
+}
+body.rn #roamingGuide .links .phone-link .phone {
+  position: absolute;
+  right: 6px;
+  top: -1px;
+}
+body.rn #roamingGuide .links .other-link a {
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #4559fc;
+  text-decoration: underline;
+}
+body.rn #roamingGuide .links .divider {
+  display: inline-block;
+  width: 1px;
+  margin-top: 3px;
+  height: 14px;
+  background-color: #e5e5e5;
+}
+body.rn #roamingGuide .link {
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #4559fc;
+}
+body.rn #roamingGuide .card .baro-qna {
+  font-size: 17px;
+  font-weight: 500;
+}
+body.rn #roamingGuide .card.product h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
+body.rn #roamingGuide .card.product .artwork {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+body.rn #roamingGuide .card.product .mtb15 {
+  margin: 15px 0;
+}
+body.rn #roamingGuide .card.guam h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
+body.rn #roamingGuide .guam-table {
+  border-collapse: collapse;
+  border: 1px solid #979797;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body.rn #roamingGuide .guam-table, #roamingGuide .guam-table th, #roamingGuide .guam-table td {
+  border: 1px solid #e5e5e5;
+}
+body.rn #roamingGuide .guam-table th {
+  background-color: #f3f4f9;
+  color: #000;
+  opacity: 0.6;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  height: 44px;
+}
+body.rn #roamingGuide .guam-table td {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  padding: 12px 10px;
+  vertical-align: top;
+}
+body.rn #roamingGuide .guam-explain {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+  min-height: 75px;
+}
+body.rn #roamingGuide .guam-explain .icon {
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 76px;
+}
+body.rn #roamingGuide .guam-explain h4 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-left: 96px;
+}
+body.rn #roamingGuide .guam-explain p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.33px;
+  margin-bottom: 10px;
+  margin-left: 96px;
+}
+body.rn #roamingGuide .guam-explain p.notice {
+  font-size: 12px;
+  font-weight: 400;
+  color: #959595;
+}
+body.rn #roamingGuide .auto-explain {
+  position: relative;
+  padding-left: 90px;
+}
+body.rn #roamingGuide .auto-explain .icon {
+  width: 62px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body.rn #roamingGuide .auto-explain h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.43px;
+  margin-bottom: 8px;
+}
+body.rn #roamingGuide .auto-explain ul.description {
+  margin: 5px 0 5px 20px;
+}
+body.rn #roamingGuide .auto-explain ul.description li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+  margin-bottom: 2px;
+}
+body.rn #roamingGuide .auto-explain ul.warning {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 20px 0 5px -70px;
+}
+body.rn #roamingGuide .auto-explain ul.warning li {
+  font-size: 13px;
+  font-weight: 400;
+  color: #757575;
+  margin-bottom: 2px;
+}
+
+body.rn #roamingGuide .config h3 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #4559fc;
+}
+
+body.rn #roamingGuide .config > p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #959595;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+body.rn #roamingGuide .tariff-list {
+  height: 188px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body.rn #roamingGuide .tariff-list .tariff-box {
+  display: inline-block;
+  width: 180px;
+  height: 168px;
+  margin-right: 8px;
+  background-color: #f3f4f9;
+  border-radius: 12px;
+}
+body.rn #roamingGuide .tariff-list .tariff-box .tariff {
+  padding: 16px;
+  position: relative;
+}
+body.rn #roamingGuide .tariff-list .tariff-box .tariff h3 {
+  position: absolute;
+  left: 16px;
+  right: 36px;
+  white-space: normal;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4559fc;
+}
+body.rn #roamingGuide .tariff-list .tariff-box .tariff .data {
+  padding-top: 65px;
+  font-size: 16px;
+  font-weight: 400;
+}
+body.rn #roamingGuide .tariff-list .tariff-box .tariff .price {
+  float: inherit;
+  display: block;
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+body.rn #roamingGuide .tariff-list .tariff-box .tariff .phone {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+}
+body.rn #roamingGuide .tariff-list .tariff .arrow {
+  position: absolute;
+  right: 13px;
+  top: 21px;
+}
+body.rn #roamingGuide .product .banner {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+body.rn #roamingGuide .product ul.boxes {
+  list-style-type: none;
+  margin: 4px 15px 20px 15px;
+}
+body.rn #roamingGuide .product ul.boxes li {
+  height: 74px;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+body.rn #roamingGuide .product ul.boxes img {
+  position: absolute;
+  left: 0;
+  top: 21px;
+}
+body.rn #roamingGuide .product ul.boxes .title {
+  position: absolute;
+  left: 40px;
+  top: 14px;
+  color: #111;
+}
+body.rn #roamingGuide .product ul.boxes .price {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  color: #111;
+}
+body.rn #roamingGuide .datasms-table {
+  border-collapse: collapse;
+  border: 1px solid #979797;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body.rn #roamingGuide .datasms-table, #roamingGuide .datasms-table th, #roamingGuide .datasms-table td {
+  border: 1px solid #e5e5e5;
+}
+body.rn #roamingGuide .datasms-table th {
+  background-color: #f3f4f9;
+  color: #000;
+  opacity: 0.6;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  height: 44px;
+}
+body.rn #roamingGuide .datasms-table td {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  padding: 12px 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+body.rn #roamingGuide .cont-actionsheet .ac-list {
+  padding-top: 4px;
+}
+body.rn #roamingGuide .cont-actionsheet .ac-tit {
+  font-size: 15px;
+  font-weight: 500;
+  color: #4559fc;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #edeef0;
+}
+#roamingGuide .custom-form input[type=radio]:checked+.r-type1 {
+  background-image: url(/img/product/roam/component_radio_small_on.svg);
+}
+#roamingGuide .bt-dropdown.bigger {
+  padding: 15px 15px;
+  font-size: 14px;
+  letter-spacing: -0.32px;
+  width: 100%;
+}
+#roamingGuide .bt-dropdown.bigger:after {
+  content: "";
+  position: absolute;
+  top: 1.06rem;
+  right: .94rem;
+  display: inline-block;
+  width: .75rem;
+  height: .44rem;
+  margin: 0;
+  background: url(/img/ico/btn-select.png) repeat;
+  background-size: .75rem;
+}
+body.rn #roamingGuide .center .tabs {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  height: 50px;
+  font-size: 0;
+}
+body.rn #roamingGuide .center .tabs .tab {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  color: #959595;
+  box-sizing: border-box;
+}
+body.rn #roamingGuide .center .tabs .tab span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.75px;
+}
+body.rn #roamingGuide .center .tabs .tab span.title {
+  display: inline-block;
+  line-height: 18px;
+  padding-top: 14px;
+}
+body.rn #roamingGuide .center .tabs .active {
+  border-bottom: 3px solid #4559fc;
+  color: #000;
+}
+body.rn #roamingGuide .center .tabs .tab.active span {
+  font-weight: 500;
+}
+body.rn #roamingGuide #branch {
+  display: none;
+}
+body.rn #roamingGuide #branch table {
+  margin-bottom: 25px;
+}
+body.rn #roamingGuide #branch table.icons {
+  width: inherit;
+  margin: 30px auto 25px auto;
+}
+body.rn #roamingGuide #branch table.icons td {
+  text-align: center;
+}
+body.rn #roamingGuide #branch table.icons td.caption {
+  font-size: 12px;
+  padding: 5px 20px;
+  vertical-align: top;
+}
+body.rn #roamingGuide table.explain {
+
+}
+body.rn #roamingGuide table.explain tr {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+body.rn #roamingGuide table.explain td {
+  padding: 15px;
+  font-size: 13px;
+}
+body.rn #roamingGuide table.explain td.label {
+  width: 60px;
+  background-color: #f3f4f9;
+  color: #757575;
+}
+body.rn #roamingGuide #branch ul.description {
+  margin-bottom: 0;
+}
+body.rn #roamingGuide #branch ul.description li {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+}
+body.rn #roamingGuide #airport h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 30px 0 15px 0;
+}
+body.rn #roamingGuide .standby {
+  display: none;
+}
+body.rn .h36 {
+  height: 36px;
+}
+body.rn .h60 {
+  height: 60px;
+}
+body.rn .mtn10 {
+  margin-top: -10px !important;
+}
+body.rn .vmiddle {
+  vertical-align: middle;
+}
+body.rn .fleft {
+  float: left;
+}
+body.rn #roamingGuide .fw400 {
+  font-weight: 400;
+}
+body.rn #roamingGuide .prelative {
+  position: relative;
+}
+body.rn .mh180 {
+  min-height: 180px;
+}
+body.rn .ui-autocomplete {
+  max-height: 100px;
+  overflow-y: auto;
+  /*
+   ul.ui-autocomplete ui-front
+     li.ui-menu-item
+       div.ui-menu-item-wrapper
+  */
+}
+body.rn .guide-contents {
+  display: none;
+}
+
+body.scroll #appbar {
+  background-color: white;
+  border-bottom: 1px solid #e9e9e9;
+}
+body.scroll #roamingOn #appbar {
+  background-color: white;
+  border-bottom: 0;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+body.scroll #roamingOn #appbar .logo {
+  display: none;
+}
+body.scroll #roamingOn #appbar .menu .white {
+  display: none;
+}
+body.scroll #roamingOn #appbar .menu .black {
+  display: block;
+}
+body.scroll #roamingOn #appbar .appbar {
+  display: inline-block;
+}
+
+.daterangepicker {
+  color: inherit;
+  background-color: #fff;
+  padding: 0;
+  margin-top: 7px;
+  display: none;
+  font-size: 15px;
+  line-height: 1em;
+}
+
+.daterangepicker:before, .daterangepicker:after {
+  display: inline-block;
+  content: '';
+}
+
+.daterangepicker.drop-up {
+  margin-top: -7px;
+}
+
+.daterangepicker.drop-up:before {
+  top: initial;
+  bottom: -7px;
+  border-bottom: initial;
+  border-top: 7px solid #ccc;
+}
+
+.daterangepicker.drop-up:after {
+  top: initial;
+  bottom: -6px;
+  border-bottom: initial;
+  border-top: 6px solid #fff;
+}
+
+.daterangepicker.single .daterangepicker .ranges, .daterangepicker.single .drp-calendar {
+  float: none;
+}
+
+.daterangepicker.single .drp-selected {
+  display: none;
+}
+
+.daterangepicker.show-calendar .drp-calendar {
+  display: block;
+  background-color: #fff;
+}
+
+.daterangepicker .drp-calendar {
+  display: none;
+}
+
+.daterangepicker .drp-calendar.left {
+  padding: 8px 16px;
+}
+
+.daterangepicker .drp-calendar.right {
+  padding: 0 16px;
+}
+
+.daterangepicker .drp-calendar.single .calendar-table {
+  border: none;
+}
+
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span {
+  color: #fff;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  border-radius: 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.daterangepicker .calendar-table .next span {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.daterangepicker .calendar-table .prev span {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  /*min-width: 32px;*/
+  /*width: 32px;*/
+  margin-top: 2px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+  /*border-radius: 4px;*/
+  border: 1px solid transparent;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.daterangepicker .calendar-table {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.daterangepicker .calendar-table table {
+  width: 100%;
+  margin: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+  background-color: #eee;
+  border-color: transparent;
+  color: inherit;
+}
+
+.daterangepicker td.week, .daterangepicker th.week {
+  font-size: 80%;
+  color: #ccc;
+}
+
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+  background-color: #fff;
+  border-color: transparent;
+  color: #888;
+}
+
+.daterangepicker td.in-range {
+  background-color: #e7ebfe;
+  border-color: transparent;
+  color: #000;
+  border-radius: 0;
+}
+
+.daterangepicker td.start-date {
+  border-radius: 18px 0 0 18px;
+}
+
+.daterangepicker td.end-date {
+  border-radius: 0 18px 18px 0;
+}
+
+.daterangepicker td.start-date.end-date {
+  border-radius: 18px;
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #4559fc;
+  border-color: transparent;
+  color: #fff;
+}
+
+.daterangepicker th.month {
+  width: auto;
+  color: #4559fc;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.daterangepicker td.disabled, .daterangepicker option.disabled {
+  color: #999;
+  cursor: not-allowed;
+  /*text-decoration: line-through;*/
+}
+
+.daterangepicker select.monthselect, .daterangepicker select.yearselect {
+  font-size: 12px;
+  padding: 1px;
+  height: auto;
+  margin: 0;
+  cursor: default;
+}
+
+.daterangepicker select.monthselect {
+  margin-right: 2%;
+  width: 56%;
+}
+
+.daterangepicker select.yearselect {
+  width: 40%;
+}
+
+.daterangepicker .drp-buttons {
+  clear: both;
+  text-align: right;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  display: none;
+  line-height: 12px;
+  vertical-align: middle;
+}
+
+.daterangepicker .drp-selected {
+  display: inline-block;
+  font-size: 12px;
+  padding-right: 8px;
+}
+
+.daterangepicker .drp-buttons .btn {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+.daterangepicker .ranges {
+  float: none;
+  text-align: left;
+  margin: 0;
+}
+
+.daterangepicker.show-calendar .ranges {
+  margin-top: 8px;
+}
+
+.daterangepicker .ranges ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.daterangepicker .ranges li {
+  font-size: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.daterangepicker .ranges li:hover {
+  background-color: #eee;
+}
+
+.daterangepicker .ranges li.active {
+  background-color: #08c;
+  color: #fff;
+}
+
+/*  Larger Screen Styling */
+@media (min-width: 360px) {
+  .daterangepicker {
+    width: auto;
+  }
+
+  .daterangepicker .ranges ul {
+    width: 140px;
+  }
+
+  .daterangepicker.single .ranges ul {
+    width: 100%;
+  }
+
+  .daterangepicker.single .drp-calendar.left {
+    clear: none;
+  }
+
+  .daterangepicker.single .ranges, .daterangepicker.single .drp-calendar {
+    /*float: left;*/
+  }
+
+  .daterangepicker {
+    direction: ltr;
+    text-align: left;
+  }
+
+  .daterangepicker .drp-calendar.left {
+    clear: left;
+    margin-right: 0;
+  }
+
+  .daterangepicker .drp-calendar.left .calendar-table {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .daterangepicker .drp-calendar.right {
+    margin-left: 0;
+  }
+
+  .daterangepicker .drp-calendar.right .calendar-table {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .daterangepicker .drp-calendar.left .calendar-table {
+    padding-right: 8px;
+  }
+
+  .daterangepicker .ranges, .daterangepicker .drp-calendar {
+    /*float: left;*/
+  }
+}
+
+/* 로밍 상품 리뉴얼 */
+.rm-prd-wrap .benefit-data li strong{display:block;color:#6a81e4}
+.rm-prd-wrap .rm-prd-baro-h img{width:100%;margin-top:-3.125rem}
+.rm-prd-wrap .rm-prd-baro{padding-bottom:2.5rem;background-color:#ecf0f6;text-align:center}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst{padding:0 1rem}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst:after{clear:both;content:'';display:block;}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst li{position:relative;display:block;float:left;padding:1.25rem .625rem 1rem;background-color:#fff;border-radius:1.25rem;box-shadow:.2rem .3125rem .625rem rgba(182,199,234,0.24)}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst.rm-prd-lst3 li{width:calc( ( 100% - 4.5rem ) / 3 );margin-left:.375rem}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst.rm-prd-lst2 li{width:calc( ( 100% - 2.97rem ) / 2 );margin-left:.47rem}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst li:first-child{margin:0}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .ico_recomm{position:absolute;top:.875rem;left:.875rem;width:2rem;line-height:1.125rem;color:#fff;font-size:.5625rem;background-color:#f76252;border-radius:1rem}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .ico{margin:0 auto;;width:3.15rem;height:3.09rem;text-indent:-999em}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .ico3{background:url({{cdn}}/img/product/rm-prd-baro3.png) no-repeat 0 0;background-size:100% auto}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .ico4{background:url({{cdn}}/img/product/rm-prd-baro4.png) no-repeat 0 0;background-size:100% auto}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .ico7{background:url({{cdn}}/img/product/rm-prd-baro7.png) no-repeat 0 0;background-size:100% auto}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .ico300{background:url({{cdn}}/img/product/rm-prd-300mb.png) no-repeat 0 0;background-size:100% auto}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .ico500{background:url({{cdn}}/img/product/rm-prd-500mb.png) no-repeat 0 0;background-size:100% auto}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .icoVip{background:url({{cdn}}/img/product/rm-prd-vip.png) no-repeat 0 0;background-size:100% auto}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .icoDataVip{background:url({{cdn}}/img/product/rm-prd-dataVip.png) no-repeat 0 0;background-size:100% auto}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .icoGuamSaipan1{background:url({{cdn}}/img/product/rm-prd-guamSaipan1.png) no-repeat 0 0;background-size:100% auto}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .icoGuamSaipan2{background:url({{cdn}}/img/product/rm-prd-guamSaipan2.png) no-repeat 0 0;background-size:100% auto}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst strong{display:block;margin-top:.75rem;font-size:��1rem}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst p{font-size:.75rem;color:#666}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst span{font-size:0.75rem;color:#f86252;display:block}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst a{display:block;border:1px solid #d7d7d7;font-size:.6875rem;line-height:1.75rem;border-radius:1rem}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .btn2 a{float:left;width:calc( ( 100% - .25rem ) /2 );margin-left:.25rem;box-sizing:border-box;line-height:1.875rem}
+.rm-prd-wrap .rm-prd-baro .rm-prd-lst .btn2 a:first-child{margin:0}
+.rm-prd-wrap .rm-prd-baro .rm-prd-yt{margin:0 1rem;padding:1.81rem 1.28rem 1.28rem;background:#dbe1e9 url({{cdn}}/img/product/rm-prd-baro-yt-bg.png) no-repeat .625rem .625rem;background-size:7.375rem auto;font-size:.75rem;border-radius:1.25rem;color:#666}
+.rm-prd-wrap .rm-prd-baro .rm-prd-yt img,
+.rm-prd-wrap .rm-prd-baro .rm-prd-yt p{display:block;padding-left:7.65625rem;text-align:left;line-height:1.125rem}
+.rm-prd-wrap .rm-prd-baro .rm-prd-yt strong{color:#111}
+.rm-prd-wrap .rm-prd-baro .rm-prd-yt .rm-prd-yt-btn{overflow:hidden}
+.rm-prd-wrap .rm-prd-baro .rm-prd-yt .rm-prd-yt-btn a{float:left;width:calc( ( 100% - 1.25rem ) / 3 );margin-left:.625rem;font-size:.875rem;font-weight:bold;color:#6a81e4;line-height:1.875rem;border-radius:1rem;background-color:#fff}
+.rm-prd-wrap .rm-prd-baro .rm-prd-yt .rm-prd-yt-btn a:first-child{margin:0}
+.rm-prd-wrap .rm-prd-chk{font-size:.6875rem}
+.rm-prd-wrap .rm-prd-chk li{color:#959595}
+.rm-prd-wrap .rm-prd-chk strong{display:block;font-weight:normal}
+.rm-prd-provide .rm-prd-provide-continent ul{position:relative;display:inline-flex;flex-wrap:wrap;width:100%;background-color:#f0f0f0;padding:0 1px 1px 0;box-sizing:border-box}
+.rm-prd-provide .rm-prd-provide-continent li{display:flex;width:calc(100% / 3 - 1px);height:3.75rem;margin:1px 0 0 1px;align-items:center;;justify-content:center;text-align:center;background-color:#fff}
+.rm-prd-provide .rm-prd-provide-continent li button{width:100%;height:100%;font-size:.9375rem}
+.rm-prd-provide .rm-prd-provide-continent li.on{background-color:#6a81e4;box-shadow:0 0 0 1px #6a81e4}
+.rm-prd-provide .rm-prd-provide-continent li.on button{color:#fff;font-weight:bold}
+.rm-prd-provide .rm-prd-provide-country{font-size:0.875rem;color:#959595}
+.rm-prd-provide .rm-prd-provide-country li{display:none;padding:1rem;background-color:#f3f3f3;line-height:1.4rem}
+.rm-prd-provide .rm-prd-provide-country .on{display:block}
+.rm-prd-provide .rm-prd-provide-bx{padding:1rem 1.25rem;background-color:#f3f3f3}
+.rm-prd-provide .idpt-country-list{margin:0}
+.rm-prd-provide .idpt-country-list p{font-weight:normal !important}
+.rm-prd-provide .idpt-country-list > li{border-color:#d9d9d9}
+.rm-pop-provide-continent{padding:0.5rem 1rem 0}
+.rm-pop-provide-continent button{display:inline-block;height:2.5rem;margin:.625rem .5rem 0 0;padding:0 1.06rem;border-radius:1.88rem;box-sizing: border-box;font-size:.875rem;border:1px solid #e5e5e5;background:#fff;color:#000;}
+.rm-pop-provide-continent button.on{background:#f76252;color:#fff}
+.rm-pop-provide-continent button:last-child{margin-right:0}
+.idpt-benefit .idpt-popup-cont.roaming .tbl-wrap{margin-top:0 !important}
+.rm-prd-provide .idpt-tbl-discount span{display:inline-block;font-size:.6875rem;color:#fff;width:30px;height:20px;line-height:20px;border-radius:2px}
+.rm-prd-provide .rm-prd-provide-ico-3g{background-color:#13bd6f}
+.rm-prd-provide .rm-prd-provide-ico-lte{background-color:#119ed7}
+.rm-prd-provide .rm-prd-provide-ico-5g{background-color:#f76252}
+.rm-prd-wrap .rm-prd-period{margin:0 1rem}
+.rm-prd-wrap .rm-prd-tb{font-size:14px;border-bottom:1px solid #d8d8d8;line-height:1.125rem;font-size:.75rem;color:#666;word-break:break-all}
+.rm-prd-wrap .rm-prd-tb th{padding:.81rem 0;vertical-align:top}
+.rm-prd-wrap .rm-prd-tb thead th{background-color:#7c90ae;color:#fff;border-left:1px solid #fff}
+.rm-prd-wrap .rm-prd-tb thead th:first-child{border:0}
+.rm-prd-wrap .rm-prd-tb thead th:nth-child(even){background-color:#7689a5}
+.rm-prd-wrap .rm-prd-tb tbody th{padding:.5rem .6875rem;background-color:#fff;font-weight:bold;color:#6a81e4;text-align:left;border-top:1px solid #e9e9e9}
+.rm-prd-wrap .rm-prd-tb tbody tr:first-child th,
+.rm-prd-wrap .rm-prd-tb tbody tr:first-child td{border-top:0}
+.rm-prd-wrap .rm-prd-tb tbody td{padding:.5rem .6875rem;background-color:#fff;text-align:left;border-top:1px solid #e9e9e9;border-left:1px solid #e9e9e9;vertical-align:top}
+.rm-prd-wrap .rm-prd-tb tbody td:nth-child(even){background-color:#f2f2f2}
+.rm-prd-wrap .rm-prd-tb p,
+.rm-prd-wrap .rm-prd-tb li{position:relative;padding-left:.4375rem}
+.rm-prd-wrap .rm-prd-tb p:before,
+.rm-prd-wrap .rm-prd-tb li:before{position:absolute;top:.35rem;left:0;content:'';width:.125rem;height:.125rem;background-color:#7086e5}
+.rm-prd-wrap .rm-prd-tb thead .th1 th{background-color:#93a3e9 !important}
+.rm-prd-wrap .rm-prd-tb tbody td.white{background-color:#fff !important}
+.rm-prd-wrap .rm-prd-tb tbody td.center{text-align:center}
+.rm-prd-wrap .rm-prd-tb tbody td.center p,
+.rm-prd-wrap .rm-prd-tb tbody td.center li{display:inline-block}
+.rm-prd-wrap .idpt-benefit .benefit-button{margin-top:1.25rem}
+.rm-prd-wrap .idpt-benefit .benefit-button a{display:block;color:#178bce;border:1px solid #9cc9f5;line-height:2.25rem;border-radius:20px}
+.idpt-popup-cont.roaming .idpt-tbl-discount thead th{color:#666}
+
+/* 2차 */
+.rm-content .cont-box.rm-cont-tooltip h3{font-size:1.3125rem}
+.rm-content .noti-list02 li{padding:0;border:0;font-size:1.6025rem}
+.rm-content .noti-list02 li .tip-view-btn{font-size:1.0625rem;color:#000;font-weight:500}
+.rm-content .tip-view{width:2.125rem;height:1.0625rem;background:#4559fc 0;color:#fff;text-indent:0;border-radius:1rem;font-size:.75rem;line-height:1.2rem}
+.rm-content .checkbox.type01:before{width:1.375rem;height:1.375rem;background-size:1.375rem auto}
+.rm-content .checkbox.type01.checked:before{background-image: url(/img/product/roam/rm-check-on.png);background-size:1.375rem auto}
+.rm-content .radiobox.type01:before{width:1.4375rem;height:1.4375rem;background-size:1.4375rem auto}
+.rm-content .radiobox.type01.checked:before{background:url(/img/product/roam/rm-radio-on.png) no-repeat 0 0;background-size:1.4375rem auto}
+.rm-content .tab-area.type1 .tab-linker>ul{background-color:#4559fc;display:flex;width:100% !important}
+.rm-content .tab-area.type1 .tab-linker>ul:after{display:none}
+.rm-content .tab-area.type1 .tab-linker>ul>li{height:3.8125rem;;border:0;flex:1;margin:0;text-align:center}
+.rm-content .tab-area.type1 .tab-linker>ul>li button,
+.rm-content .tab-area.type1 .tab-linker>ul>li a{width:100%;height:3.8125rem;line-height:3.8125rem;font-size:0.9375;color:rgba(255,255,255, 0.4)}
+.rm-content .tab-area.type1 .tab-linker>ul>li[aria-selected="true"] button, 
+.rm-content .tab-area.type1 .tab-linker>ul>li[aria-selected="true"] a{color:rgba(255,255,255,1);font-size:1.03125rem;font-weight:400}
+
+.rm-content .bul-list.fs14 li:before{top:.46rem}
+.rm-content .bul-list.fs13 li:before{top:.375rem}
+.rm-content .bul-list li.tod-txcolor4:before{background-color:#858585}
+.rm-content .bul-list li span{color:#4559fc !important}
+
+.rm-content .rm-anchor ul{display:flex;background-color:#4559fc}
+.rm-content .rm-anchor li{height:3.8125rem;;border:0;flex:1;margin:0;text-align:center}
+.rm-content .rm-anchor li a{display:block;width:100%;height:3.8125rem;line-height:3.8125rem;font-size:0.9375;color:rgba(255,255,255, 0.4)}
+.rm-content .rm-anchor li a[aria-selected="true"]{color:rgba(255,255,255,1);font-size:1.03125rem;font-weight:400}
+.rm-content .rm-anchor.fixed ul{position:fixed;top:52px;left:0;width:100%;z-index:50}
+.rm-content .rm-anchor.fixed:after{content:'';display:block;position:static;height:3.8125rem;width:100%}
+
+.rm-content .rm-bg-gray{background-color:#f3f4f9}
+.bt-slice>li.bt-roaming1 a,
+.bt-slice>li.bt-roaming1 button{color:#4559fc;border:1px solid #4559fc}
+.bt-slice>li.bt-roaming1 button:disabled{border:1px solid #9e9e9e;color:#9e9e9e}
+.bt-slice>li.bt-roaming1 a.selected,
+.bt-slice>li.bt-roaming1 button.selected{background:#4559fc;color:#fff}
+.bt-slice>li.bt-roaming1 a.disabled,
+.bt-slice>li.bt-roaming1 button.disabled{border:1px solid #9e9e9e;color:#9e9e9e;background:#fff;pointer-events:none;cursor:default}
+.bt-slice>li.bt-roaming2 button,
+.bt-slice>li.bt-roaming2 a{color:#fff;background-color:#4559fc}
+.bt-slice>li.bt-roaming2 button.selected{color:#4559fc;border:1px solid #4559fc}
+.bt-slice>li.bt-roaming2 button.disabled {border:1px solid #9e9e9e;color:#fff;background:#fff;pointer-events:none;cursor:default}
+.bt-slice>li.bt-roaming2 button:disabled{color:#fff;background:#dcdcdc;}
+
+.rm-content .tab-area.pop-tab-type1>.tab-linker>ul{width:100% !important}
+.rm-content .tab-area.pop-tab-type1>.tab-linker>ul>li{border:0;margin-right:1em}
+.rm-content .tab-area.pop-tab-type1>.tab-linker>ul>li button,
+.rm-content .tab-area.pop-tab-type1>.tab-linker>ul>li a{width:100%;font-size:1.25rem;color:#959595}
+.rm-content .tab-area.pop-tab-type1>.tab-linker>ul>li[aria-selected="true"] button, 
+.rm-content .tab-area.pop-tab-type1>.tab-linker>ul>li[aria-selected="true"] a{color:#4559fc;font-weight:400}
+.rm-content .tab-area.pop-tab-type2{display:flex}
+.rm-content .tab-area.pop-tab-type2>.tab-linker{width:7.5rem;background-color:#f0f4ff}
+.rm-content .tab-area.pop-tab-type2>.tab-linker>ul{width:100% !important}
+.rm-content .tab-area.pop-tab-type2>.tab-linker>ul:after{display:none}
+.rm-content .tab-area.pop-tab-type2>.tab-linker>ul>li{border:0;margin:0;width:100%;float:none;height:auto}
+.rm-content .tab-area.pop-tab-type2>.tab-linker>ul>li button,
+.rm-content .tab-area.pop-tab-type2>.tab-linker>ul>li a{width:100%;height:3.5rem;;text-align:left;;padding-left:1.4375rem;font-size:1rem;color:#959595;background-color:#f0f4ff}
+.rm-content .tab-area.pop-tab-type2>.tab-linker>ul>li[aria-selected="true"] button, 
+.rm-content .tab-area.pop-tab-type2>.tab-linker>ul>li[aria-selected="true"] a{color:#4559fc;background-color:#fff}
+.rm-content .tab-area.pop-tab-type2>.tab-contents{flex:1}
+.rm-content .tab-area.pop-tab-type2>.tab-contents .cont-box ul li{margin-bottom:2rem;font-size:.9375rem}
+.rm-content .tab-area.pop-tab-type2>.tab-contents .cont-box ul li:last-child{margin:0}
+.rm-content .tab-area.pop-tab-type2>.tab-contents .cont-box button{width:100%;font-size:.9375rem;padding:.5rem 0;text-align:left;margin:.5rem 0}
+.rm-content .tab-area.pop-tab-type2>.tab-contents .cont-box button:first-child{margin-top:-0.5rem}
+.bt-dropdown.rm-pop-dropdown{width:100%;height:3.3125rem;;padding:0 2.25rem 0 0.75rem;border:1px solid #eaeaea;border-radius:.75rem}
+.bt-dropdown.rm-pop-dropdown:after{width:.8125rem;height:.8125rem;background:url(/img/product/roam/ico_dropdown.svg) no-repeat 0 0;background-size:.8125rem;margin-top:-0.4rem}
+.rm-content .cont-sp{background-color:#f6f6f6f6}
+.rm-content .charge-guide-wrap .sub-disc01{font-size:.875rem}
+.rm-content .charge-guide-wrap [class^="sub-disc"] .ico.ico-pin{width:0.875rem;height:.875rem;background:url(/img/product/roam/ico_pin.svg);background-size:.875rem}
+.rm-content .charge-guide-wrap .tit-tgothic{font-size:1.625rem}
+.rm-content .charge-guide-wrap .sub-disc04{font-size:.8125rem;color:#959595}
+
+/* step */
+.rm-content .widget-box.step{display:flex;background-color:#eaefff;padding:1.1875rem 1.625rem 1.1875rem 1rem}
+.rm-content .widget-box.step .step-ti{font-size:.9375rem;color:#111;line-height:1.4}
+.rm-content .widget-box.step .step-ti em{display:inline;font-size:.9375rem;color:#4559fc;font-weight:500;padding-right:.5rem}
+.rm-content .widget-box.step .step-list{position:static;text-align:right;flex:1}
+.rm-content .widget-box.step .step-list li{float:none;display:inline-block}
+.rm-content .widget-box.step .step-list li{border:0;font-size:.75rem;width:.5rem;height:.5rem;margin-left:.2rem;background-color:#c8d0ff;vertical-align:middle;text-indent:-999rem}
+.rm-content .widget-box.step .step-list li.on{width:1.125rem;height:1.125rem;padding:0;background-color:#4559fc;line-height:1.125rem;margin:0;text-indent:0}
+.rm-content.fixedStep .step-wrap{height:60px}
+.rm-content.fixedStep .widget-box.step{position:fixed;top:53px;left:0;right:0;z-index:50}
+
+/* baro Box */
+.rm-content .rm-box-ct .rm-box-ct-top h3{font-size:1.625rem;font-weight:500;padding-right:4.5rem}
+.rm-content .rm-box-ct .rm-box-ct-top h3 em{color:#4559fc}
+.rm-content .rm-box-ct .rm-box-ct-top{position:relative}
+.rm-content .rm-box-ct .rm-box-ct-top .rm-box-bt-cancel{position:absolute;top:2.1875rem;right:1rem;padding-right:.875rem;color:#505dff}
+.rm-content .rm-box-ct .rm-box-ct-top .rm-box-bt-cancel:after{position:absolute;right:0;top:.125rem;width:.75rem;height:.75rem;background:url(/img/product/roam/ico_arrow_b.svg) no-repeat right center;content:'';}
+.rm-content .rm-box-ct .rm-box-ct-top .cont-noti{color:#959595}
+.rm-content .rm-box-ct h4{font-size:1.3125rem}
+.rm-content strong em{color:#4559fc}
+.rm-content .rm-box-ct .rm-box-benefit{padding:3rem 2.5rem}
+.rm-content .rm-box-ct .rm-box-benefit.rm-box-radius{padding:2rem 1rem;background-color:#fff;border-radius:.75rem}
+.rm-content .rm-box-benefit h5{display:flex;font-size:1.125rem}
+.rm-content .rm-box-benefit h5 em{position:relative}
+.rm-content .rm-box-benefit h5 em i{position:relative;z-index:20;font-style:normal;white-space:nowrap}
+.rm-content .rm-box-benefit h5 em:after{display:block;content:'';position:absolute;left:0;bottom:0;width:100%;height:4px;background-color:#d3dbff;z-index:10}
+.rm-content .rm-box-benefit h5 span.num{flex-basis:2.5rem;flex-shrink:0;height:2.375rem;position:relative;top:.3rem}
+.rm-content .rm-box-benefit h5 span.n1{background:url(/img/product/roam/rm-box-num1.png) no-repeat 0 0;background-size:0.78125rem auto;text-indent:-999em}
+.rm-content .rm-box-benefit h5 span.n2{background:url(/img/product/roam/rm-box-num2.png) no-repeat 0 0;background-size:1.4375rem auto;text-indent:-999em}
+.rm-content .rm-box-benefit h5 span.n3{background:url(/img/product/roam/rm-box-num3.png) no-repeat 0 0;background-size:1.46875rem auto;text-indent:-999em}
+.rm-content .rm-box-benefit h5 span.n4{background:url(/img/product/roam/rm-box-num4.png) no-repeat 0 0;background-size:1.625rem auto;text-indent:-999em}
+.rm-content .rm-box-benefit .rm-box-benefit-list{display:flex}
+.rm-content .rm-box-benefit .rm-box-benefit-list li{padding:4.6875rem .5rem 0;flex:1;text-align:center;font-size:.75rem;color:#959595;}
+.rm-content .rm-box-benefit .rm-box-benefit-list li.ico1{background:url(/img/product/roam/rm-box-benefit-ico1.png) no-repeat center 0;background-size:3.875rem auto}
+.rm-content .rm-box-benefit .rm-box-benefit-list li.ico2{background:url(/img/product/roam/rm-box-benefit-ico2.png) no-repeat center 0;background-size:3.875rem auto}
+.rm-content .rm-box-benefit .rm-box-benefit-list li.ico3{background:url(/img/product/roam/rm-box-benefit-ico3.png) no-repeat center 0;background-size:3.875rem auto}
+.rm-content .rm-box-benefit .rm-box-benefit-list li.ico4{background:url(/img/product/roam/rm-box-benefit-ico4.png) no-repeat center 0;background-size:3.875rem auto}
+.rm-content .rm-box-benefit .rm-box-benefit-list li.ico5{background:url(/img/product/roam/rm-box-benefit-ico5.png) no-repeat center 0;background-size:3.875rem auto}
+.rm-content .rm-box-benefit .rm-box-benefit-list li.ico6{background:url(/img/product/roam/rm-box-benefit-ico6.png) no-repeat center 0;background-size:3.875rem auto}
+.rm-content .rm-box-ct .data-a{border:0;border-top:1px solid #e5e5e5}
+.rm-content .rm-box-ct .data-a th{color:rgba(0,0,0,0.6)}
+.rm-content .rm-box-ct .data-a td{border:0;border-bottom:1px solid #e5e5e5}
+.rm-content .rm-box-ct .data-a td span{color:#959595}
+.rm-content .rm-box-ct .data-a .tip-view{position:relative;top:-0.1rem}
+.rm-content .rm-box-ct h5{font-size:1.0625rem}
+.rm-content .rm-box-ct .rm-box-btn-link{color:#4559fc;text-decoration:underline}
+.rm-content .rm-box-use>li{display:flex;padding-bottom:2.5rem;background:url(/img/product/roam/rm-box-use-bg.png) repeat-y 1.185rem 0;background-size:2px auto}
+.rm-content .rm-box-use>li:last-child{background:0;padding:0}
+.rm-content .rm-box-use .num{flex-basis:2.5rem;flex-shrink:0;margin-right:.875rem;font-size:1.25rem;width:2.5rem;height:2.5rem;background-color:#eeeff4;border-radius:1.25rem;text-align:center;line-height:2.5rem}
+.rm-content .rm-box-use .desc{flex:1}
+.rm-content .rm-box-use>li .bul-list{padding:0}
+.rm-content .rm-box-use>li .bul-list li{margin:0}
+.rm-content .rm-box-use>li .bul-list li:before{top:.46rem}
+.rm-content .rm-box-use .desc>strong{display:block;font-size:1.0625rem}
+.rm-content .rm-box-use p{color:#757575}
+.rm-box-use-flex{display:flex}
+.rm-box-use-flex span{flex:1}
+.rm-content .rm-box-use .rm-box-use-flex span strong{font-size:.875rem;color:#000}
+.rm-content .rm-box-use .rm-box-use-flex span i{color:#959595}
+.rm-content .rm-barobox-info .coupon-way .acco-list .acco-box .acco-tit button{height:auto;padding:1rem;font-size:1.0625rem;font-weight:400}
+.rm-content .rm-barobox-info .coupon-way .acco-list .acco-box .acco-tit button span{display:block;color:#757575;line-height:1.125rem}
+.rm-content .rm-box-ct .recommendedrate-list>li{background:url(/img/product/roam/rm-arr-rgt.png) no-repeat right 1.8125rem;background-size:0.40625rem auto}
+.rm-content .rm-box-ct .recommendedrate-list>li .product-infolink .products-titleinfo .info{color:#4559fc;font-weight:500;top:3.5rem}
+.rm-content .rm-box-ct .rm-barobox-info .recommendedrate-list .products-desc{font-size:12px}
+.rm-content .rm-box-ct .rm-barobox-info .recommendedrate-list .products-desc em{line-height:2rem;color:#4559fc}
+.rm-content .basic-text .top-tx span{color:#4559fc}
+
+.rm-content .basic-list.li-line2 ul li{display:flex;position:relative;width:auto;margin-bottom:.625rem;padding:.8125rem 1.125rem;border:1px solid #e0e0e0;border-radius:0.2em;justify-content:space-between;align-items:center}
+.rm-content .basic-list.li-line2 ul li .tx-cont .bt-alone .bt-line-gray1{width:1.5rem;height:1.5rem;border-radius:1rem;border:0;text-indent:-999em;background:#f5f5f5 url(/img/product/roam/rm-barobox-del.svg) no-repeat center center}
+.rm-content .popup-page .rm-barobox-tit{font-size:1.3125rem}
+.rm-content .popup-page .rm-barobox-tit .blind{top:0}
+.rm-content .rm-barobox-null{padding:1.625rem;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;color:#959595}
+.rm-content .form-data-list .tit .rm-fr{float:right;margin-top:.2rem}
+.rm-content .agree-chk-wrap .list-comp-input-agree .select-list > li > div .comp-list-layout{padding-left:3.25rem}
+.rm-content button.bt-link-tx.underline, a.bt-link-tx.underline{color:#4559fc}
+.rm-content .complete-title img{width:3.1875rem;height:3.1875rem}
+.rm-content .complete-title span{font-size:1.625rem}
+.rm-content .charge-guide-wrap .list-type > li .basic-list ul li .title{width:20%;font-size:.875rem;color:#959595}
+.rm-content .charge-guide-wrap .list-type > li .basic-list ul li .tx-cont{width:80%;font-size:.875rem}
+
+/* 본인인증 */
+.rm-content .rm-box-cert{text-align:center}
+.rm-content .rm-box-cert.cont-box h3{font-size:1.3125rem;font-weight:400}
+.rm-content .rm-box-cert.cont-box h3 span{color:#4559fc}
+.rm-content .rm-box-cert-proc{display:inline-block;height:1.875rem;border-bottom:1px dotted #e0e0e0}
+.rm-content .rm-box-cert-proc li{display:inline-block;width:3.875rem;margin-right:1.25rem;padding-top:4.4375rem;background:url(/img/product/roam/rm-box-cert1.png) no-repeat center 0;background-size:3.875rem auto}
+.rm-content .rm-box-cert-proc li+li{margin:0 0 0 1.25rem;background:url(/img/product/roam/rm-box-cert2.png) no-repeat center 0;background-size:3.875rem auto}
+
+/* 조회/취소 */
+.rm-content .title-wrap .bt-detail{position:relative;height:1.4375rem;padding:0 1.75rem 0 0.75rem;font-size:.8125rem;border:1px solid #4559fc;border-radius:1rem}
+.rm-content .title-wrap .bt-detail:after{right:0.5rem}
+.rm-content .title-wrap .bt-dropdown{position:absolute;top:.2rem;right:0;background:0;padding:0 1.125rem 0 0}
+.rm-content .title-wrap .bt-dropdown:after{right:0;background:url(/img/ico/ico-group.png) no-repeat -1.88rem -22.44rem;background-size:50px auto;margin-top:-0.25rem}
+.rm-content .charge-guide-wrap .list-type .rm-box-tit-stat{position:relative;display:block;color:#4559fc;font-size:1.0625rem;padding:0 0 1rem 1.875rem}
+.rm-content .charge-guide-wrap .list-type .rm-box-tit-stat:before{position:absolute;top:0;left:0;content:'';width:1.3125rem;height:1.3125rem;background:url(/img/product/roam/rm-box-reserv.png) no-repeat 0 0;background-size:1.3125rem auto}
+.rm-content .charge-guide-wrap .list-type .rm-box-tit-stat.stat2:before{background-position:0 -1.875rem}
+.rm-content .charge-guide-wrap .list-type .rm-box-tit-stat.stat3:before{background-position:0 -3.6875rem}
+.rm-content .charge-guide-wrap .list-type .rm-box-tit-stat.stat4:before{background-position:0 -5.625rem}
+.rm-content .bt-more button{background:#fff url(/img/product/roam/ico_expand.svg) no-repeat center center;text-indent:-999em;border-top:1px solid #e0e0e0}
+
+/* 카드쿠폰 */
+.rm-content .roaming-card-coupon{position:relative}
+.rm-content .roaming-card-coupon .tit{font-size:1.625rem;font-weight:500}
+.rm-content .roaming-card-coupon .desc{margin-top:1.125rem;font-size:.8125rem}
+.rm-content .roaming-card-coupon .btn-inq{position:absolute;top:0;right:0;color:#505dff}
+.rm-content .rm-btn-hd-rgt{position:absolute;top:.1875rem;right:0;padding-right:.875rem;color:#505dff}
+.rm-content .rm-btn-hd-rgt:after{position:absolute;right:0;top:.125rem;width:.75rem;height:.75rem;background:url(/img/product/roam/ico_arrow_b.svg) no-repeat right center;content:'';}
+.rm-content .rm-card-call{display:flex;justify-content:space-between;align-items:center;padding:0 1.25rem}
+.rm-content .rm-card-call p{font-size:1.1875rem;color:#4559fc;font-weight:500}
+.rm-content .rm-card-call p span{font-size:.8125rem;color:#858585}
+.rm-content .rm-card-call a{display:inline-block;margin:0 .75rem;padding-top:2.8125rem;font-size:.75rem;background:url(/img/product/roam/rm-card-tel.png) no-repeat center 0;background-size:2.5rem auto}
+.rm-content .card-coupon-wrap{padding:2.1875rem 0;background-color:#fff}
+.rm-content .card-coupon-wrap h4{margin-left:1rem}
+.rm-content .card-coupon-box .card-coupon-inner .inner-box{min-width:17.06rem;width:auto;height:18.75rem;padding:1.75rem 1.25rem;background-color:#f3f4f9}
+.rm-content .card-coupon-box .card-coupon-inner .tit{white-space:nowrap;margin:0;font-size:1.125rem;color:#4559fc;font-weight:500;margin:0}
+.rm-content .card-coupon-box .card-coupon-inner .card{width:auto;height:auto;margin:.94rem 0 0 0}
+.rm-content .card-coupon-box .card-coupon-inner .card img{width:auto;height:auto}
+.rm-content .card-coupon-box .card-coupon-inner .price{color:#000;font-weight:500}
+.rm-content .card-coupon-box .card-coupon-inner .desc{color:#858585}
+.rm-content .way-cont-box .order li{padding-left:4.6875rem;min-height:3.75rem}
+.rm-content .way-cont-box .order li :after{width:3.75rem;height:3.75rem;background:url(/img/product/roam/ico-order01.png) no-repeat 0 0;background-size:100% auto}
+.rm-content .way-cont-box .order li:last-child :after{background-image:url(/img/product/roam/ico-order02.png)}
+.rm-content .way-cont-box .order li strong{font-size:.9375rem;font-weight:500}
+.rm-content .way-cont-box .order li p{font-size:.875rem;color:#757575}
+.rm-content .way-cont-box .txt{font-size:.875rem;color:#757575}
+
+.rm-content .h-tip h5{display:inline-block;font-size:1.0625rem;vertical-align:middle}
+.rm-content .h-tip h4{display:inline-block;vertical-align:middle}
+.rm-content .h-tip .tip-view-btn{overflow:hidden;color:transparent;letter-spacing:-999em}
+.rm-content .h-tip .tip-view-btn .tip-view{letter-spacing:0;vertical-align:top}
+.rm-content h4{font-size:1.3125rem;font-weight:500}
+
+/* 로밍모드 */
+.rm-mod-info1 .info-h{display:flex;justify-content:space-between;align-items:center;line-height:1.5rem}
+.rm-mod-info1 .info-h span{padding-left:1.6875rem;font-size:.9375rem;font-weight:400}
+.rm-mod-info1 .info-h.info-voice span{background:url(/img/product/roam/rm-mode-voice.png) no-repeat .25rem 0;background-size:1rem auto}
+.rm-mod-info1 .info-h.info-text span{background:url(/img/product/roam/rm-mode-text.png) no-repeat .25rem 0;background-size:1.125rem auto}
+.rm-tx-color{color:#4559fc !important}
+#roamingOn .profile-main-loader .loader{width:24px;height:24px;margin:0;left:auto;right:3.125rem}
+#roamingOn .rm-mod-loading{position:relative}
+#roamingOn .loading{position:absolute}
+#roamingOn .loading .spinner_loading{width:24px;height:24px;margin:-12px 0 0 -12px}
+#roamingOn .loading .spinner_loading .line {-webkit-transform-origin:24px 24px;transform-origin:24px 24px}
+#roamingOn .loading .spinner_loading .line:after{content:"";display:block;position:absolute;top:12px;left:23px;width:2px;height:7px;border-radius:25%;background:#666}
+
+
+/* 나의 T로밍 이용 현황 */
+.rm-myuse-dropdown{padding:.8rem 1rem 0;text-align:right}
+.rm-myuse-dropdown .bt-dropdown{padding:0 1.25rem 0 0;background:0}
+.rm-myuse-dropdown .bt-dropdown:after{right:0;background:url(/img/ico/ico-group.png) no-repeat -1.88rem -22.44rem;background-size:50px auto;margin-top:-0.25rem}
+.rm-myuse-txb{font-size:1.125rem}
+#roamingMyuse h2{font-size:1.3125rem;line-height:1.375rem}
+.rm-myuse-history li{overflow:hidden;padding:1rem 0;border-top:1px solid #f2f2f2}
+.rm-myuse-history li:first-child{border-top:0}
+.rm-myuse-history li .flag{float:left;margin-right:1.25rem}
+.rm-myuse-history li .flag img{width:2rem}
+.rm-myuse-history li .tit{float:left}
+.rm-myuse-history li .tit strong{font-size:1rem}
+.rm-myuse-history li .data{float:right;text-align:right}
+.rm-myuse-history li .data strong{font-size:.9375rem}
+#roamingMyuse .bt-more button{background:#fff url(/img/product/roam/ico_expand.svg) no-repeat center center;text-indent:-999em;border-top:1px solid #e0e0e0}
+
+/* 나의 T로밍 이용 현황 select box  */
+#roamingMyuse .custom-form input[type=radio]:checked+.r-type1 {
+  background-image: url(/img/product/roam/component_radio_small_on.svg);
+}
+
+/* 로밍모드 수정 */
+#roamingOn{background-size:100% auto !important}
+
+/* 출국 전 필수확인 팝업 접근성 수정 */
+body.rn .guide-dialog .checklist li{padding:0}
+body.rn .guide-dialog .checklist li button{width:100%;padding:20px 0;font-size:15px;font-weight:500;text-align:left;background:url(https://cdnm.tworld.co.kr/img/product/roam/ico_expand.svg) no-repeat right center;background-size:13px auto}
+body.rn .guide-dialog .checklist .description{padding-bottom:20px}
+body.rn .guide-dialog .tabs button{box-sizing:content-box}
+
+/************************************************************************
+202011-웹접근성 수정 사항 적용 
+*************************************************************************/
+/* 스킵 네비게이션 추가 */
+#skipnavigation a ,.tloaming-skip-nav a{position:absolute;left:-3000%;}
+#skipnavigation a:focus, .tloaming-skip-nav a:focus{display:block;left:0;top:0;z-index:10000000000;width:100%;height:36px;line-height:36px;font-size:14px;background:#004880;color:#fff;text-align:center;}
+/* #header */
+.rn .header-wrap,
+.rn .header-wrap .h-belt{min-height:0;}
+.rn .h-tit .logo-tloaming{width:94px;height:24px;margin-top:14px;}
+.rn .icon-gnb-search:focus{outline:1px solid #ccc;}
+/* T로밍 메인 */
+.rn #roamingMain{background:url(/img/product/roam/bg-map.png) no-repeat right 0;background-size:360px 180px;}
+body.rn .card .field-container button.btn-country-srch{position:absolute;top:5px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;}
+.rn button.btn-country-srch:focus{border: 1px solid #000;}
+body.rn .card .field-container .btn-country-srch img{position:static;}
+/* 스케쥴 팝업 */
+body.rn #scheduleDialog .header .summary,
+body.rn #scheduleDialog .header .close{z-index:3;}
+body.rn #scheduleDialog .header .banner{z-index:0;}
+/* 스케쥴 팝업 - datepicker 커스텀 */
+.rn .table-condensed td button{display:block;width:100%;height:100%;color:inherit;}
+.table-condensed td:focus{outline:1px solid #000;}
+.rn .table-condensed-header{position:relative;height:32px;}
+.rn .table-condensed-title{width:auto;color:#4559fc;font-size:15px;font-weight:500;text-align:center;line-height:32px;}
+.rn .table-condensed-header__btns{position:absolute;top:0;}
+.rn .table-condensed-header__btns.prev.available{left:0;}
+.rn .table-condensed-header__btns.next.available{right:0;}
+.rn .table-condensed-header__btns button{width:55px;height:32px;}
+.rn .table-condensed-header__btns button:focus{outline:1px solid #000;}
+/* #nationsDialog, #countriesDialog */
+.rn .title-itemList{overflow: hidden;text-indent:-9999px;width:0;height:0;opacity:0;color:#fff;}
+body.rn #countriesDialog .menu li>button,
+body.rn #countriesDialog .menu li>a{display:inline-block;height:100%;width:100%;line-height:56px;font-size:16px;color:inherit;text-align:left;}
+body.rn #countriesDialog .menu li.active>button,
+body.rn #countriesDialog .menu li.active>a{background-color:white;color:#4559fc;font-weight:bold}
+body.rn #countriesDialog .content li>button,
+body.rn #countriesDialog .content li>a{display:inline-block;height:100%;width:100%;line-height:50px;font-size:15px;color:#666;text-align:left;}
+/* T로밍 요금제 */
+body.rn #roamingTariffs .tariff{position:relative;}
+body.rn #roamingTariffs .tariff .price{float:none;position:absolute;top:0;right:0;}
+/* #roamingGuide */
+.rn .q .btn-qna-q{display:block;width:100%;text-align:left;}
+/* 스위치 토글 버튼 */
+.tloaming-toggle-switch .tloaming-toggle-switch__circle{position:relative;cursor:pointer;width:40px;}
+.switch .switch__label{position:absolute;right:0;opacity:0;pointer-events:none;}
+.tloaming-toggle-switch .tloaming-toggle-switch__circle::before,
+.tloaming-toggle-switch .tloaming-toggle-switch__circle::after{content:'';display:block;margin:0 3px;transition:all 100ms cubic-bezier(0.4, 0.0, 0.2, 1);background:#bdbdbd;}
+.tloaming-toggle-switch .tloaming-toggle-switch__circle::before{height:14px;width:100%;border-radius:7px;opacity:0.4;background:#fff;}
+.tloaming-toggle-switch .tloaming-toggle-switch__circle::after{position:absolute;top:50%;transform:translate(0, -50%);height:20px;width:20px;border-radius:50%;background-color:#3ee5ff;}
+.tloaming-toggle-switch:focus{outline:#5d9dd5 solid 1px;box-shadow:0 0 8px #5e9ed6;}
+.tloaming-toggle-switch.switch-on .tloaming-toggle-switch__circle::after{transform:translate(100%, -50%);}
+/* #roamingOn */
+@media all and (min-width: 376px)  {
+#roamingOn{background-size:contain!important;background-position-y: -7%!important;}
+}
+/* #roamingTariffOffer */
+body.rn #roamingTariffOffer .decoration{height: 0;padding-top: 47%;}
+body.rn #roamingTariffOffer .decoration .banner{bottom:auto;top:0;}
+
+/* 접근성 추가 수정 [OP002-12168] */
+body.rn #roamingMain #header .h-belt{background:0;border:0}
+body.rn.fly #roamingMain #header .h-belt{background-color:#fff;border-bottom:1px solid #e5e5e5}
+body.rn #roamingGuide a.button{display:block}
+body.rn .card .field-container button{width:21px;height:21px}
+body.rn .tip-view{width:2.125rem;height:1.0625rem;background:#4559fc 0;color:#fff;text-indent:0;border-radius:1rem;font-size:.75rem;line-height:1.2rem}
+body.rn .card .tip-view{position:relative;top:-0.1rem}
+body.rn #roamingRates .card .link button{font-size:.8125rem;color:#4559fc;letter-spacing:-1px;text-decoration:underline}
+body.rn #roamingMain #content .history a{display:block}
+body.rn #scheduleDialog .bottom-button{width:100%;font-size:16px}
+body.rn #scheduleDialog .bottom-button:disabled{background-color:#ddd}
+body.rn #nationsDialog .menu li button.active{font-weight:bold}
+
+
+/* 접근성 추가 수정 */
+body.rn #roamingGuide .card .sub{flex:1;background:url(https://cdnm.tworld.co.kr/img/product/roam/guide_auto.svg) no-repeat center 0;background-size:4.875rem auto}
+body.rn #roamingGuide .card .sub a,
+body.rn #roamingGuide .card .sub button{width:4.875rem;padding-top:5.625rem;margin:0 auto;vertical-align:top}
+body.rn #roamingGuide .card .sub+.sub{background-image:url(https://cdnm.tworld.co.kr/img/product/roam/guide_datasms.svg)}
+body.rn #roamingGuide .card .sub+.sub+.sub{background-image:url(https://cdnm.tworld.co.kr/img/product/roam/guide_docs.svg)}
+body.rn #roamingGuide .card .subs{display:flex;margin:0}
+body.rn #roamingGuide .card .sub a{display:block}
+body.rn #roamingGuide .card .point ul li{padding-right:0}
+body.rn #roamingGuide .card .point ul li button{width:100%;padding-right:1.5625rem;text-align:left;font-size:1rem;background:url(https://cdnm.tworld.co.kr/img/product/roam/ico_arrow.png) no-repeat center right;background-size:.8125rem}
+body.rn .guide-dialog .checklist li button[aria-pressed="true"]{background-image:url(https://cdnm.tworld.co.kr/img/product/roam/ico_collapse.svg)}
+
+/* [OP002-13188] 로밍 간편 가입 추가 건 */
+.popup.tw-popup.rm-popup .popup-info .popup-header .popup-title.sub{clear:both;font-size:1.3125rem;font-weight:500}
+.popup.tw-popup.rm-popup .popup-info .popup-header .pop-close{text-align:right;margin:-0.5rem -0.7rem 1rem 0}
+.popup.tw-popup.rm-popup .popup-info .popup-header .btn-close{width:2rem;height:2rem;background:url(/img/product/roam/ico_close.svg) no-repeat center center;background-size:1rem auto;text-indent:-999rem}
+.popup.tw-popup.rm-popup .inner-contents{font-size:1rem}
+.popup.tw-popup.rm-popup .inner-contents strong{font-weight:400;color:#4b52ff}
+.popup.tw-popup.rm-popup .popup-contents .bul-list{background:0;padding:0;margin-top:1rem}
+.popup.tw-popup.rm-popup .popup-contents .bul-list li{margin-top:.2rem;font-size:.875rem;color:#959595}
+.popup.tw-popup.rm-popup .popup-contents .bul-list li:before{background-color:#959595}
+.popup.tw-popup.rm-popup .popup-info .bt-bottom li.bt-blue1 button{color:#4559fc;font-weight:400}
+.popup.tw-popup.rm-popup .popup-info .bt-bottom{border-top:1px solid #e2e2e2}
+
+/* */
+.rn .cont-box.rm-cont-tooltip h3{font-size:1.3125rem}
+.rn .noti-list02 li{padding:0;border:0;font-size:1.6025rem}
+.rn .noti-list02 li .tip-view-btn{font-size:1.0625rem;color:#000;font-weight:500}
+.rn .tip-view{width:2.125rem;height:1.0625rem;background:#4559fc 0;color:#fff;text-indent:0;border-radius:1rem;font-size:.75rem;line-height:1.2rem}
+
+/* [OP002-15038] 로밍 고객 정보보호 수정 건 */
+body.rn #roamingGuide .links{display:flex;justify-content:space-between}
+body.rn #roamingGuide .links .other-link{display:block;width:auto}
+
+/* 구독 패키지 */
+body.rn #roamingMain .passInfo{margin:1.0625rem -20px 0;padding:1.0625rem 1.25rem 0;border-top:1px solid #f2f2f2}
+body.rn #roamingMain .passInfo .btn{text-align:center}
+body.rn #roamingMain .passInfo .btn a{margin-right:1.125rem;text-decoration:underline;padding-left:1.375rem}
+body.rn #roamingMain .passInfo .btn .passOption{background:url(/img/product/roam/rm-main-passBtn1.png) no-repeat 0 center;background-size:.96875rem auto}
+body.rn #roamingMain .passInfo .btn .passList{background:url(/img/product/roam/rm-main-passBtn2.png) no-repeat 0 center;background-size:.8125rem auto}
+body.rn #roamingMain .passInfo .btn .passCoupon{background:url(/img/product/roam/rm-main-passBtn3.png) no-repeat 0 center;background-size:.9375rem auto}
+body.rn #roamingTariffOffer .tariff-list.travelInfo-list{height:10rem;margin-bottom:0}
+body.rn #roamingTariffOffer .tariff-list .travelInfo{display:inline-block;width:11.25rem;margin-right:.4375rem;padding:5.0625rem 1rem 1.375rem;background-color:#f0f4ff;border-radius:.75rem;text-align:left;font-size:1rem}
+body.rn #roamingTariffOffer .tariff-list .travelInfo{background:#f0f4ff url(/img/product/roam/rm-offer-info1.png) no-repeat 1.3125rem 1.5625rem;background-size:1.875rem auto}
+body.rn #roamingTariffOffer .tariff-list .travelInfo+.travelInfo{background-image:url(/img/product/roam/rm-offer-info2.png);background-size:1.781rem auto}
+body.rn #roamingTariffOffer .tariff-list .travelInfo+.travelInfo+.travelInfo{background-image:url(/img/product/roam/rm-offer-info3.png);background-size:2.21875rem auto}
+
+/* 우주패스 T로밍 구독 */
+.rm-content .rm-pass-top{overflow:hidden;height:88.47vw;background:url(/img/product/roam/rm-pass-top-bg.jpg) no-repeat 0 0;background-size:100% auto;color:#fff;text-align:center}
+.rm-content .rm-pass-top h2{margin-top:12.27vw;font-size:1.5625rem;font-weight:600}
+.rm-content .rm-pass-top h2 span{font-size:1.125rem;font-weight:300}
+.rm-content .rm-pass-top p em{font-weight:600;color:#dbff34}
+.rm-content .rm-pass-top a{display:inline-block;padding:0 1.375rem;color:#fff;border:1px solid #fff;border-radius:2.5rem;line-height:2.375rem}
+.rm-content .rm-pass-ct{background-color:#e5effb}
+.rm-content .rm-pass-ct h3{font-size:1.25rem;text-align:center;font-weight:600}
+.rm-content .rm-pass-ct h3 span{font-weight:400}
+.rm-content .rm-pass-ct .rm-pass-box{position:relative;padding:3.0625rem 1.25rem 4.625rem;background-color:#fff;border-radius:.875rem;box-shadow:.625rem 0.625rem .781rem rgba(96,141,195,0.15)}
+.rm-content .rm-pass-ct h4{text-align:center;font-size:1.25rem;line-height:1.21875rem}
+.rm-content .rm-pass-ct h4 strong{font-size:1.125rem !important}
+.rm-content .rm-pass-ct h4 span.num{position:absolute;top:-1.46875rem;left:50%;display:inline-block;width:4.4375rem;height:3.0625rem;margin-left:-2.21875rem}
+.rm-content .rm-pass-ct h4 span.n1{background:url(/img/product/roam/rm-pass-num1.png) no-repeat 0 0;background-size:100%;text-indent:-999em}
+.rm-content .rm-pass-ct h4 span.n2{background:url(/img/product/roam/rm-pass-num2.png) no-repeat 0 0;background-size:100%;text-indent:-999em}
+.rm-content .rm-pass-ct .box-bg{height:11.5625rem}
+.rm-content .rm-pass-ct .rm-pass-color1 .box-bg{background:url(/img/product/roam/rm-pass-coupon.png) no-repeat center bottom;background-size:20.75rem}
+.rm-content .rm-pass-ct .rm-pass-color2 .box-bg{background:url(/img/product/roam/rm-pass-insurance.png) no-repeat center bottom;background-size:19.75rem}
+.rm-content .rm-pass-ct p{font-weight:500}
+.rm-content .rm-pass-ct p em{background-color:#b1f485}
+.rm-content .rm-pass-ct .bul-list li:before{background-color:#ccc}
+.rm-content .rm-pass-ct .rm-pass-box-btm{position:absolute;left:0;right:0;bottom:0;height:2.8125rem;padding:0 1.25rem;text-align:right;color:#fff;border-radius:0 0 .875rem .875rem}
+.rm-content .rm-pass-ct .rm-pass-box-btm button{height:2.8125rem;color:#fff}
+.rm-content .rm-pass-ct .rm-pass-box-btm button:after{content:'';position:relative;top:-2px;display:inline-block;width:.4375rem;height:.4375rem;margin-left:.1875rem;border-right: 1px solid #fff;border-bottom: 1px solid #fff;transform:rotate(-45deg);vertical-align:middle}
+.rm-content .rm-pass-ct .rm-pass-color1 .rm-pass-box-btm{background-color:#7a7ede}
+.rm-content .rm-pass-ct .rm-pass-color2 .rm-pass-box-btm{background-color:#ff8051}
+.rm-content .rm-pass-ct .rm-pass-color1 strong{color:#0084ff}
+.rm-content .rm-pass-ct .rm-pass-color2 strong{color:#ff6511}
+.rm-content .rm-pass-ct .rm-pass-color2 .bt-slice>li.bt-roaming1 a,
+.rm-content .rm-pass-ct .rm-pass-color2 .bt-slice>li.bt-roaming1 button{color:#ff6511;border:1px solid #ff6511}
+
+.rm-content .rm-pass-subs{padding:2.25rem 1.25rem 1.875rem;background:#4f55ec url(/img/product/roam/rm-pass-subs-bg.png) no-repeat right .625rem;background-size:10.875rem auto, auto 100%;color:#fff}
+.rm-content .rm-pass-subs h3{font-size:1.3125rem;font-weight:600}
+.rm-content .rm-pass-subs h3 span{display:inline-block;font-weight:400;line-height:1.1875rem}
+.rm-content .rm-pass-subs p{color:#fffc00}
+.rm-content .rm-pass-subs .rm-pass-subs-desc{border-top:1px solid #7d82ff}
+.rm-content .rm-pass-subs .rm-pass-subs-desc li{display:flex;align-items:center;font-weight:600}
+.rm-content .rm-pass-subs .rm-pass-subs-desc li .num{width:2.0625rem;height:2.0625rem;margin-right:1rem;border:1px solid #fff;text-align:center;border-radius:50%;line-height:2.0625rem;font-weight:bold}
+.rm-content .rm-pass-subs .rm-pass-subs-desc li span{color:#cad0f1}
+.popup .popup-info .popup-header .ico.ico-rm-coupon{width:5.625rem;height:5.625rem;background:url(/img/product/roam/rm-ico-coupon.png) no-repeat 0 0;background-size:5.625rem auto}
+
+/* 로밍 홍보 랜딩 페이지 건 [OP002-17804] */
+#rm_promotion{background-color:#fff}
+#rm_promotion h1{text-align:center}
+#rm_promotion h2{padding:35px 0 27px;font-size:16px;text-align:center}
+#rm_promotion h2 strong{display:block;padding-top:8px;font-size:20px}
+#rm_promotion h2 strong.tx_baro{width:100%;height:40px;background:url(/img/product/roam/promo-baro-tx.png) no-repeat center 0;background-size:143.5px auto}
+#rm_promotion .promo_top{height:125vw;background:url(/img/product/roam/promo-top-img.png) no-repeat 0 0;background-size:100% auto}
+#rm_promotion .promo_top img{width:100%}
+#rm_promotion .promo_wrap{padding:0 20px 40px}
+#rm_promotion .bg_sky{background-color:#d0e5ff}
+#rm_promotion .bg_gray{background-color:#f1f1f1}
+#rm_promotion .bx_white{background-color:#fff;border-radius:9px;box-shadow:4px 4px 12px rgba(0,0,0,0.1)}
+#rm_promotion .baro_proc .num{position:absolute;top:-31px;left:50%;width:62px;height:62px;margin-left:-31px;background-color:#4765ff;color:#fff;font-size:16px;font-weight:bold;border-radius:32px;text-align:center;line-height:92px}
+#rm_promotion .baro_proc .bx_white{overflow:hidden;position:relative;padding:30px 0}
+#rm_promotion .baro_proc .proc1 .proc_ct_wrap{background:url(/img/product/roam/promo-proc-bg1.png) no-repeat center bottom;background-size:180.5px auto}
+#rm_promotion .baro_proc .proc2 .proc_ct_wrap{background:url(/img/product/roam/promo-proc-bg2.png) no-repeat center bottom;background-size:180.5px auto}
+#rm_promotion .baro_proc .proc3 .proc_ct_wrap{background:url(/img/product/roam/promo-proc-bg3.png) no-repeat center bottom;background-size:180.5px auto}
+#rm_promotion .proc_ct_wrap{text-align:center;padding:20px 20px 200px;font-size:14px}
+#rm_promotion .proc_ct_wrap strong{position:relative;display:block;font-size:19px}
+#rm_promotion .proc_ct_wrap strong em{position:relative}
+#rm_promotion .proc_ct_wrap strong em i{position:relative;z-index:20;font-style:normal;font-weight:bold;white-space:nowrap}
+#rm_promotion .proc_ct_wrap strong em:after{display:block;content:'';position:absolute;bottom:3px;left:0;width:100%;height:4px;background-color:#5cff46;z-index:10}
+#rm_promotion .proc_ct_wrap span{display:block;font-size:12px;color:#666}
+#rm_promotion .promo_qa h2{font-size:18px}
+#rm_promotion .promo_qa h2 em{font-weight:bold}
+#rm_promotion .promo_qa h2 strong{display:inline-block;padding:0;font-size:18px;color:#4765ff}
+#rm_promotion .promo_qa h3{position:relative;text-align:center;margin:24px 0 14px;font-size:18px;font-weight:bold;color:#4765ff}
+#rm_promotion .promo_qa h3 span{position:relative;display:inline-block;padding:0 10px;background-color:#fff;z-index:20}
+#rm_promotion .promo_qa h3:after{content:'';display:block;position:absolute;top:10px;left:0;width:100%;height:2px;background-color:#4765ff;z-index:10}
+#rm_promotion .promo_qa_wrap{padding-bottom:13px}
+#rm_promotion .promo_qa_wrap.box_a{text-align:right}
+#rm_promotion .promo_qa .promo_qa_box{display:inline-block;position:relative;box-shadow:inset -7px -19px 19px rgba(18,31,193,0.24), 9px 9px 16px rgba(20,54,226,0.09);border-radius:40px;font-size:14px}
+#rm_promotion .promo_qa .box_q .promo_qa_box{padding:15px 29px 15px 80px;background:#e9eeff url(/img/product/roam/promo-qa-ico-q.png) no-repeat 32px center;background-size:30px auto;}
+#rm_promotion .promo_qa .box_q .promo_qa_box:after{display:block;content:'';position:absolute;left:30px;bottom:-12px;width:17px;height:13px;background:url(/img/product/roam/promo-qa-arr-q.svg) no-repeat 0 0;background-size:100% auto}
+#rm_promotion .promo_qa .box_a .promo_qa_box{padding:15px 80px 15px 29px;background:#5d78ff  url(/img/product/roam/promo-qa-ico-a.png) no-repeat right 28px center;background-size:30px auto;color:#fff;text-align:right}
+#rm_promotion .promo_qa .box_a .promo_qa_box:after{display:block;content:'';position:absolute;right:30px;bottom:-12px;width:17px;height:13px;background:url(/img/product/roam/promo-qa-arr-a.svg) no-repeat 0 0;background-size:100% auto}
+#rm_promotion .promo_slider .slider .slick-list li{width:100%;height:100px;padding-bottom:255px;font-size:13px;text-align:center}
+#rm_promotion .promo_slider{padding:30px 32px 57px}
+#rm_promotion .promo_slider .slick-prev{position:absolute;top:50%;left:-18px;width:18px;height:32px;margin-top:-16px;background:url(/img/product/roam/promo-slider-prev.png) no-repeat 0 0;background-size:100% auto;text-indent:-999em}
+#rm_promotion .promo_slider .slick-next{position:absolute;top:50%;right:-18px;width:18px;height:32px;margin-top:-16px;background:url(/img/product/roam/promo-slider-next.png) no-repeat 0 0;background-size:100% auto;text-indent:-999em}
+#rm_promotion .promo_slider .slick-dots{bottom:-30px}
+#rm_promotion .promo_slider .slick-dots li{width:auto;height:auto;margin:0 2px}
+#rm_promotion .promo_slider .slick-dots li button{width:8px;height:8px;background-color:#dcdcdc;border-radius:4px}
+#rm_promotion .promo_slider .slick-dots li.slick-active button{width:30px;background-color:#4765ff}
+#rm_promotion .promo_slider .step{display:inline-block;padding:0 15px;background-color:#4765ff;color:#fff;font-weight:bold;line-height:25px;border-radius:13px}
+#rm_promotion .promo_slider h3{font-size:16px;font-weight:600;color:#111}
+#rm_promotion .promo_slider p{color:#666}
+#rm_promotion .promo_guide .step1{background:url(/img/product/roam/promo-guide-img1.png) no-repeat center bottom;background-size:auto 235px}
+#rm_promotion .promo_guide .step2{background:url(/img/product/roam/promo-guide-img2.png) no-repeat center bottom;background-size:auto 235px}
+#rm_promotion .promo_guide .step3{background:url(/img/product/roam/promo-guide-img3.png) no-repeat center bottom;background-size:auto 235px}
+#rm_promotion .promo_guide .step4{background:url(/img/product/roam/promo-guide-img4.png) no-repeat center bottom;background-size:auto 235px}
+#rm_promotion .promo_guide .step5{background:url(/img/product/roam/promo-guide-img5.png) no-repeat center bottom;background-size:auto 235px}
+#rm_promotion .promo_guide .step6{background:url(/img/product/roam/promo-guide-img6.png) no-repeat center bottom;background-size:auto 235px}
+#rm_promotion .promo_guide .step7{background:url(/img/product/roam/promo-guide-img7.png) no-repeat center bottom;background-size:auto 235px}
+#rm_promotion .promo_guide .step8{background:url(/img/product/roam/promo-guide-img8.png) no-repeat center bottom;background-size:auto 235px}
+#rm_promotion .promo_link{position:relative;border-top:1px solid #f1f1f1;font-size:14px}
+#rm_promotion .promo_link:first-child{border:0}
+#rm_promotion .promo_link a{display:flex;align-items:center;height:116px;padding:0 50px 0 91px}
+#rm_promotion .promo_link a:after{display:block;position:absolute;content:'';top:50%;right:21px;width:10px;height:10px;margin-top:-7px;border-top:1px solid #000;border-right:1px solid #000;transform: rotate(45deg);vertical-align:middle}
+#rm_promotion .promo_link1{background:url(/img/product/roam/promo-link-ico1.png) no-repeat 30px center;background-size:44px auto}
+#rm_promotion .promo_link2{background:url(/img/product/roam/promo-link-ico2.png) no-repeat 29px center;background-size:40.5px auto}
+#rm_promotion .promo_link3{background:url(/img/product/roam/promo-link-ico3.png) no-repeat 26px center;background-size:52px auto}
+#rm_promotion .promo_cust{color:#666}
+#rm_promotion .promo_cust .tel_wrap{background:url(/img/product/roam/promo-ico-tel.png) no-repeat right center;background-size:22.5px auto;color:#111}
+#rm_promotion .promo_cust_h{font-size:16px;color:#111}
+#rm_promotion .promo_cust_tel a{color:#4765ff;font-size:20px;font-weight:600;line-height:22px}
+
+.rm-first-promo .rm-first-promo-top .rm-first-promo-srch .srch-result a.btn-srch{display:inline-block}
+.popup .popup-info .popup-header .ico-first-promo{width:5.625rem;height:5.625rem;margin-bottom:0;background:url(/img/product/roam/ico-first-promo.png) no-repeat 0 0;background-size:100% auto}
+.popup .pop-first-promo-tx{font-size:.9375rem}
+
+
+/* [MOZOP002-19797] 로밍 모드 수정 건 */
+.rn #dialogWelcome.roaming-modal .bt-bottom{margin:2.06rem -1.5rem 0;padding:1.06rem 1.5rem 0.06rem;border-top:1px solid #efefef;overflow:hidden}
+.rn #dialogWelcome.roaming-modal .bt-bottom li button,
+.rn #dialogWelcome.roaming-modal .bt-bottom li a{color:#000;font-size:0.94rem;padding:1rem;font-weight:700}
+.rn #dialogWelcome.roaming-modal .bt-bottom li.bt-red1 button,
+.rn #dialogWelcome.roaming-modal .bt-bottom li.bt-red1 a {color:#ef4b49;font-weight:700}
+.rn #dialogWelcome.roaming-modal .bt-bottom li.pos-left{float:left;margin:-1.06rem}
+.rn #dialogWelcome.roaming-modal .bt-bottom li.pos-right{float:right;margin:-1.06rem}
+.rn #dialogUsage.roaming-modal .bt-bottom{margin:2.06rem -1.5rem 0;padding:1.06rem 1.5rem 0.06rem;border-top:1px solid #efefef;overflow:hidden}
+.rn #dialogUsage.roaming-modal .bt-bottom li button,
+.rn #dialogUsage.roaming-modal .bt-bottom li a{color:#000;font-size:0.94rem;padding:1rem;font-weight:700}
+.rn #dialogUsage.roaming-modal .bt-bottom li.bt-red1 button,
+.rn #dialogUsage.roaming-modal .bt-bottom li.bt-red1 a {color:#ef4b49;font-weight:700}
+.rn #dialogUsage.roaming-modal .bt-bottom li.pos-left{float:left;margin:-1.06rem}
+.rn #dialogUsage.roaming-modal .bt-bottom li.pos-right{float:right;margin:-1.06rem}
+
+/* [MOZOP002-20345] */
+#fe-guamsaipan-pop.rm-pop-search .rm-pop-ct{height:131.9vw}
+.rm-pop-search .bt-slice{left:0;width:100%;margin:0}
+.rm-pop-search .bt-slice .bt-roaming2{left:0;text-align:center}
+.rm-pop-search .bt-slice .bt-roaming2 a{display:inline-block;width:auto;padding:0 2.7rem}
+#fe-guamsaipan-pop.rm-pop-search .bt-slice{bottom:52%}
+
+/* [MOZOP002-20524] */
+#roamingGuide .card.guamSaipan_membership{background:#029fd9 url(/img/product/roam/bg_guamSaipan_membership.png) no-repeat right 0 !important;background-size:18.156rem auto !important;color:#fff}
+#roamingGuide .card.guamSaipan_membership h2{color:#fdff7b;font-size:1rem !important}
+#roamingGuide .card.guamSaipan_membership strong{display:block;font-size:1.3125rem}
+#roamingGuide .card.guamSaipan_membership p{color:#fff !important}
+#roamingGuide .card.guamSaipan_membership p span{color:#c6f5ff}
+#roamingGuide .card.guamSaipan_membership .bt-slice a{color:#fff;border:1px solid #fff}
+
+/* [MOZOP002-20636] */
+.rm-first-promo .rm-first-promo-top h2{font-size:1.125rem;line-height:2.0625rem}
+.rm-first-promo .rm-first-promo-top h2 img{width:18.625rem}
+.rm-first-promo .rm-first-promo-top .rm-first-promo-srch .srch-result p{font-size:.875rem !important}
+.rm-first-promo .rm-first-promo-top .rm-first-promo-srch em{font-size:1.1875rem !important;padding-top:1.375rem}
+.rm-first-promo .rm-first-promo-top .rm-first-promo-srch .btn-close{display:none}
+
+/* [MOZOP002-20690] */
+.list-comp-input.type01.radio-rm-baroClub .select-list > li.type01-big:before{top:.8125rem !important}
+.list-comp-input.type01.radio-rm-baroClub .select-list .comp-list-layout:before{background:0}
+body.rn #roamingOn .card .link a{font-size:13px;color:#4559fc;text-decoration: underline}
+body.rn #roamingMain .main-slide-banner{margin-bottom:16px}
+body.rn #roamingMain .passInfo .btn a.ico-gift{background:url(/img/product/roam/ico-baroClub-gift.png) no-repeat 0 0;background-size:.8125rem auto;padding-left:1.125rem}
+
+/* [MOZOP002-21261] */
+body.rn #roamingTariffOffer .tariff .ext{position:absolute;top:21px;right:13px;padding-right:.6875rem;background:url(/img/product/roam/ico_arrow.png) no-repeat right center;background-size:auto .8125rem}
+body.rn #roamingTariffOffer .card:first-child{background-color:#f0f4ff !important}
+body.rn #roamingTariffOffer .offered .others{background-color:#f5f5f5 !important}
+body.rn #roamingTariffOffer .offered{background-color:#fff !important;box-shadow:0 4px 12px 1px rgba(0, 45, 237, 0.15)}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+  <style>
+    h1 {margin: 0 0 30px;text-align: center;font-size:15px;}
+    h2 {margin: 30px 0;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+
+      <h2>모달팝업(가운데 위치) 닫기 버튼 오른쪽 상단 위에 위치 case</h2>
+      <div class="popup tw-popup">
+        <div class="popup-info" role="alertdialog" aria-describedby="alertText">
+          <!-- popup-header는 생략가능한거 같음 -->
+          <div class="popup-header">
+            <button type="button" class="btn-tooltip-close">닫기</button>
+          </div>
+
+          <div class="popup-contents" id="alertText">
+            팝업내용 자리
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      
+      <h2>full popup case</h2>
+      <div class="popup-page tw-popup">
+        <!-- #header -->
+      
+        <!--// #header -->
+      
+        <!-- 내용 -->
+        
+        <!-- .popup-closeBtn -- full popup 팝업 닫기 스크립트에서 쓰임 -->
+        <button class="popup-closeBtn"><span class="blind">팝업 페이지 닫기</span></button>
+        <!--// .popup-closeBtn -->
+      </div>
+
+
+    </div>
+  </div><!-- / .wrap -->
+</body>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

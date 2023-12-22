@@ -1,0 +1,12 @@
+/**
+  * @name: placeholder
+  * @tag : <input type="text" placeholder="">
+*/
+button,
+input,
+textarea {
+  &::placeholder {
+    font-family: var(--font-family);
+    // position: absolute;  가운데 정렬안 돼서 주석처리
+  }
+}

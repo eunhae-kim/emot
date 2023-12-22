@@ -1,0 +1,29 @@
+[
+  {
+    "subtitle": "Support",
+    "href": "/en/customer",
+    "sublist": [
+      {
+        "href": "/en/customer/agentsearch",
+        "name": "Store Information",
+        "oferStcCd": "CMMA_A10_B80_C1199-37"
+      },
+      {
+        "href": "/en/customer/videoguide",
+        "name": "Video Guide",
+        "oferStcCd": "CMMA_A10_B80_C1199-38"
+      },
+      {
+        "href": "/en/customer/faq",
+        "name": "FAQ",
+        "oferStcCd": "CMMA_A10_B80_C1199-39"
+      },
+      {
+        "href": "/en/customer/document",
+        "name": "Required Documents",
+        "oferStcCd": "CMMA_A10_B80_C1199-40"
+      }
+    ],
+    "oferStcCd": "CMMA_A10_B80_C1199-36"
+  }
+]

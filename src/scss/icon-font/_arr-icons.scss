@@ -1,0 +1,18 @@
+//화살표 아이콘
+.bl-arr:before {
+  content: '\e909';
+}
+.bl-arr-bold:before {
+  content: '\e902';
+}
+.bl-change-top:before {
+  content: '\e966';
+}
+.bl-change-same:before {
+  content: '\e967';
+  color: #cbcbcb;
+}
+.ic-arr-btm:before {
+  content: '\e968';
+  color: #666;
+}

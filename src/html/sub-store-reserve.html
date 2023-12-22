@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="store-reserve container">
+
+      <header class="tworld-sub-header">
+        <div class="sub-header-inner">
+          <a href="#" class="menu-item-prev">
+            <i class="svg-prev"></i>
+            <span class="hidden">이전 페이지</span>
+          </a>
+          <span class="menu-box">
+            <a href="" class="menu-item-home">
+              <i class="svg-home"></i>
+              <span class="hidden">홈</span>
+            </a>
+            <a href="#" class="menu-item-search">
+              <i class="svg-search"></i>
+              <span class="hidden">검색</span>
+            </a>
+          </span>
+        </div>
+      </header>
+
+      <div class="content-reserve">
+        <h1 class="reserve-tit">상담 예약</h1>
+        <h2 class="store-name">
+          <i class="ic-location-bold"></i>
+          미래대리점 종로 직영점
+        </h2>
+        <div class="list-input-box">
+          <p class="guide-tit">상담 목적을 선택해주세요. <em>(단일선택)</em></p>
+          <ul class="inquire-type-two">
+            <li class="inquire-item">
+              <input type="radio" id="goal1" name="goal"/>
+              <label for="goal1">
+                <em>휴대폰 구매</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="goal2" name="goal"/>
+              <label for="goal2">
+                <em>TV/인터넷</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="goal3" name="goal"/>
+              <label for="goal3">
+                <em>SK 매직</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="goal4" name="goal"/>
+              <label for="goal4">
+                <em>기타</em>
+              </label>
+            </li>
+          </ul>
+          <input type="text" title="상담목적 기타 입력" placeholder="상담 원하는 기종이 있으면 알려주세요" class="tworld-input">
+        </div>
+
+        <div class="list-input-box">
+          <p class="guide-tit">날짜 및 시간을 선택해주세요.</p>
+          <dl>
+            <dt>
+              <i class="ico-date"></i>
+              날짜
+            </dt>
+            <dd><input type="text" title="날짜 입력" placeholder="날짜를 입력해 주세요" class="tworld-input" readonly></dd>
+            <dt>
+              <i class="ico-time"></i>
+              시간
+            </dt>
+            <dd><input type="text" title="시간 입력" placeholder="시간을 입력해 주세요" class="tworld-input" readonly></dd>
+          </dl>
+        </div>
+
+        <div class="list-input-box counsel-type-box">
+          <p class="guide-tit">상담 유형을 선택해주세요. <em>(단일선택)</em></p>
+          <ul class="inquire-type-two">
+            <li class="inquire-item">
+              <input type="radio" id="type1" name="type"/>
+              <label for="type1">
+                <em><i class="ic-store"></i> 매장 방문</em>
+                <span class="add-text">선택하신 일정에 매장을
+                  방문하시면, T크루가 친절히
+                  상담해드려요</span>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="type2" name="type"/>
+              <label for="type2">
+                <em><i class="ic-etc-hphone"></i> 전화 상담</em>
+                <span class="add-text">
+                  선택하신 일정에 T크루가
+                  전화로 연락드려
+                  상담해드려요
+                  </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="list-input-box">
+          <p class="guide-tit">예약자 정보를 입력해주세요.</p>
+          <dl>
+            <dt>예약자</dt>
+            <dd><input type="text" title="예약자 입력" placeholder="예약자명을 입력해 주세요" class="tworld-input"></dd>
+            <dt>연락처</dt>
+            <dd><input type="tel" title="연락처 입력" placeholder="연락처를 입력해 주세요" class="tworld-input"></dd>
+            <dt>예약확인 비밀번호</dt>
+            <dd><input type="password" title="예약확인 비밀번호 입력" class="tworld-input"></dd>
+          </dl>
+        </div>
+
+        <div class="content-info-agree">
+          <div class="agree-check">
+            <span class="check-box">
+              <input type="checkbox" id="info-agree" title="광고성 정보 수신 동의">
+              <span class="check-ico">
+                <i class="bl-check"></i>
+              </span>
+              <label for="info-agree">[선택] 광고성 정보 수신 동의</label>
+            </span>
+            <button type="button" class="btn-open">
+              <i class="bl-arr-bold">
+              </i>
+              <em class="hidden">펼침</em>
+            </button>
+          </div>
+          <div class="agree-desc">
+            <div class="inner">
+              <strong class="title">개인정보 수집·이용에 대한 동의</strong>
+              <div class="desc">수집·이용 목적
+                방문 예약 처리 및 고객상담
+                수집 개인정보 항목…
+                
+                수집·이용 목적
+                방문 예약 처리 및 고객상담 수집 개인정보 항목방문 예약 
+                처리 및 고객상담 수집 개인정보 항목…
+                방문 예약 처리 및 고객상담 수집 개인정보 항목…
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- / .content-reserve -->
+
+      <div class="fixed-area-bt">
+        <div class="btn-full-pop">
+          <button type="button" class="btns blue">상담예약 신청하기</button>
+        </div>
+      </div>
+
+      <!-- 기존 마크업: 상담 예약 완료 모달 팝업 기존 -->
+      <div class="overlay reserv-complete-popup">  <!-- active 누르면  -->
+        <div class="popup-info basic-popup" role="alertdialog" aria-describedby="alertText">
+          <div class="popup-contents" id="alertText">
+            <!-- 신규 css시작 -->
+            <div class="popup-inner">
+              <strong class="popup-tit">상담 예약 완료</strong>
+              <p class="store-name"><i class="ic-location-bold"></i> 미래 대리점 판교 직영점</p>
+              <dl class="reserve-cont">
+                <dt>예약일시</dt>
+                <dd>2022-05-08  12:00</dd>
+                <dt>상담목적</dt>
+                <dd>휴대폰 구매</dd>
+                <dt>상담유형</dt>
+                <dd>매장 방문</dd>
+              </dl>
+            </div>
+            <div class="common-content-btn">
+              <div class="btn-area">
+                <button type="button" class="btns-square-rd gray">닫기</button>
+                <button type="button" class="btns-square-rd blue">추가 예약</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/$var.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../public/js/widgets.js"></script>
+<script src="../../../public/js/auth.js"></script>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/ScrollMagic.min.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

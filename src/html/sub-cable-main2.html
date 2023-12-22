@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="container cablesub">
+
+      <header class="tworld-sub-header">
+        <div class="sub-header-inner">
+          <a href="#" class="menu-item-prev">
+            <i class="svg-prev"></i>
+            <span class="hidden">이전 페이지</span>
+          </a>
+          <strong class="sub-header-tit">인터넷/<em class="ent-world">IPTV</em></strong>
+          <span class="menu-box">
+            <a href="#" class="menu-item-search">
+              <i class="svg-search"></i>
+              <span class="hidden">검색</span>
+            </a>
+          </span>
+        </div>
+      </header>
+
+      <div class="common-content-visual">
+        <div class="swiper swiperVisual">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="/public/images/banner/main-banner.png" alt="banner" width="100%" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="/public/images/banner/main-banner.png" alt="banner" width="100%" />
+                </picture>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="/public/images/banner/main-banner.png" alt="banner" width="100%" />
+                </picture>
+              </a>
+            </li>
+          </ul>
+
+          <!-- 배너 1개일 경우 controller 숨김 -->
+          <div class="visual-swiper-controller" id="swVisualController">
+            <!-- 재생/정지 -->
+            <div class="btn-controller">
+              <button type="button" class="swiper-button-play" id="swPlay">
+                <i class="ic-play" class="icon-play"></i>
+                <span class="hidden">재생</span>
+              </button>
+              <button type="button" class="swiper-button-pause" id="swStop">
+                <i class="ic-btn-stop2" class="icon-stop"></i>
+                <span class="hidden">정지</span>
+              </button>
+            </div>
+            
+            <div class="swiper-pagination visual-pagination"></div>
+          </div>
+          <!-- .controller -->
+        </div>
+      </div>
+
+      <div class="common-content-slide">
+        <div class="swiper swiperCableTop">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <button type="button" class="btn-icon">
+                <span class="icon-box">
+                  <i class="ic-qckcab-intern"></i>
+                </span>
+                <span class="txt">인터넷</span>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button" class="btn-icon">
+                <span class="icon-box">
+                  <i class="ic-qckcab-iptv"></i>
+                </span>
+                <span class="txt"><em>IPTV</em></span>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button" class="btn-icon">
+                <span class="icon-box">
+                  <i class="ic-qckcab-combprd"></i>
+                </span>
+                <span class="txt">결합상품</span>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button" class="btn-icon">
+                <span class="icon-box">
+                  <i class="ic-qckcab-tel"></i>
+                </span>
+                <span class="txt">전화</span>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button" class="btn-icon">
+                <span class="icon-box">
+                  <i class="ic-qckcab-secur"></i>
+                </span>
+                <span class="txt">보안</span>
+              </button>
+            </li>
+          </ul>
+
+          <!-- 배너 1개일 경우 controller 숨김 -->
+          <div class="bnr-swiper-controlle">
+            <div class="swiper-button-prev">
+              <i class="bl-arr left"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="bl-arr"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="common-content-attend">
+        <!-- 가입 -->
+        <div class="attend-detail none">
+          <i class="icon-usual">
+            <img src="/public/images/icon/ic-mike.png" alt="알림"/>
+          </i>
+          <div class="attend-text">
+            <div class="remark">
+              <strong class="underline"><em>Giga+All</em> 패키지</strong> 상품에 가입하셨어요
+              약정만기일은 <strong>2022.7.29</strong>입니다.
+            </div>
+            <a href="/" class="btn-go">
+              <span class="text">재약정하고 추가 할인받기</span>
+              <i class="bl-arr"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 미가입 -->
+        <div class="attend-detail">
+          <picture>
+            <img loading="lazy" src="/public/images/icon/ic-sch.png" alt="26" width="100%" />
+          </picture>
+          <div class="attend-text">
+            <div class="remark">
+              아직 상품 가입하지 않으셨다면 
+              <strong>내게 맞는 인터넷/IPTV</strong> 상품을 찾아보세요
+            </div>
+            <a href="/" class="btn-go">
+              <span class="text">내게 맞는 상품 찾아보기</span>
+              <i class="bl-arr"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="common-content-button">
+        <button type="button" class="bar-btn">
+          <picture>
+            <img loading="lazy" src="/public/images/thumbnail/img-sch.png" alt="58" width="100%" />
+          </picture>
+          <p class="bar-col">
+            <span class="stxt">복잡한 인터넷 상품 바로 찾아드려요!</span>
+            <span class="bar-title">내게 맞는 인터넷/IPTV 상품 찾기</span> 
+          </p>
+          <span class="bi-box">
+            <i class="bl-arr"></i>
+            <span class="hidden">이동</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="common-content-thumb">
+        <h2 class="thumb-title">요즘결합은간단하게, 할인은더많이!</h2>
+        <p class="thumb-sub-title">인터넷+<em class="eng-word">IPTV</em>, 결합 할인은 기본, <em class="eng-word">T</em>다이렉트샵 전용할인까지~</p>
+        <div class="list-thumb-col">
+          <div class="item-large-hashtag">
+            <div class="fiex">
+              <picture class="thumbnail-rounded">
+                <img loading="lazy" src="/public/images/thumbnail/thum-plan.jpg" alt="우주패스 all(상품명2)" width="128" height="128">
+              </picture>
+              <span class="content-infobox">
+                <strong class="title"><em class="eng-word">T</em>다이렉트샵 전용할인 혜택</strong>
+                <p class="desc">기가인터넷와 B tv 가입하면<br>월 13,200원 추가할인</p>
+
+                <p class="price-txt"><em class="eng-word">SKT</em> 1회선 결합 기준</p>
+                <strong class="price-point">월 최대 <em>35,00</em>원 할인</strong>
+              </span>
+            </div>
+            <div class="btn-area-full">
+              <button type="button" class="btns-round">설치 가능한 인터넷 상품 찾기</button>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="common-content-banner">
+        <div class="full-banner-medium">
+          <div class="swiper swiperControls">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/banner/cable-banner01.jpg" alt="인기절정! 기가인터넷 속도와 Btv 모든 채널을 한번에" width="100%" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/banner/cable-banner02.jpg" alt="1G빠른 인터넷과 와이파이 Btv 모든채널 및 VOD 쿠폰" width="100%" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/banner/cable-banner03.jpg" alt="실속파 맞춤형 결합상품" width="100%" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/banner/cable-banner04.jpg" alt="당신의TV,Apple을 만나다" width="100%" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <picture>
+                    <img loading="lazy" src="/public/images/banner/cable-banner05.jpg" alt="반값으로 Btv 한대 더 Btv추가 가입 시 50% 할인" width="100%" />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+
+            <!-- 배너 1개일 경우 controller 숨김 -->
+            <div class="bnr-swiper-controller" id="swController">
+              <div class="swiper-pagination"></div>
+
+              <div class="btn-controller">
+                <button type="button" class="swiper-button-play" id="swPlay2">
+                  <i class="ic-play" class="icon-play"></i>
+                  <span class="hidden">재생</span>
+                </button>
+                <button type="button" class="swiper-button-pause" id="swStop2">
+                  <i class="ic-btn-stop2" class="icon-stop"></i>
+                  <span class="hidden">정지</span>
+                </button>
+              </div>
+            </div>
+            <!-- .controller -->
+          </div>
+        </div>
+      </div>
+
+      <div class="common-content-button">
+        <button type="button" class="bar-btn">
+          <picture>
+            <img loading="lazy" src="/public/images/thumbnail/img-calculator.png" alt="58" width="100%" />
+          </picture>
+          <p class="bar-col">
+            <span class="stxt">내 예상요금을 미리 예측해보세요! </span>
+            <span class="bar-title">예상 요금 시뮬레이션 하러가기</span> 
+          </p>
+          <span class="bi-box">
+            <i class="bl-arr"></i>
+            <span class="hidden">이동</span>
+          </span>
+        </button>
+      </div>
+      
+      <!-- 가입현황 정보가 있는경우 -->
+      <div class="common-content-chart none">
+        <h2 class="thumb-title">우리동네 인터넷 인기상품 가입현황</h2>
+        <div class="link-area">
+          <a href="/" class="link-text-map">
+            <i class="ic-location"></i> <span>서울시 중구 을지로 2가</span>
+          </a>
+        </div>
+        <div class="pie-chart-col">
+          <div class="pie-chart-wrap">
+            <!-- 파이 차트 들어가는 공간 -->
+          </div>
+          <ul class="list-percent-info">
+            <li>
+              <span class="info-name ">
+                <i class="first-prd-ico circle-shape"></i>
+                <em class="eng-word">T</em>광랜 + <em class="">Wifi</em> 
+              </span>
+              <strong class="info-percent">45%</strong>
+            </li>
+            <li>
+              <span class="info-name">
+                <i class="second-prd-ico circle-shape"></i>
+                <em class="eng-word">T Giga</em>라이트 + <em class="">Wifi</em> 
+              </span>
+              <strong class="info-percent">30%</strong>
+            </li>
+            <li>
+              <span class="info-name">
+                <i class="third-prd-ico circle-shape"></i>
+                <em class="eng-word">T Giga</em> + <em class="">Wifi</em> 
+              </span>
+              <strong class="info-percent">9%</strong>
+            </li>
+            <li>
+              <span class="info-name">
+                <i class="fourth-prd-ico circle-shape"></i>
+                그 외
+              </span>
+              <strong class="info-percent">10%</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="list-group-desc">
+          <div class="list-item-head">
+            <span class="cmn-badge-blue-border"><em class="eng-word">BEST</em></span>
+            <h3 class="title except-case"><em class="eng-word">T</em>광랜 + <em class="">Wifi</em> </h3>
+            <strong class="info">월 23,100원</strong>
+          </div>
+          <div class="btn-area-full">
+            <button type="button" class="btns-round">설치 가능한 인터넷 상품 찾기</button>
+          </div>
+        </div> 
+      </div>
+      <!-- //가입현황 정보가 있는경우 -->
+
+      <!-- 가입현황 정보가 없는경우 -->
+      <div class="common-content-chart ">
+        <h2 class="thumb-title">우리동네 인터넷 인기상품 가입현황</h2>
+        <div class="link-area">
+          <a href="/" class="link-text-map">
+            <i class="ic-location"></i> <span>서울시 중구 을지로 2가</span>
+          </a>
+        </div>
+        <div class="message-announce-case">
+          <div class="my-msg-exception">
+            <i class="ic-warn"></i>
+            <p class="emp-text">해당 지역에 가입가능한 상품이 없습니다.</p>
+            <span class="acc-text">고객센터<strong>(080-816-2000)</strong>로 전화주시면<br>자세히 안내해 드리겠습니다</span>
+            <div class="my-btn-area">
+              <a href="tel:080-816-2000" class="btn">상담 전화하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //가입현황 정보가 없는경우 -->
+      
+      <div class="common-content-button">
+        <button type="button" class="bar-btn">
+          <span class="icon-box">
+            <i class="ic-bar-iptv">
+              <img src="/public/images/icon/ic-tv.png" alt="TV"/>
+            </i>
+          </span>
+          <span class="txt"><em class="eng-word">IPTV</em> 채널 정보 보러가기</span> 
+          <span class="bi-box">
+            <i class="bl-arr"></i>
+            <span class="hidden">이동</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="common-content-cctv">
+        <h2 class="thumb-title"> 당신의 일상과 함께할게요</h2>
+        <ul class="list-thumb-col">
+          <li class="item-medium">
+            <a href="/">
+              <picture class="thumbnail-rounded">
+                <img loading="lazy" src="/public/images/thumbnail/thum-caps.jpg" alt="캡스홈" width="68" height="68">
+              </picture>
+              <div class="content-infobox">
+                <span class="title">캡스홈</span>
+                <p class="desc">우리집 안전은 물론<br> <em class="eng-word">SK</em>텔레콤 결합 할인 혜택까지</p>
+              </div>
+            </a>
+          </li> 
+          <li class="item-medium">
+            <a href="/">
+              <picture class="thumbnail-rounded">
+                <img loading="lazy" src="/public/images/thumbnail/thum-cctv.jpg" alt="cctv" width="68" height="68">
+              </picture>
+              <div class="content-infobox">
+                <span class="title"><em class="eng-word">T</em>안심보안</span>
+                <p class="desc">우리집 안전은 물론<br> <em>SK</em>텔레콤 결합 할인 혜택까지</p>
+              </div>
+            </a>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="common-content-box content-board-type">
+        <div class="search-list-head">
+          <h2 class="head-tit">
+            <a href="/">궁금증을 해결해드려요</a>
+          </h2>
+        </div>
+        <ul class="list-group-accodian common-list-group">
+          <li class="accodian-item">
+            <button type="button" class="accodian-tit">
+              <h3 class="title">&#91;유선&#93; 사은품이언제배송되나요?</em></h3>
+              <i class="bl-arr btm">
+                <span class="hidden">'바로가기' 펼치기</span>
+              </i>
+            </button>
+            <div class="accodian-cont">
+              <ul class="group-depth-list">
+                <li class="desc"><a href="#">사은품이언제배송되나요</a></li>
+                <li class="desc"><a href="#">my T > 나의 <em class="search-keyword">데이터</em>/통화 > T끼리끼리<em class="search-keyword">데이터</em>선물 > 요금제 충전</a></li>
+              </ul>
+            </div>
+          </li> 
+          <li class="accodian-item">
+            <button type="button" class="accodian-tit">
+              <h3 class="title">&#91;유선&#93; 상품 및 사은품 정보를 변경할 수 있나요?</em></h3>
+              <i class="bl-arr btm">
+                <span class="hidden">'바로가기' 펼치기</span>
+              </i>
+            </button>
+            <div class="accodian-cont">
+              <ul class="group-depth-list">
+                <li class="desc"><a href="#">저보 변경 안내</a></li>
+                <li class="desc"><a href="#">my T > 나의 <em class="search-keyword">데이터</em>/통화 > T끼리끼리<em class="search-keyword">데이터</em>선물 > 요금제 충전</a></li>
+                <li class="desc"><a href="#">my T > 나의 <em class="search-keyword">데이터</em>/통화 > T끼리끼리<em class="search-keyword">데이터</em>선물 > 데이터 한도</a></li>
+              </ul>
+            </div>
+          </li> 
+          <li class="accodian-item"> <!--depth없는 case -펼침기능 X -->
+            <a href="/" class="no-depth-type">
+              <h3 class="title">결합 할인과 장기 가입 할인을 중복으로 받을 수 있나요?</h3>
+            </a>
+          </li> 
+        </ul>
+      </div>
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/ScrollMagic.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+<script>
+  devFunc.floatingAction.state();
+</script>
+</html>

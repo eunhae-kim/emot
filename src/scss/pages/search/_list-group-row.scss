@@ -1,0 +1,100 @@
+// list-thumb-row
+.list-thumb-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .list-item {
+    margin-top: 24px;
+    width: 49%;
+    &:nth-child(-n + 2) {
+      margin-top: 0;
+    }
+  }
+  .thumbnail-rounded {
+    margin-bottom: 10px;
+    width: 157px;
+    height: 157px;
+  }
+  .title,
+  .desc {
+    display: block;
+    max-width: 127px;
+  }
+  .title {
+    margin-bottom: 7px;
+    font-size: 14px;
+  }
+  .desc {
+    margin: 5px 0;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.48px;
+  }
+  .etc-name {
+    margin: 3px 0 9px;
+    font-size: 12px;
+    letter-spacing: normal;
+    color: var(--grey500);
+  }
+}
+
+// v컬러링 부분에만 해당
+.search .coloring-content {
+  .title {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .desc {
+    margin: 0 0 8.5px;
+    font-size: 13px;
+  }
+}
+
+// list-group-fullbanner
+.list-group-fullbanner {
+  .list-item {
+    margin-top: 25px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .thumbnail-rounded {
+    margin-bottom: 10px;
+  }
+  .title {
+    display: block;
+    max-width: 90%;
+    @include ellipsis;
+  }
+  .date {
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #808080;
+  }
+}
+
+//list-icon-row
+.list-icon-row {
+  display: flex;
+  justify-content: space-between;
+  .list-item {
+    width: 25%;
+    text-align: center;
+    .app-img {
+      display: block;
+      padding: 0 11px;
+      margin-bottom: 11px;
+      img {
+        width: 100%;
+      }
+    }
+    .app-name {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      em {
+        letter-spacing: 0;
+      }
+    }
+  }
+}

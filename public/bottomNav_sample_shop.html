@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./bottomNav.js" charset="UTF-8"></script>
+</head>
+<body>
+<div onclick="$tw.bottomNav.show()">Show</div>
+<div onclick="$tw.bottomNav.hide()">Hide</div>
+<script>
+  $tw.bottomNav.init({
+    isTworld: false,
+    ldsp: "STG",
+    lang: "KO",
+    show: true,
+    tabIndex: 1,
+
+    // 값을 직접 생성 해 주셔야 됩니다. 예) isLoggedIn: document.cookie.indexOf("TWM") > -1
+    isLoggedIn: true,
+    loginUrl: "",
+
+    // 첫 화면
+    //showBottomSheet: "EXCEPTION_ONLY",
+    // 나머지 화면
+    showBottomSheet: "N",
+
+  });
+</script>
+</body>
+</html>

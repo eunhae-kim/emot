@@ -1,0 +1,32 @@
+[
+  {
+    "subtitle":"혜택",
+    "sublist": [
+      {
+        "href": null,
+        "name": "전체 혜택"
+      }
+    ]
+  },
+  {
+    "subtitle":"이벤트",
+    "sublist": []
+  },
+  {
+    "subtitle":"T맴버십",
+    "sublist": [
+      {
+        "href": null,
+        "name": "나의 T맴버십"
+      },
+      {
+        "href": null,
+        "name": "헤택 브랜드"
+      },
+      {
+        "href": null,
+        "name": "혜택 이용내역"
+      }
+    ]
+  }
+]

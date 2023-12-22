@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- 2022. 09. 26 15:30 / 팝업 구조변경 -->
+    <div class="popup-page tw-popup fixed-bottom popup-cablesub">
+      <header class="tworld-sub-header">  
+        <div class="sub-header-inner">
+          <a href="javascript:window.history.go(-1);" class="menu-item-prev">
+            <i class="svg-prev"></i>
+            <span class="hidden">이전 페이지</span>
+          </a>
+          <strong class="sub-header-tit">내게 맞는 인터넷/IPTV 상품 찾기</strong>
+          <span class="menu-box">
+            <button type="button" class="menu-item-close">
+              <i class="svg-close"></i>
+              <span class="hidden">닫기</span>
+            </button>
+          </span>
+        </div>
+
+        <!-- 그래프 -->
+        <div class="channel-line-graph">
+          <div class="bar-graph" aria-label="막대그래프">
+            <span class="figure-data" style="width:70%"></span>
+          </div>
+        </div>
+        <!-- / 그래프 -->
+      </header>
+      <div class="container-wrap">
+        <h2 class="blind">내용</h2>
+        <div class="container">
+          <div class="common-content-survey step1">
+            <div class="popup-top">
+              <p class="step">마지막으로</p>
+              <h2 class="top-title">
+                사용하고 싶은 셋톱박스를<br> 선택해주세요.
+              </h2>
+            </div>
+  
+            <ul class="inquire-type-two">
+              <li class="inquire-item">
+                <input type="radio" id="step3_0" name="step3"/>
+                <label for="step3_0" class="channel-title">
+                  <span class="channel-chart">
+                    <!-- 2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+                    <i class="icon-survey-ai"></i>
+                    <span class="hidden">셋톱박스</span>
+                    <!-- //2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+                  </span>
+                  <strong>AI 2</strong>
+                  <em class="stxt">감각적인 AI스피커형 디자인,<br>
+                    더 정확해진 음성인식 기능
+                  </em>
+                </label>
+              </li>
+              <li class="inquire-item">
+                <input type="radio" id="step3_1" name="step3"/>
+                <label for="step3_1"  class="channel-title">
+                  <span class="channel-chart">
+                    <!-- 2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+                    <i class="icon-survey-smart"></i>
+                    <span class="hidden">스마트박스</span>                  
+                    <!-- //2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+                  </span>
+                  <strong>Smart 3</strong>
+                  <em class="stxt">Youtube등 다양한 앱과<br>
+                    NUGU 음성지원 제공
+                  </em>
+                </label>
+              </li>
+              <li class="inquire-item">
+                <input type="radio" id="step3_2" name="step3"/>
+                <label for="step3_2"  class="channel-title">
+                  <span class="channel-chart">
+                    <!-- 2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+                    <i class="icon-survey-apptv"></i>
+                    <span class="hidden">apptv</span>
+                    <!-- //2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+                  </span>
+                  <strong>Apple TV 4K</strong>
+                  <em class="stxt">Apple 매니아라면 강력추천,<br>
+                    콘텐츠를 즐기는 최고의 방법
+                  </em>
+                </label>
+              </li>
+              <li class="inquire-item">
+                <input type="radio" id="step3_3" name="step3"/>
+                <label for="step3_3"  class="channel-title">
+                  <span class="channel-chart">
+                    <!-- 2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+                    <i class="icon-survey-btv"></i>
+                    <span class="hidden">btv</span>
+                    <!-- //2022. 09. 23 18:00 / img - i 태그 변경 hidden 텍스트 추가 -->
+                  </span>
+                  <strong>B tv air</strong>
+                  <em class="stxt">태블릿으로 Btv서비스를<br>
+                    집안 어디서나 이용
+                  </em>
+                </label>
+              </li>
+            </ul>
+  
+            <div class="msg-exception">
+              <strong>셋톱박스란?</strong>
+              IPTV에 연결하여 방송을 수신할 수 있는 장비로, 
+              다양한 서비스가 탑재되어 있습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixed-area-bt">
+        <div class="btn-full-pop">
+          <button type="button" class="btns blue" onClick="location.href='sub-cable-survey-step8.html'">다음</button>
+        </div>
+      </div>
+    </div>
+    <!-- // .popup-page -->
+
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+
+</html>

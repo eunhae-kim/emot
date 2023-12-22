@@ -1,0 +1,44 @@
+[
+  {
+    "title":"나의 데이터/통화",
+    "subList": [
+      {
+        "link": null,
+        "subtitle": "실시간 잔여량"
+      },
+      {
+        "link": null,
+        "subtitle": "T끼리데이터선물"
+      },
+      {
+        "link": null,
+        "subtitle": "리필쿠폰"
+      },
+      {
+        "link": null,
+        "subtitle": "최근 충전/선물 내역"
+      }
+    ]
+  },
+  {
+    "title":"나의 요금",
+    "subList": [
+      {
+        "link": null,
+        "subtitle": "요금안내서"
+      },
+      {
+        "link": null,
+        "subtitle": "T끼리데이터선물"
+      },
+      {
+        "link": null,
+        "subtitle": "리필쿠폰"
+      },
+      {
+        "link": null,
+        "subtitle": "최근 충전/선물 내역"
+      }
+    ]
+  }
+]

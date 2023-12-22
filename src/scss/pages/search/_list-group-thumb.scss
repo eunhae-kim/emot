@@ -1,0 +1,212 @@
+// list-thumb-col
+.list-thumb-col {
+  // thumb 공통
+  [class^='item'] {
+    padding: 25px 0;
+    border-bottom: 1px solid #efefef;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+    a {
+      display: flex;
+    }
+  }
+  //이미지 size: large
+  [class^='item-large'] {
+    .thumbnail-rounded {
+      width: 128px;
+      height: 128px;
+    }
+    .content-infobox {
+      margin-top: 15px;
+      width: calc(100% - 143px);
+    }
+  }
+  //이미지 size: medium
+  [class^='item-medium'] {
+    .thumbnail-rounded {
+      width: 104px;
+      height: 104px;
+    }
+    .content-infobox {
+      width: calc(100% - 119px);
+    }
+  }
+  //이미지 size: small
+  [class^='item-small'] {
+    .thumbnail-rounded {
+      width: 100px;
+      height: 80px;
+    }
+    .content-infobox {
+      width: calc(100% - 115px);
+    }
+  }
+  .thumbnail-rounded {
+    margin-right: 15px;
+  }
+  .title {
+    display: block;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .desc {
+    font-size: 12px;
+    line-height: 17px;
+    color: #808080;
+  }
+  .price-point {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.64px;
+    color: var(--point);
+    em {
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+  }
+  .sale-percent {
+    color: var(--primary);
+  }
+  // item-large-basic 케이스(악세사리 카테고리)
+  .item-large-basic {
+    .title {
+      max-width: 140px;
+      margin-bottom: 45px;
+    }
+    .desc {
+      margin-bottom: 5px;
+      .sale-percent {
+        display: inline-block;
+        margin-left: 2px;
+        font-weight: 600;
+      }
+    }
+  }
+  // item-large-hashtag 케이스(혜택/할인 카테고리)
+  .item-large-hashtag {
+    .content-infobox {
+      margin-top: 12px;
+    }
+    .title,
+    .desc {
+      margin-bottom: 5px;
+    }
+  }
+  // item-large-rank 케이스 (2030 여성 인기 휴대폰 Best 3 부분)
+  .item-large-rank {
+    .thumb-box {
+      position: relative;
+    }
+    .thumbnail-rounded {
+      position: relative;
+    }
+    .rank-number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 23px;
+      height: 23px;
+      line-height: 23px;
+      background-color: var(--primary);
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center;
+      color: var(--white);
+      border-radius: 3px 0 3px 0;
+    }
+    .title {
+      margin-bottom: 11px;
+    }
+    .group-color {
+      margin-bottom: 7.5px;
+    }
+    .group-memory {
+      margin-bottom: 16px;
+    }
+    .price-point {
+      display: block;
+      margin-bottom: 3px;
+    }
+  }
+  // item-large-desc 케이스 (지금 가장 인기있는 혜택 1위)
+  .item-large-desc {
+    .title {
+      margin-bottom: 7px;
+    }
+  }
+  // item-large-badge 케이스 (30대 남성 인기 구독상품  Best 3)
+  .item-large-badge {
+    .title {
+      margin-bottom: 68px;
+    }
+  }
+  // item-medium 케이스 (컬러링/벨소리)
+  .item-medium {
+    padding: 20px 0;
+    .content-infobox {
+      margin-top: 12.5px;
+    }
+    .title {
+      font-size: 17px;
+      margin-bottom: 9px;
+    }
+    .desc {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+  }
+  // item-small 케이스 (T우주)
+  .item-small {
+    .content-infobox {
+      max-width: 170px;
+    }
+    .title {
+      margin-bottom: 10px;
+    }
+    .group-badge {
+      margin-bottom: 12px;
+    }
+    .desc {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+//statistics-module
+.statistic-content-box {
+  padding: 36px 20px 20px;
+  border-bottom: 7px solid #f0f0f5;
+  h2 {
+    margin-bottom: 19px;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+  }
+  .link-rounded-large {
+    margin-top: 18px;
+  }
+  .swiper-slide {
+    padding: 0 1px;
+  }
+  .pie-chart-row {
+    padding: 25px 5px 0 0;
+  }
+  //30대 남성 인기 구독상품  Best 3
+  .chart-col-case {
+    h2 {
+      margin-bottom: 0;
+    }
+    .list-thumb-col {
+      padding: 19px 0 16px;
+      margin-top: 19px;
+      border-top: 1px solid #e5e5e5;
+    }
+  }
+}

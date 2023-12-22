@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../styles/app.min.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- 메인 공통 바텀시트 -->
+    <div class="nav-global-bottom">
+      <div class="g-bottom-info">
+        <div class="g-line-user">
+          <button type="button" class="btn-txt">
+            <span class="info-number">010-12**-12** <i class="bl-arr btm"></i></span>
+          </button>
+          <div class="g-goods">
+            <span class="text">데이터 무제한</span>
+          </div> 
+          <!-- <button type="button" class="btn-txt">로그인하기<i class="bl-arr"></i></button>
+          <div class="g-goods underline">
+            <a href="https://m.T world.co.kr/common/member/slogin/ios?target=%2Fmain%2Fhome" target="_blank" class="text">간편로그인</a>
+            <a href="/common/member/signup-guide" target="_blank" class="text">회원가입</a>
+          </div> -->
+        </div>
+      </div>
+      <div class="g-bottom-nav">
+        <ul class="g-nav-list">
+          <li>
+            <button class="btn-icon">
+              <i class="svg-home on"></i>
+              <span class="txt"><em>HOME</em></span>
+            </button>
+          </li>
+          <li>
+            <button class="btn-icon">
+              <i class="svg-shop"></i>
+              <span class="txt"><em>SHOP</em></span>
+            </button>
+          </li>
+          <li>
+            <button class="btn-icon btn-my">
+              <i class="bl-arr top"></i>
+              <span class="txt"><em>MY</em></span>
+            </button>
+          </li>
+          <li>
+            <button class="btn-icon">
+              <i class="svg-benef"></i>
+              <span class="txt">혜택</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn-icon">
+              <i class="svg-menu"></i>
+              <span class="txt">메뉴</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- / .global-bottom -->
+
+  </div><!-- / .wrap -->
+
+  <script>
+    // 바텀네비 메뉴 클릭시 on 이벤트 스트립트
+    const divElement = document.querySelector('.g-nav-list');
+    const btns = divElement.getElementsByTagName('i');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("on");
+      if (current.length > 0) { 
+        current[0].className = current[0].className.replace(" on", "");
+      }
+      this.className += " on";
+      });
+    }
+  </script>
+
+</body>
+
+</html>

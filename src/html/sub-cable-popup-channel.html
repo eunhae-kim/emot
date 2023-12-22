@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/css/auth.css">
+  <link rel="stylesheet" href="../../../styles/css/common.css">
+  <link rel="stylesheet" href="../../../styles/css/components.css">
+  <link rel="stylesheet" href="../../../styles/css/font_spoqa.css">
+  <link rel="stylesheet" href="../../../styles/css/layout.css">
+  <link rel="stylesheet" href="../../../styles/css/m_product.css">
+  <link rel="stylesheet" href="../../../styles/css/product.css">
+  <link rel="stylesheet" href="../../../styles/css/roaming-next.css">
+  <link rel="stylesheet" href="../../../styles/css/widgets.css">
+  
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <main class="container cablesub">
+
+      <div class="popup-cablesub">
+        <header class="tworld-sub-header">  
+          <div class="sub-header-inner">
+            <strong class="sub-header-tit">IPTV 채널 정보</strong>
+            <span class="menu-box">
+              <button type="button" class="menu-item-close">
+                <i class="svg-close"></i>
+                <span class="hidden">닫기</span>
+              </button>
+            </span>
+          </div>
+        </header>
+
+        <div class="tab-item-top">
+          <ul class="tab-item">
+            <li>
+              <button type="button" class="active">
+                <em class="eng-word">All</em>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                스탠다드
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                이코노미
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                미니
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- All 내용 -->
+        <div class="tab-item-content active">
+          <!-- 탭 내용 -->
+          <div class="tab-item-cont">
+            <!-- 조회 -->
+            <div class="sel-addinfo">
+              <button type="button" class="btn-store-type">
+                종교/교양정보<i class="bl-arr btm"></i>
+                <span class="hidden">채널정보</span>
+              </button>
+            </div>
+            <!-- /조회 -->
+  
+            <h2>지상파</h2>
+            <ul class="channel-list">
+              <li>
+                <div class="channel-info">
+                  <span class="number">5</span>
+                  <span class="channel-txt">SBS</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">7</span>
+                  <span class="channel-txt">KBS2</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">20</span>
+                  <span class="channel-txt">OBS *</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">20</span>
+                  <span class="channel-txt">OBS *</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">999</span>
+                  <span class="channel-txt">TV CHOSUN(종합편성채널)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- //탭 내용 .tab-item-cont -->
+
+          <div class="tab-item-cont">
+            <h2>애니</h2>
+            <ul class="channel-list">
+              <li>
+                <div class="channel-info">
+                  <span class="number">170</span>
+                  <span class="channel-txt">Tooniverse</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">173</span>
+                  <span class="channel-txt">Animax</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">176</span>
+                  <span class="channel-txt">애니원</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">175</span>
+                  <span class="channel-txt">부메랑</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">180</span>
+                  <span class="channel-txt">DreamWorks</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="tab-item-cont">
+            <h2>키즈</h2>
+            <ul class="channel-list">
+              <li>
+                <div class="channel-info">
+                  <span class="number">181</span>
+                  <span class="channel-txt">MiaoMi</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">183</span>
+                  <span class="channel-txt">뽀요TV</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">184</span>
+                  <span class="channel-txt">캐리TV</span>
+                </div>
+              </li>
+              <li>
+                <div class="channel-info">
+                  <span class="number">999</span>
+                  <span class="channel-txt">신기한나라TV</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- / .card-tab-area -->
+
+        
+        <!-- 채널 구분 하단 레이어 -->
+        <div class="overlay active">  <!--active 붙으면 활성화-->
+          <div class="layer-type-bottom">
+            <div class="title-fixed">
+              <h2 class="sub-title">채널 구분</h2> 
+            </div>
+            <!-- 버튼형태 case -->
+            <ul class="select-list-type">
+              <!-- 반복 -->
+              <li class="item active"> <!-- 선택된 케이스: 클래스명 active 붙임-->
+                <button type="button">
+                  전체
+                  <span class="select-state"></span>
+                </button>
+              </li>        
+              <!--/ 반복 -->      
+              <li class="item">
+                <button type="button">
+                  지상파
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  애니
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  키즈
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  영화
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  시리즈
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  드라마
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  라이프
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  음악
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  취미/레저
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  스포츠
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  교육
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  홈쇼핑
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  공공
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  예능
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  종교/교양정보
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  뉴스/경제
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  보도
+                  <span class="select-state"></span>
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  프로모션
+                  <span class="select-state"></span>
+                </button>
+              </li>
+            </ul>   
+          </div>
+        </div>
+
+      </div> <!-- / .popup-cablesub -->
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+
+</html>

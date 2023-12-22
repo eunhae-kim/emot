@@ -1,0 +1,9 @@
+.dropdown {
+  border: 1px solid #000;
+}
+.dropdown-menu {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

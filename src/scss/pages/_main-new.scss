@@ -1,0 +1,415 @@
+// T-time 메인 슬라이드
+.card-main-content.t-time {
+  position: relative;
+  background-image: url(/public/images/main/main-tTime-bg.png);
+  background-position: top 0 left 0;
+  background-repeat: no-repeat;
+  background-size: 100% 228px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    width: 121px;
+    height: 142px;
+    background-image: url(/public/images/main/main-tTime-cup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @media all and (max-width: 359px) {
+      top: 35px;
+      right: 10px;
+      width: 78px;
+      height: 91px;
+    }
+  }
+
+  h2 {
+    width: calc(100% - 124px);
+    color: #fff;
+
+    @media all and (max-width: 359px) {
+      width: calc(100% - 78px);
+    }
+  }
+
+  p {
+    width: calc(100% - 124px);
+    margin: 20px 0 30px;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -2px;
+    color: #fff;
+
+    @media all and (max-width: 359px) {
+      width: calc(100% - 78px);
+      font-size: 12px;
+      letter-spacing: -1px;
+    }
+  }
+
+  .list-grid-thumbnail-visual {
+    padding-bottom: 35px;
+
+    .swiper-slide {
+      width: 140px;
+      overflow: hidden;
+      box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+
+      a {
+        picture {
+          width: 100%;
+          height: 100px;
+          margin-right: 0;
+          border-radius: 0;
+        }
+
+        .text-area {
+          width: 100%;
+          background: #fff;
+          padding: 20px 15px;
+          box-sizing: border-box;
+
+          strong {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 110px;
+            min-height: 34px;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.2;
+            color: #010101;
+          }
+
+          span {
+            width: 100%;
+            margin: 15px 0 0;
+            box-sizing: border-box;
+            font-size: 12px;
+            color: #888;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 359px) {
+  .card-main-content.t-time {
+    .t-time-bg-cup {
+      top: 35px;
+      right: 10px;
+      width: 78px;
+      height: auto;
+    }
+
+    h2 {
+      width: calc(100% - 78px);
+    }
+
+    p {
+      width: calc(100% - 78px);
+      font-size: 12px;
+      letter-spacing: -1px;
+    }
+  }
+}
+
+// 검수 확인용 css
+body {
+  overflow-y: scroll;
+}
+
+.sb-show-main.sb-main-padded {
+  padding: 0;
+}
+
+// T-time 메세지 버블
+.card-main-notification.tTime {
+  a {
+    background-color: #398dfd;
+    color: #fff !important;
+
+    .ic-alarm-notice {
+      &::before {
+        background: url($dir + 'icon/ic-exclam.png') no-repeat center center;
+        background-size: 100% 100%;
+      }
+    }
+  }
+
+  button {
+    .ic-tbar-cls {
+      color: #fff;
+      opacity: 0.8;
+    }
+  }
+}
+
+// T-time 개인화 영역
+.tTime-personal-area {
+  position: relative;
+  width: 100%;
+  padding: 35px 20px;
+  box-sizing: border-box;
+  background: #efeeff;
+  @include break-point(359) {
+    padding: 25px 10px;
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: bold;
+    @include break-point(359) {
+      font-size: 16px;
+    }
+  }
+
+  .tTime-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    @include break-point(359) {
+      padding: 20px;
+    }
+    
+    div {
+      position: relative;
+      min-width: 106px;
+      padding-right: 60px;
+      box-sizing: border-box;
+      @include break-point(359) {
+        min-width: 88px;
+        padding-right: 50px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        right: -5px;
+        width: 60px;
+        height: 63px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        @include break-point(359) {
+          width: 50px;
+          height: 53px;
+        }
+      }
+
+      &.teabag-box::before {
+        background-image: url(/public/images/icon/ic-teabag.png);
+      }
+      &.teacup-box::before  {
+        background-image: url(/public/images/icon/ic-teacup.png);
+      }
+
+      span {
+        display: block;
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: 500;
+        letter-spacing: -1px;
+        @include break-point(359) {
+          font-size: 13px;
+        }
+
+        &.num {
+          margin-top: 10px;
+          font-size: 12px;
+          color: #1932de;
+          font-weight: 700;
+
+          em {
+            padding-right: 3px;
+            font-size: 20px;
+            vertical-align: -1px;
+            @include break-point(359) {
+              font-size: 15px;
+              vertical-align: 0;
+            }
+          }
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 63px;
+        @include break-point(359) {
+          height: 43px;
+        }
+      }
+    }
+  }
+
+  .btn-refresh {
+    position: absolute;
+    top: 27px;
+    right: 14px;
+    @include break-point(359) {
+      top: 18px;
+      right: 4px;
+    }
+
+    .ic-refresh {
+      &::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url(/public/images/icon/ic-refresh.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+
+  // 비로그인 시
+  .no-login-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(36, 23, 156, 0.8);
+    z-index: 1;
+
+    p {
+      width: 100%;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      @include break-point(359) {
+        font-size: 16px;
+      }
+    }
+
+    .btn-login {
+      display: block;
+      margin-top: 20px;
+      padding: 12px 15px;
+      background: #efeeff;
+      border-radius: 36px;
+      span {
+        font-size: 13px;
+        color: #4130df;
+      }
+    }
+  }
+}
+
+// Ttime 리스트
+.card-main-content.tTime-list {
+  padding-top: 0;
+  border-bottom: none;
+
+  .card-tab-area {
+    li {
+      .thumbnail-rounded {
+        width: 95px;
+      }
+  
+      a,
+      .tbumb-item {
+        min-height: 90px;
+      }
+
+      .tbumb-item {
+        div {
+          display: block;
+          padding-left: 111px;
+  
+          em {
+            display: inline-block;
+            width: auto;
+            font-size: 12px;
+            color: #808080;
+
+            & + em {
+              margin-left: 12px;
+            }
+          }
+
+          strong {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 42px;
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.3;
+            font-weight: 700;
+            @include break-point(359) {
+              min-height: 40px;
+              font-size: 15px;
+            }
+          }
+
+          span {
+            display: block;
+            position: relative;
+            padding: 10px 0 0;
+            font-size: 12px;
+            color: #808080;
+
+            &::before {
+              content: '';
+              display: inline-block;
+              width: 14px;
+              height: 11px;
+              margin-right: 5px;
+              background-image: url(/public/images/icon/ic-eyes.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
+          }
+        }
+      }
+    }
+
+    .banner-area {
+      margin-left: -20px;
+      margin-right: -20px;
+      border-top: 8px #f0f0f5 solid;
+      border-bottom: 8px #f0f0f5 solid;
+      @include break-point(359) {
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+  
+      a {
+        min-height: auto;
+      }
+    }
+  }
+}

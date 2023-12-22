@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../../styles/app.min.css">
+  <style>
+    h1 {margin: 0 0 30px;text-align: center;font-size:15px;}
+    h3 {margin: 30px 0;font-size: 15px;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="container ">
+      <div  style="padding:20px">
+        <h1>* 버튼 형태(input type/button/link) UI가이드 * </h3>
+        <ul style="margin:20px;color:blue;font-size:15px;line-height:20px;">
+          <li><a href="form.html"> - 버튼/link/input type 버튼/검색</a></li>
+          <li><a href="banner.html"> - 썸네일, 이미지들 배너</a></li>
+          <li><a href="etc.html"> - 컨텐츠박스/헤더 등 기타</a></li>
+        </ul>
+
+        <h3>공통 검색폼 case1</h3>
+        <!--  검색페이지용  -->
+        <div class="common-content">
+          <div class="search-form">
+            <form action="">
+              <fieldset>
+                <legend class="hidden">검색 영역</legend>
+                <div class="search-input-area">
+                  <input type="search" class="search-input" value="추천 검색어1">
+                  <button type="button" class="btn-txt-delete">
+                    <i class="ic-input-delet"></i>
+                    <span class="hidden">텍스트 삭제 버튼</span>
+                  </button>
+                </div>
+                <button type="submit" class="btn-search-submit">
+                  <i class="ic-tbar-srch2"></i>
+                  <span class="hidden">검색</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+  
+        <h3>공통 검색폼 case2</h3>
+        <!-- 검색 input영역 - 검색버튼 바깥에 있는 case: class명 search-form-full  -->
+        <div class="common-content">
+          <div class="search-form-full">
+            <form action="">
+              <fieldset>
+                <legend class="hidden">검색 영역</legend>
+                <div class="search-input-area">
+                  <input type="search" class="search-input" value="추천 검색어1">
+                  <button type="button" class="btn-txt-delete">
+                    <i class="ic-input-delet"></i>
+                    <span class="hidden">텍스트 삭제 버튼</span>
+                  </button>
+                </div>
+                <button type="submit" class="btn-search-submit">
+                  <i class="ic-tbar-srch2"></i>
+                  <span class="hidden">검색</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <h3>기본 라디오</h3>
+        <div class="common-content">
+          <div class="radio-box">
+            <input type="radio" name="radio" id="radio">
+            <label for="radio">전체</label>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio2">지점</label>
+          </div>
+        </div>
+
+        <h3>기본 체크박스</h3>
+        <div class="common-content">
+          <span class="check-box">
+            <input type="checkbox" id="reset-search">
+            <span class="check-ico">
+              <i class="bl-check"></i>
+            </span>
+            <label for="reset-search">결과 내 재검색</label>
+          </span>
+        </div>
+
+        <h3>버튼 100%</h3>
+        <div class="common-content-btn">
+          <div class="btn-area-full">
+            <button type="button" class="btns-round">full 버튼</button>
+          </div>
+        </div>
+
+        <h3>버튼 round col2</h3>
+        <div class="common-content-btn">
+          <div class="btn-area">
+            <button type="button" class="btns-round blue">
+              <i class="ic-etc-data"></i> 충전하기
+            </button>
+            <button type="button" class="btns-round">
+              <i class="ic-etc-gift"></i> 선물하기
+            </button>
+          </div>
+        </div>
+
+        <h3>버튼 square</h3>
+        <div class="common-content-btn">
+          <div class="btn-area">
+            <button type="button" class="btns-square">버튼</button>
+          </div>
+        </div>
+
+        <h3>버튼 square-rd(round)</h3>
+        <div class="common-content-btn">
+          <div class="btn-area">
+            <button type="button" class="btns-square-rd">버튼</button>
+          </div>
+        </div>
+
+        <h3>버튼 square-rd(round) col2</h3>
+        <div class="common-content-btn">
+          <div class="btn-area">
+            <button type="button" class="btns-square-rd gray">닫기</button>
+            <button type="button" class="btns-square-rd blue">추가 예약</button>
+          </div>
+        </div>
+
+        <hr>
+
+        <article class="common-content-inquire">
+          <h2>사용 중인 휴대폰을 선택하세요</h2>
+          <ul class="inquire-type-one">
+            <li class="inquire-item">
+              <input type="radio" id="asw0" name="mobile"/>
+              <label for="asw0">
+                <em>5G 휴대폰</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="asw1" name="mobile"/>
+              <label for="asw1">
+                <em>LTE 휴대폰</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="asw2" name="mobile"/>
+              <label for="asw2">
+                <em>3G 휴대폰</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="asw3" name="mobile"/>
+              <label for="asw3">
+                <em>태블릿/스마트기기</em>
+              </label>
+            </li>          
+          </ul>
+        </article>
+  
+        <article class="common-content-inquire">
+          <h2>평소 데이터 사용량이 어느 정도인가요?</h2>
+          <ul class="inquire-type-two">
+            <li class="inquire-item">
+              <input type="radio" id="data0" name="data"/>
+              <label for="data0">
+                <em>무제한</em>
+                <span class="add-text">데이터를 많이 사용</span>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="data1" name="data"/>
+              <label for="data1">
+                <em>150GB 이상</em>
+                <span class="add-text">데이터를 자주 사용</span>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="data2" name="data"/>
+              <label for="data2">
+                <em>100GB 이상</em>
+                <span class="add-text">가끔 동영상 시청</span>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="data3" name="data"/>
+              <label for="data3">
+                <em>10GB 이상</em>
+                <span class="add-text">종종 웹서핑</span>
+              </label>
+            </li>
+          </ul>
+        </article>
+  
+        <article class="common-content-inquire">
+          <h2>음성통화 무제한 이용을 원하시나요?</h2>
+          <ul class="inquire-type-two">
+            <li class="inquire-item">
+              <input type="radio" id="inf0" name="infinite"/>
+              <label for="inf0">
+                <em>SK텔레콤 사용자간의 무제한 음성통화</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="inf1" name="infinite"/>
+              <label for="inf1">
+                <em>통신사 상관없이 무제한 음성통화</em>
+              </label>
+            </li>            
+          </ul>
+        </article>
+  
+        <article class="common-content-inquire">
+          <h2>적정하다고 생각되는 월 기본요금은?</h2>
+          <ul class="inquire-type-three">
+            <li class="inquire-item">
+              <input type="radio" id="fee0" name="fee"/>
+              <label for="fee0">
+                <em>3만원 이하</em>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="fee1" name="fee"/>
+              <label for="fee1">
+                <em>4~5만원</em>
+              </label>
+            </li>   
+            <li class="inquire-item">
+              <input type="radio" id="fee2" name="fee"/>
+              <label for="fee2">
+                <em>7만원</em>
+              </label>
+            </li>          
+          </ul>
+        </article>
+  
+        <article class="common-content-inquire">
+          <h2>요금제를 이용하시는 분은?</h2>
+          <ul class="inquire-type-three">
+            <li class="inquire-item">
+              <input type="radio" id="user0" name="user"/>
+              <label for="user0">
+                <em>어린이 청소년</em>
+                <span class="add-text">(만 18세 이하)</span>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="user1" name="user"/>
+              <label for="user1">
+                <em>만 24세 이하</em>
+                <span class="add-text">(성인)</span>
+              </label>
+            </li>   
+            <li class="inquire-item">
+              <input type="radio" id="user3" name="user"/>
+              <label for="user3">
+                <em>만 65세 이상</em>
+                <span class="add-text">(성인)</span>
+              </label>
+            </li>
+            <li class="inquire-item">
+              <input type="radio" id="user4" name="user"/>
+              <label for="user4">
+                <em>나이제한 없음</em>
+                <span class="add-text">(성인)</span>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="user5" name="fee"/>
+              <label for="user5">
+                <em>복지할인 등록자</em>
+              </label>
+            </li> 
+            <li class="inquire-item">
+              <input type="radio" id="user6" name="fee"/>
+              <label for="user6">
+                <em>군인</em>
+              </label>
+            </li>           
+          </ul>
+        </article>
+
+      </div><!-- padding:20px -->
+
+      <h3>full팝업 버튼</h3>
+      <div class="common-content-btn">
+        <div class="btn-full-pop">
+          <button type="button" class="btns blue">서비스 선택 완료</button>
+        </div>
+      </div>
+
+      <h3>full팝업 버튼 비활성</h3>
+      <div class="common-content-btn">
+        <div class="btn-full-pop">
+          <button type="button" class="btns-type">다른주소 조회</button>
+          <button type="button" class="btns-type gray">확인</button>
+        </div>
+      </div>
+      <h3>full팝업 버튼 활성</h3>
+      <div class="common-content-btn">
+        <div class="btn-full-pop">
+          <button type="button" class="btns-type">다른주소 조회</button>
+          <button type="button" class="btns blue">확인</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>link 버튼</h3>
+      <div class="common-content-btn">
+        <div class="link-area">
+          <a href="/" class="link-text">홈페이지</a>
+          <a href="/" class="link-text">전화</a>
+        </div>
+      </div>
+      
+      <h3>map 링크</h3>
+      <div class="common-content-btn">
+        <div class="link-area">
+          <a href="/" class="link-text-map">
+            <i class="ic-location"></i> <span>서울시 중구 을지로 2가</span>
+          </a>
+        </div>
+      </div>
+      
+      <h3>bar 버튼 - button/a tag 사용가능</h3>
+
+      <div class="common-content-btn">
+        <button type="button" class="bar-btn">
+          <span class="icon-box">
+            <i class="ic-search"></i>
+          </span>
+          <span class="txt">내게 맞는 인터넷/IPTV 상품 찾기</span> 
+          <span class="bi-box">
+            <i class="bl-arr"></i>
+            <span class="hidden">이동</span>
+          </span>
+        </button>
+
+        <button type="button" class="bar-btn">
+          <span class="icon-box">
+            <i class="ic-etc-fee2"></i>
+          </span>
+          <span class="txt">예상 요금 시뮬레이션 하러가기</span>          
+          <span class="bi-box">
+            <i class="bl-arr"></i>
+            <span class="hidden">이동</span>
+          </span>
+        </button>
+        
+        
+        <button type="button" class="bar-btn">
+          <span class="icon-box">
+            <img src="/public/images/icon/ic-file.png" alt="" width="20" height="20">
+          </span>
+          <span class="txt">무상 및 유상 서비스를 확인하세요.</span>          
+          <span class="bi-box">
+            <i class="bl-arr"></i>
+            <span class="hidden">이동</span>
+          </span>
+        </button>
+
+        <a href="/" class="bar-btn">
+          <span class="icon-box">
+            <img src="/public/images/icon/ic-comment-dotsi.png" alt="" width="20" height="20">
+          </span>
+          <span class="txt">AS 신청 안내사항을 꼭 확인해 주세요.</span>          
+          <span class="bi-box">
+            <i class="bl-arr"></i>
+            <span class="hidden">이동하기</span>
+          </span>
+        </a>
+      </div>
+
+    </main><!-- / .container -->
+  </div><!-- / .wrap -->
+</body>
+
+<script src="../../../public/js/ua-parser.min.js"></script>
+<script src="../../../public/js/jquery-2.2.4.min.js"></script>
+<script src="../../../public/js/swiper-bundle.min.js"></script>
+<script src="../../../public/js/app.js"></script>
+</html>

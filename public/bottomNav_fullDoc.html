@@ -1,0 +1,92 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      .g-bottom{
+          padding-bottom:80px;
+          min-height:100%;
+          height:auto
+      }
+      .g-bottom-sheet{
+          padding-bottom:105px;
+          min-height:100%;
+          height:auto
+      }
+      @media only screen and (max-width: 359px){
+          .g-bottom{
+              padding-bottom:160px
+          }
+      }
+  </style>
+  <script src="./bottomNav.js" charset="UTF-8"></script>
+</head>
+<body>
+<div onclick="$tw.bottomNav.show()">Show</div>
+<div onclick="$tw.bottomNav.hide()">Hide</div>
+<script>
+  $tw.bottomNav.init({
+    // 티월드 API를 이용한 기능을 사용할지 여부입니다. 만약 티월드 사용 예정이라도 https가 아닌 로컬 환경에서 개발 중이라서 서버 API 호출
+    // 관련 오류가 발생하는 상황이라면 false로 설정해서 API 기능 제외하고 실행 가능합니다.
+    //
+    // true로 설정 될 경우 (티월드)
+    // - Tworld 서버와 API 통신이 이루어지고 바텀시트에 사용자 정보가 노출 됩니다.
+    // - 버튼의 링크들이 상대경로로 생성됩니다.
+    // - API 통신에는 https Tworld 도메인과 TWM 쿠키가 필요하기 때문에 다른 도메인의 서비스에서는 true 옵션 사용 불가 입니다.
+    //
+    // false로 설정 될 경우 (티다이렉트)
+    // - Tworld 서버와 API 통신이 없습니다.
+    // - 버튼의 경로들이 절대경로로 생성됩니다.
+    // - 바텀시트는 강제로 숨김처리가 됩니다.
+    // - API 통신이 없어 사용자 로그인 상태 파악이 자동으로 되지 않아 isLoggedIn / loginUrl 옵션을 수동으로 주셔야 합니다.
+    isTworld: false,
+    // 환경에 맞는 랜딩 URL 및 API base URL이 설정 됩니다.
+    // "LOCAL" | "DEV" | "STG" | "GREEN" | "BLUE"
+    ldsp: "STG",
+
+    // isTworld == false 일때만 필요한 값. 티월드에서는 API 연동으로 로그인 상태 확인
+    // default: false
+    isLoggedIn: true,
+    // isTworld == false 일때만 필요한 값. 티월드에서는 미리 지정된 로그인 URL 사용
+    loginUrl: "",
+    simpleLoginUrl: "",
+
+    // default: "KO"
+    lang: "KO",
+
+    // 노출하지 않는 페이지에서는 false로 설정해서 앱에서 숨김처리 하도록 함
+    // default: true
+    show: true,
+
+    // 바텀시트 노출여부 입니다.
+    // 현재 스펙상으로 설정 되어야 하는 값은 아래와 같습니다.
+    // 메인
+    //   - 첫 화면: 바텀시트 노출 (Y)
+    //   - 나머지 화면: 노출 안함 (N)
+    // T 다이렉트샵
+    //   - 첫 화면: 예외상황에서만 노출 (EXCEPTION_ONLY)
+    //   - 나머지 화면: 노출 안함 (N)
+    // T 혜택
+    //   - 첫 화면: 예외상황에서만 노출 (EXCEPTION_ONLY)
+    //   - 나머지 화면: 노출 안함 (N)
+    // 메뉴:  노출 안함 (N)
+    //
+    // showBottomSheet: "Y" | "N" | "EXCEPTION_ONLY"
+    // default: "N"
+    showBottomSheet: "N",
+
+    // 선택할 상태로 노출할 버튼의 Index (국문, 영문 공통)
+    // 아무 탭도 선택되지 않은 상태로 노출하기 위해서는 값 생략
+    // 0: 홈
+    // 1: T다이렉트샵
+    // 2: 혜택
+    // 3: 메뉴
+    tabIndex: 0,
+
+    // 하단네비는 디폴트로 25의 zIndex를 가지고 있습니다. 만약 이보다 높은 zIndex를 가진 페이지에 적용되면서 하단네비가 가려지는 현상이
+    // 발생하면 zIndex 값을 조정 하시면 됩니다.
+    // default: 25
+    zIndex: 25,
+  });
+</script>
+</body>
+</html>

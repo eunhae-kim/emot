@@ -1,0 +1,99 @@
+
+//header 알림 아이콘
+.ic-alarm-svc {
+  width: 19px;
+  height: 19px;
+  background-size: 100% 100%;
+  &::before {
+    display: block;
+    content: '' !important;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC4wMTYiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCAzOC4wMTYgMzgiPg0KICA8ZyBpZD0iXy1lLWljb25fLWJlbGwiIGRhdGEtbmFtZT0iLWUtaWNvbi1iZWxsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTY1Ljk4NCAtODUpIj4NCiAgICA8cmVjdCBpZD0iXzM4XzM4IiBkYXRhLW5hbWU9IjM4KjM4IiB3aWR0aD0iMzgiIGhlaWdodD0iMzgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU2NiA4NSkiIGZpbGw9IiNkZTAwZmYiIG9wYWNpdHk9IjAiLz4NCiAgICA8cGF0aCBpZD0i7JWM66a87JWE7J207L2YIiBkPSJNNTczLjc4MiwxMTNWMTAyYTExLjA2OSwxMS4wNjksMCwwLDEsMjIuMTM4LDB2OGgzLjAxOXYtOGExNC4wNDYsMTQuMDQ2LDAsMCwwLTEyLjQ1My0xMy45Vjg1aC0zLjAxOXYzLjA2OUExNC4wNTIsMTQuMDUyLDAsMCwwLDU3MC43NjMsMTAydjExaC00Ljc4djNoMTEuODM4YTcuMTU4LDcuMTU4LDAsMCwwLDE0LjMxMiwwaDExLjgzOHYtM1ptMTEuMTk1LDdhNC4wNzUsNC4wNzUsMCwwLDEtNC4xMzctNGg4LjI3NEE0LjA3NSw0LjA3NSwwLDAsMSw1ODQuOTc3LDEyMFoiLz4NCiAgPC9nPg0KPC9zdmc+DQo=");
+    background-size: 100% 100%;
+    width: 19px;
+    height: 19px;
+  }
+}
+
+//header 검색 아이콘
+.ic-tbar-srch1 {
+  width: 19px;
+  height: 19px;
+  background-size: 100% 100%;
+  &::before {
+    display: block;
+    content: '' !important;
+    background: url($dir + 'icon/ic-tbar-srch1.png') no-repeat center center;
+    background-size: 100% 100%;
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.header {
+  background-color: var(--white);
+  height: 56px;
+  padding: 0 5px 0 20px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  @include break-point(359) {
+    padding: 0 5px 0 10px;
+  }
+
+  h1 {
+    a,
+    .link-logo {
+      background: url($dir + 'logo.png') no-repeat left top;
+      background-size: 100% 100%;
+      width: 23px;
+      height: 24px;
+      display: block;
+    }
+  }
+
+  button,
+  .link-search {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 20px;
+    }
+  }
+
+  .svc-box {
+    margin: 0 0 0 auto;
+    white-space: nowrap;
+    position: relative;
+
+    .svc-item-alarm {
+      margin-right: 5px;
+    }
+
+    a,
+    button {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: middle;
+
+      .icon {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        background-size: 100% auto;
+        vertical-align: middle;
+      }
+    }
+  }
+
+}
+
